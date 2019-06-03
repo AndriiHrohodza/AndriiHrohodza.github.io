@@ -1,0 +1,537 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, SECTION, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+	display: table;
+}
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+.container{
+	width: 940px;
+	margin: 0 auto;
+}
+#header{
+	padding: 30px 0;
+	position: absolute;
+	top: 30px;
+	width: 100%;
+}
+.logo{
+	float: left;
+}
+.nav{
+	float: right;
+	padding-top: 5px;
+}
+.nav li{
+	float: left;
+	margin-right: 40px;
+}
+.nav li:last-child{
+	margin-right: 0px;
+}
+li a{
+	text-decoration: none;
+}
+.nav a{
+	text-transform: uppercase;
+	font: 14px Arial, sans-serif;
+	color: white;
+}
+.nav a:hover{
+	color: #fed136;
+}
+#home{
+	height: 410px;
+	padding-top: 290px;
+	text-align: center;
+	color: #fff;
+	background: url("image/Tint.jpg") no-repeat center top;
+	background-size: 100%;	
+	
+}
+#home h3{
+	font: 40px/40px Arial, sans-sefir;
+	margin-bottom: 50px;
+}
+#home h1{
+	height: 57px;
+	font: 75px/75px Arial, sans-sefir;
+	text-transform: uppercase;
+	margin-bottom: 50px;
+}
+.btn{
+	display: inline-block;
+	font: bold 24px/24px Arial, sans-sefir;
+	text-transform: uppercase;
+	background: #fed136;
+	padding: 20px 30px;
+	color: white;
+	border: none;
+	cursor: pointer;
+	border-radius: 2px;
+
+}
+.btn:hover{
+	background: #e3b929;
+	color: #fff;
+}
+.box {
+	padding: 120px 0px;
+	
+}
+
+#servises {
+	text-align: center;
+}
+
+h2.title {
+	margin-bottom: 10px;
+	font: bold 40px Arial, sans-sefir;
+	color: #222222;
+	text-transform: uppercase;
+}
+
+p.desc {
+	font-size: 16px;
+	color: #777777;
+	
+}
+
+h5.title {
+	margin-bottom: 10px;
+	font: bold 18px Arial, sans-sefir;
+	color: #222222;
+}
+
+p {
+	font-size: 18px;
+	color: #777777;
+	letter-spacing: 0.5px;
+	word-spacing: 1px;
+	line-height: 23px;
+	padding: 0 25px;
+}
+
+.services-ecommers {
+	width: 33.3%;
+	float: left;
+	padding-top: 100px;
+}
+
+.basket {
+	background: url(image/Icon-Basket.png) no-repeat center top;
+}
+
+.laptop {
+	background: url(image/Icon-Laptop.png) no-repeat center top;
+}
+
+.lock {
+	background: url(image/Icon-Locked.png) no-repeat center top;
+}
+
+#portfolio {
+	text-align: center;
+	margin-top: 230px;
+	background: #f7f7f7;
+	height: 980px;
+}
+
+span {
+	font-size: 14px;
+	color: #737373;
+	position: relative;
+	bottom: 78px;
+}
+
+.portfolio-item {
+	width: 33%;
+	float: left;
+	margin-right: 0.3%;
+}
+
+h5.up {
+	position: relative;
+	bottom: 70px;
+}
+
+.p-item-footer {
+	margin-bottom: 3px;
+}
+
+#about {
+	text-align: center;
+}
+
+.services-wrap,
+.portfolio-wrap,
+.about-wrap,
+.team-wrap,
+#messege {
+	margin-top: 75px;
+}
+
+.about-warp {
+	width: 100%;
+}
+
+.about-text {
+	float: left;
+	width: 35%;
+	height: 120px;
+	text-align: right;
+	display: block;
+}
+
+.about-img {
+	float: left;
+	width: 30%;
+	height: 20px;
+	display: block;
+	
+}
+
+p.q {
+	text-align: right;
+	padding: 0px;
+}
+
+.about-text h5 {
+	line-height: 30px;
+}
+
+.about-img img {
+	display: inline-block;
+}
+
+.about-img:after {
+	content: "";
+	display: block;
+	margin: 0 auto;
+	height: 94px;
+	width: 4px;
+	position: relative;
+	bottom: 10px;
+	background: #f1f1f1;
+}
+
+
+.about-img1:after {
+	content: "";
+	display: block;
+	margin: 0 auto;
+	height: 95px;
+	width: 4px;
+	position: relative;
+	bottom: 10px;
+	background: #f1f1f1;
+}
+
+
+.about-text1 {
+	float: right;
+	width: 35%;
+	height: 120px;
+	text-align: right;
+	display: block;
+}
+p.qq {
+	text-align: left;
+	padding: 0px;
+}
+h5.title1 {
+	text-align: left;
+	margin-bottom: 10px;
+	font: bold 18px Arial, sans-sefir;
+	color: #222222;
+}
+.about-text1 h5 {
+	line-height: 30px;
+}
+.about-img1 {
+	float: right;
+	width: 30%;
+	height: 20px;
+	display: block;
+	
+}
+
+.about-item1 {
+	padding-top: 60px;
+}
+
+.about-img3 {
+	float: right;
+	width: 30%;
+	height: 20px;
+	display: block;
+	
+}
+
+.about-item3 {
+	padding-top: 60px;
+}
+
+.about-img img {
+	display: inline-block;
+}
+
+.about-item2 {
+	padding-top: 60px;
+}
+
+.about-img2:after {
+	content: "";
+	display: block;
+	margin: 0 auto;
+	height: 94px;
+	width: 4px;
+	position: relative;
+	bottom: 10px;
+	background: #f1f1f1;
+}
+.about-item,
+.about-item1,
+.about-item2 {
+margin-bottom: 90px;
+}
+
+.title-container {
+	margin-bottom: 10px;
+	font: bold 18px Arial, sans-sefir;
+	color: #ffffff;
+	line-height: 30px;
+	position: relative;
+	bottom:  150px;
+	text-transform: uppercase;
+}
+
+.about-link {
+	color: white;
+	text-decoration: none;
+	text-shadow: 0 1px rgba(0,0,0,0.3);
+}
+
+.about-container1 {
+	padding: 0px 0px;
+	height: 0px;
+}
+
+#team {
+	text-align: center;
+}
+
+.team-item img {
+	width: 220px;
+	height: 220px;
+}
+
+.cat {
+	font: 14px Arial, sans-sefir;
+}
+
+h5.title2 {
+	margin-bottom: 10px;
+	font: bold 16px Arial, sans-sefir;
+	color: #222222;
+	text-align: center;
+	margin-top: 20px;
+}
+
+.social a {
+	display: inline-block;
+	width: 34px;
+	height: 34px;
+	border: 3px solid #222;
+	border-radius: 50%;
+	margin: 0px 3px;
+	background: url("image/sprits.png") no-repeat;
+}
+
+.social {
+	margin-top: 14px;
+}
+
+.team-item {
+	float: left;
+	width: 33.33%;
+	margin: 0 0px;
+}
+.social a.ic-twit {
+	background-position: 0 0;
+}
+.social a.ic-twit:hover {
+	border-color: #00aced;
+	background-color: #00aced;
+	background-position: 0px -38px;
+}
+.social a.ic-twit.www {
+	background-position: 0 -38px;
+}
+.social a.ic-fb {
+	background-position: -40px -2px;
+}
+.social a.ic-fb:hover {
+	border-color: #3b5998;
+	background-color: #3b5998;
+	background-position: -40px -40px;
+}
+.social a.ic-fb.www {
+	background-position: -40px -40px;
+}
+.social a.ic-pn {
+	background-position: -80px -2px;
+}
+.social a.ic-pn:hover {
+	border-color: #cb2028;
+	background-color: #cb2028;
+	background-position: -80px -40px;
+}
+.social a.ic-pn.www {
+	background-position: -80px -40px;
+}
+.social a.ic-gl {
+	background-position: -121px -1px;
+}
+.social a.ic-gl:hover {
+	border-color: #d95232;
+	background-color: #d95232;
+	background-position: -121px -39px;
+}
+.social a.ic-gl.www {
+	background-position: -121px -39px;
+}
+.iqq {
+	margin-top: 465px;
+}
+
+.brands {
+	text-align: center;
+	padding: 60px 0;
+}
+
+.brands a {
+	display: inline-block;
+	margin-right: 40px;
+}
+
+.brands a:last-child{
+	margin-right: 0px;
+}
+
+.brands img {
+	vertical-align: middle;
+}
+
+#contact {
+	height: 435px;
+	text-align: center;
+	background: #222 url(image/map.png) no-repeat right bottom;
+	background-position: 760px 105px ;
+}
+
+#contact h2.title {
+	color:white;
+}
+
+.left {
+	float: left;
+	width: 44%;
+}
+
+.right {
+	float: right;
+	width: 48%;
+}
+
+#messege input[type=text],
+#messege textarea {
+	background: #fff;
+	color: #222;
+	font: bold 14px/14px Arial,sans-sefir;
+	padding: 15px 20px;
+	border-radius: 4px;
+	width: 100%;
+	box-shadow: none;
+	margin-bottom: 30px;
+}
+
+#messege input[type=text] {
+	height: 18px;
+	border: 1px solid #ccc;
+}
+
+#messege textarea {
+	border: none;
+	height: 180px;
+	resize: none;
+}
+
+::-webkit-input-placeholder {
+	text-transform: uppercase;
+	font: bold 14px/14px Arial,sans-sefir;
+	color: #bbbbbb;
+}
+
+.copy {
+	float: left;
+	font: 14px Arial,sans-serif;
+	color: #555555;
+	padding-top: 20px;
+	padding-bottom: 30px;
+	padding-left: 0px;
+
+}
+
+#copyright .social {
+	padding-top: 10px;
+	margin-left: 370px;
+}
+
+.social a.www {
+	background-color: #222;
+}
