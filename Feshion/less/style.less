@@ -1,0 +1,252 @@
+@font-face {
+    font-family: 'Druk Wide_reg';
+    src: url('../fonts/Druk-WideMedium.woff2') format('woff2'),
+        url('../fonts/Druk-WideMedium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Graphik_bold';
+    src: url('../fonts/Graphik-Bold.woff2') format('woff2'),
+        url('../fonts/Graphik-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Graphik_reg';
+    src: url('../fonts/Graphik-Regular.woff2') format('woff2'),
+        url('../fonts/Graphik-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Druk Wide_bold';
+    src: url('../fonts/DrukWide-Bold.woff2') format('woff2'),
+        url('../fonts/DrukWide-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+}
+.graphreg() {
+	font-family: 'Graphik_reg', sans-serif;
+}
+.graphbold() {
+	font-family: 'Graphik_bold', sans-serif;
+}
+.drukreg() {
+	font-family: 'Druk Wide_reg', sans-serif;
+}
+.drukbold() {
+	font-family: 'Druk Wide_bold', sans-serif;
+}
+
+
+body {
+	margin: 0;
+	.graphreg(); 
+}
+* {
+	box-sizing: border-box;
+}
+.main {
+	background-color: #FFF9EA;
+	background-size: cover;
+	.container {
+		margin: 0 194px 0 194px;
+	}
+}
+.header {
+	padding-top: 17px;
+	height: 70px;
+	&-logo {
+		line-height: 50px;
+		height: 50px;
+		text-align: center;
+		float: left;
+		img {
+			width: 17px;
+			height: 42px;
+			display: inline-block;
+			vertical-align: middle;
+		}
+	}
+	&-nav {
+		margin-left: 173px;
+		padding: 0;
+		li.header-nav-menu {
+			position: relative;
+		}
+			li {
+				display: inline-block;
+				margin-right: 61px;
+				a {
+					text-decoration: none;
+					color: #1C1717;
+					.graphreg();
+					font-size: 17px;
+					img {
+						width: 16px;
+						height: 7px;
+						position: absolute;
+						top: 50%;
+						left: 0;
+						transform: translateY(-50%);
+					}
+				}
+			}
+
+			li:last-child {
+				margin-right: 10px;
+			}
+			&-right {
+				float: right;
+			}
+			&-menu {
+				float: right;
+				display: flex;
+				width: 16px;
+				height: 19px;
+			}
+		}
+}
+.content {
+	margin: 169px 0;
+	.textright {
+		float: left;
+		width: 33%;
+		ol {
+			padding-left: 158px;
+			margin: 98px 0px 0;
+			.drukreg();
+			li {
+				margin: 50px 0;
+				list-style-type: none;
+				letter-spacing: 0.7px;
+				font-size: 25px;
+			}
+		}
+	}
+	.textleft {
+		float: left;
+		width: 33%;
+		position: relative;
+		h1 {
+			color: black;
+			-webkit-text-fill-color: transparent;
+			-webkit-text-stroke-width: 2px;
+			.drukbold();
+			font-size: 120px;
+			line-height: 140px;
+
+			margin: 225px 0 50px 0;
+		}
+		.atme {
+			position: absolute;
+			bottom: -19.2%;
+			right: -27%;
+			margin: 0;
+			color: #1C1717;
+			font-size: 120px;
+			.drukbold();
+			z-index: 0;
+		}
+	}
+
+}
+.footer {
+	padding-bottom: 17px;
+	height: 70px;
+	width: 100%;
+	position: relative;
+	&-start {
+		display: inline-block;
+		height: 50px;
+		width: 64px;
+		float: left;
+		line-height: 50px;
+		a {
+		 margin: 0;
+		 text-decoration: none;
+		 color: #1C1717;
+		}
+		a::before {
+			content: '';
+			display: inline-block;
+			width: 1.4rem;
+			height: 1.4rem;
+			background: url("../images/Subtract.svg") center no-repeat;
+			background-size: 100%;
+			vertical-align: middle;
+			margin-right: 5px;
+			margin-bottom: 4px;
+		}
+	}
+	&-line {
+		display: inline-block;
+		position: relative;
+		float: left;
+		width: 1358px;
+		height: 50px;
+		margin-left: 110px;
+		&-1px {
+			position: absolute;
+			top: 50%;
+			left: 0;
+			transform: translateY(-50%);
+			width: 1357px;
+			height: 1px;
+			background-color: #1C1717;
+			z-index: 0;
+		}
+		&-menu {
+			display: block;
+			position: absolute;
+			top: 0;
+			right: 80px;
+			height: 50px;
+			width: 100px;
+			text-align: center;
+			line-height: 50px;
+			background-color: #FFF9EA;
+			z-index: 2;
+			a {
+				padding: 10px 15px;
+				text-decoration: none;
+				color: black;
+				font-size: 17px;
+			}
+		}
+	}
+}
+.card {
+ perspective: 1000px;
+ transform-style: preserve-3d;
+ float: left;
+ width: 33%;
+ z-index: 99;
+}
+.card-item {
+		background: #fff url("../images/11.png") center center no-repeat;
+		background-size: cover;
+		width: 480px;
+		height: 706px;
+		transition: transform 0.2s;
+		margin: auto;	
+	}
+	.content::after {
+	content: "";
+	clear: both;
+	display: table;
+}
+@media (min-width: 1920px) {
+	.header {
+		padding-top: 30px;
+		height: 80px;
+	}
+	.footer {
+		padding-bottom: 30px;
+		height: 80px;
+	}
+}
