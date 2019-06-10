@@ -60,6 +60,8 @@ body {
     background: #0304b8 url(../images/Фон.jpg) center bottom no-repeat;
     background-size: cover;
     color: @color-white;
+    box-shadow: 0 50px 100px rgba(33, 48, 99, 0.8);
+
  }
  .container {   // how to create flexible container for each monitor size
     margin: 0 8%;
@@ -155,7 +157,7 @@ body {
 
  /*mainContent*/
  .mainContent {
-    margin-top: 80px;
+    margin-top: 150px;
     height: 500px;
     /*leftItem*/
     .leftItem {
@@ -238,21 +240,134 @@ body {
 
 /*mainFootre*/
 .mainFooter {
-    position: relative;
+    position: absolute;
+    bottom: 0;
+    right: 0;
     font-size: 22px;
     font-family: 'JaapokkisubtractRegular', sans-serif;
     height: 149px;
+    overflow: hidden;
     &__item {
         display: block;
-        position: absolute;
-        right: 9%;
         border-right: 3px solid @color-white;
         padding-right: 40px;
         padding-top: 23px;
-        height: 149px;
+        height: 100%;
         a {
             text-decoration: none;
             color: @color-white;
         }
     }
 }
+
+/*Section Servises*/
+.services {
+    font-family: 'JaapokkisubtractRegular', sans-serif;
+    .subText {
+        margin: 170px 0 0;
+        font-size: 23px;
+        color: #a8a8e4;
+        letter-spacing: 1px;
+    }
+    .mainText {
+        color: #0001c5;
+        position: relative;
+        margin-bottom: 115px;
+        &__service {
+            font-size: 85px;
+            margin: 20px 0 0;
+            padding-left: 14px;
+            margin-left: 50px;
+            letter-spacing: 3px;
+        }
+    }
+    .mainText:after {
+        content: " ";
+        display: inline-block;
+        position: absolute;
+        bottom: 14%;
+        left: 24%;
+        background-color: @color-blue;
+        width: 31px;
+        height: 5px;
+    }
+}
+.serviceSlider {
+        background-color: #ffffff;
+        display: flex;
+        justify-content: center;        
+        position: relative;
+        .prev {
+          position: absolute;
+          top: 50%;
+          left: -5%;
+          transform: translateY(-50%);
+          z-index: 99;
+          width: 2rem;
+          height: 2rem;
+          border: none;
+          background: url(../images/Services/left-arrow.svg) center no-repeat;
+          background-size: 80%;
+
+        }
+        .next {
+          position: absolute;
+          top: 50%;
+          right: -5%;
+          transform: translateY(-50%);
+          z-index: 99;
+          width: 2rem;
+          height: 2rem;
+          border: none;
+          background: url(../images/Services/right-arrow.svg) center no-repeat;
+          background-size: 80%;
+        }
+    &__block {
+        width: 285px;
+        border: 4px solid #0001c5;
+        margin: 0 60px;
+        position: relative;
+        span {
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            width: 41px;
+            height: 41px;
+            background-color: #0001c5;
+            text-align: center;
+            line-height: 41px;
+            font-size: 31px;
+            color: @color-white;
+        }
+        .number {
+            position: absolute;
+            top: 5%;
+            left: -23%;
+            color: #a8a8e4;
+            display: block;
+            width: 28px;
+            height: 28px;
+            background-color: transparent;
+        }
+    }
+    &__block img {
+        width: 49px;
+        height: 49px;
+        margin: 49px;
+    }
+    &__block h4 {
+        font-family: 'Roboto', sans-serif;
+        font-size: 26px;
+        margin-left: 49px;
+        line-height: 1.8;
+        color: #0001c5;
+        margin-bottom: 131px;
+    }
+    &__block:before {
+        content: " ";
+        width: 20px;
+        height: 20px;
+        background-color: black;
+    }
+}
+
