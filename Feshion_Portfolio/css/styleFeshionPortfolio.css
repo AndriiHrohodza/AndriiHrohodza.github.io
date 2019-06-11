@@ -294,7 +294,7 @@ body {
   display: inline-block;
   position: absolute;
   bottom: 14%;
-  left: 24%;
+  left: 21%;
   background-color: #0001c5;
   width: 31px;
   height: 5px;
@@ -480,4 +480,46 @@ body {
   text-decoration: none;
   line-height: 55px;
   color: #ffffff;
+}
+/*Media*/
+@media (max-width: 1650px) {
+  .btn {
+    width: 210px;
+    height: 55px;
+  }
+  .mainContent {
+    margin-top: 110px;
+  }
+  .mainContent .leftItem__worth {
+    font-size: 185px;
+  }
+  .mainContent .leftItem__mainText {
+    font-size: 40px;
+    line-height: 60px;
+    padding: 20px 0 40px;
+  }
+  .mainContent .leftItem__subText {
+    font-size: 15px;
+  }
+  .mainContent .rightItem__text {
+    font-size: 240px;
+  }
+  .services .mainText {
+    padding-left: 40px;
+  }
+  .services .serviceSlider__block {
+    margin: 0 41px;
+    width: 230px;
+    height: 330px;
+  }
+  .services .serviceSlider__block .number {
+    position: absolute;
+    top: 5%;
+    left: -21%;
+    width: 24px;
+    height: 24px;
+  }
+  .services .serviceSlider__block h4 {
+    font-size: 22px;
+  }
 }
