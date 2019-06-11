@@ -302,7 +302,7 @@ body {
         display: inline-block;
         position: absolute;
         bottom: 14%;
-        left: 24%;
+        left: 21%;
         background-color: @color-blue;
         width: 31px;
         height: 5px;
@@ -471,6 +471,58 @@ body {
                 text-decoration: none;
                 line-height: 55px;
                 color: @color-white;
+            }
+        }
+    }
+}
+
+/*Media*/
+@media (max-width: 1650px) {
+    .btn {
+        width: 210px;
+        height: 55px;
+    }
+    .mainContent {
+        margin-top: 110px;
+        .leftItem {
+            &__worth {
+                font-size: 185px;
+            }
+            &__mainText {
+                font-size: 40px;
+                line-height: 60px;
+                padding: 20px 0 40px;
+            }
+            &__subText {
+                font-size: 15px;
+            }
+        }
+        .rightItem {
+            &__text {
+                font-size: 240px;
+            }
+        }
+    }
+    .services {
+        .mainText {
+            padding-left: 40px;
+            
+        }
+        .serviceSlider {
+            &__block {
+                margin: 0 41px;
+                width: 230px;
+                height: 330px;
+                .number {
+                    position: absolute;
+                    top: 5%;
+                    left: -21%;
+                    width: 24px;
+                    height: 24px;
+                }
+                h4 {
+                    font-size: 22px;
+                }
             }
         }
     }
