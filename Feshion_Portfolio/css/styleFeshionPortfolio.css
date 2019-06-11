@@ -37,9 +37,16 @@ body {
   color: white;
   border: 3px solid #ffffff;
   font-size: 20px;
+  cursor: pointer;
+}
+.btn:hover {
+  background-color: #ffffff;
+  color: blue;
+  -webkit-box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+          box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
 }
 /*Main*/
-/*Header*/
+/*main__Header*/
 .main {
   background: #0304b8 url(../images/Фон.jpg) center bottom no-repeat;
   background-size: cover;
@@ -151,7 +158,7 @@ body {
   float: left;
   clear: both;
 }
-/*mainContent*/
+/*main__Content*/
 .mainContent {
   margin-top: 150px;
   height: 500px;
@@ -231,7 +238,7 @@ body {
 .mainContent .rightItem__text .span-e {
   color: #0048ff;
 }
-/*mainFootre*/
+/*main__Footre*/
 .mainFooter {
   position: absolute;
   bottom: 0;
@@ -247,18 +254,26 @@ body {
   padding-right: 40px;
   padding-top: 23px;
   height: 100%;
+  cursor: pointer;
 }
 .mainFooter__item a {
   text-decoration: none;
-  color: #ffffff;
+  color: #0001c5;
+  height: 100%;
+}
+.mainFooter__item:hover {
+  background-color: #ffffff;
+  color: #0001c5;
+  -webkit-box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+          box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
 }
 /*Section Servises*/
 .services {
   font-family: 'JaapokkisubtractRegular', sans-serif;
   margin-bottom: 190px;
+  padding: 170px 0 0;
 }
 .services .subText {
-  margin: 170px 0 0;
   font-size: 23px;
   color: #a8a8e4;
   letter-spacing: 1px;
@@ -267,12 +282,12 @@ body {
   color: #0001c5;
   position: relative;
   margin-bottom: 115px;
+  padding-left: 14px;
+  margin-left: 50px;
 }
 .services .mainText__service {
   font-size: 85px;
   margin: 20px 0 0;
-  padding-left: 14px;
-  margin-left: 50px;
   letter-spacing: 3px;
 }
 .services .mainText:after {
@@ -294,6 +309,7 @@ body {
       -ms-flex-pack: center;
           justify-content: center;
   position: relative;
+  cursor: pointer;
 }
 .serviceSlider .prev {
   position: absolute;
@@ -326,18 +342,21 @@ body {
   border: 4px solid #0001c5;
   margin: 0 60px;
   position: relative;
+  background-color: #ffffff;
+  color: #0001c5;
 }
 .serviceSlider__block span {
   position: absolute;
   bottom: 0;
   right: 0;
-  width: 41px;
-  height: 41px;
+  width: 42px;
+  height: 42px;
   background-color: #0001c5;
   text-align: center;
-  line-height: 41px;
+  line-height: 42px;
   font-size: 31px;
   color: #ffffff;
+  cursor: pointer;
 }
 .serviceSlider__block .number {
   position: absolute;
@@ -349,6 +368,12 @@ body {
   height: 28px;
   background-color: transparent;
 }
+.serviceSlider__block:hover {
+  background-color: #0001c5;
+  color: #ffffff;
+  -webkit-box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+          box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
 .serviceSlider__block img {
   width: 49px;
   height: 49px;
@@ -359,7 +384,6 @@ body {
   font-size: 26px;
   margin-left: 49px;
   line-height: 1.8;
-  color: #0001c5;
   margin-bottom: 131px;
 }
 .serviceSlider__block:before {
@@ -371,9 +395,11 @@ body {
 /*Footer*/
 .footer {
   height: 412px;
+  background-color: #ededf8;
 }
 .footer__container {
-  padding-top: 80px;
+  padding-top: 122px;
+  padding-bottom: 122px;
 }
 .footer__nav {
   display: -webkit-box;
@@ -389,7 +415,7 @@ body {
   display: -ms-flexbox;
   display: flex;
   list-style-type: none;
-  margin: 0 60px;
+  margin: 0;
   padding: 0;
   overflow: hidden;
   -webkit-box-pack: justify;
@@ -409,6 +435,9 @@ body {
   background: transparent;
   font-size: 20px;
 }
+.footer__nav ul li.footer__button:hover {
+  background-color: #ffffff;
+}
 .footer__nav ul li {
   float: left;
   margin: 0 30px;
@@ -419,6 +448,14 @@ body {
   text-align: center;
   text-decoration: none;
   color: #0001c5;
+}
+.footer__nav ul li:first-child {
+  margin: 0 30px 0 60px;
+  color: red;
+}
+.footer__nav ul li:last-child {
+  margin: 0 0 0 30px;
+  color: red;
 }
 .footer__nav .logo {
   display: inline-block;
@@ -434,7 +471,7 @@ body {
   -webkit-transition: border-radius 0.11s ease;
   transition: border-radius 0.11s ease;
   position: absolute;
-  top: 66%;
+  top: 50%;
   left: 0;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
