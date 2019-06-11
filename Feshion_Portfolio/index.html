@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/Animation.css">
     <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
     <!--Add the new slick-theme.css if you want the default styling-->
     <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
@@ -22,7 +23,7 @@
           <div class="nav__logo">
             <a href="#">Bs</a>
           </div>
-          <div class="nav__text">
+          <div class="nav__text animated slideInDown">
             b <br> r <br> a <br> a <br> a <br> h
           </div>
           <div class="nav__boorger">
@@ -45,7 +46,7 @@
               <p>You can order the best website you`ve <br>
               ever seen. Seriously.</p>
             </div>
-            <button class="leftItem__button btn"><a href="#">contact us</a></button>
+            <button class="leftItem__button btn">contact us</button>
           </div>
           <div class="rightItem">
             <div class="rightItem__text">
@@ -57,13 +58,13 @@
           </div>
         </div>
         <div class="mainFooter">
-          <div class="mainFooter__item">
-            <a href="#"><span>scroll <br> down</span></a>
+          <div class="mainFooter__item animated slideInUp">
+            <a href="#" onclick="slowScroll('#service')">scroll <br> down</a>
           </div>
         </div>
       </div>  
     </main>
-    <section class="services">
+    <section class="services" id="service">
       <div class="container">
         <h4 class="subText">we provide</h4>
         <div class="mainText">
@@ -105,11 +106,11 @@
           </div>
           <ul>
             <li><a>2017 / all rights reserved</a></li>
-            <li class="footer__button btn"><a href="#">contact us</a></li>
+            <li class="footer__button btn wow flash"><a href="#" >contact us</a></li>
             <li><a href="#">+1 8674 948 94 2</a></li>
             <li><a href="#">info@sitename.ru</a></li>
             <li><a href="#">Working hours: 8 am - 7 pm</a></li>
-            <li><a href="#"><img src="images/footer/icons8-up-40.png" alt="up pointer"></a></li>
+            <li><a href="#main"><img src="images/footer/icons8-up-40.png" alt="up pointer"></a></li>
           </ul>
         </div>
       </div>
@@ -147,5 +148,13 @@
           ]        });
       });
     </script>
+    <!--WoW Js-->
+    <script src="js/wow.min.js"></script>
+    <script>
+      var wow = new WOW;
+      wow.init();
+    </script>
+    <!--Main JS-->
+    <script src="js/main.js"></script>
   </body>
 </html>
