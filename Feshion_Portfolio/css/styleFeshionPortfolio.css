@@ -161,6 +161,7 @@ body {
 /*main__Content*/
 .mainContent {
   margin-top: 150px;
+  margin-bottom: 103px;
   height: 500px;
   /*leftItem*/
 }
@@ -282,7 +283,6 @@ body {
   color: #0001c5;
   position: relative;
   margin-bottom: 115px;
-  margin-left: 60px;
 }
 .services .mainText__service {
   font-size: 85px;
@@ -294,7 +294,7 @@ body {
   display: inline-block;
   position: absolute;
   bottom: 14%;
-  left: 21%;
+  left: 315px;
   background-color: #0001c5;
   width: 31px;
   height: 5px;
@@ -359,8 +359,8 @@ body {
 }
 .serviceSlider__block .number {
   position: absolute;
-  top: 5%;
-  left: -23%;
+  top: 0;
+  left: 0;
   color: #a8a8e4;
   display: block;
   width: 28px;
@@ -397,14 +397,13 @@ body {
   background-color: #ededf8;
 }
 .footer__container {
-  padding-top: 122px;
-  padding-bottom: 122px;
+  padding-top: 176px;
+  padding-bottom: 176px;
 }
 .footer__nav {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  height: 168px;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -422,7 +421,7 @@ body {
           justify-content: space-between;
   height: 60px;
   width: 100%;
-  line-height: 59px;
+  line-height: 60px;
 }
 .footer__nav ul li.footer__button {
   border: 3px solid #0001c5;
@@ -483,12 +482,15 @@ body {
 }
 /*Media*/
 @media (max-width: 1650px) {
+  /*Button*/
   .btn {
     width: 210px;
     height: 55px;
   }
+  /*Main*/
   .mainContent {
     margin-top: 110px;
+    height: 360px;
   }
   .mainContent .leftItem__worth {
     font-size: 185px;
@@ -503,9 +505,16 @@ body {
   }
   .mainContent .rightItem__text {
     font-size: 240px;
+    position: absolute;
+    top: -4%;
+    right: 22%;
   }
-  .services .mainText {
-    padding-left: 40px;
+  .mainContent .rightItem__text span {
+    padding-left: 20px;
+  }
+  /*Services*/
+  .services .mainText__service {
+    font-size: 80px;
   }
   .services .serviceSlider__block {
     margin: 0 41px;
@@ -513,13 +522,393 @@ body {
     height: 330px;
   }
   .services .serviceSlider__block .number {
-    position: absolute;
-    top: 5%;
-    left: -21%;
     width: 24px;
     height: 24px;
   }
   .services .serviceSlider__block h4 {
     font-size: 22px;
+  }
+}
+@media (max-width: 1400px) {
+  /*Main*/
+  .nav {
+    height: 150px;
+    position: relative;
+  }
+  .nav__logo {
+    width: 46px;
+    height: 46px;
+    line-height: 53px;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
+  }
+  .nav__text {
+    height: 150px;
+    padding: 14px 0;
+    font-size: 13px;
+    text-align: center;
+    line-height: 20px;
+  }
+  .nav__boorger {
+    width: 46px;
+    height: 46px;
+    position: absolute;
+    top: 50%;
+    right: 0;
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
+  }
+  .mainContent {
+    margin: 85px 0;
+  }
+  .mainContent .leftItem__worth {
+    font-size: 160px;
+  }
+  .mainContent .leftItem__mainText {
+    font-size: 35px;
+    line-height: 50px;
+  }
+  .mainContent .leftItem__subText {
+    font-size: 12px;
+  }
+  .mainContent .leftItem__button {
+    width: 200px;
+    height: 50px;
+    position: absolute;
+    bottom: -65%;
+    right: 28%;
+  }
+  .mainContent .rightItem__text {
+    font-size: 210px;
+    line-height: 0.7em;
+  }
+  .mainContent .rightItem__text span {
+    margin-left: 20px;
+  }
+  .mainFooter {
+    height: 130px;
+  }
+  .mainFooter__item {
+    padding-top: 20px;
+  }
+  /*Services*/
+  .services .serviceSlider__block {
+    margin: 0 15px;
+  }
+  .services .serviceSlider__block h4 {
+    text-align: center;
+    margin-left: 0;
+  }
+}
+@media (max-width: 1200px) {
+  /*Main*/
+  .nav {
+    height: 120px;
+  }
+  .nav__text {
+    height: 120px;
+    padding: 5px 0;
+    font-size: 13px;
+    width: 36px;
+    line-height: 18px;
+  }
+  .mainContent {
+    margin: 126px 0;
+    height: 230px;
+  }
+  .mainContent .leftItem__worth {
+    font-size: 130px;
+  }
+  .mainContent .leftItem__mainText {
+    font-size: 30px;
+    line-height: 40px;
+    padding: 20px 0 30px;
+  }
+  .mainContent .leftItem__subText {
+    font-size: 10px;
+    line-height: 20px;
+  }
+  .mainContent .leftItem__button {
+    position: absolute;
+    bottom: -72%;
+    right: 28%;
+  }
+  .mainContent .rightItem {
+    height: 230px;
+  }
+  .mainContent .rightItem__text {
+    font-size: 180px;
+  }
+  .mainFooter {
+    height: 120px;
+  }
+  .mainFooter__item {
+    padding-right: 30px;
+  }
+  /*Footer*/
+  .footer__nav .logo {
+    width: 46px;
+    height: 46px;
+  }
+  .footer__nav ul {
+    height: 50px;
+    line-height: 50px;
+  }
+  .footer__nav ul li.footer__button {
+    width: 200px;
+    height: 50px;
+    line-height: 45px;
+  }
+  .footer__nav ul li {
+    margin: 0;
+  }
+  .footer__nav ul li:first-child {
+    margin: 0 0 0 60px;
+  }
+  .footer__nav ul li:last-child {
+    margin: 0;
+  }
+}
+@media (max-width: 1100px) {
+  .mainContent {
+    margin: 126px 0;
+  }
+}
+@media (max-width: 1010px) {
+  /*Main*/
+  .mainContent {
+    margin: 45px 0;
+  }
+  /*Services*/
+  .services {
+    padding: 100px 0 0;
+    margin-bottom: 100px;
+  }
+  /*Footer*/
+  .footer {
+    height: 421px;
+    padding-top: 100px;
+  }
+  .footer .footer__container {
+    padding: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .footer__nav {
+    padding-to: 56px;
+  }
+  .footer__nav .logo {
+    display: none;
+  }
+  .footer__nav ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    overflow: visible;
+    height: 100%;
+    text-align: center;
+    line-height: 30px;
+  }
+  .footer__nav ul li {
+    margin: 10px;
+  }
+  .footer__nav ul li:first-child {
+    margin: 10px;
+  }
+  .footer__nav ul li.footer__button {
+    margin: 10px auto;
+  }
+}
+@media (max-width: 952px) {
+  /*Main*/
+  .nav {
+    height: 90px;
+  }
+  .nav__logo {
+    width: 38px;
+    height: 38px;
+    font-size: 20px;
+    line-height: 44px;
+  }
+  .nav__logo a {
+    line-height: 44px;
+  }
+  .nav__text {
+    height: 90px;
+    width: 30px;
+    font-size: 10px;
+    padding: 0;
+    line-height: 15px;
+  }
+  .nav__boorger {
+    width: 38px;
+    height: 38px;
+  }
+  .nav__boorger .span__long--red {
+    width: 38px;
+  }
+  .nav__boorger .span__madium--white {
+    width: 22px;
+  }
+  .nav__boorger .span__short--white {
+    width: 14px;
+  }
+  .mainContent {
+    margin: 67px 0;
+    height: 187px;
+  }
+  .mainContent .leftItem__worth {
+    font-size: 100px;
+  }
+  .mainContent .leftItem__mainText {
+    line-height: 35px;
+    font-size: 23px;
+    padding: 10px 0 25px;
+  }
+  .mainContent .leftItem__button {
+    position: absolute;
+    bottom: -78%;
+    left: 28%;
+    width: 150px;
+    height: 40px;
+  }
+  .mainContent .rightItem {
+    height: 210px;
+  }
+  .mainContent .rightItem__text {
+    font-size: 150px;
+  }
+  .mainFooter {
+    height: 90px;
+  }
+  .mainFooter__item {
+    font-size: 16px;
+    padding: 10px 20px 0 0;
+  }
+  /*Section*/
+  .services {
+    padding: 100px 0 0;
+  }
+  .services h4 {
+    text-align: center;
+  }
+  .services .mainText h2 {
+    text-align: center;
+  }
+  .services .mainText:after {
+    display: none;
+  }
+  .services .serviceSlider__block {
+    text-align: center;
+  }
+  .services .serviceSlider__block h4 {
+    margin: 0 49px;
+  }
+  .services .serviceSlider__block img {
+    margin: 49px auto;
+  }
+}
+@media (max-width: 768px) {
+  /*Main*/
+  .main .container-main {
+    height: auto;
+  }
+  .main .nav {
+    height: 90px;
+  }
+  .main .nav__logo {
+    width: 48px;
+    height: 48px;
+    line-height: 52px;
+  }
+  .main .nav__text {
+    display: none;
+  }
+  .main .nav__boorger {
+    width: 48px;
+    height: 48px;
+  }
+  .main .nav__boorger .span__long--red {
+    width: 48px;
+  }
+  .main .nav__boorger .span__madium--white {
+    width: 30px;
+  }
+  .main .nav__boorger .span__short--white {
+    width: 18px;
+  }
+  .main .mainContent {
+    margin: 0;
+    position: relative;
+    float: none;
+    height: 374px;
+  }
+  .main .mainContent .leftItem {
+    display: block;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  .main .mainContent .leftItem__worth {
+    font-size: 90px;
+    position: relative;
+    display: block;
+    text-align: center;
+  }
+  .main .mainContent .leftItem__mainText {
+    font-size: 16px;
+    line-height: 23px;
+    letter-spacing: 6px;
+    display: block;
+    position: relative;
+    left: 0;
+    padding: 0 0 25px;
+  }
+  .main .mainContent .leftItem__mainText:after {
+    display: none;
+  }
+  .main .mainContent .leftItem__subText {
+    font-size: 10px;
+    position: relative;
+    display: block;
+    left: 0;
+    bottom: 0;
+  }
+  .main .mainContent .leftItem__button {
+    position: relative;
+    left: 0;
+    margin-top: 25px;
+  }
+  .main .mainContent .rightItem {
+    display: none;
+  }
+  .main .mainFooter {
+    height: 90px;
+  }
+  /*Services*/
+  /*Footer*/
+}
+@media (max-width: 400px) {
+  /*Main*/
+  .main .mainContent .leftItem__worth {
+    font-size: 72px;
+  }
+  /*Services*/
+  .services .mainText__service {
+    font-size: 70px;
   }
 }
