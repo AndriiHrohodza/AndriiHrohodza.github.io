@@ -22,7 +22,111 @@
 	font-family: 'PT Sans', sans-serif;
 }
 
+/*Colors*/
+@btn: ##ee3643;
+@headServices-bg: ##f2f6f8;
+/*@footerHead*/
+
+/*ClearFix*/
+.clearfix::after {
+	content: "";
+	display: table;
+	clear: both;
+}
 
 html, body {
+	margin: 0;
+	padding: 0;
 	.cuprum();
+}
+.container {
+	position: relative;
+	width: 940px;
+	margin: 0 auto;
+}
+
+/*Header*/
+.header {
+	background-color: #f1f5f7;
+	padding-bottom: 60px;
+	&__nav {
+		background-color: #293449;
+		color: white;
+		font-size: 17px;
+		line-height: 18px;
+		.headerLogo {
+			position: absolute;
+			top: 0;
+			left: 0;
+			font-size: 24px;
+			line-height: 24px;
+			text-transform: uppercase;
+			padding: 9px 10px;
+			padding-bottom: 14px;
+			width: 200px;
+			text-align: center;
+			text-decoration: none;
+			background-color: #ee3643;
+			box-shadow: inset 0 -5px 0 rgba(0, 0, 0, 0.24);
+		}
+		.search {
+			position: relative;
+			margin-left: 220px; 
+			float: left;
+			font-size: 0;
+			&__input {
+				position: relative;
+				border: none;
+				outline: none;
+				font-size: 17px;
+				line-height: 18px;
+				padding: 12px 20px;
+				padding-left: 50px;
+				width: 270px; 
+				background: none;
+				color: white;
+				font-family: 'Cuprum', sans-serif;
+			}
+			&__input::before {
+				content: "0x1f50d";				
+			}
+			&__input::focus {
+				background-color:  #ffffff;
+				color: black;
+				opacity: 1;
+			}
+			&__input::focus + label{
+				color: red;
+				opacity: 1;
+			}
+			&__input::hover + label{
+				opacity: 1;
+			}
+			&__label {
+				background: none;
+				border: none;
+				outline: none;
+				position: absolute;
+				top: 10px;
+				left: 15px;
+				font-size: 17px;
+				color: white;
+				opacity: 0.3;
+			}
+		}
+		.basket-buy {
+			width: 110px;
+			background-color: #5fbb2d;
+			text-align: center;
+		}
+	}
+	&__nav a {
+		display: block;
+		float: left;
+		color: white;
+		font-size: 17px;
+		line-height: 18px;
+		padding: 12px 22px;
+		text-decoration: none;
+	}
 }
