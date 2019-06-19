@@ -54,6 +54,15 @@ html, body {
 		color: white;
 		font-size: 17px;
 		line-height: 18px;
+		a {
+				display: block;
+				float: left;
+				color: white;
+				font-size: 17px;
+				line-height: 18px;
+				padding: 12px 22px;
+				text-decoration: none;
+			}
 		.headerLogo {
 			position: absolute;
 			top: 0;
@@ -91,7 +100,7 @@ html, body {
 				content: "0x1f50d";				
 			}
 			&__input::focus {
-				background-color:  #ffffff;
+				background-color: #ffffff;
 				color: black;
 				opacity: 1;
 			}
@@ -101,6 +110,8 @@ html, body {
 			}
 			&__input::hover + label{
 				opacity: 1;
+				background-color: #ffffff;
+				color: black;
 			}
 			&__label {
 				background: none;
@@ -120,13 +131,6 @@ html, body {
 			text-align: center;
 		}
 	}
-	&__nav a {
-		display: block;
-		float: left;
-		color: white;
-		font-size: 17px;
-		line-height: 18px;
-		padding: 12px 22px;
-		text-decoration: none;
-	}
+	
+
 }
