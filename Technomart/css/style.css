@@ -43,6 +43,15 @@ body {
   font-size: 17px;
   line-height: 18px;
 }
+.header__nav a {
+  display: block;
+  float: left;
+  color: white;
+  font-size: 17px;
+  line-height: 18px;
+  padding: 12px 22px;
+  text-decoration: none;
+}
 .header__nav .headerLogo {
   position: absolute;
   top: 0;
@@ -78,20 +87,21 @@ body {
   color: white;
   font-family: 'Cuprum', sans-serif;
 }
-.header__nav .search__input::before {
+.header__nav .search__input:before {
   content: "0x1f50d";
 }
-.header__nav .search__input::focus {
+.header__nav .search__input:focus {
   background-color: #ffffff;
   color: black;
   opacity: 1;
 }
-.header__nav .search__input::focus + label {
+.header__nav .search__input:focus + label {
   color: red;
   opacity: 1;
 }
-.header__nav .search__input::hover + label {
+.header__nav .search__input:hover + label {
   opacity: 1;
+  
 }
 .header__nav .search__label {
   background: none;
@@ -108,13 +118,4 @@ body {
   width: 110px;
   background-color: #5fbb2d;
   text-align: center;
-}
-.header__nav a {
-  display: block;
-  float: left;
-  color: white;
-  font-size: 17px;
-  line-height: 18px;
-  padding: 12px 22px;
-  text-decoration: none;
 }
