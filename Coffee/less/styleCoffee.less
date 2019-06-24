@@ -45,6 +45,8 @@
 .container-main {
 	height: 100vh;
 	margin: 0 9%;
+	display: flex;
+	flex-direction: column;
 }
 /*Clearfix*/
 .clearfix::after {
@@ -63,13 +65,11 @@ body {
 	.muller-reg();
 }
 /*Mian*/
-.main {
-	margin-top: 3.5rem;
-}
 /*Main__Header*/
 .header {
 	margin: 0;
-	height: 6rem;
+	height: 9.5rem;
+	padding-top: 3.5rem;
 	/*border: 1px solid red;*/
 	&__return-call {
 		align-items: center;
@@ -115,6 +115,7 @@ body {
 /*Main__Nav*/
 .nav {
 	margin-top: 2rem;
+	margin-bottom: 3.5rem;
 	border: 1px solid #B7B7B7;
 	&__links {
 		margin: 0;
@@ -161,4 +162,45 @@ body {
 
 		}
 	}
+}
+
+/*Main__section*/
+.slider {
+	display: block; 
+	flex-grow: 1;
+	width: 100%;
+	background-color: @btn-color;
+	overflow: hidden;
+	&__description {
+		position: relative;
+		top: 49%;
+		left: 9%;
+		display: inline-block;
+		width: 38%;
+		h2 {
+			color: #ffffff;
+			font-size: 5.6rem;
+			font-weight: 100;
+			margin: 0;
+			padding: 0;
+			.gerbera-reg;
+			margin-bottom: 3.3rem;
+		}
+		p {
+			color: #ffffff;
+			font-size: 2.1rem;
+			margin-bottom: 1.5rem;
+			font-weight: 100;
+		}
+		p:last-child {
+			margin: 0;
+		}
+	}
+	
+}
+footer {
+	height: 30rem;
+	width: 100%;
+	display: block;
+	background-color: green;
 }
