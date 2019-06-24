@@ -20,6 +20,7 @@
   padding: 1.9rem 8.2rem 2rem 8.3rem;
   border: 0.1rem solid #262829;
   background-color: transparent;
+  margin-top: 0.1rem;
 }
 /*Container-main*/
 .container-main {
@@ -95,3 +96,55 @@ body {
   display: inline-block;
 }
 /*Main__Nav*/
+.nav {
+  margin-top: 2rem;
+  border: 1px solid #B7B7B7;
+}
+.nav__links {
+  margin: 0;
+  padding: 0;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 6.9rem;
+}
+.nav__links li {
+  display: inline-block;
+  line-height: 6.5rem;
+  list-style: none;
+  padding-right: 5.2rem;
+  padding-left: 5.2rem;
+  margin: 0;
+  position: relative;
+}
+.nav__links li:first-child {
+  padding-left: 7.15rem;
+}
+.nav__links li::after {
+  content: " ";
+  display: block;
+  background-color: #B7B7B7;
+  width: 0.1rem;
+  height: 2rem;
+  position: absolute;
+  top: 50%;
+  right: 0;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+.nav__links li:last-child {
+  padding-right: 7.15rem;
+}
+.nav__links li:last-child:after {
+  content: none;
+}
+.nav__links a {
+  font-size: 1.5rem;
+  text-decoration: none;
+  color: #262829;
+  font-family: 'Gerbera', sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 0.3rem;
+}
