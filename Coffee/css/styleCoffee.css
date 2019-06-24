@@ -1,24 +1,96 @@
+/*Fonts*/
+@font-face {
+  font-family: 'Gerbera';
+  src: url('../fonts/Gerbera.eot');
+  src: url('Gerbera.eot?#iefix') format('embedded-opentype'), url('../fonts/Gerbera.woff2') format('woff2'), url('../fonts/Gerbera.woff') format('woff'), url('../fonts/Gerbera.ttf') format('truetype'), url('../fonts/Gerbera.svg') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Muller';
+  src: url('../fonts/MullerRegular.eot');
+  src: url('MullerRegular.eot?#iefix') format('embedded-opentype'), url('../fonts/MullerRegular.woff2') format('woff2'), url('../fonts/MullerRegular.woff') format('woff'), url('../fonts/MullerRegular.ttf') format('truetype'), url('../fonts/MullerRegular.svg') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+/*Colors*/
+/*btn*/
+.btn {
+  font-size: 1.7rem;
+  padding: 1.8rem 8.2rem 1.9rem 8.3rem;
+  border: 0.1rem solid #262829;
+  background-color: transparent;
+}
+/*Container-main*/
+.container-main {
+  height: 100vh;
+  margin: 0 9%;
+}
+/*Clearfix*/
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+}
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
-body {
-  margin: 0;
-  padding: 0;
-  height: 5000px;
+html {
+  font-size: 10px;
   overflow-x: hidden;
-  background: #00947a;
 }
-h1 {
+body {
+  font-family: 'Muller', sans-serif;
+}
+/*Mian*/
+.main {
+  margin-top: 3.5rem;
+}
+.header {
   margin: 0;
-  padding: 0;
-  font-family: sans-serif;
-  position: fixed;
-  top: 50%;
-  -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
-  font-size: 15em;
-  color: white;
-  left: 500px;
-  white-space: nowrap;
+  height: 6rem;
+  /*border: 1px solid red;*/
+}
+.header__return-call {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  float: left;
+  display: inline-block;
+  padding: 0.95rem 0;
+}
+.header__return-call p {
+  font-size: 1.7rem;
+  letter-spacing: 0.07rem;
+  font-family: 'Gerbera', sans-serif;
+  margin-bottom: 0.3rem;
+}
+.header__return-call a {
+  font-size: 1.5rem;
+  color: #59a329;
+}
+.header__street {
+  float: left;
+  display: inline-block;
+  margin-left: 12.6rem;
+  height: 5.8rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.header__street p {
+  font-size: 1.5rem;
+  line-height: 2.3rem;
+  padding: 0.6rem 0;
+}
+.header__logo {
+  float: left;
+  display: inline-block;
+  padding: 0.6rem 0;
+  margin: 0 44.7rem 0 29.3rem;
+}
+.header__button {
+  float: right;
+  display: inline-block;
 }
