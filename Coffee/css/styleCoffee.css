@@ -17,7 +17,7 @@
 /*btn*/
 .btn {
   font-size: 1.7rem;
-  padding: 1.8rem 8.2rem 1.9rem 8.3rem;
+  padding: 1.9rem 8.2rem 2rem 8.3rem;
   border: 0.1rem solid #262829;
   background-color: transparent;
 }
@@ -47,6 +47,7 @@ body {
 .main {
   margin-top: 3.5rem;
 }
+/*Main__Header*/
 .header {
   margin: 0;
   height: 6rem;
@@ -58,7 +59,7 @@ body {
           align-items: center;
   float: left;
   display: inline-block;
-  padding: 0.90rem 0;
+  padding: 1rem 0;
 }
 .header__return-call p {
   font-size: 1.7rem;
@@ -81,15 +82,16 @@ body {
 .header__street p {
   font-size: 1.5rem;
   line-height: 2.3rem;
-  padding: 0.6rem 0;
+  padding: 0.7rem 0;
 }
 .header__logo {
   float: left;
   display: inline-block;
-  padding: 0.6rem 0;
+  padding: 0.8rem 0;
   margin-left: 29.3rem;
 }
 .header__button {
   float: right;
   display: inline-block;
 }
+/*Main__Nav*/
