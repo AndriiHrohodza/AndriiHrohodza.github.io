@@ -50,7 +50,7 @@
 }
 /*Container*/
 .container {
-	height: 100vh;
+	/*height: 100vh;*/
 	margin: 0 9%;
 	/*display: flex;
 	flex-direction: column;*/
@@ -76,6 +76,9 @@ body {
 
 
 /*Header*/
+header {
+	background-color: #fafaf3;
+}
 /*sup-navigation*/
 .sup-navigation {
 	margin: 0;
@@ -185,13 +188,18 @@ body {
 
 
 /*Main*/
+main {
+	background-color: #fafaf3;
+}
+/*Slider*/
 .slider {
 	display: block; 
 	height: calc( 100vh - 20vh);// right???????????????
 	/*flex-grow: 1;*/
 	width: 100%;
-	background-color: red;
+	background-color: @btn-color;
 	overflow: hidden;
+	margin-bottom: 12.4rem;
 	&__description {
 		position: relative;
 		top: 49%;
@@ -216,5 +224,74 @@ body {
 		p:last-child {
 			margin: 0;
 		}
+	}
+}
+
+/*Goods*/
+.goods {
+	margin-bottom: 16.8rem;
+}
+/*Menu*/
+.menu {
+	width: 100%;
+	height: 10rem;
+	/*background-color: red;*/
+	display: flex;
+	justify-content: center;
+	border-bottom: 0.1rem solid #B7B7B7;
+	&__buttons > button {
+		width: 23.7rem;
+		.gerbera-reg;
+		font-size: 1.7rem;
+		padding: 1.9rem 5.2rem 2rem 5.3rem;
+		position: relative;
+	}
+	&__buttons {
+		margin-bottom: 3rem;
+		.btn-space {
+			margin: 0 6rem;
+		}
+	}
+	&__buttons button:before {
+		content: "";
+		display: block;
+		position: absolute;
+		top: 50%;
+		left: 23%;
+		transform: translateY(-50%);
+		width: 2rem;
+		height: 1rem;
+		background: url("../img/main/Goods/Vector.svg")  no-repeat;
+		/*background-color: red;*/
+	}
+	&__buttons .btn:hover {
+		border: none;
+		background-color: #FFFFFF;
+	}	
+}
+/*Cards*/
+.cards {
+	width: 100%;
+	height: 74.5rem;
+	background-color: black;
+}
+
+/*Partners*/
+.partners {
+	display: flex;
+	flex-wrap: wrap;
+	width: 100%;	
+	&__items {
+		display: flex;
+		width: 25%;
+		height: 20.9rem;
+		border: 0.1rem solid #B7B7B7;
+		justify-content: center;
+		align-items: center;
+		cursor: pointer;
+	}
+	&__items:hover {
+		background-color: #fff;
+		border: none;
 	}
 }
