@@ -2,34 +2,36 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"><!--Удалити треба-->
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" href="css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="css/normalize.css"><!--Удалити треба-->
     <link rel="stylesheet" type="text/css" href="css/styleCoffee.css">
-    <title>Coffe</title>
+    <title>Coffee</title>
+    <!-- JS main-->
+    <script src="js/jsCoffee.js"></script>
   </head>
   <body>
-    <main class="main">
-      <div class="container-main">
-        <div class="header clearfix">
-          <div class="header__return-call">
-            <p class="phone"><strong>+7 (908) 710 59 49</strong></p>
-            <a href="">Обратный звонок</a>
+    <header>
+      <div class="container-header">
+        <div class="sup-navigation clearfix">
+          <div class="call-back">
+            <a class="call-back__number" href="tel:7-908-710-59-49"><strong>+7 (908) 710 59 49</strong></a>
+            <a class="call-back__text" href="">Обратный звонок</a>
           </div>
-          <div class="header__street">
-            <p>г. Сыктывкар, <br>
+          <div class="address">
+            <p class="address__text">г. Сыктывкар, <br>
               ул. Громова, д.81
             </p>
           </div>
-          <div class="header__logo">
+          <div class="logo">
             <img src="img/header/logo.svg" alt="logo">
           </div>
-          <div class="header__button">
+          <div class="button">
             <button class="btn">Магазин</button>
           </div>
         </div>
-        <nav class="nav">
-          <ul class="nav__links">
+        <nav class="sub-navigation">
+          <ul class="sub-navigation__links">
             <li><a href="#">кофе</a></li>
             <li><a href="#">чай</a></li>
             <li><a href="#">аксессуары</a></li>
@@ -40,7 +42,12 @@
             <li><a href="#">контакты</a></li>
           </ul>
         </nav>
-        <!--Main-->
+      </div>
+    </header>
+
+    <!--Main-->
+    <main>
+      <div class="container">
         <section class="slider">
           <div class="slider__description">
             <h2>MarkBush Premium</h2>
@@ -51,7 +58,7 @@
         </section>
       </div>
     </main>
-    <footer></footer>
+
     
 
 
@@ -62,7 +69,5 @@
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <!-- JS main-->
-    <script src="js/jsCoffee.js"></script>
   </body>
 </html>
