@@ -76,7 +76,7 @@ body {
   display: inline-block;
   padding: 0.9rem 0;
 }
-.sup-navigation .call-back a {
+.sup-navigation .call-back a:not(.call-back__text) {
   text-decoration: none;
 }
 .sup-navigation .call-back__number {
