@@ -8,13 +8,16 @@
     <link rel="stylesheet" href="css/normalize.css">
     <!-- Main Style -->
     <link rel="stylesheet" href="css/styleDSS.css">
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
     <title>DSS</title>
   </head>
   <body>
-	
-		
-    <!-- jQuery -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
- 
+  	<h1>Hello</h1>   
+  	 
+ 		<script type="text/javascript">
+ 			$(document).on('scroll', function(){
+ 				$('h1').css("left", Math.max(500 - 0.35*window:scrollY) + "px");
+ 			})
+ 		</script>
   </body>
 </html>
