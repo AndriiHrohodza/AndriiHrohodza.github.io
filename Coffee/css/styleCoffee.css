@@ -182,7 +182,7 @@ main {
   background-color: #fafaf3;
 }
 /*Slider*/
-.slider {
+.features {
   display: block;
   height: calc(80vh);
   /*flex-grow: 1;*/
@@ -191,14 +191,14 @@ main {
   overflow: hidden;
   margin-bottom: 12.4rem;
 }
-.slider__description {
+.features__description {
   position: relative;
   top: 49%;
   left: 9%;
   display: inline-block;
   width: 50%;
 }
-.slider__description h2 {
+.features__description h2 {
   color: #ffffff;
   font-size: 5.6rem;
   font-weight: 100;
@@ -207,20 +207,20 @@ main {
   font-family: 'Gerbera', sans-serif;
   margin-bottom: 3.3rem;
 }
-.slider__description p {
+.features__description p {
   color: #ffffff;
   font-size: 2.1rem;
   margin-bottom: 1.5rem;
   font-weight: 100;
 }
-.slider__description p:last-child {
+.features__description p:last-child {
   margin: 0;
 }
 /*Goods*/
 .goods {
   margin-bottom: 16.8rem;
 }
-/*Menu*/
+/*Goods__Menu*/
 .menu {
   width: 100%;
   height: 10rem;
@@ -242,28 +242,59 @@ main {
 }
 .menu__buttons {
   margin-bottom: 3rem;
+  /*Coffe btn*/
+  /*Tea btn*/
+  /*Accessories*/
 }
 .menu__buttons .btn-space {
   margin: 0 6rem;
 }
-.menu__buttons button:before {
+.menu__buttons button:nth-child(1):before {
   content: "";
-  display: block;
   position: absolute;
   top: 50%;
-  left: 23%;
+  left: 35%;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
   width: 2rem;
   height: 1rem;
   background: url("../img/main/Goods/Vector.svg") no-repeat;
-  /*background-color: red;*/
+  z-index: -1;
 }
-.menu__buttons .btn:hover {
+.menu__buttons button:nth-child(2):before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 37%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  width: 2rem;
+  height: 1rem;
+  background: url("../img/main/Goods/Vector.svg") no-repeat;
+  z-index: -1;
+}
+.menu__buttons button:nth-child(3):before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 22%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  width: 2rem;
+  height: 1rem;
+  background: url("../img/main/Goods/Vector.svg") no-repeat;
+  z-index: -1;
+}
+.menu__buttons button:hover {
   border: none;
   background-color: #FFFFFF;
+  -webkit-box-shadow: 0rem 0.6rem 0.8rem 0rem rgba(0, 0, 0, 0.25);
+          box-shadow: 0rem 0.6rem 0.8rem 0rem rgba(0, 0, 0, 0.25);
 }
-/*Cards*/
+.menu__buttons button:hover:before {
+  z-index: 1;
+}
+/*Goods__Cards*/
 .cards {
   width: 100%;
   height: 74.5rem;
@@ -296,4 +327,6 @@ main {
 .partners__items:hover {
   background-color: #fff;
   border: none;
+  -webkit-box-shadow: 0rem 0rem 0.9rem 0.8rem rgba(0, 0, 0, 0.11);
+          box-shadow: 0rem 0rem 0.9rem 0.8rem rgba(0, 0, 0, 0.11);
 }

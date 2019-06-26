@@ -192,7 +192,7 @@ main {
 	background-color: #fafaf3;
 }
 /*Slider*/
-.slider {
+.features {
 	display: block; 
 	height: calc( 100vh - 20vh);// right???????????????
 	/*flex-grow: 1;*/
@@ -231,7 +231,7 @@ main {
 .goods {
 	margin-bottom: 16.8rem;
 }
-/*Menu*/
+/*Goods__Menu*/
 .menu {
 	width: 100%;
 	height: 10rem;
@@ -251,25 +251,53 @@ main {
 		.btn-space {
 			margin: 0 6rem;
 		}
-	}
-	&__buttons button:before {
-		content: "";
-		display: block;
-		position: absolute;
-		top: 50%;
-		left: 23%;
-		transform: translateY(-50%);
-		width: 2rem;
-		height: 1rem;
-		background: url("../img/main/Goods/Vector.svg")  no-repeat;
-		/*background-color: red;*/
-	}
-	&__buttons .btn:hover {
-		border: none;
-		background-color: #FFFFFF;
-	}	
+		/*Coffe btn*/
+		button:nth-child(1):before {
+			content: "";
+			position: absolute;
+			top: 50%;
+			left: 35%;
+			transform: translateY(-50%);
+			width: 2rem;
+			height: 1rem;
+			background: url("../img/main/Goods/Vector.svg")  no-repeat;
+			z-index: -1;
+		}
+		/*Tea btn*/
+		button:nth-child(2):before {
+			content: "";
+			position: absolute;
+			top: 50%;
+			left: 37%;
+			transform: translateY(-50%);
+			width: 2rem;
+			height: 1rem;
+			background: url("../img/main/Goods/Vector.svg")  no-repeat;
+			z-index: -1;
+		}
+		/*Accessories*/
+		button:nth-child(3):before {
+			content: "";
+			position: absolute;
+			top: 50%;
+			left: 22%;
+			transform: translateY(-50%);
+			width: 2rem;
+			height: 1rem;
+			background: url("../img/main/Goods/Vector.svg")  no-repeat;
+			z-index: -1;
+		}
+		button:hover {
+			border: none;
+			background-color: #FFFFFF;
+			box-shadow: 0rem 0.6rem 0.8rem 0rem rgba(0, 0, 0, 0.25)
+		}
+		button:hover:before{
+			z-index: 1;
+		}
+	} 	
 }
-/*Cards*/
+/*Goods__Cards*/
 .cards {
 	width: 100%;
 	height: 74.5rem;
@@ -293,5 +321,6 @@ main {
 	&__items:hover {
 		background-color: #fff;
 		border: none;
+		box-shadow: 0rem 0rem 0.9rem 0.8rem rgba(0, 0, 0, 0.11);
 	}
 }
