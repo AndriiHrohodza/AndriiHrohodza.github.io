@@ -40,13 +40,15 @@
 	background-color: transparent;
 	margin-top: 0.1rem;
 }
-
+/*Container-slider*/
+/*.container-slider {
+	margin: 0 4%;
+	
+}*/
 /*Container-header*/
 .container-header {
 	/*height: 100vh;*/
 	margin: 0 9%;
-	display: flex;
-	flex-direction: column;
 }
 /*Container*/
 .container {
@@ -72,12 +74,13 @@ body {
 	width: 100%;
 	height: 100%;
 	.muller-reg();
+	background-color: #fafaf3;
 }
 
 
 /*Header*/
 header {
-	background-color: #fafaf3;
+	margin-bottom: 3.5rem;
 }
 /*sup-navigation*/
 .sup-navigation {
@@ -135,7 +138,6 @@ header {
 /*sub-navigation*/
 .sub-navigation {
 	margin-top: 2rem;
-	margin-bottom: 3.5rem;
 	border: 1px solid #B7B7B7;
 	&__links {
 		display: flex;
@@ -147,11 +149,9 @@ header {
 		li {
 			display: inline-block;
 			line-height: 6.5rem;
-			list-style: none;
 			/*width: 100%;*/
+			list-style: none;
 			text-align: center;
-			/*padding-right: 5.2rem;
-			padding-left: 5.2rem;*/
 			margin: 0;
 			position: relative;
 		}
@@ -161,12 +161,12 @@ header {
 		/*li::after {
 			content: " ";
 			display: block;
+			position: absolute;
+			top: 50%;
+			right: 0%;
 			background-color: red;
 			width: 0.1rem;
 			height: 2rem;
-			position: absolute;
-			top: 50%;
-			right: -50%;
 			transform: translateY(-50%);
 		}*/
 		li:last-child {
@@ -191,27 +191,82 @@ header {
 main {
 	background-color: #fafaf3;
 }
-/*Slider*/
-.features {
-	display: block; 
+/*Feature*/
+.features,
+.wrap { 
 	height: calc( 100vh - 20vh);// right???????????????
-	/*flex-grow: 1;*/
+	position: relative;
 	width: 100%;
 	background-color: @btn-color;
 	overflow: hidden;
 	margin-bottom: 12.4rem;
-	&__description {
+	transition: .5s transform;
+	/*Arrows*/
+	.arrow {
+		cursor: pointer;
+		height: 2rem;
+		width: 3.4rem;
+		background-color: red;
+	}
+	.arrow-left {
+		position: absolute;
+		top: 50%;
+		left: 0;
+		background: url(../img/main/Goods/LeftArrow.png) center no-repeat;
+	}
+	.arrow-left:hover {
+		background: url(../img/main/Goods/LeftArrow-Selected.png) center no-repeat;
+	}
+	.arrow-right {
+		position: absolute;
+		top: 50%;
+		right: 0;
+		background: url(../img/main/Goods/RightArrow.png) center no-repeat;
+	}
+	.arrow-right:hover {
+		background: url(../img/main/Goods/RightArrow-Selected.png) center no-repeat;
+	}
+}
+.features-slider {
+	display: flex;
+}
+.features-slider__item:nth-child(1) {
+	background-color: @btn-color;
+	width: 100%;
+	flex: 0 0 auto;
+}
+.features-slider__item:nth-child(2) {
+	background-color: red;
+	width: 100%;
+	flex: 0 0 auto;
+}
+.features-slider__item:nth-child(3) {
+	background-color: green;
+	width: 100%;
+	flex: 0 0 auto;
+}
+.features-slider__item:nth-child(4) {
+	background-color: purple;
+	width: 100%;
+	flex: 0 0 auto;
+}
+.content {
+	height: calc( 100vh - 20vh);
+	width: 100%;
+	overflow-x: hidden;
+	position: relative;
+	.content-text {
 		position: relative;
 		top: 49%;
 		left: 9%;
 		display: inline-block;
 		width: 50%;
 		h2 {
+			padding: 0;
+			margin: 0;
 			color: #ffffff;
 			font-size: 5.6rem;
 			font-weight: 100;
-			margin: 0;
-			padding: 0;
 			.gerbera-reg;
 			margin-bottom: 3.3rem;
 		}
