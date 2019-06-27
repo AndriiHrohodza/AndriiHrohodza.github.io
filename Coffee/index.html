@@ -5,9 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge"><!--Удалити треба-->
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" href="css/normalize.css"><!--Удалити треба-->
+    <!--Подключаем стили slick slider-->
+    <link rel="stylesheet" type="text/css" href="slick/slick.css">
+    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css">
     <link rel="stylesheet" type="text/css" href="css/styleCoffee.css">
     <title>Coffee</title>
-    <!-- JS main-->
+   
     
   </head>
   <body>
@@ -107,15 +110,157 @@
         <section class="goods">
           <div class="menu">
             <div class="menu__buttons">
-              <button class="btn">Кофе</button>
-              <button class="btn btn-space">Чай</button>
-              <button class="btn">Аксессуары</button>
+              <button class="source source-1 btn btn-coffee">Кофе</button>
+              <button class="source source-2 btn btn-tea">Чай</button>
+              <button class="source source-3 btn btn-accessories">Аксессуары</button>
             </div>
           </div>
           <div class="cards">
-            <img src="" alt="">
-            <img src="" alt="">
-            <img src="" alt="">
+            <div class="target target-1 cards__coffee">
+                <div class="cards-slider">
+                  <div class="cards-slider__item">
+                    <div class="items">
+                      <div class="items-img">
+                        <img src="img/main/Goods/Goods.png" alt="">
+                      </div>
+                      <div class="items-text">
+                        <p>superior</p>
+                        <span>450</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="cards-slider__item">
+                    <div class="items">
+                      <div class="items-img">
+                        <img src="img/main/Goods/Goods.png" alt="">
+                      </div>
+                      <div class="items-text">
+                        <p>superior</p>
+                        <span>450</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="cards-slider__item">
+                    <div class="items">
+                      <div class="items-img">
+                        <img src="img/main/Goods/Goods.png" alt="">
+                      </div>
+                      <div class="items-text">
+                        <p>superior</p>
+                        <span>450</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="cards-slider__item">
+                    <div class="items">
+                      <div class="items-img">
+                        <img src="img/main/Goods/Goods.png" alt="">
+                      </div>
+                      <div class="items-text">
+                        <p>superior</p>
+                        <span>450</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+            </div>
+            <div class="target target-2 cards__tea">
+                <div class="cards-slider">
+                  <div class="cards-slider__item">
+                    <div class="items">
+                      <div class="items-img">
+                        <img src="img/main/Goods/Goods.png" alt="">
+                      </div>
+                      <div class="items-text">
+                        <p>superior</p>
+                        <span>450</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="cards-slider__item">
+                    <div class="items">
+                      <div class="items-img">
+                        <img src="img/main/Goods/Goods.png" alt="">
+                      </div>
+                      <div class="items-text">
+                        <p>superior</p>
+                        <span>450</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="cards-slider__item">
+                    <div class="items">
+                      <div class="items-img">
+                        <img src="img/main/Goods/Goods.png" alt="">
+                      </div>
+                      <div class="items-text">
+                        <p>superior</p>
+                        <span>450</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="cards-slider__item">
+                    <div class="items">
+                      <div class="items-img">
+                        <img src="img/main/Goods/Goods.png" alt="">
+                      </div>
+                      <div class="items-text">
+                        <p>superior</p>
+                        <span>450</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+            </div>
+            <div class="target target-3 cards__accessories">
+                <div class="cards-slider">
+                  <div class="cards-slider__item">
+                    <div class="items">
+                      <div class="items-img">
+                        <img src="img/main/Goods/Goods.png" alt="">
+                      </div>
+                      <div class="items-text">
+                        <p>superior</p>
+                        <span>450</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="cards-slider__item">
+                    <div class="items">
+                      <div class="items-img">
+                        <img src="img/main/Goods/Goods.png" alt="">
+                      </div>
+                      <div class="items-text">
+                        <p>superior</p>
+                        <span>450</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="cards-slider__item">
+                    <div class="items">
+                      <div class="items-img">
+                        <img src="img/main/Goods/Goods.png" alt="">
+                      </div>
+                      <div class="items-text">
+                        <p>superior</p>
+                        <span>450</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="cards-slider__item">
+                    <div class="items">
+                      <div class="items-img">
+                        <img src="img/main/Goods/Goods.png" alt="">
+                      </div>
+                      <div class="items-text">
+                        <p>superior</p>
+                        <span>450</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+            </div>
           </div>
         </section>
         <section class="partners">
@@ -141,6 +286,40 @@
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    
+    <!--Подключаем саму библиотеку slick slider-->
+    <script src="slick/slick.min.js"></script>
     <script src="js/jsCoffee.js"></script>
+
+    <!--Скрипты-->
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $('.cards-slider').slick({
+          centerMode: true,
+          centerPadding: '6rem',
+          slidesToShow: 3,
+          responsive: [
+          {
+            breakpoint: 768,
+            settings: {
+              arrows: false,
+              centerMode: true,
+              centerPadding: '1rem',
+              slidesToShow: 2
+            }
+          },
+          {
+            breakpoint: 480,
+            settings: {
+              arrows: false,
+              centerMode: true,
+              centerPadding: '1rem',
+              slidesToShow: 1
+            }
+          }
+          ]
+        });
+      });
+    </script>
   </body>
 </html>

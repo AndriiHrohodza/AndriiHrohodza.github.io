@@ -314,7 +314,7 @@ main {
   /*Tea btn*/
   /*Accessories*/
 }
-.menu__buttons .btn-space {
+.menu__buttons .btn-tea {
   margin: 0 6rem;
 }
 .menu__buttons button:nth-child(1):before {
@@ -366,7 +366,62 @@ main {
 .cards {
   width: 100%;
   height: 74.5rem;
-  background-color: black;
+}
+.cards__coffee {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+}
+.cards__tea {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+}
+.cards__accessories {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+}
+.slick-center {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+.slick-list {
+  height: 100%;
+}
+.hidden {
+  display: none;
+}
+.cards-slider {
+  width: 100%;
+}
+.cards-slider__item {
+  margin: 0 auto;
+  padding: 10rem 0;
+}
+.cards-slider__item .items {
+  height: 100%;
+}
+.cards-slider__item img {
+  height: 100%;
+  width: 100%;
+}
+.cards-slider__item .items-text {
+  text-align: center;
+}
+.cards-slider__item .items-text p {
+  font-size: 2.1rem;
+  font-family: 'Gerbera', sans-serif;
+  color: #262829;
+  letter-spacing: 0.3rem;
+  margin-bottom: 0.8rem;
+}
+.cards-slider__item .items-text span {
+  font-size: 1.7rem;
+  color: #59A329;
 }
 /*Partners*/
 .partners {

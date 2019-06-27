@@ -285,6 +285,7 @@ main {
 
 /*Goods*/
 .goods {
+	;
 	margin-bottom: 16.8rem;
 }
 /*Goods__Menu*/
@@ -305,7 +306,7 @@ main {
 	}
 	&__buttons {
 		padding-bottom: 3rem;
-		.btn-space {
+		.btn-tea {
 			margin: 0 6rem;
 		}
 		/*Coffe btn*/
@@ -358,7 +359,55 @@ main {
 .cards {
 	width: 100%;
 	height: 74.5rem;
-	background-color: black;
+	&__coffee {
+		display: flex;
+		height: 100%;
+	}
+	&__tea {
+		display: flex;
+		height: 100%;
+	}
+	&__accessories {
+		display: flex;
+		height: 100%;
+	}
+}
+.slick-center { 
+  transform: scale(1.1);
+}
+.slick-list {
+	height: 100%;
+}
+.hidden {
+	display: none;
+}
+.cards-slider {
+	width: 100%;
+	&__item {
+		margin: 0 auto;
+		padding: 10rem 0;
+		.items {
+			height: 100%;
+		}
+		img {
+				height: 100%;
+				width: 100%;
+		}
+		.items-text {
+			text-align: center;
+			p {
+				font-size: 2.1rem;
+				.gerbera-reg;
+				color: @btn-color;
+				letter-spacing: 0.3rem;
+				margin-bottom: 0.8rem
+			}
+			span {
+				font-size: 1.7rem;
+				color: #59A329;
+			}
+		}
+	}
 }
 
 /*Partners*/
