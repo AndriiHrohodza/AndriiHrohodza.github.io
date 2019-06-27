@@ -378,12 +378,14 @@ main {
   display: -ms-flexbox;
   display: flex;
   height: 100%;
+  background-color: red;
 }
 .cards__accessories {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   height: 100%;
+  background-color: black;
 }
 .slick-center {
   -webkit-transform: scale(1.1);
