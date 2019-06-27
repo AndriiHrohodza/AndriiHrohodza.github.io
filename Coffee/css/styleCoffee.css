@@ -22,17 +22,15 @@
   background-color: transparent;
   margin-top: 0.1rem;
 }
+/*Container-slider*/
+/*.container-slider {
+	margin: 0 4%;
+	
+}*/
 /*Container-header*/
 .container-header {
   /*height: 100vh;*/
   margin: 0 9%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
 }
 /*Container*/
 .container {
@@ -59,10 +57,11 @@ body {
   width: 100%;
   height: 100%;
   font-family: 'Muller', sans-serif;
+  background-color: #fafaf3;
 }
 /*Header*/
 header {
-  background-color: #fafaf3;
+  margin-bottom: 3.5rem;
 }
 /*sup-navigation*/
 .sup-navigation {
@@ -122,7 +121,6 @@ header {
 /*sub-navigation*/
 .sub-navigation {
   margin-top: 2rem;
-  margin-bottom: 3.5rem;
   border: 1px solid #B7B7B7;
 }
 .sub-navigation__links {
@@ -140,23 +138,21 @@ header {
   /*li::after {
 			content: " ";
 			display: block;
+			position: absolute;
+			top: 50%;
+			right: 0%;
 			background-color: red;
 			width: 0.1rem;
 			height: 2rem;
-			position: absolute;
-			top: 50%;
-			right: -50%;
 			transform: translateY(-50%);
 		}*/
 }
 .sub-navigation__links li {
   display: inline-block;
   line-height: 6.5rem;
-  list-style: none;
   /*width: 100%;*/
+  list-style: none;
   text-align: center;
-  /*padding-right: 5.2rem;
-			padding-left: 5.2rem;*/
   margin: 0;
   position: relative;
 }
@@ -181,39 +177,110 @@ header {
 main {
   background-color: #fafaf3;
 }
-/*Slider*/
-.features {
-  display: block;
+/*Feature*/
+.features,
+.wrap {
   height: calc(80vh);
-  /*flex-grow: 1;*/
+  position: relative;
   width: 100%;
   background-color: #262829;
-  overflow: hidden;
   margin-bottom: 12.4rem;
+  -webkit-transition: .5s transform;
+  transition: .5s transform;
+  overflow: hidden;
+  /*Arrows*/
 }
-.features__description {
+.features .arrow,
+.wrap .arrow {
+  cursor: pointer;
+  height: 2rem;
+  width: 3.4rem;
+  background-color: red;
+}
+.features .arrow-left,
+.wrap .arrow-left {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  background: url(../img/main/Goods/LeftArrow.png) center no-repeat;
+}
+.features .arrow-left:hover,
+.wrap .arrow-left:hover {
+  background: url(../img/main/Goods/LeftArrow-Selected.png) center no-repeat;
+}
+.features .arrow-right,
+.wrap .arrow-right {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  background: url(../img/main/Goods/RightArrow.png) center no-repeat;
+}
+.features .arrow-right:hover,
+.wrap .arrow-right:hover {
+  background: url(../img/main/Goods/RightArrow-Selected.png) center no-repeat;
+}
+.features-slider {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.features-slider__item:nth-child(1) {
+  background-color: #262829;
+  width: 100%;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 auto;
+          flex: 0 0 auto;
+}
+.features-slider__item:nth-child(2) {
+  background-color: red;
+  width: 100%;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 auto;
+          flex: 0 0 auto;
+}
+.features-slider__item:nth-child(3) {
+  background-color: green;
+  width: 100%;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 auto;
+          flex: 0 0 auto;
+}
+.features-slider__item:nth-child(4) {
+  background-color: #262829;
+  width: 100%;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 auto;
+          flex: 0 0 auto;
+}
+.content {
+  height: calc(80vh);
+  width: 100%;
+  overflow-x: hidden;
+  position: relative;
+}
+.content .content-text {
   position: relative;
   top: 49%;
   left: 9%;
   display: inline-block;
   width: 50%;
 }
-.features__description h2 {
+.content .content-text h2 {
+  padding: 0;
+  margin: 0;
   color: #ffffff;
   font-size: 5.6rem;
   font-weight: 100;
-  margin: 0;
-  padding: 0;
   font-family: 'Gerbera', sans-serif;
   margin-bottom: 3.3rem;
 }
-.features__description p {
+.content .content-text p {
   color: #ffffff;
   font-size: 2.1rem;
   margin-bottom: 1.5rem;
   font-weight: 100;
 }
-.features__description p:last-child {
+.content .content-text p:last-child {
   margin: 0;
 }
 /*Goods*/
@@ -232,6 +299,7 @@ main {
       -ms-flex-pack: center;
           justify-content: center;
   border-bottom: 0.1rem solid #B7B7B7;
+  margin-bottom: 4rem;
 }
 .menu__buttons > button {
   width: 23.7rem;
@@ -241,7 +309,7 @@ main {
   position: relative;
 }
 .menu__buttons {
-  margin-bottom: 3rem;
+  padding-bottom: 3rem;
   /*Coffe btn*/
   /*Tea btn*/
   /*Accessories*/
