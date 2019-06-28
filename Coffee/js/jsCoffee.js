@@ -37,7 +37,8 @@ carouselSlide.addEventListener('transitionend', () => {
 	}
 })
 
-/*Cards*/
+
+/*Goods__Cards*/
 var HIDDEN_CLASS_NAME = 'hidden';
 var TARGET_CLASS_NAME = 'target';
 var SOURCE_CLASS_NAME = 'source';

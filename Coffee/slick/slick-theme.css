@@ -69,12 +69,12 @@
 .slick-prev:hover,
 .slick-prev:focus
 {
-    background: url(../img/main/Goods/LeftArrow-Selected.png);
+    background: url(../img/main/Goods/LeftArrow-Selected.png) center no-repeat;
 }
 ,
 .slick-next:hover,
 .slick-next:focus {
-    background: url(../img/main/Goods/RightArrow-Selected.png);
+    background: url(../img/main/Goods/RightArrow-Selected.png) center no-repeat;
 }
 .slick-prev:hover:before,
 .slick-prev:focus:before,
@@ -105,11 +105,11 @@
 
 .slick-prev
 {
-    left: -9.9rem;
+    left: -7.3%;
 }
 [dir='rtl'] .slick-prev
 {
-    right: -9.9rem;
+    right: -7.3%;
     left: auto;
 }
 .slick-prev:before
@@ -123,12 +123,12 @@
 
 .slick-next
 {
-    right: -9.9rem;
+    right: -7.3%;
 }
 [dir='rtl'] .slick-next
 {
     right: auto;
-    left: -9.9rem;
+    left: -7.3%;
 }
 .slick-next:before
 {

@@ -195,7 +195,7 @@ main {
 .features,
 .wrap { 
 	height: calc( 100vh - 20vh);// right???????????????
-	position: relative;
+	/*position: relative;*/
 	width: 100%;
 	background-color: @btn-color;
 	overflow: hidden;
@@ -211,8 +211,8 @@ main {
 	}
 	.arrow-left {
 		position: absolute;
-		top: 50%;
-		left: 0;
+		top: 60%;
+		left: 3%;
 		background: url(../img/main/Goods/LeftArrow.png) center no-repeat;
 	}
 	.arrow-left:hover {
@@ -220,8 +220,8 @@ main {
 	}
 	.arrow-right {
 		position: absolute;
-		top: 50%;
-		right: 0;
+		top: 60%;
+		right: 3%;
 		background: url(../img/main/Goods/RightArrow.png) center no-repeat;
 	}
 	.arrow-right:hover {
@@ -283,6 +283,7 @@ main {
 	}
 }
 
+
 /*Goods*/
 .goods {
 	;
@@ -303,6 +304,7 @@ main {
 		font-size: 1.7rem;
 		padding: 1.9rem 5.2rem 2rem 5.3rem;
 		position: relative;
+		outline: none;
 	}
 	&__buttons {
 		padding-bottom: 3rem;
@@ -345,16 +347,30 @@ main {
 			background: url("../img/main/Goods/Vector.svg")  no-repeat;
 			z-index: -1;
 		}
-		button:hover {
+		button.active {
 			border: none;
 			background-color: #FFFFFF;
 			box-shadow: 0rem 0.6rem 0.8rem 0rem rgba(0, 0, 0, 0.25)
 		}
+		button.selected {
+			border: none;
+			background-color: #FFFFFF;
+			box-shadow: 0rem 0.6rem 0.8rem 0rem rgba(0, 0, 0, 0.25)
+		}
+		button:visited,
+		button:hover,
+		button:active {
+			border: none;
+			background-color: #FFFFFF;
+			box-shadow: 0rem 0.6rem 0.8rem 0rem rgba(0, 0, 0, 0.25);
+		}
+		
 		button:hover:before{
 			z-index: 1;
 		}
 	} 	
 }
+
 /*Goods__Cards*/
 .cards {
 	width: 100%;
@@ -403,7 +419,7 @@ main {
 				.gerbera-reg;
 				color: @btn-color;
 				letter-spacing: 0.3rem;
-				margin-bottom: 0.8rem
+				margin-bottom: 0.8rem;
 			}
 			span {
 				font-size: 1.7rem;
@@ -412,6 +428,7 @@ main {
 		}
 	}
 }
+
 
 /*Partners*/
 .partners {
