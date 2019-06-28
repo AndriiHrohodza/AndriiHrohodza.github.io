@@ -20,12 +20,22 @@
   display: table;
   clear: both;
 }
+/*Container*/
+.container-wrap {
+  margin: 0 9%;
+  height: 100vh;
+}
+.wrap {
+  height: 100vh;
+  background: url(../img/Rectangle.jpg) center no-repeat;
+  background-size: cover;
+}
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
 html {
-  font-style: 10px;
+  font-size: 10px;
   overflow-x: hidden;
 }
 body {
@@ -34,3 +44,71 @@ body {
   font-family: 'GT America';
 }
 /*Header*/
+.header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  /*padding-top: 6rem; */
+  height: 10.5rem;
+}
+.header__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 4.5rem;
+  width: 100%;
+}
+.header__section-logo .logo {
+  font-size: 3.2rem;
+  font-weight: bold;
+  padding: 0;
+}
+.header__section-logo .header-item a {
+  text-decoration: none;
+  color: #ffffff;
+}
+.header__section-nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+}
+.header__section-nav .header-item a {
+  text-decoration: none;
+  color: #ffffff;
+}
+.header__section-nav .header-item {
+  font-size: 2.1rem;
+  padding: 0 4rem;
+}
+.header__section-nav .header-item:nth-child(1) {
+  padding-left: 0;
+}
+.header__section-nav .header-item:nth-child(4) {
+  padding-right: 0;
+}
+.header__section-nav .form:after {
+  content: " + ";
+  display: block;
+  text-align: center;
+  line-height: 2rem;
+  width: 2rem;
+  height: 2rem;
+  color: #ffffff;
+  /*background-color: red;*/
+  position: absolute;
+  top: 50%;
+  right: -4%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  cursor: pointer;
+}
