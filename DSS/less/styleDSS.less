@@ -68,7 +68,17 @@
 }
 
 /*btn*/
-
+.btn  {
+	padding: 1.979166666666667vw 3.854166666666667vw;
+	background-color: @btn-color;
+	border: none;
+	outline: none;
+}
+/*.btn:hover,
+.btn:focus,
+.btn:active {
+	letter-spacing: 0.125rem;
+}*/
 
 * {
 	box-sizing: border-box;
@@ -92,20 +102,18 @@ body {
 	display: flex;
 	align-items: flex-end;
 	width: 82%;
-	
-	/*padding-top: 6rem; */
-	height: 10.5rem;
+	height: 9.459459459459459vh;
 }
 .header__content {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	height: 4.5rem;
+	height: 4.054054054054054vh;
 	width: 100%;
 }
 .header__section-logo {
 	.logo {
-		font-size: 3.2rem;
+		font-size: 1.666666666666667vw;
 		font-weight: bold;
 		padding: 0;
 	}
@@ -122,8 +130,8 @@ body {
 		color: @btn-color;
 	}
 	.header-item {
-		font-size: 2.1rem;
-		padding: 0 4rem;
+		font-size: 1.09375vw;
+		padding: 0 2.083333333333333vw;
 	}
 	.header-item:nth-child(1) {
 		padding-left: 0;
@@ -142,7 +150,7 @@ body {
 		/*background-color: red;*/
 		position: absolute;
 		top: 50%;
-		right: -4%;
+		right: -5%;
 		transform: translateY(-50%);
 		cursor: pointer;
 	}
@@ -151,10 +159,8 @@ body {
 /*Features*/
 .features {
 	width: 100%;
-	height: 39.6vh;
-	/*background-color: red;*/
 	&__content {
-		height: 100%;
+
 		p {
 			font-size: 1.09375vw;
 			margin: 0;
@@ -172,10 +178,7 @@ body {
 		}
 		button {
 			margin-top: 5vw;
-			padding: 1.979166666666667vw 3.854166666666667vw;
 			font-size: 1.09375vw;
-			background-color: @btn-color;
-			border: none;
 			.Cinetype-Bold();
 
 		}
@@ -188,15 +191,38 @@ body {
 	bottom: 0;
 	left: 9%;
 	width: 82%;
-	height: 12rem;
+	height: 10.81081081081081vh;
 }
 .scroll-down {
 	&__button {
-		font-size: 1.7rem;
+		font-size: 0.8854166666666667vw;
 		.Cinetype-Mono();
 		a {
 			text-decoration: none;
 			color: @btn-color;
 		}
 	}
+}
+
+/*about-company*/
+.about-company{
+	height: 20rem;
+	background-color: red;
+	/*display: flex;
+	justify-content: center;
+	align-items: center;*/
+	font-size: 2.5rem;
+	position: relative;
+	overflow: hidden;
+	.animation {
+		position: absolute;
+		bottom: 50%;
+		left: 50%;
+	}
+}
+
+/*Footer*/
+.footer {
+	height: 20rem;
+	background-color: green;
 }
