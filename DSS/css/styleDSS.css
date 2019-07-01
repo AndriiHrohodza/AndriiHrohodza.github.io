@@ -150,25 +150,25 @@ body {
 main {
   width: 100%;
 }
-/*Main__Features*/
-.features {
+/*Main__Primary*/
+.primary {
   width: 100%;
 }
-.features p {
+.primary p {
   font-size: 1.09375vw;
   margin: 0;
   font-family: 'GT Cinetype Mono';
   margin-bottom: 0.78125vw;
   color: #ffffff;
 }
-.features h2 {
+.primary h2 {
   margin: 0;
   font-size: 3.020833333333333vw;
   /*width: 65%;*/
   font-weight: 800;
   color: #ffffff;
 }
-.features button {
+.primary button {
   margin-top: 5vw;
   font-size: 1.09375vw;
   font-family: 'GT Cinetype';
@@ -208,13 +208,13 @@ main {
 }
 .description-content__img img {
   width: 100%;
-  /*height: 100%;*/
+  height: 100%;
 }
 .description-content__img:before {
   content: '';
   display: block;
-  width: 57.3rem;
-  height: 100rem;
+  width: 29.84375vw;
+  height: 91.64509009009009vh;
   border: 1px solid #4C4C4C;
   position: absolute;
   top: 50%;
@@ -241,6 +241,43 @@ main {
 .description-content__text .cinetype {
   font-family: 'GT Cinetype Mono';
 }
+.wrap-main {
+  background-color: #1D1D1D;
+}
+/*Main__features*/
+.features {
+  /*position: relative;*/
+  background-color: #1D1D1D;
+  padding-top: 7.92792792792793vh;
+}
+.features-content {
+  bottom: 0;
+  left: 30%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  color: white;
+}
+.features-content__items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 90rem;
+}
+.features-content__items .items-img {
+  width: 30%;
+}
+.features-content__items .items-text {
+  padding: 2.3rem 0 2.8rem 8.1rem;
+}
+.features-content__items h3 {
+  font-size: 5.8rem;
+  margin-bottom: 4rem;
+}
+.features-content__items p {
+  font-size: 2.1rem;
+  line-height: 2.702702702702703vh;
+}
 /*about-company*/
 .about-company {
   height: 20rem;
@@ -259,6 +296,6 @@ main {
 }
 /*Footer*/
 .footer {
-  height: 20rem;
+  height: 50rem;
   background-color: green;
 }

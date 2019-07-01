@@ -166,8 +166,8 @@ body {
 main {
 	width: 100%;
 }
-/*Main__Features*/
-.features {
+/*Main__Primary*/
+.primary {
 	width: 100%;
 		p {
 			font-size: 1.09375vw;
@@ -225,14 +225,14 @@ main {
 		z-index: 999;
 		img {
 			width: 100%;
-			/*height: 100%;*/
+			height: 100%;
 		}
 	}
 	&__img:before {
 		content: '';
 		display: block;
-		width: 57.3rem;
-		height: 100rem;
+		width: 29.84375vw;
+		height: 91.64509009009009vh;
 		border: 1px solid #4C4C4C;
 		position: absolute;
 		top: 50%;
@@ -257,6 +257,47 @@ main {
 		.cinetype {
 			.Cinetype-Mono();
 		}
+	}
+}
+.wrap-main {
+	background-color: #1D1D1D;
+}
+/*Main__features*/
+.features {
+	/*position: relative;*/
+	background-color: #1D1D1D;
+	padding-top: 7.92792792792793vh;
+
+
+}
+.features-content {
+	
+	bottom: 0;
+	left: 30%;
+	display: flex;
+	color: white;
+	
+	&__items {
+		display: flex;
+		width: 90rem;
+
+		.items-img {
+			width: 30%;
+			img {
+
+			}
+		}
+		.items-text {
+			padding: 2.3rem 0 2.8rem 8.1rem;
+		}
+			h3 {
+				font-size: 5.8rem;
+				margin-bottom: 4rem;
+			}
+			p {
+				font-size: 2.1rem;
+				line-height: 2.702702702702703vh;
+			}
 	}
 }
 
@@ -285,6 +326,6 @@ main {
 
 /*Footer*/
 .footer {
-	height: 20rem;
+	height: 50rem;
 	background-color: green;
 }
