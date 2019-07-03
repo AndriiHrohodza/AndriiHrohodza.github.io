@@ -180,7 +180,6 @@ main {
     -webkit-transform: translate3d(0, 100%, 0);
     transform: translate3d(0, 100%, 0);
   }
-
   to {
     opacity: 1;
     -webkit-transform: none;
@@ -256,11 +255,7 @@ main {
 		img {
 			width: 39.84375vw;
 			height: 100%;
-			animation-name: crescendo;
-			animation-duration: 5s;
-			animation-fill-mode: forwards;
-			animation-timing-function: linear;
-			animation-iteration-count: normal;
+			
 		}
 	}
 	/*Animation*/
@@ -287,6 +282,9 @@ main {
 		padding: 7.027027027027027vh 0 7.027027027027027vh 8.4375vw;
 		display: flex;
 		align-items: center;
+		opacity: 0;
+		transform: translateY(15rem);
+		transition: all 2s ease;
 		h3 {
 		 margin: 0 ;
 		 font-size: 3.020833333333333vw;
@@ -305,6 +303,19 @@ main {
 }
 .wrap-main {
 	background-color: #1D1D1D;
+}
+/*Animation fade-in*/
+.fade-in {
+	opacity: 1;
+	transform: translateY(0);
+}
+/*img animation*/
+.img-scale {
+	animation-name: crescendo;
+				animation-duration: 5s;
+				animation-fill-mode: forwards;
+				animation-timing-function: linear;
+				animation-iteration-count: normal;
 }
 
 

@@ -31,16 +31,22 @@ const scene = new ScrollMagic.Scene({
 .addTo(controller);*/
 
 
-/*var controller = new ScrollMagic.Controller();
+var controller = new ScrollMagic.Controller();
 
 // build tween
-	var tween = TweenMax.staggerFromTo(".features-content", 2, {left: 900}, {left: 0, ease: Back.easeOut}, 0.15);
+	var tween = TweenMax.staggerFromTo(".features-content", 2, {left: 900}, {left: -window.innerWidth, ease: Back.easeOut}, 0.15);
 
 	// build scene
-	var scene = new ScrollMagic.Scene({triggerElement: "#trigger", duration: 300})
+	var scene = new ScrollMagic.Scene({
+		triggerElement: "#scroll-trigger",
+		duration: 1200,
+		triggerHook: 0.7
+
+	})
 					.setTween(tween)
 					.addIndicators({name: "staggering"}) // add indicators (requires plugin)
-					.addTo(controller);*/
+					/*.setPin('.features')*/
+					.addTo(controller);
 
 /*Scroll*/
 /*function slowScroll(id) { 
@@ -64,4 +70,31 @@ const scene = new ScrollMagic.Scene({
              			});
              		} 
              	});
-             });
+
+             	/*Animation*/
+             	var controller = new ScrollMagic.Controller();
+             	//text animation
+             	var ourScene = new ScrollMagic.Scene({
+             		triggerElement: '#trigger',
+             		reverse: true
+             	})
+             	.setClassToggle('#scrollmagic', 'fade-in')
+             	.addIndicators()
+             	.addTo(controller);
+
+             //img animation
+             var ourScene2 = new ScrollMagic.Scene({
+             	triggerElement: '#trigger',
+             	reverse: true
+             })
+             .setClassToggle('#img-magic', 'img-scale')
+             .addIndicators()
+             .addTo(controller);
+
+             //slider animation
+
+
+           });
+
+             
+     
