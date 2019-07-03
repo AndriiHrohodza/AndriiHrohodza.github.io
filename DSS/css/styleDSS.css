@@ -1,3 +1,327 @@
+
+/*Fonts*/
+@font-face {
+  font-family: 'GT Cinetype Mono';
+  src: url('../fonts/GTCinetype-Mono.eot');
+  src: url('GTCinetype-Mono.eot?#iefix') format('embedded-opentype'), url('../fonts/GTCinetype-Mono.woff2') format('woff2'), url('../fonts/GTCinetype-Mono.woff') format('woff'), url('../fonts/GTCinetype-Mono.ttf') format('truetype'), url('../fonts/GTCinetype-Mono.svg') format('svg');
+  font-weight: 900;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'GT Cinetype';
+  src: url('../fonts/GTCinetype-Bold.eot');
+  src: url('GTCinetype-Bold.eot?#iefix') format('embedded-opentype'), url('../fonts/GTCinetype-Bold.woff2') format('woff2'), url('../fonts/GTCinetype-Bold.woff') format('woff'), url('../fonts/GTCinetype-Bold.ttf') format('truetype'), url('../fonts/GTCinetype-Bold.svg') format('svg');
+  font-weight: bold;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'GT America';
+  src: url('../fonts/GTAmerica-Regular.eot');
+  src: url('GTAmerica-Regular.eot?#iefix') format('embedded-opentype'), url('../fonts/GTAmerica-Regular.woff2') format('woff2'), url('../fonts/GTAmerica-Regular.woff') format('woff'), url('../fonts/GTAmerica-Regular.ttf') format('truetype'), url('../fonts/GTAmerica-Regular.svg') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+/*Colors*/
+/*Clearfix*/
+.clearfix {
+  content: "";
+  display: table;
+  clear: both;
+}
+/*Container-wrap*/
+.container-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0 9%;
+  height: 100vh;
+}
+/*Container*/
+.container {
+  margin: 0 9%;
+}
+.wrap {
+  height: 100vh;
+  background: url(../img/Rectangle.jpg) center no-repeat;
+  background-size: cover;
+}
+/*btn*/
+.btn {
+  padding: 1.979166666666667vw 3.854166666666667vw;
+  background-color: #ffffff;
+  border: none;
+  outline: none;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+.btn:hover {
+  letter-spacing: 0.125rem;
+}
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+html {
+  font-size: 10px;
+  overflow-x: hidden;
+}
+body {
+  width: 100%;
+  height: 100%;
+  font-family: 'GT America';
+}
+/*Header*/
+.header {
+  position: absolute;
+  top: 0;
+  left: 9%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  width: 82%;
+  height: 9.459459459459459vh;
+}
+.header__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 4.054054054054054vh;
+  width: 100%;
+}
+.header__section-logo .logo {
+  font-size: 1.666666666666667vw;
+  font-weight: bold;
+  padding: 0;
+}
+.header__section-logo .header-item a {
+  text-decoration: none;
+  color: #ffffff;
+}
+.header__section-nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+}
+.header__section-nav .header-item a {
+  text-decoration: none;
+  color: #ffffff;
+}
+.header__section-nav .header-item {
+  font-size: 1.09375vw;
+  padding: 0 2.083333333333333vw;
+}
+.header__section-nav .header-item:nth-child(1) {
+  padding-left: 0;
+}
+.header__section-nav .header-item:nth-child(4) {
+  padding-right: 0;
+}
+.header__section-nav .form:after {
+  content: " + ";
+  display: block;
+  text-align: center;
+  line-height: 2rem;
+  width: 2rem;
+  height: 2rem;
+  color: #ffffff;
+  /*background-color: red;*/
+  position: absolute;
+  top: 50%;
+  right: -5%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  cursor: pointer;
+}
+/*Main*/
+main {
+  width: 100%;
+}
+/*Main__Primary*/
+.primary {
+  width: 100%;
+}
+.primary p {
+  font-size: 1.09375vw;
+  margin: 0;
+  font-family: 'GT Cinetype Mono';
+  margin-bottom: 0.78125vw;
+  color: #ffffff;
+}
+.primary h2 {
+  margin: 0;
+  font-size: 3.020833333333333vw;
+  /*width: 65%;*/
+  font-weight: 800;
+  color: #ffffff;
+}
+.primary button {
+  margin-top: 5vw;
+  font-size: 1.09375vw;
+  font-family: 'GT Cinetype';
+}
+.primary a {
+  text-decoration: none;
+  color: #252525;
+}
+/*Scroll*/
+.scroll {
+  position: absolute;
+  bottom: 0;
+  left: 9%;
+  width: 82%;
+  height: 10.81081081081081vh;
+}
+.scroll-button {
+  font-size: 0.8854166666666667vw;
+  font-family: 'GT Cinetype Mono';
+}
+.scroll-button a {
+  text-decoration: none;
+  color: #ffffff;
+}
+/*Main__company-description*/
+.company-description {
+  background-color: #1D1D1D;
+  padding-top: 38.28828828828829vh;
+  padding-bottom: 38.28828828828829vh;
+}
+.description-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  color: white;
+  position: relative;
+}
+.description-content__img {
+  width: 50%;
+  z-index: 2;
+}
+.description-content__img img {
+  width: 100%;
+  height: 100%;
+}
+.description-content__img:before {
+  content: '';
+  display: block;
+  width: 29.84375vw;
+  height: 91.64509009009009vh;
+  border: 1px solid #4C4C4C;
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  left: -11.5%;
+  z-index: -1;
+}
+.description-content__text {
+  width: 50%;
+  padding: 7.027027027027027vh 0 7.027027027027027vh 8.4375vw;
+}
+.description-content__text h3 {
+  margin: 0 ;
+  font-size: 3.020833333333333vw;
+  font-weight: 800;
+}
+.description-content__text p {
+  font-size: 1.09375vw;
+  margin-top: 3.243243243243243vh;
+  word-spacing: 0.2604166666666667vw;
+  line-height: 3.702702702702703vh;
+}
+.description-content__text .cinetype {
+  font-family: 'GT Cinetype Mono';
+}
+.wrap-main {
+  background-color: #1D1D1D;
+}
+/*Main__features*/
+.features {
+  position: relative;
+  background-color: #1D1D1D;
+  padding-bottom: 27.92792792792793vh;
+  /*padding-top: 7.92792792792793vh;*/
+}
+.features-content {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  color: white;
+}
+.features-content__items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 46.875vw;
+  margin-right: 8.4375vw;
+  padding-top: 0.2604166666666667vw;
+}
+.features-content__items .items-img {
+  margin: auto 0;
+}
+.features-content__items .items-img img {
+  width: 9.635416666666667vw‬;
+  height: 26.12612612612613vh‬;
+}
+.features-content__items .items-text {
+  padding: 1.197916666666667vw 0 2.2rem 4.21875vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  /*flex-direction: column;*/
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.features-content__items h3 {
+  font-size: 3.020833333333333vw;
+  margin-bottom: 1.302083333333333vw;
+  line-height: 6.02702702702703vh;
+}
+.features-content__items p {
+  font-size: 1.09375vw;
+  line-height: 3.702702702702703vh;
+}
+.features-content__items:nth-child(3) {
+  margin: 0;
+}
+/*about-company*/
+.about-company {
+  height: 50rem;
+  background-color: red;
+  /*display: flex;
+	justify-content: center;
+	align-items: center;*/
+  font-size: 2.5rem;
+  position: relative;
+  overflow: hidden;
+}
+.about-company .animation {
+  position: absolute;
+  bottom: 50%;
+  left: 50%;
+}
+/*Footer*/
+.footer {
+  height: 90rem;
+  width: 100%;
+  background-color: green;
+=======
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -21,4 +345,5 @@ h1 {
   color: white;
   left: 500px;
   white-space: nowrap;
+
 }
