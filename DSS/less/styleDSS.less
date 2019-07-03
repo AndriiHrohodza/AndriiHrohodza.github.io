@@ -1,3 +1,350 @@
+
+/*Fonts*/
+@font-face {
+    font-family: 'GT Cinetype Mono';
+    src: url('../fonts/GTCinetype-Mono.eot');
+    src: url('GTCinetype-Mono.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/GTCinetype-Mono.woff2') format('woff2'),
+        url('../fonts/GTCinetype-Mono.woff') format('woff'),
+        url('../fonts/GTCinetype-Mono.ttf') format('truetype'),
+        url('../fonts/GTCinetype-Mono.svg') format('svg');
+    font-weight: 900;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'GT Cinetype';
+    src: url('../fonts/GTCinetype-Bold.eot');
+    src: url('GTCinetype-Bold.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/GTCinetype-Bold.woff2') format('woff2'),
+        url('../fonts/GTCinetype-Bold.woff') format('woff'),
+        url('../fonts/GTCinetype-Bold.ttf') format('truetype'),
+        url('../fonts/GTCinetype-Bold.svg') format('svg');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'GT America';
+    src: url('../fonts/GTAmerica-Regular.eot');
+    src: url('GTAmerica-Regular.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/GTAmerica-Regular.woff2') format('woff2'),
+        url('../fonts/GTAmerica-Regular.woff') format('woff'),
+        url('../fonts/GTAmerica-Regular.ttf') format('truetype'),
+        url('../fonts/GTAmerica-Regular.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+.America() {
+	font-family: 'GT America';
+}
+.Cinetype-Mono() {
+	font-family: 'GT Cinetype Mono';
+}
+.Cinetype-Bold() {
+	font-family: 'GT Cinetype'
+}
+
+/*Colors*/
+@btn-color: #fff;
+
+/*Clearfix*/
+.clearfix {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+/*Container-wrap*/
+.container-wrap {
+	display: flex;
+	align-items: center;
+	margin: 0 9%;
+	height: 100vh;
+}
+/*Container*/
+.container {
+	margin: 0 9%;
+}
+.wrap {
+	height: 100vh;
+	background: url(../img/Rectangle.jpg) center no-repeat;
+	background-size: cover;
+}
+
+/*btn*/
+.btn  {
+	padding: 1.979166666666667vw 3.854166666666667vw;
+	background-color: @btn-color;
+	border: none;
+	outline: none;
+	transition: all 0.5s;
+}
+.btn:hover {
+	letter-spacing: 0.125rem;
+
+}
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+html {
+	font-size: 10px;
+	overflow-x: hidden;
+}
+body {
+	width: 100%;
+	height: 100%;
+	.America();
+}
+
+/*Header*/
+.header {
+	position: absolute;
+	top: 0;
+	left: 9%;
+	display: flex;
+	align-items: flex-end;
+	width: 82%;
+	height: 9.459459459459459vh;
+}
+.header__content {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	height: 4.054054054054054vh;
+	width: 100%;
+}
+.header__section-logo {
+	.logo {
+		font-size: 1.666666666666667vw;
+		font-weight: bold;
+		padding: 0;
+	}
+	.header-item a {
+		text-decoration: none;
+		color: @btn-color;
+	}
+}
+.header__section-nav {
+	display: flex;
+	position: relative;
+	.header-item a {
+		text-decoration: none;
+		color: @btn-color;
+	}
+	.header-item {
+		font-size: 1.09375vw;
+		padding: 0 2.083333333333333vw;
+	}
+	.header-item:nth-child(1) {
+		padding-left: 0;
+	}
+	.header-item:nth-child(4) {
+		padding-right: 0;
+	}
+	.form:after {
+		content: " + ";
+		display: block;
+		text-align: center;
+		line-height: 2rem;
+		width: 2rem;
+		height: 2rem;
+		color: @btn-color;
+		/*background-color: red;*/
+		position: absolute;
+		top: 50%;
+		right: -5%;
+		transform: translateY(-50%);
+		cursor: pointer;
+	}
+}
+
+
+/*Main*/
+main {
+	width: 100%;
+}
+/*Main__Primary*/
+.primary {
+	width: 100%;
+		p {
+			font-size: 1.09375vw;
+			margin: 0;
+			.Cinetype-Mono();
+			margin-bottom: 0.78125vw;
+			color: @btn-color;
+		}
+		h2 {
+			margin: 0;
+			font-size: 3.020833333333333vw;
+			/*width: 65%;*/
+			font-weight: 800;
+			color: @btn-color;
+
+		}
+		button {
+			margin-top: 5vw;
+			font-size: 1.09375vw;
+			.Cinetype-Bold();
+		}
+		a {
+			text-decoration: none;
+			color: #252525;
+		}
+}
+
+/*Scroll*/
+.scroll {
+	position: absolute;
+	bottom: 0;
+	left: 9%;
+	width: 82%;
+	height: 10.81081081081081vh;
+}
+.scroll-button {
+	font-size: 0.8854166666666667vw;
+	.Cinetype-Mono();
+	a {
+		text-decoration: none;
+		color: @btn-color;
+	}
+}
+
+/*Main__company-description*/
+.company-description {
+	background-color: #1D1D1D;
+	padding-top: 38.28828828828829vh;
+	padding-bottom: 38.28828828828829vh;
+}
+.description-content {
+	display: flex;
+	color: white;
+	position: relative;
+	
+	&__img {
+		width: 50%;
+		z-index: 2;
+		img {
+			width: 100%;
+			height: 100%;
+		}
+	}
+	&__img:before {
+		content: '';
+		display: block;
+		width: 29.84375vw;
+		height: 91.64509009009009vh;
+		border: 1px solid #4C4C4C;
+		position: absolute;
+		top: 50%;
+		transform: translateY(-50%);
+		left: -11.5%;
+		z-index: -1;
+	}
+	&__text {
+		width: 50%;
+		padding: 7.027027027027027vh 0 7.027027027027027vh 8.4375vw;
+		h3 {
+		 margin: 0 ;
+		 font-size: 3.020833333333333vw;
+		 font-weight: 800; 
+		}
+		p {
+			font-size: 1.09375vw;
+			margin-top: 3.243243243243243vh;
+			word-spacing: 0.2604166666666667vw;
+			line-height: 3.702702702702703vh;
+		}
+		.cinetype {
+			.Cinetype-Mono();
+		}
+	}
+}
+.wrap-main {
+	background-color: #1D1D1D;
+}
+
+
+/*Main__features*/
+.features {
+	position: relative;
+	background-color: #1D1D1D;
+	padding-bottom: 27.92792792792793vh;
+	/*padding-top: 7.92792792792793vh;*/
+	
+}
+.features-content {
+	position: relative;
+
+	display: flex;
+	color: white;
+	
+	&__items {
+		display: flex;
+		width: 46.875vw;
+		margin-right: 8.4375vw;
+		padding-top: 0.2604166666666667vw;
+		.items-img {
+			margin: auto 0;
+			img {
+				width: 9.635416666666667vw‬; // 18.5rem
+				height: 26.12612612612613vh‬; // 29rem
+			}
+		}
+		.items-text {
+			padding: 1.197916666666667vw 0 2.2rem 4.21875vw;
+			display: flex;
+			/*flex-direction: column;*/
+			align-items: center;
+		}
+			h3 {
+				font-size: 3.020833333333333vw;
+				margin-bottom: 1.302083333333333vw;
+				line-height: 6.02702702702703vh;
+			}
+			p {
+				font-size: 1.09375vw;
+				line-height: 3.702702702702703vh;
+			}
+	}
+	&__items:nth-child(3) {
+		margin: 0;
+	}
+}
+
+
+
+
+
+
+
+/*about-company*/
+.about-company{
+	height: 50rem;
+	background-color: red;
+
+	/*display: flex;
+	justify-content: center;
+	align-items: center;*/
+	font-size: 2.5rem;
+	position: relative;
+	overflow: hidden;
+	.animation {
+		position: absolute;
+		bottom: 50%;
+		left: 50%;
+	}
+}
+
+/*Footer*/
+.footer {
+	height: 90rem;
+	width: 100%;
+	background-color: green;
+=======
 * {
 	box-sizing: border-box;
 }
@@ -19,4 +366,5 @@ h1 {
 	color: white;
 	left: 500px; 
 	white-space: nowrap;
+
 }
