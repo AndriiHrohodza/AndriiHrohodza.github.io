@@ -200,40 +200,38 @@ main {
 /*Main__company-description*/
 .company-description {
   background-color: #1D1D1D;
-  padding-top: 38.28828828828829vh;
-  padding-bottom: 38.28828828828829vh;
+  padding-top: 43rem;
+  padding-bottom: 43rem;
+  position: relative;
 }
 .description-content {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   color: white;
-  position: relative;
+  /*&__img:before {
+		
+	}*/
 }
 .description-content__img {
   width: 50%;
   z-index: 2;
+  /*height: 68.91891891891892vh;‬*/
+  margin: auto 0;
 }
 .description-content__img img {
-  width: 100%;
+  width: 39.84375vw;
   height: 100%;
-}
-.description-content__img:before {
-  content: '';
-  display: block;
-  width: 29.84375vw;
-  height: 91.64509009009009vh;
-  border: 1px solid #4C4C4C;
-  position: absolute;
-  top: 50%;
-  -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
-  left: -11.5%;
-  z-index: -1;
 }
 .description-content__text {
   width: 50%;
   padding: 7.027027027027027vh 0 7.027027027027027vh 8.4375vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 .description-content__text h3 {
   margin: 0 ;
@@ -244,10 +242,24 @@ main {
   font-size: 1.09375vw;
   margin-top: 3.243243243243243vh;
   word-spacing: 0.2604166666666667vw;
-  line-height: 3.702702702702703vh;
+  line-height: 160%;
 }
 .description-content__text .cinetype {
   font-family: 'GT Cinetype Mono';
+}
+.description-content:before {
+  content: '';
+  width: 29.84375vw;
+  height: 115.71171171171171vh;
+  border-top: 0.0520833333333333vw solid #4C4C4C;
+  border-right: 0.0520833333333333vw solid #4C4C4C;
+  border-bottom: 0.0520833333333333vw solid #4C4C4C;
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  left: -1%;
+  /*z-index: -1;*/
 }
 .wrap-main {
   background-color: #1D1D1D;
@@ -272,7 +284,7 @@ main {
   display: flex;
   width: 46.875vw;
   margin-right: 8.4375vw;
-  padding-top: 0.2604166666666667vw;
+  /*padding-top: 0.2604166666666667vw;*/
 }
 .features-content__items .items-img {
   margin: auto 0;
