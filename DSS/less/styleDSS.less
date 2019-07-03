@@ -220,13 +220,14 @@ main {
 /*Main__company-description*/
 .company-description {
 	background-color: #1D1D1D;
-	padding-top: 43rem;//38.28828828828829vh
-	padding-bottom: 43rem;
-	position: relative;
+	padding-top: 22.39583333333333vw;//38.28828828828829vh
+	padding-bottom: 22.39583333333333vw;
+	
 }
 .description-content {
 	display: flex;
 	color: white;
+	position: relative;
 	
 	
 	&__img {
@@ -239,9 +240,20 @@ main {
 			height: 100%;
 		}
 	}
-	/*&__img:before {
-		
-	}*/
+	&__img:before {
+		content: '';
+		display: block;
+		width: 29.84375vw;
+		height: 115.71171171171171vh;
+		border-top: 0.0520833333333333vw solid #4C4C4C;
+		border-right: 0.0520833333333333vw solid #4C4C4C;
+		border-bottom: 0.0520833333333333vw solid #4C4C4C;
+		position: absolute;
+		top: 50%;
+		transform: translateY(-50%);
+		left: -12.1%;
+		z-index: -1;
+	}
 	&__text {
 		width: 50%;
 		padding: 7.027027027027027vh 0 7.027027027027027vh 8.4375vw;
@@ -262,20 +274,6 @@ main {
 			.Cinetype-Mono();
 		}
 	}
-}
-.description-content:before {
-	content: '';
-	
-	width: 29.84375vw;
-	height: 115.71171171171171vh;
-	border-top: 0.0520833333333333vw solid #4C4C4C;
-	border-right: 0.0520833333333333vw solid #4C4C4C;
-	border-bottom: 0.0520833333333333vw solid #4C4C4C;
-	position: absolute;
-	top: 50%;
-	transform: translateY(-50%);
-	left: -1%;
-	/*z-index: -1;*/
 }
 .wrap-main {
 	background-color: #1D1D1D;
