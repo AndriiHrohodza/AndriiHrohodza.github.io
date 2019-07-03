@@ -44,7 +44,7 @@ var controller = new ScrollMagic.Controller();
 
 	})
 					.setTween(tween)
-					.addIndicators({name: "staggering"}) // add indicators (requires plugin)
+					/*.addIndicators({name: "staggering"}) // add indicators (requires plugin)*/
 					/*.setPin('.features')*/
 					.addTo(controller);
 
