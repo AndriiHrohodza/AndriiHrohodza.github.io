@@ -173,6 +173,20 @@ body {
 main {
 	width: 100%;
 }
+/*Animation*/
+@keyframes fadeInUp {
+  from { 
+    opacity: 0;
+    -webkit-transform: translate3d(0, 100%, 0);
+    transform: translate3d(0, 100%, 0);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+  }
+}
 /*Main__Primary*/
 .primary {
 	width: 100%;
@@ -182,6 +196,8 @@ main {
 			.Cinetype-Mono();
 			margin-bottom: 0.78125vw;
 			color: @btn-color;
+			opacity: 0;
+			animation: fadeInUp 1s ease-in-out 0s forwards;
 		}
 		h2 {
 			margin: 0;
@@ -189,6 +205,8 @@ main {
 			/*width: 65%;*/
 			font-weight: 800;
 			color: @btn-color;
+			opacity: 0;
+			animation: fadeInUp .8s ease 0.2s forwards;
 
 		}
 		button {
@@ -224,21 +242,31 @@ main {
 	padding-bottom: 22.39583333333333vw;
 	
 }
+
 .description-content {
 	display: flex;
 	color: white;
 	position: relative;
-	
-	
 	&__img {
 		width: 50%;
 		z-index: 2;
 		/*height: 68.91891891891892vh;‬*/
 		margin: auto 0;
+		overflow: hidden;
 		img {
 			width: 39.84375vw;
 			height: 100%;
+			animation-name: crescendo;
+			animation-duration: 5s;
+			animation-fill-mode: forwards;
+			animation-timing-function: linear;
+			animation-iteration-count: normal;
 		}
+	}
+	/*Animation*/
+	@keyframes crescendo {
+	  0%   {transform: scale(1);}
+	  100% {transform: scale(1.2);}
 	}
 	&__img:before {
 		content: '';
@@ -360,3 +388,5 @@ main {
 	width: 100%;
 	background-color: green;
 }
+
+

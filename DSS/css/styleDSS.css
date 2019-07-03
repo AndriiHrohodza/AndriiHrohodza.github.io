@@ -156,6 +156,31 @@ body {
 main {
   width: 100%;
 }
+/*Animation*/
+@-webkit-keyframes fadeInUp {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 100%, 0);
+    transform: translate3d(0, 100%, 0);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+  }
+}
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 100%, 0);
+    transform: translate3d(0, 100%, 0);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+  }
+}
 /*Main__Primary*/
 .primary {
   width: 100%;
@@ -166,6 +191,9 @@ main {
   font-family: 'GT Cinetype Mono';
   margin-bottom: 0.78125vw;
   color: #ffffff;
+  opacity: 0;
+  -webkit-animation: fadeInUp 1s ease-in-out 0s forwards;
+          animation: fadeInUp 1s ease-in-out 0s forwards;
 }
 .primary h2 {
   margin: 0;
@@ -173,6 +201,9 @@ main {
   /*width: 65%;*/
   font-weight: 800;
   color: #ffffff;
+  opacity: 0;
+  -webkit-animation: fadeInUp .8s ease 0.2s forwards;
+          animation: fadeInUp .8s ease 0.2s forwards;
 }
 .primary button {
   margin-top: 5vw;
@@ -209,16 +240,48 @@ main {
   display: flex;
   color: white;
   position: relative;
+  /*Animation*/
 }
 .description-content__img {
   width: 50%;
   z-index: 2;
   /*height: 68.91891891891892vh;‬*/
   margin: auto 0;
+  overflow: hidden;
 }
 .description-content__img img {
   width: 39.84375vw;
   height: 100%;
+  -webkit-animation-name: crescendo;
+          animation-name: crescendo;
+  -webkit-animation-duration: 5s;
+          animation-duration: 5s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+  -webkit-animation-iteration-count: normal;
+          animation-iteration-count: normal;
+}
+@-webkit-keyframes crescendo {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  100% {
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2);
+  }
+}
+@keyframes crescendo {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  100% {
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2);
+  }
 }
 .description-content__img:before {
   content: '';
