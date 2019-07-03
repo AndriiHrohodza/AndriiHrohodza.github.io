@@ -278,8 +278,9 @@ main {
   margin: auto 0;
 }
 .features-content__items .items-img img {
-  max-width: 9.635416666666667vw;
-  max-height: 26.12612612612613vh;
+  width: 9.635416666666667vw;
+  height: auto;
+  /*max-width: 100%;*/
 }
 .features-content__items .items-text {
   padding: 1.197916666666667vw 0 1.145833333333333vw 4.21875vw;
@@ -290,6 +291,7 @@ main {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  /*max-height: 22.52252252252252vh;*/
 }
 .features-content__items h3 {
   font-size: 3.020833333333333vw;
