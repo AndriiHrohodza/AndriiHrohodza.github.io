@@ -79,7 +79,7 @@ var controller = new ScrollMagic.Controller();
              		reverse: true
              	})
              	.setClassToggle('#scrollmagic', 'fade-in')
-             	.addIndicators()
+             	/*.addIndicators()*/
              	.addTo(controller);
 
              //img animation
@@ -88,7 +88,7 @@ var controller = new ScrollMagic.Controller();
              	reverse: true
              })
              .setClassToggle('#img-magic', 'img-scale')
-             .addIndicators()
+             /*.addIndicators()*/
              .addTo(controller);
 
              //slider animation
