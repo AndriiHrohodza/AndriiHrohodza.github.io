@@ -1,4 +1,3 @@
-
 /*Fonts*/
 @font-face {
   font-family: 'GT Cinetype Mono';
@@ -50,12 +49,18 @@
 }
 /*btn*/
 .btn {
-  padding: 1.979166666666667vw 3.854166666666667vw;
+  /*padding: 1.979166666666667vw 3.854166666666667vw;*/
+  line-height: 8.108108108108108vh;
+  max-width: 16.5625vw;
+  width: 100%;
   background-color: #ffffff;
   border: none;
   outline: none;
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
+  cursor: pointer;
+  font-size: 1.09375vw;
+  font-family: 'GT Cinetype';
 }
 .btn:hover {
   letter-spacing: 0.125rem;
@@ -171,8 +176,6 @@ main {
 }
 .primary button {
   margin-top: 5vw;
-  font-size: 1.09375vw;
-  font-family: 'GT Cinetype';
 }
 .primary a {
   text-decoration: none;
@@ -321,29 +324,4 @@ main {
   height: 90rem;
   width: 100%;
   background-color: green;
-=======
-* {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-}
-body {
-  margin: 0;
-  padding: 0;
-  height: 5000px;
-  overflow-x: hidden;
-  background: #00947a;
-}
-h1 {
-  margin: 0;
-  padding: 0;
-  font-family: sans-serif;
-  position: fixed;
-  top: 50%;
-  -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
-  font-size: 15em;
-  color: white;
-  left: 500px;
-  white-space: nowrap;
-
 }

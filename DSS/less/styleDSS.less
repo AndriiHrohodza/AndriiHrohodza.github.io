@@ -73,11 +73,17 @@
 
 /*btn*/
 .btn  {
-	padding: 1.979166666666667vw 3.854166666666667vw;
+	/*padding: 1.979166666666667vw 3.854166666666667vw;*/
+	line-height: 8.108108108108108vh;
+	max-width: 16.5625vw;
+	width: 100%;
 	background-color: @btn-color;
 	border: none;
 	outline: none;
 	transition: all 0.5s;
+	cursor: pointer;
+	font-size: 1.09375vw;
+	.Cinetype-Bold();
 }
 .btn:hover {
 	letter-spacing: 0.125rem;
@@ -187,8 +193,6 @@ main {
 		}
 		button {
 			margin-top: 5vw;
-			font-size: 1.09375vw;
-			.Cinetype-Bold();
 		}
 		a {
 			text-decoration: none;
@@ -344,27 +348,4 @@ main {
 	height: 90rem;
 	width: 100%;
 	background-color: green;
-=======
-* {
-	box-sizing: border-box;
-}
-body {
-	margin: 0;
-	padding: 0;
-	height: 5000px;
-	overflow-x: hidden;
-	background: #00947a;
-}
-h1 {
-	margin: 0;
-	padding: 0;
-	font-family: sans-serif;
-	position: fixed;
-	top: 50%;
-	transform: translateY(-50%);
-	font-size: 15em; 
-	color: white;
-	left: 500px; 
-	white-space: nowrap;
-
 }

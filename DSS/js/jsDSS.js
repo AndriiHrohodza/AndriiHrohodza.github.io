@@ -49,6 +49,19 @@ const scene = new ScrollMagic.Scene({
                     scrollTop: $(id).offset().top - offset 
                }, 1000);
                return false; 
-           }*/
-
-           
+             }*/
+             
+             /*Slowdown Scroll*/
+             $(document).ready(function(){
+             	$("a").on('click', function(event) {
+             		if (this.hash !== "") {
+             			event.preventDefault();
+             			var hash = this.hash;
+             			$('html, body').animate({
+             				scrollTop: $(hash).offset().top
+             			}, 800, function(){
+             				window.location.hash = hash;
+             			});
+             		} 
+             	});
+             });

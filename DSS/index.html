@@ -140,22 +140,7 @@
     </script>
     <!-- Main JS -->
     <script src="js/jsDSS.js"></script>
-    <!-- Slowdown Scroll -->
-    <script>
-      $(document).ready(function(){
-        $("a").on('click', function(event) {
-          if (this.hash !== "") {
-            event.preventDefault();
-            var hash = this.hash;
-            $('html, body').animate({
-              scrollTop: $(hash).offset().top
-            }, 800, function(){
-              window.location.hash = hash;
-            });
-          } 
-        });
-      });
-    </script>
+    
  		<!--<script type="text/javascript">
  			$(document).on('scroll', function(){
  				$('h1').css("left", Math.max(500 - 0.35*window:scrollY) + "px");
