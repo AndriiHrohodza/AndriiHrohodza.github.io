@@ -31,12 +31,7 @@ const scene = new ScrollMagic.Scene({
 .addTo(controller);*/
 
 $(document).ready(function(){
-
-
-
-// build tween
-var tween = TweenMax.staggerFromTo(".features-content", 2, {left: 900}, {left: -900, easeInOut: Back.easeOut}, 0.15);
-
+var controller = new ScrollMagic.Controller();
 // pin 
 var pinFeatureScene = new ScrollMagic.Scene({
 	triggerElement: '#features-pin',
@@ -44,19 +39,10 @@ var pinFeatureScene = new ScrollMagic.Scene({
 	duration: '100%'
 })
 .setPin('#features-pin')
-.setTween(tween)
+.setTween(TweenMax.staggerFromTo(".features-content", 2, {left: 900}, {left: -900, easeInOut: Back.easeOut}, 0.15))
 .addIndicators({name: "pin"})
 .addTo(controller);
 
-var controller = new ScrollMagic.Controller();
-	// build scene
-	var scene = new ScrollMagic.Scene({
-		triggerElement: "#scroll-trigger",
-		duration: 700,
-		triggerHook: 0.7
-	})
-	.setTween(tween)
-	.addTo(controller);
 });
 
 

@@ -259,8 +259,8 @@ main {
             transform: scale(1);
   }
   100% {
-    -webkit-transform: scale(1.2);
-            transform: scale(1.2);
+    -webkit-transform: scale(1.15);
+            transform: scale(1.15);
   }
 }
 @keyframes crescendo {
@@ -269,8 +269,8 @@ main {
             transform: scale(1);
   }
   100% {
-    -webkit-transform: scale(1.2);
-            transform: scale(1.2);
+    -webkit-transform: scale(1.15);
+            transform: scale(1.15);
   }
 }
 .description-content__img:before {
@@ -337,8 +337,8 @@ main {
 .img-scale {
   -webkit-animation-name: crescendo;
           animation-name: crescendo;
-  -webkit-animation-duration: 5s;
-          animation-duration: 5s;
+  -webkit-animation-duration: 10s;
+          animation-duration: 10s;
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards;
   -webkit-animation-timing-function: linear;
