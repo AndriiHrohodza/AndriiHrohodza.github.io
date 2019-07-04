@@ -34,18 +34,18 @@ const scene = new ScrollMagic.Scene({
 var controller = new ScrollMagic.Controller();
 
 // build tween
-	var tween = TweenMax.staggerFromTo(".features-content", 2, {left: 900}, {left: -window.innerWidth, ease: Back.easeOut}, 0.15);
+	var tween = TweenMax.staggerFromTo(".features-content", 2, {left: 900}, {left: -window.innerWidth, easeInOut: Back.easeOut}, 0.15);
 
 	// build scene
 	var scene = new ScrollMagic.Scene({
 		triggerElement: "#scroll-trigger",
-		duration: 1200,
+		duration: 700,
 		triggerHook: 0.7
 
 	})
 					.setTween(tween)
-					/*.addIndicators({name: "staggering"}) // add indicators (requires plugin)*/
-					/*.setPin('.features')*/
+					.addIndicators({name: "staggering"}) // add indicators (requires plugin)
+					.setPin('.features')
 					.addTo(controller);
 
 /*Scroll*/
@@ -73,22 +73,23 @@ var controller = new ScrollMagic.Controller();
 
              	/*Animation*/
              	var controller = new ScrollMagic.Controller();
-             	//text animation
+
+             	//Text animation
              	var ourScene = new ScrollMagic.Scene({
              		triggerElement: '#trigger',
              		reverse: true
              	})
-             	.setClassToggle('#scrollmagic', 'fade-in')
+             	.setClassToggle('#text-magic', 'fade-in')
              	/*.addIndicators()*/
              	.addTo(controller);
 
-             //img animation
+             //Img animation
              var ourScene2 = new ScrollMagic.Scene({
              	triggerElement: '#trigger',
              	reverse: true
              })
              .setClassToggle('#img-magic img', 'img-scale')
-             /*.addIndicators()*/
+             .addIndicators()
              .addTo(controller);
 
              //slider animation

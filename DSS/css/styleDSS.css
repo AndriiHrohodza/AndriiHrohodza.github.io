@@ -307,12 +307,19 @@ main {
   margin: 0 ;
   font-size: 3.020833333333333vw;
   font-weight: 800;
+  /*opacity: 0;
+		 transform: translateY(15rem);
+		 transition: all 2s ease;*/
 }
 .description-content__text p {
   font-size: 1.09375vw;
   margin-top: 3.243243243243243vh;
   word-spacing: 0.2604166666666667vw;
   line-height: 160%;
+  /*opacity: 0;*/
+  /*transform: translateY(15rem);
+			animation-delay: 3s;
+			transition: all 2s ease;*/
 }
 .description-content__text .cinetype {
   font-family: 'GT Cinetype Mono';
@@ -352,6 +359,7 @@ main {
   display: -ms-flexbox;
   display: flex;
   color: white;
+  height: 35rem;
 }
 .features-content__items {
   display: -webkit-box;
