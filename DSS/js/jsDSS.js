@@ -30,82 +30,36 @@ const scene = new ScrollMagic.Scene({
 .setPin('.features')
 .addTo(controller);*/
 
+$(document).ready(function(){
 
-var controller = new ScrollMagic.Controller();
+
+
+// build tween
+var tween = TweenMax.staggerFromTo(".features-content", 2, {left: 900}, {left: -900, easeInOut: Back.easeOut}, 0.15);
+
 // pin 
 var pinFeatureScene = new ScrollMagic.Scene({
-		triggerElement: '#features-pin',
-		triggerHook: 0.3,
-		duration: '100%'
+	triggerElement: '#features-pin',
+	triggerHook: 0.3,
+	duration: '100%'
 })
 .setPin('#features-pin')
-.setTween(TweenMax.staggerFromTo(".features-content", 2, {left: 900}, {left: -900, easeInOut: Back.easeOut}, 0.15))
+.setTween(tween)
 .addIndicators({name: "pin"})
 .addTo(controller);
 
-/*// build tween
-	var tween = TweenMax.staggerFromTo(".features-content", 2, {left: 900}, {left: -900, easeInOut: Back.easeOut}, 0.15);*/
-
+var controller = new ScrollMagic.Controller();
 	// build scene
 	var scene = new ScrollMagic.Scene({
 		triggerElement: "#scroll-trigger",
 		duration: 700,
 		triggerHook: 0.7
-
 	})
-					.setTween(tween)
-					/*.addIndicators({name: "staggering"})*/ // add indicators (requires plugin)
-					/*.setPin('#features-pin')*/
-					.addTo(controller);
-
-/*Scroll*/
-/*function slowScroll(id) { 
-               var offset = 0;
-               $('html, body').animate({ 
-                    scrollTop: $(id).offset().top - offset 
-               }, 1000);
-               return false; 
-             }*/
-             
-             /*Slowdown Scroll*/
-             $(document).ready(function(){
-             	$("a").on('click', function(event) {
-             		if (this.hash !== "") {
-             			event.preventDefault();
-             			var hash = this.hash;
-             			$('html, body').animate({
-             				scrollTop: $(hash).offset().top
-             			}, 800, function(){
-             				window.location.hash = hash;
-             			});
-             		} 
-             	});
-
-             	/*Animation*/
-             	var controller = new ScrollMagic.Controller();
-
-             	//Text animation
-             	var ourScene = new ScrollMagic.Scene({
-             		triggerElement: '#trigger',
-             		reverse: true
-             	})
-             	.setClassToggle('#text-magic', 'fade-in')
-             	/*.addIndicators()*/
-             	.addTo(controller);
-
-             //Img animation
-             var ourScene2 = new ScrollMagic.Scene({
-             	triggerElement: '#trigger',
-             	reverse: true
-             })
-             .setClassToggle('#img-magic img', 'img-scale')
-             .addIndicators()
-             .addTo(controller);
-
-             //slider animation
+	.setTween(tween)
+	.addTo(controller);
+});
 
 
-           });
+	
 
-             
-     
+
