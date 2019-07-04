@@ -44,7 +44,7 @@
 }
 .wrap {
   height: 100vh;
-  background: url(../img/photo_back.png) center -13rem no-repeat;
+  background: url(../img/photo_back.png) center center no-repeat;
   background-size: cover;
 }
 /*btn*/
@@ -224,8 +224,8 @@ main {
 }
 /*Primary-animation*/
 .cssanimation {
-  -webkit-animation-duration: 1s;
-          animation-duration: 1s;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
   -webkit-animation-fill-mode: both;
           animation-fill-mode: both;
 }
@@ -239,6 +239,7 @@ main {
 }
 .wipe {
   height: 0;
+  overflow: hidden;
   margin: 0 auto;
   -webkit-animation-name: wipe;
           animation-name: wipe;
