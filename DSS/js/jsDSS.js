@@ -87,7 +87,7 @@ var controller = new ScrollMagic.Controller();
              	triggerElement: '#trigger',
              	reverse: true
              })
-             .setClassToggle('#img-magic', 'img-scale')
+             .setClassToggle('#img-magic img', 'img-scale')
              /*.addIndicators()*/
              .addTo(controller);
 
