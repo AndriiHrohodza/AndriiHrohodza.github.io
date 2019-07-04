@@ -44,7 +44,7 @@
 }
 .wrap {
   height: 100vh;
-  background: url(../img/Rectangle.jpg) center no-repeat;
+  background: url(../img/photo_back.png) center no-repeat;
   background-size: cover;
 }
 /*btn*/
@@ -219,8 +219,8 @@ main {
   height: 2.762162162162162vh;
 }
 .sub-text {
-  height: 26vh;
-  margin-top: 1.666666666666667vw;
+  height: 21vh;
+  margin-top: 0.666666666666667vw;
 }
 /*Primary-animation*/
 .cssanimation {
@@ -239,26 +239,24 @@ main {
 }
 .wipe {
   height: 0;
-  overflow: hidden;
   margin: 0 auto;
   -webkit-animation-name: wipe;
           animation-name: wipe;
 }
 .wipe-two {
   height: 0;
-  overflow: hidden;
   margin: 0 auto;
   -webkit-animation-name: wipe-two;
           animation-name: wipe-two;
 }
 @-webkit-keyframes wipe {
   to {
-    height: 8.66666667vh;
+    height: 6.94594595vh;
   }
 }
 @keyframes wipe {
   to {
-    height: 8.66666667vh;
+    height: 6.94594595vh;
   }
 }
 @-webkit-keyframes wipe-two {
