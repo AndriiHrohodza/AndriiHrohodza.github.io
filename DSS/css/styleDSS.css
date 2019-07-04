@@ -44,7 +44,7 @@
 }
 .wrap {
   height: 100vh;
-  background: url(../img/photo_back.png) center no-repeat;
+  background: url(../img/photo_back.png) center -13rem no-repeat;
   background-size: cover;
 }
 /*btn*/
