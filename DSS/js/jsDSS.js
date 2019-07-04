@@ -32,9 +32,19 @@ const scene = new ScrollMagic.Scene({
 
 
 var controller = new ScrollMagic.Controller();
+// pin 
+var pinFeatureScene = new ScrollMagic.Scene({
+		triggerElement: '#features-pin',
+		triggerHook: 0.3,
+		duration: '100%'
+})
+.setPin('#features-pin')
+.setTween(TweenMax.staggerFromTo(".features-content", 2, {left: 900}, {left: -900, easeInOut: Back.easeOut}, 0.15))
+.addIndicators({name: "pin"})
+.addTo(controller);
 
-// build tween
-	var tween = TweenMax.staggerFromTo(".features-content", 2, {left: 900}, {left: -window.innerWidth, easeInOut: Back.easeOut}, 0.15);
+/*// build tween
+	var tween = TweenMax.staggerFromTo(".features-content", 2, {left: 900}, {left: -900, easeInOut: Back.easeOut}, 0.15);*/
 
 	// build scene
 	var scene = new ScrollMagic.Scene({
@@ -44,8 +54,8 @@ var controller = new ScrollMagic.Controller();
 
 	})
 					.setTween(tween)
-					.addIndicators({name: "staggering"}) // add indicators (requires plugin)
-					.setPin('.features')
+					/*.addIndicators({name: "staggering"})*/ // add indicators (requires plugin)
+					/*.setPin('#features-pin')*/
 					.addTo(controller);
 
 /*Scroll*/
