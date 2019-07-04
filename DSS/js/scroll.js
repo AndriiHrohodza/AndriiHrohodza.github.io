@@ -30,6 +30,6 @@
              	reverse: true
              })
              .setClassToggle('#img-magic img', 'img-scale')
-             .addIndicators()
+             /*.addIndicators()*/
              .addTo(controller);
            });
