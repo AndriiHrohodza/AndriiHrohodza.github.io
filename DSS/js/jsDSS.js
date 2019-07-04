@@ -30,7 +30,7 @@ const scene = new ScrollMagic.Scene({
 .setPin('.features')
 .addTo(controller);*/
 
-/*Animation Scroll*/
+/*Features-scroll */
 $(document).ready(function(){
 var controller = new ScrollMagic.Controller();
 // pin 
@@ -44,8 +44,6 @@ var pinFeatureScene = new ScrollMagic.Scene({
 /*.addIndicators({name: "pin"})*/
 .addTo(controller);
 });
-
-/**/
 
 
 	

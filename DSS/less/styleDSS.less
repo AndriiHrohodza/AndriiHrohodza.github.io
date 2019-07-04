@@ -193,10 +193,13 @@ main {
 			font-size: 1.09375vw;
 			margin: 0;
 			.Cinetype-Mono();
-			margin-bottom: 0.78125vw;
+			
 			color: @btn-color;
-			opacity: 0;
-			animation: fadeInUp 1s ease-in-out 0s forwards;
+			/*height: 0;
+			overflow: hidden; 
+			animation-duration: 2s;
+			animation-fill-mode: both;  
+			animation-name: wipe-two;*/
 		}
 		h2 {
 			margin: 0;
@@ -204,8 +207,12 @@ main {
 			/*width: 65%;*/
 			font-weight: 800;
 			color: @btn-color;
-			opacity: 0;
-			animation: fadeInUp .8s ease 0.2s forwards;
+			/*height: 0;
+			overflow: hidden; 
+			animation-duration: 3s;
+			animation-fill-mode: both;  
+			animation-name: wipe;*/
+			
 
 		}
 		button {
@@ -216,6 +223,45 @@ main {
 			color: #252525;
 		}
 }
+.sup-text {
+	height: 2.762162162162162vh;
+}
+.sub-text {
+	height: 26vh;
+	margin-top: 1.666666666666667vw;
+}
+
+/*Primary-animation*/
+.cssanimation {
+    animation-duration: 1s;
+    animation-fill-mode: both;
+}
+.cssanimation-delay {
+    animation-duration: 1s;
+    animation-delay: 0.4s;
+    animation-fill-mode: both;
+}
+.wipe {
+    height: 0;
+    overflow: hidden;
+    margin: 0 auto;   
+    animation-name: wipe;
+}
+.wipe-two {
+
+	height: 0;
+	overflow: hidden;
+	margin: 0 auto;   
+	animation-name: wipe-two;
+}
+@keyframes wipe {
+    to { height: 8.666666666666667vh }
+}
+@keyframes wipe-two {
+    to { height: 2.752252252252252vh }
+}
+
+
 
 /*Scroll*/
 .scroll {
@@ -283,25 +329,21 @@ main {
 		display: flex;
 		align-items: center;
 		opacity: 1;
-		transform: translateY(15rem);
-		transition: all 2s ease;
+		/*transform: translateY(15rem);
+		transition: all 2s ease;*/
 		h3 {
 		 margin: 0 ;
 		 font-size: 3.020833333333333vw;
 		 font-weight: 800; 
-		 /*opacity: 0;
-		 transform: translateY(15rem);
-		 transition: all 2s ease;*/
+		 
 		}
 		p {
 			font-size: 1.09375vw;
 			margin-top: 3.243243243243243vh;
 			word-spacing: 0.2604166666666667vw;
 			line-height: 160%;
-			/*opacity: 0;*/
-			/*transform: translateY(15rem);
-			animation-delay: 3s;
-			transition: all 2s ease;*/
+			width: 100%;
+			
 		}
 		.cinetype {
 			.Cinetype-Mono();
@@ -323,6 +365,20 @@ main {
 				animation-fill-mode: forwards;
 				animation-timing-function: linear;
 				animation-iteration-count: normal;
+}
+/*Text-animation*/
+/*.char{
+	animation: an 1s ease-out 1 both;
+}
+@keyframes an{
+	from{
+		opacity: 0;
+		transform: perspective(500px) translate3d(-35px, -40px, -150px) rotate3d(1, -1, 0, 35deg);
+	}
+	to{
+		opacity: 1;
+		transform: perspective(500px) translate3d(0, 0, 0);
+	}
 }
 
 

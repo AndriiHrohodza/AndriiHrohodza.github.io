@@ -189,11 +189,12 @@ main {
   font-size: 1.09375vw;
   margin: 0;
   font-family: 'GT Cinetype Mono';
-  margin-bottom: 0.78125vw;
   color: #ffffff;
-  opacity: 0;
-  -webkit-animation: fadeInUp 1s ease-in-out 0s forwards;
-          animation: fadeInUp 1s ease-in-out 0s forwards;
+  /*height: 0;
+			overflow: hidden; 
+			animation-duration: 2s;
+			animation-fill-mode: both;  
+			animation-name: wipe-two;*/
 }
 .primary h2 {
   margin: 0;
@@ -201,9 +202,11 @@ main {
   /*width: 65%;*/
   font-weight: 800;
   color: #ffffff;
-  opacity: 0;
-  -webkit-animation: fadeInUp .8s ease 0.2s forwards;
-          animation: fadeInUp .8s ease 0.2s forwards;
+  /*height: 0;
+			overflow: hidden; 
+			animation-duration: 3s;
+			animation-fill-mode: both;  
+			animation-name: wipe;*/
 }
 .primary button {
   margin-top: 5vw;
@@ -211,6 +214,62 @@ main {
 .primary a {
   text-decoration: none;
   color: #252525;
+}
+.sup-text {
+  height: 2.762162162162162vh;
+}
+.sub-text {
+  height: 26vh;
+  margin-top: 1.666666666666667vw;
+}
+/*Primary-animation*/
+.cssanimation {
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+}
+.cssanimation-delay {
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-delay: 0.4s;
+          animation-delay: 0.4s;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+}
+.wipe {
+  height: 0;
+  overflow: hidden;
+  margin: 0 auto;
+  -webkit-animation-name: wipe;
+          animation-name: wipe;
+}
+.wipe-two {
+  height: 0;
+  overflow: hidden;
+  margin: 0 auto;
+  -webkit-animation-name: wipe-two;
+          animation-name: wipe-two;
+}
+@-webkit-keyframes wipe {
+  to {
+    height: 8.66666667vh;
+  }
+}
+@keyframes wipe {
+  to {
+    height: 8.66666667vh;
+  }
+}
+@-webkit-keyframes wipe-two {
+  to {
+    height: 2.75225225vh;
+  }
+}
+@keyframes wipe-two {
+  to {
+    height: 2.75225225vh;
+  }
 }
 /*Scroll*/
 .scroll {
@@ -298,28 +357,20 @@ main {
       -ms-flex-align: center;
           align-items: center;
   opacity: 1;
-  -webkit-transform: translateY(15rem);
-          transform: translateY(15rem);
-  -webkit-transition: all 2s ease;
-  transition: all 2s ease;
+  /*transform: translateY(15rem);
+		transition: all 2s ease;*/
 }
 .description-content__text h3 {
   margin: 0 ;
   font-size: 3.020833333333333vw;
   font-weight: 800;
-  /*opacity: 0;
-		 transform: translateY(15rem);
-		 transition: all 2s ease;*/
 }
 .description-content__text p {
   font-size: 1.09375vw;
   margin-top: 3.243243243243243vh;
   word-spacing: 0.2604166666666667vw;
   line-height: 160%;
-  /*opacity: 0;*/
-  /*transform: translateY(15rem);
-			animation-delay: 3s;
-			transition: all 2s ease;*/
+  width: 100%;
 }
 .description-content__text .cinetype {
   font-family: 'GT Cinetype Mono';
@@ -346,6 +397,22 @@ main {
   -webkit-animation-iteration-count: normal;
           animation-iteration-count: normal;
 }
+/*Text-animation*/
+/*.char{
+	animation: an 1s ease-out 1 both;
+}
+@keyframes an{
+	from{
+		opacity: 0;
+		transform: perspective(500px) translate3d(-35px, -40px, -150px) rotate3d(1, -1, 0, 35deg);
+	}
+	to{
+		opacity: 1;
+		transform: perspective(500px) translate3d(0, 0, 0);
+	}
+}
+
+
 /*Main__features*/
 .features {
   position: relative;
