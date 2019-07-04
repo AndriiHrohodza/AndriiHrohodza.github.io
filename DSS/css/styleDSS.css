@@ -245,6 +245,7 @@ main {
 }
 .wipe-two {
   height: 0;
+  overflow: hidden;
   margin: 0 auto;
   -webkit-animation-name: wipe-two;
           animation-name: wipe-two;
