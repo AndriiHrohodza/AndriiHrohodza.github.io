@@ -305,8 +305,7 @@ main {
           animation-delay: 0.5s;
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards;
-  -webkit-animation-name: description-text-animation;
-          animation-name: description-text-animation;
+  /*animation-name: description-text-animation;*/
 }
 .description-content__text p {
   font-size: 1.09375vw;
@@ -322,8 +321,7 @@ main {
           animation-delay: 0.5s;
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards;
-  -webkit-animation-name: description-text-animation;
-          animation-name: description-text-animation;
+  /*animation-name: description-text-animation;*/
 }
 .description-text-wrapper > div:nth-child(1) {
   overflow: hidden;
@@ -361,14 +359,6 @@ main {
           animation-iteration-count: normal;
 }
 .text-animation {
-  -webkit-transform: translateY(5rem);
-          transform: translateY(5rem);
-  -webkit-animation-duration: 1s;
-          animation-duration: 1s;
-  -webkit-animation-delay: 0.5s;
-          animation-delay: 0.5s;
-  -webkit-animation-fill-mode: forwards;
-          animation-fill-mode: forwards;
   -webkit-animation-name: description-text-animation;
           animation-name: description-text-animation;
 }
