@@ -3,9 +3,9 @@ var _win = $(window),
    _cAF = window.cancelAnimationFrame,
    _AF = undefined,
    _log = $('.log'),
-   _scroll_time = 2000,
+   _scroll_time = 500,
    _isMac = /Mac/i.test(navigator.userAgent),
-   _scroll_distance = 500;
+   _scroll_distance = 300;
 
 console.log(_isMac);
 
