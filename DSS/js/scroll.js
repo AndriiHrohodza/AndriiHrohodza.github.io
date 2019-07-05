@@ -21,7 +21,7 @@ $(document).ready(function(){
              		reverse: true
              	})
              	.setClassToggle('#text-magic', 'text-animation')
-             	.addIndicators()
+             	/*.addIndicators()*/
              	.addTo(controller);
 
              //Img animation
