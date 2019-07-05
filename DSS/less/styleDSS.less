@@ -67,7 +67,7 @@
 }
 .wrap {
 	height: 100vh;
-	background: url(../img/photo_back.png) center center no-repeat;
+	background: url(../img/photo_back.png) center no-repeat;
 	background-size: cover;
 }
 
@@ -150,19 +150,20 @@ body {
 	}
 	.header-item:nth-child(4) {
 		padding-right: 0;
+		position: relative;
 	}
 	.form:after {
 		content: " + ";
 		display: block;
 		text-align: center;
-		line-height: 2rem;
-		width: 2rem;
-		height: 2rem;
+		line-height: 1.801801801801802vh;
+		width: 1.041666666666667vw;
+		height: 1.801801801801802vh;
 		color: @btn-color;
 		/*background-color: red;*/
 		position: absolute;
-		top: 50%;
-		right: -5%;
+		top: 0.675vw;
+		left: 4.6875vw;
 		transform: translateY(-50%);
 		cursor: pointer;
 	}
@@ -193,28 +194,23 @@ main {
 			font-size: 1.09375vw;
 			margin: 0;
 			.Cinetype-Mono();
-			
 			color: @btn-color;
-			/*height: 0;
-			overflow: hidden; 
-			animation-duration: 2s;
-			animation-fill-mode: both;  
-			animation-name: wipe-two;*/
+			transform: translateY(8rem);
+			animation-duration: 1s; 
+			animation-fill-mode: both;
+			animation-name: sup-text-animation;
 		}
 		h2 {
 			margin: 0;
 			font-size: 3.020833333333333vw;
-			/*width: 65%;*/
 			font-weight: 800;
 			color: @btn-color;
-			/*height: 0;
-			overflow: hidden; 
-			animation-duration: 3s;
-			animation-fill-mode: both;  
-			animation-name: wipe;*/
-			
-
+			transform: translateY(8rem);
+			animation-duration: 2s; 
+			animation-fill-mode: both;
+			animation-name: sub-text-animation;
 		}
+
 		button {
 			margin-top: 5vw;
 		}
@@ -223,45 +219,42 @@ main {
 			color: #252525;
 		}
 }
-.sup-text {
-	height: 2.762162162162162vh;
+.sup-item {
+	overflow: hidden;
 }
-.sub-text {
-	height: 21vh;
+.sub-item {
 	margin-top: 0.666666666666667vw;
+	&__text {
+		overflow: hidden;
+		padding-bottom: 1vh;
+	}
+	&__text:nth-child(2) h2{
+		animation-delay: 1s;
+
+	}
+	&__text:nth-child(3) h2{
+		animation-delay: 1.5s;
+	}
 }
 
 /*Primary-animation*/
-.cssanimation {
-    animation-duration: 2s;
-    animation-fill-mode: both;
-}
-.cssanimation-delay {
+/*.cssanimation-sup {
     animation-duration: 1s;
     animation-delay: 0.4s;
     animation-fill-mode: both;
-}
-.wipe {
-    height: 0;
-		overflow: hidden;
-    margin: 0 auto;   
-    animation-name: wipe;
-}
-.wipe-two {
-
+}*/
+/*.wipe-sup {
 	height: 0;
 	overflow: hidden;
 	margin: 0 auto;   
 	animation-name: wipe-two;
+}*/
+@keyframes sub-text-animation {
+    to { transform: translateY(0) }
 }
-@keyframes wipe {
-    to { height: 6.945945945945946vh }
+@keyframes sup-text-animation {
+    to { transform: translateY(0) }
 }
-@keyframes wipe-two {
-    to { height: 2.752252252252252vh }
-}
-
-
 
 /*Scroll*/
 .scroll {

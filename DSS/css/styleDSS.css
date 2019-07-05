@@ -44,7 +44,7 @@
 }
 .wrap {
   height: 100vh;
-  background: url(../img/photo_back.png) center center no-repeat;
+  background: url(../img/photo_back.png) center no-repeat;
   background-size: cover;
 }
 /*btn*/
@@ -135,19 +135,20 @@ body {
 }
 .header__section-nav .header-item:nth-child(4) {
   padding-right: 0;
+  position: relative;
 }
 .header__section-nav .form:after {
   content: " + ";
   display: block;
   text-align: center;
-  line-height: 2rem;
-  width: 2rem;
-  height: 2rem;
+  line-height: 1.801801801801802vh;
+  width: 1.041666666666667vw;
+  height: 1.801801801801802vh;
   color: #ffffff;
   /*background-color: red;*/
   position: absolute;
-  top: 50%;
-  right: -5%;
+  top: 0.675vw;
+  left: 4.6875vw;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
   cursor: pointer;
@@ -190,23 +191,28 @@ main {
   margin: 0;
   font-family: 'GT Cinetype Mono';
   color: #ffffff;
-  /*height: 0;
-			overflow: hidden; 
-			animation-duration: 2s;
-			animation-fill-mode: both;  
-			animation-name: wipe-two;*/
+  -webkit-transform: translateY(8rem);
+          transform: translateY(8rem);
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+  -webkit-animation-name: sup-text-animation;
+          animation-name: sup-text-animation;
 }
 .primary h2 {
   margin: 0;
   font-size: 3.020833333333333vw;
-  /*width: 65%;*/
   font-weight: 800;
   color: #ffffff;
-  /*height: 0;
-			overflow: hidden; 
-			animation-duration: 3s;
-			animation-fill-mode: both;  
-			animation-name: wipe;*/
+  -webkit-transform: translateY(8rem);
+          transform: translateY(8rem);
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+  -webkit-animation-name: sub-text-animation;
+          animation-name: sub-text-animation;
 }
 .primary button {
   margin-top: 5vw;
@@ -215,60 +221,58 @@ main {
   text-decoration: none;
   color: #252525;
 }
-.sup-text {
-  height: 2.762162162162162vh;
+.sup-item {
+  overflow: hidden;
 }
-.sub-text {
-  height: 21vh;
+.sub-item {
   margin-top: 0.666666666666667vw;
 }
+.sub-item__text {
+  overflow: hidden;
+  padding-bottom: 1vh;
+}
+.sub-item__text:nth-child(2) h2 {
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
+}
+.sub-item__text:nth-child(3) h2 {
+  -webkit-animation-delay: 1.5s;
+          animation-delay: 1.5s;
+}
 /*Primary-animation*/
-.cssanimation {
-  -webkit-animation-duration: 2s;
-          animation-duration: 2s;
-  -webkit-animation-fill-mode: both;
-          animation-fill-mode: both;
-}
-.cssanimation-delay {
-  -webkit-animation-duration: 1s;
-          animation-duration: 1s;
-  -webkit-animation-delay: 0.4s;
-          animation-delay: 0.4s;
-  -webkit-animation-fill-mode: both;
-          animation-fill-mode: both;
-}
-.wipe {
-  height: 0;
-  overflow: hidden;
-  margin: 0 auto;
-  -webkit-animation-name: wipe;
-          animation-name: wipe;
-}
-.wipe-two {
-  height: 0;
-  overflow: hidden;
-  margin: 0 auto;
-  -webkit-animation-name: wipe-two;
-          animation-name: wipe-two;
-}
-@-webkit-keyframes wipe {
+/*.cssanimation-sup {
+    animation-duration: 1s;
+    animation-delay: 0.4s;
+    animation-fill-mode: both;
+}*/
+/*.wipe-sup {
+	height: 0;
+	overflow: hidden;
+	margin: 0 auto;   
+	animation-name: wipe-two;
+}*/
+@-webkit-keyframes sub-text-animation {
   to {
-    height: 6.94594595vh;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
   }
 }
-@keyframes wipe {
+@keyframes sub-text-animation {
   to {
-    height: 6.94594595vh;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
   }
 }
-@-webkit-keyframes wipe-two {
+@-webkit-keyframes sup-text-animation {
   to {
-    height: 2.75225225vh;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
   }
 }
-@keyframes wipe-two {
+@keyframes sup-text-animation {
   to {
-    height: 2.75225225vh;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
   }
 }
 /*Scroll*/
