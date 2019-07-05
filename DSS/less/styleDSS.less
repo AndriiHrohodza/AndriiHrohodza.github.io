@@ -87,9 +87,7 @@
 }
 .btn:hover {
 	letter-spacing: 0.125rem;
-
 }
-
 * {
 	box-sizing: border-box;
 	margin: 0;
@@ -160,7 +158,6 @@ body {
 		width: 1.041666666666667vw;
 		height: 1.801801801801802vh;
 		color: @btn-color;
-		/*background-color: red;*/
 		position: absolute;
 		top: 0.675vw;
 		left: 4.6875vw;
@@ -174,19 +171,7 @@ body {
 main {
 	width: 100%;
 }
-/*Animation*/
-@keyframes fadeInUp {
-  from { 
-    opacity: 0;
-    -webkit-transform: translate3d(0, 100%, 0);
-    transform: translate3d(0, 100%, 0);
-  }
-  to {
-    opacity: 1;
-    -webkit-transform: none;
-    transform: none;
-  }
-}
+
 /*Main__Primary*/
 .primary {
 	width: 100%;
@@ -249,12 +234,6 @@ main {
 	margin: 0 auto;   
 	animation-name: wipe-two;
 }*/
-@keyframes sub-text-animation {
-    to { transform: translateY(0) }
-}
-@keyframes sup-text-animation {
-    to { transform: translateY(0) }
-}
 
 /*Scroll*/
 .scroll {
@@ -280,7 +259,6 @@ main {
 	padding-bottom: 22.39583333333333vw;
 	
 }
-
 .description-content {
 	display: flex;
 	color: white;
@@ -294,14 +272,8 @@ main {
 		img {
 			width: 39.84375vw;
 			height: 100%;
-			
 		}
-	}
-	/*Animation*/
-	@keyframes crescendo {
-	  0%   {transform: scale(1);}
-	  100% {transform: scale(1.15);}
-	}
+	}	
 	&__img:before {
 		content: '';
 		display: block;
@@ -328,7 +300,11 @@ main {
 		 margin: 0 ;
 		 font-size: 3.020833333333333vw;
 		 font-weight: 800; 
-		 
+		 transform: translateY(100%);
+		 animation-duration: 1s; 
+		 animation-delay: 0.5s;
+		 animation-fill-mode: forwards;
+		 animation-name: description-text-animation;
 		}
 		p {
 			font-size: 1.09375vw;
@@ -336,42 +312,48 @@ main {
 			word-spacing: 0.2604166666666667vw;
 			line-height: 160%;
 			width: 100%;
-			
-		}
-		.cinetype {
-			.Cinetype-Mono();
+			transform: translateY(100%);
+			animation-duration: 1s; 
+			animation-delay: 0.5s;
+			animation-fill-mode: forwards;
+			animation-name: description-text-animation;
 		}
 	}
 }
-.wrap-main {
+.description-text-wrapper > div:nth-child(1) {
+	overflow: hidden;
+}
+.description-text-wrapper > div:nth-child(2) {
+	.Cinetype-Mono();
+	overflow: hidden;
+}
+.description-text-wrapper > div:nth-child(3) {
+	overflow: hidden;
+}
+.description-text-wrapper > div:nth-child(2) p{
+	animation-delay: 1s;
+}
+.description-text-wrapper > div:nth-child(3) p{
+	transform: translateY(180%);
+	animation-delay: 1.3s;
+}
+
+.wrap-description {
 	background-color: #1D1D1D;
 }
-/*Animation fade-in*/
-.fade-in {
-	opacity: 1;
-	transform: translateY(0);
-}
-/*img animation*/
 .img-scale {
-	animation-name: crescendo;
-				animation-duration: 10s;
-				animation-fill-mode: forwards;
-				animation-timing-function: linear;
-				animation-iteration-count: normal;
+	animation-name: scale;
+	animation-duration: 10s;
+	animation-fill-mode: forwards;
+	animation-timing-function: linear;
+	animation-iteration-count: normal;
 }
-/*Text-animation*/
-/*.char{
-	animation: an 1s ease-out 1 both;
-}
-@keyframes an{
-	from{
-		opacity: 0;
-		transform: perspective(500px) translate3d(-35px, -40px, -150px) rotate3d(1, -1, 0, 35deg);
-	}
-	to{
-		opacity: 1;
-		transform: perspective(500px) translate3d(0, 0, 0);
-	}
+.text-animation {
+	transform: translateY(5rem);
+	animation-duration: 1s; 
+	animation-delay: 0.5s;
+	animation-fill-mode: forwards;
+	animation-name: description-text-animation;
 }
 
 
@@ -428,28 +410,29 @@ main {
 }
 
 
+/*Animations*/
+	/*Primary*/
+		@keyframes sub-text-animation {
+    	to { transform: translateY(0) }
+		}
+		@keyframes sup-text-animation {
+    	to { transform: translateY(0) }
+		}
+
+	/*Company-description*/
+		/*Img*/
+		@keyframes scale {
+	 	 0%   {transform: scale(1);}
+	  	100% {transform: scale(1.15);}
+		}
+		/*text*/
+		@keyframes description-text-animation {
+    	to { transform: translateY(0) }
+		}
 
 
 
 
-
-/*about-company*/
-.about-company{
-	height: 50rem;
-	background-color: red;
-
-	/*display: flex;
-	justify-content: center;
-	align-items: center;*/
-	font-size: 2.5rem;
-	position: relative;
-	overflow: hidden;
-	.animation {
-		position: absolute;
-		bottom: 50%;
-		left: 50%;
-	}
-}
 
 /*Footer*/
 .footer {
