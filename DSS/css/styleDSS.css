@@ -477,6 +477,19 @@ main {
             transform: translateY(0);
   }
 }
+/*Scroll bg*/
+.wrap-bg {
+  background: #1D1D1D;
+  z-index: 999;
+}
+/*Button none*/
+.button-none {
+  opacity: 0;
+}
+/*Scroll-down-none*/
+.scroll-down-none {
+  opacity: 0;
+}
 /*Footer*/
 .footer {
   height: 90rem;

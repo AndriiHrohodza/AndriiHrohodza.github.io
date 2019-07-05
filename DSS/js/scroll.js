@@ -32,4 +32,37 @@ $(document).ready(function(){
              .setClassToggle('#img-magic img', 'img-scale')
              /*.addIndicators()*/
              .addTo(controller);
+
+             /*Scroll bg*/
+             var ourScene2 = new ScrollMagic.Scene({
+                  triggerElement: '#trigger',
+                  reverse: true,
+                  triggerHook: 0.4
+             })
+             .setClassToggle('#wrap-trigger', 'wrap-bg')
+             .addIndicators()
+             .addTo(controller);
+
+             /*Buttom none*/
+             var ourScene2 = new ScrollMagic.Scene({
+                  triggerElement: '#trigger',
+                  reverse: true,
+                  triggerHook: 0.4
+             })
+             .setClassToggle('#button-trigger', 'button-none')
+             .addIndicators()
+             .addTo(controller);
+
+             /*Scroll-down none*/
+             var ourScene2 = new ScrollMagic.Scene({
+                  triggerElement: '#trigger',
+                  reverse: true,
+                  triggerHook: 0.4
+             })
+             .setClassToggle('#scroll-down-trigger', 'scroll-down-none')
+             .addIndicators()
+             .addTo(controller);
+
        });
+
+
