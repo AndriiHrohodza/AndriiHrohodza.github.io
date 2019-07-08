@@ -241,7 +241,7 @@ main {
   text-decoration: none;
   color: #ffffff;
 }
-/*Main__company-description*/
+/*Company-description*/
 .company-description {
   background-color: #1D1D1D;
   padding-top: 22.39583333333333vw;
@@ -362,7 +362,7 @@ main {
   -webkit-animation-name: description-text-animation;
           animation-name: description-text-animation;
 }
-/*Main__features*/
+/*Features*/
 .features {
   position: relative;
   background-color: #1D1D1D;
@@ -375,7 +375,7 @@ main {
   display: -ms-flexbox;
   display: flex;
   color: white;
-  height: 35rem;
+  height: 31.53153153153153vh;
 }
 .features-content__items {
   display: -webkit-box;
@@ -415,6 +415,68 @@ main {
 }
 .features-content__items:nth-child(3) {
   margin: 0;
+}
+/*Digital-Sourcing*/
+.digital-sourcing {
+  padding-top: 27.92792792792793vh;
+  display: block;
+  width: 100%;
+  margin-bottom: 16.2rem;
+}
+.digital-sourcing__text {
+  font-size: 3.020833333333333vw;
+  font-weight: 800;
+  margin-bottom: 9rem;
+}
+.digital-sourcing__text p:first-child {
+  margin-bottom: 1rem;
+}
+.digital-sourcing__content img {
+  width: 100%;
+}
+/*Services*/
+.services__sup-content,
+.services__sub-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 17rem;
+}
+.services__sup-content .items,
+.services__sub-content .items {
+  width: 32.91666666666667vw;
+}
+.services__sup-content .items .first-row,
+.services__sub-content .items .first-row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  margin-bottom: 3.8rem;
+}
+.services__sup-content .items .first-row p,
+.services__sub-content .items .first-row p {
+  font-size: 2.1rem;
+  font-family: 'GT Cinetype Mono';
+  line-height: 160%;
+}
+.services__sup-content .items .first-row span,
+.services__sub-content .items .first-row span {
+  font-size: 6rem;
+  font-family: 'GT Cinetype Mono';
+}
+.services__sup-content .items .second-row,
+.services__sub-content .items .second-row {
+  font-size: 2.1rem;
+  line-height: 160%;
 }
 /*Animations*/
 /*Primary*/

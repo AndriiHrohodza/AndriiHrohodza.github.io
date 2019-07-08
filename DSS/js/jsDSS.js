@@ -1,6 +1,6 @@
 
 /*Features-scroll */
-$(document).ready(function(){
+/*$(document).ready(function(){
 var controller = new ScrollMagic.Controller();
 // pin 
 var pinFeatureScene = new ScrollMagic.Scene({

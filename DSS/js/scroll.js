@@ -1,4 +1,4 @@
-/*Slowdown Scroll*/
+/*Primary-slow-down Scroll*/
 $(document).ready(function(){
   $("a").on('click', function(event) {
    if (this.hash !== "") {
@@ -15,47 +15,47 @@ $(document).ready(function(){
   /*Animation*/
   var controller = new ScrollMagic.Controller();
 
-             	//Text animation
+             	//Description-text animation
              	var ourScene = new ScrollMagic.Scene({
-             		triggerElement: '#trigger',
+             		triggerElement: '#description-trigger',
              		reverse: true
              	})
              	.setClassToggle('#text-magic', 'text-animation')
              	/*.addIndicators()*/
              	.addTo(controller);
 
-             //Img animation
+             //Description-img animation
              var ourScene2 = new ScrollMagic.Scene({
-             	triggerElement: '#trigger',
+             	triggerElement: '#description-trigger',
              	reverse: true
              })
              .setClassToggle('#img-magic img', 'img-scale')
              /*.addIndicators()*/
              .addTo(controller);
 
-             /*Scroll bg*/
+             /*Scroll primary-bg*/
              var ourScene2 = new ScrollMagic.Scene({
-                  triggerElement: '#trigger',
+                  triggerElement: '#description-trigger',
                   reverse: true,
                   triggerHook: 0.4
              })
              .setClassToggle('#wrap-trigger', 'wrap-bg')
-             .addIndicators()
+             /*.addIndicators()*/
              .addTo(controller);
 
-             /*Buttom none*/
+             /*Primary-btn none*/
              var ourScene2 = new ScrollMagic.Scene({
-                  triggerElement: '#trigger',
+                  triggerElement: '#description-trigger',
                   reverse: true,
                   triggerHook: 0.4
              })
-             .setClassToggle('#button-trigger', 'button-none')
+             .setClassToggle('#primary-button_trigger', 'button-none')
              .addIndicators()
              .addTo(controller);
 
-             /*Scroll-down none*/
+             /*Primary-scroll-down none*/
              var ourScene2 = new ScrollMagic.Scene({
-                  triggerElement: '#trigger',
+                  triggerElement: '#description-trigger',
                   reverse: true,
                   triggerHook: 0.4
              })
