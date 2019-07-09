@@ -348,9 +348,7 @@ main {
 	animation-timing-function: linear;
 	animation-iteration-count: normal;
 }
-.text-animation {
-	animation-name: description-text-animation;
-}
+
 
 
 /*Features*/
@@ -509,10 +507,10 @@ main {
 		 margin: 0 ;
 		 font-size: 3.020833333333333vw;
 		 font-weight: 800; 
-		 /*transform: translateY(100%);
+		 transform: translateY(100%);
 		 animation-duration: 1s; 
 		 animation-delay: 0.5s;
-		 animation-fill-mode: forwards;*/
+		 animation-fill-mode: forwards;
 		 /*animation-name: description-text-animation;*/
 		}
 		p {
@@ -522,10 +520,10 @@ main {
 			line-height: 160%;
 			width: 100%;
 			.Cinetype-Mono();
-			/*transform: translateY(100%);
+			transform: translateY(100%);
 			animation-duration: 1s; 
 			animation-delay: 0.5s;
-			animation-fill-mode: forwards;*/
+			animation-fill-mode: forwards;
 			/*animation-name: description-text-animation;*/
 		}
 	}
@@ -534,6 +532,23 @@ main {
 		color: @btn-color;
 		margin-top: 4.6875vw;
 	}
+}
+/*.contacts-text-wrapper > div:nth-child(1) {
+	overflow: hidden;
+}
+.contacts-text-wrapper > div:nth-child(2) {
+	.Cinetype-Mono();
+	overflow: hidden;
+}
+.contacts-text-wrapper > div:nth-child(3) {
+	overflow: hidden;
+}*/
+.contacts-text-wrapper > div:nth-child(2) p{
+	animation-delay: 1s;
+}
+.contacts-text-wrapper > div:nth-child(3) p{
+	transform: translateY(180%);
+	animation-delay: 1.3s;
 }
 
 /*Footer*/
@@ -609,6 +624,9 @@ main {
 
 
 /*Animations*/
+.text-animation {
+	animation-name: description-text-animation;
+}
 	/*Primary*/
 		@keyframes sub-text-animation {
     	to { transform: translateY(0) }

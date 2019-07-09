@@ -21,9 +21,19 @@ $(document).ready(function(){
              		reverse: true
              	})
              	.setClassToggle('#text-magic', 'text-animation')
-             	/*.addIndicators()*/
+             	/*.addIndicators({name: "des"})*/
              	.addTo(controller);
 
+                  /*contacts animation*/
+                  var ourScene7 = new ScrollMagic.Scene({
+                       triggerElement: '#contacts-trigger',
+                       reverse: true,
+                       triggerHook: 0.7
+                  })
+                  .setClassToggle('#lox', 'text-animation')
+                  .addIndicators({name: "contacts"})
+                  .addTo(controller);
+                  
              //Description-img animation
              var ourScene2 = new ScrollMagic.Scene({
              	triggerElement: '#description-trigger',
@@ -34,7 +44,7 @@ $(document).ready(function(){
              .addTo(controller);
 
              /*Scroll primary-bg*/
-             var ourScene2 = new ScrollMagic.Scene({
+             var ourScene3 = new ScrollMagic.Scene({
                   triggerElement: '#description-trigger',
                   reverse: true,
                   triggerHook: 0.4
@@ -44,24 +54,26 @@ $(document).ready(function(){
              .addTo(controller);
 
              /*Primary-btn none*/
-             var ourScene2 = new ScrollMagic.Scene({
+             var ourScene4 = new ScrollMagic.Scene({
                   triggerElement: '#description-trigger',
                   reverse: true,
                   triggerHook: 0.4
              })
              .setClassToggle('#primary-button_trigger', 'button-none')
-             .addIndicators()
+             /*.addIndicators()*/
              .addTo(controller);
 
              /*Primary-scroll-down none*/
-             var ourScene2 = new ScrollMagic.Scene({
+             var ourScene5 = new ScrollMagic.Scene({
                   triggerElement: '#description-trigger',
                   reverse: true,
                   triggerHook: 0.4
              })
              .setClassToggle('#scroll-down-trigger', 'scroll-down-none')
-             .addIndicators()
+             /*.addIndicators()*/
              .addTo(controller);
+
+             
 
        });
 

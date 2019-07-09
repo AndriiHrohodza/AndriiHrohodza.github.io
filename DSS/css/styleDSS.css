@@ -357,10 +357,6 @@ main {
   -webkit-animation-iteration-count: normal;
           animation-iteration-count: normal;
 }
-.text-animation {
-  -webkit-animation-name: description-text-animation;
-          animation-name: description-text-animation;
-}
 /*Features*/
 .features {
   position: relative;
@@ -534,10 +530,14 @@ main {
   margin: 0 ;
   font-size: 3.020833333333333vw;
   font-weight: 800;
-  /*transform: translateY(100%);
-		 animation-duration: 1s; 
-		 animation-delay: 0.5s;
-		 animation-fill-mode: forwards;*/
+  -webkit-transform: translateY(100%);
+          transform: translateY(100%);
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-delay: 0.5s;
+          animation-delay: 0.5s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
   /*animation-name: description-text-animation;*/
 }
 .contacts-content__text p {
@@ -547,16 +547,40 @@ main {
   line-height: 160%;
   width: 100%;
   font-family: 'GT Cinetype Mono';
-  /*transform: translateY(100%);
-			animation-duration: 1s; 
-			animation-delay: 0.5s;
-			animation-fill-mode: forwards;*/
+  -webkit-transform: translateY(100%);
+          transform: translateY(100%);
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-delay: 0.5s;
+          animation-delay: 0.5s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
   /*animation-name: description-text-animation;*/
 }
 .contacts-content .contacts-btn {
   background-color: #252525;
   color: #ffffff;
   margin-top: 4.6875vw;
+}
+/*.contacts-text-wrapper > div:nth-child(1) {
+	overflow: hidden;
+}
+.contacts-text-wrapper > div:nth-child(2) {
+	.Cinetype-Mono();
+	overflow: hidden;
+}
+.contacts-text-wrapper > div:nth-child(3) {
+	overflow: hidden;
+}*/
+.contacts-text-wrapper > div:nth-child(2) p {
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
+}
+.contacts-text-wrapper > div:nth-child(3) p {
+  -webkit-transform: translateY(180%);
+          transform: translateY(180%);
+  -webkit-animation-delay: 1.3s;
+          animation-delay: 1.3s;
 }
 /*Footer*/
 /*Container-footer*/
@@ -641,6 +665,10 @@ main {
   font-family: 'GT Cinetype Mono';
 }
 /*Animations*/
+.text-animation {
+  -webkit-animation-name: description-text-animation;
+          animation-name: description-text-animation;
+}
 /*Primary*/
 @-webkit-keyframes sub-text-animation {
   to {
