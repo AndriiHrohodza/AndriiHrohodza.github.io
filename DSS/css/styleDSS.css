@@ -562,16 +562,16 @@ main {
   color: #ffffff;
   margin-top: 4.6875vw;
 }
-/*.contacts-text-wrapper > div:nth-child(1) {
-	overflow: hidden;
+.contacts-text-wrapper > div:nth-child(1) {
+  overflow: hidden;
 }
 .contacts-text-wrapper > div:nth-child(2) {
-	.Cinetype-Mono();
-	overflow: hidden;
+  font-family: 'GT Cinetype Mono';
+  overflow: hidden;
 }
 .contacts-text-wrapper > div:nth-child(3) {
-	overflow: hidden;
-}*/
+  overflow: hidden;
+}
 .contacts-text-wrapper > div:nth-child(2) p {
   -webkit-animation-delay: 1s;
           animation-delay: 1s;
@@ -665,7 +665,8 @@ main {
   font-family: 'GT Cinetype Mono';
 }
 /*Animations*/
-.text-animation {
+.text-animation,
+.text-contacts-animation {
   -webkit-animation-name: description-text-animation;
           animation-name: description-text-animation;
 }

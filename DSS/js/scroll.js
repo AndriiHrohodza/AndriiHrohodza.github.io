@@ -25,12 +25,12 @@ $(document).ready(function(){
              	.addTo(controller);
 
                   /*contacts animation*/
-                  var ourScene7 = new ScrollMagic.Scene({
+                  let ourScene6 = new ScrollMagic.Scene({
                        triggerElement: '#contacts-trigger',
                        reverse: true,
                        triggerHook: 0.7
                   })
-                  .setClassToggle('#lox', 'text-animation')
+                  .setClassToggle('#contacts-text-magic', 'text-contacts-animation')
                   .addIndicators({name: "contacts"})
                   .addTo(controller);
                   
