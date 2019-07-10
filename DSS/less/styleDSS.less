@@ -141,7 +141,7 @@ body {
 	}
 	.header-item {
 		font-size: 1.09375vw;
-		padding: 0 6.5rem;
+		padding: 0 3.385416666666667vw;
 	}
 	.header-item:nth-child(1) {
 		padding-left: 0;
@@ -180,10 +180,10 @@ main {
 			margin: 0;
 			.Cinetype-Mono();
 			color: @btn-color;
-			transform: translateY(8rem);
+			/*transform: translateY(8rem);
 			animation-duration: 1s; 
 			animation-fill-mode: both;
-			animation-name: sup-text-animation;
+			animation-name: sup-text-animation;*/
 		}
 		h2 {
 			margin: 0;
@@ -198,6 +198,10 @@ main {
 
 		button {
 			margin-top: 5vw;
+			/*transform: translateY(8rem);
+			animation-duration: 1s; 
+			animation-fill-mode: both;
+			animation-name: sup-text-animation;*/
 		}
 		a {
 			text-decoration: none;
@@ -207,6 +211,9 @@ main {
 .sup-item {
 	overflow: hidden;
 }
+.sup-text p {
+	animation-delay: 0.8s;
+}
 .sub-item {
 	margin-top: 0.666666666666667vw;
 	&__text {
@@ -214,11 +221,11 @@ main {
 		padding-bottom: 1vh;
 	}
 	&__text:nth-child(2) h2{
-		animation-delay: 1s;
+		animation-delay: 0.3s;
 
 	}
 	&__text:nth-child(3) h2{
-		animation-delay: 1.5s;
+		animation-delay: 0.6s;
 	}
 }
 
@@ -278,7 +285,7 @@ main {
 		content: '';
 		display: block;
 		width: 29.84375vw;
-		height: 115.71171171171171vh;
+		height: 52.34375vw;
 		border-top: 0.0520833333333333vw solid #4C4C4C;
 		border-right: 0.0520833333333333vw solid #4C4C4C;
 		border-bottom: 0.0520833333333333vw solid #4C4C4C;
@@ -646,7 +653,10 @@ main {
 		@keyframes description-text-animation {
     	to { transform: translateY(0) }
 		}
-
+	/*Animated*/
+	.animated {
+		animation-delay: 1.3s;
+	}
 
 /*Scroll bg*/
 .wrap-bg {

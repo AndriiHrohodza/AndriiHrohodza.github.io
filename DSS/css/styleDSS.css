@@ -142,7 +142,7 @@ body {
 }
 .header__section-nav .header-item {
   font-size: 1.09375vw;
-  padding: 0 6.5rem;
+  padding: 0 3.385416666666667vw;
 }
 .header__section-nav .header-item:nth-child(1) {
   padding-left: 0;
@@ -164,14 +164,10 @@ main {
   margin: 0;
   font-family: 'GT Cinetype Mono';
   color: #ffffff;
-  -webkit-transform: translateY(8rem);
-          transform: translateY(8rem);
-  -webkit-animation-duration: 1s;
-          animation-duration: 1s;
-  -webkit-animation-fill-mode: both;
-          animation-fill-mode: both;
-  -webkit-animation-name: sup-text-animation;
-          animation-name: sup-text-animation;
+  /*transform: translateY(8rem);
+			animation-duration: 1s; 
+			animation-fill-mode: both;
+			animation-name: sup-text-animation;*/
 }
 .primary h2 {
   margin: 0;
@@ -189,6 +185,10 @@ main {
 }
 .primary button {
   margin-top: 5vw;
+  /*transform: translateY(8rem);
+			animation-duration: 1s; 
+			animation-fill-mode: both;
+			animation-name: sup-text-animation;*/
 }
 .primary a {
   text-decoration: none;
@@ -196,6 +196,10 @@ main {
 }
 .sup-item {
   overflow: hidden;
+}
+.sup-text p {
+  -webkit-animation-delay: 0.8s;
+          animation-delay: 0.8s;
 }
 .sub-item {
   margin-top: 0.666666666666667vw;
@@ -205,12 +209,12 @@ main {
   padding-bottom: 1vh;
 }
 .sub-item__text:nth-child(2) h2 {
-  -webkit-animation-delay: 1s;
-          animation-delay: 1s;
+  -webkit-animation-delay: 0.3s;
+          animation-delay: 0.3s;
 }
 .sub-item__text:nth-child(3) h2 {
-  -webkit-animation-delay: 1.5s;
-          animation-delay: 1.5s;
+  -webkit-animation-delay: 0.6s;
+          animation-delay: 0.6s;
 }
 /*Primary-animation*/
 /*.cssanimation-sup {
@@ -268,7 +272,7 @@ main {
   content: '';
   display: block;
   width: 29.84375vw;
-  height: 115.71171171171171vh;
+  height: 52.34375vw;
   border-top: 0.0520833333333333vw solid #4C4C4C;
   border-right: 0.0520833333333333vw solid #4C4C4C;
   border-bottom: 0.0520833333333333vw solid #4C4C4C;
@@ -729,6 +733,11 @@ main {
     -webkit-transform: translateY(0);
             transform: translateY(0);
   }
+}
+/*Animated*/
+.animated {
+  -webkit-animation-delay: 1.3s;
+          animation-delay: 1.3s;
 }
 /*Scroll bg*/
 .wrap-bg {

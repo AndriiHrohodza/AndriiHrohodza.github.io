@@ -24,14 +24,14 @@ $(document).ready(function(){
              	/*.addIndicators({name: "des"})*/
              	.addTo(controller);
 
-                  /*contacts animation*/
+                  /*Contacts animation*/
                   let ourScene6 = new ScrollMagic.Scene({
                        triggerElement: '#contacts-trigger',
                        reverse: true,
                        triggerHook: 0.7
                   })
                   .setClassToggle('#contacts-text-magic', 'text-contacts-animation')
-                  .addIndicators({name: "contacts"})
+                  /*.addIndicators({name: "contacts"})*/
                   .addTo(controller);
                   
              //Description-img animation
