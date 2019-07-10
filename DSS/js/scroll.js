@@ -110,9 +110,9 @@ $(document).ready(function(){
 
              /*Scroll-changing features-bg*/
              var ourScene8 = new ScrollMagic.Scene({
-                  triggerElement: '#scroll-trigger',
+                  triggerElement: '#digital-sourcing-trigger',
                   reverse: true,
-                  triggerHook: 0
+                  triggerHook: 0.6
              })
              .setClassToggle('#wrap-description', 'digital-sourcing-bg')
              .addIndicators()

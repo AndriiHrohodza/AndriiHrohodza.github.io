@@ -15,7 +15,7 @@ var pinFeatureScene = new ScrollMagic.Scene({
 });
 
 /*Cursor*/
-document.body.style.cursor = 'none';
+/*document.body.style.cursor = 'none';
 function lerp(start, end, amt) {
    return (1 - amt) * start + amt * end;
 }
@@ -72,4 +72,4 @@ function loop() {
    cursor.update();
 }
 
-setInterval(loop, 1000 / 60);
+setInterval(loop, 1000 / 60);*/

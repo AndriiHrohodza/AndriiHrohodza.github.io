@@ -370,9 +370,8 @@ main {
 }
 .wrap-description {
   background-color: #1D1D1D;
-  opacity: 1;
-  -webkit-transition: opacity 1s ease;
-  transition: opacity 1s ease;
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.4s ease;
 }
 .img-scale {
   -webkit-animation-name: scale;
@@ -389,7 +388,7 @@ main {
 /*Features*/
 .features {
   position: relative;
-  background-color: #1D1D1D;
+  /*background-color: #1D1D1D;*/
   padding-bottom: 38vw;
   /*padding-top: 7.92792792792793vh;*/
 }
@@ -808,7 +807,7 @@ main {
 }
 /*Scroll digital-sourcing bg*/
 .digital-sourcing-bg {
-  opacity: 0;
+  background: white;
   transition: all 0.4s ease;
   -webkit-transition: all 0.4s ease;
 }
