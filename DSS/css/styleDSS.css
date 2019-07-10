@@ -314,8 +314,8 @@ main {
           transform: translateY(100%);
   -webkit-animation-duration: 1s;
           animation-duration: 1s;
-  -webkit-animation-delay: 0.5s;
-          animation-delay: 0.5s;
+  -webkit-animation-delay: 0.1s;
+          animation-delay: 0.1s;
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards;
   /*animation-name: description-text-animation;*/
@@ -326,12 +326,10 @@ main {
   word-spacing: 0.2604166666666667vw;
   line-height: 160%;
   width: 100%;
-  -webkit-transform: translateY(100%);
-          transform: translateY(100%);
   -webkit-animation-duration: 1s;
           animation-duration: 1s;
-  -webkit-animation-delay: 0.5s;
-          animation-delay: 0.5s;
+  -webkit-animation-delay: 0.3s;
+          animation-delay: 0.3s;
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards;
   /*animation-name: description-text-animation;*/
@@ -343,18 +341,25 @@ main {
   font-family: 'GT Cinetype Mono';
   overflow: hidden;
 }
-.description-text-wrapper > div:nth-child(3) {
-  overflow: hidden;
+/*.description-text-wrapper > div:nth-child(3) {
+	overflow: hidden;
+}*/
+.description-text-wrapper > div:nth-child(1) p {
+  -webkit-transform: translateY(100%);
+          transform: translateY(100%);
+  -webkit-animation-delay: 0.1s;
+          animation-delay: 0.1s;
 }
 .description-text-wrapper > div:nth-child(2) p {
-  -webkit-animation-delay: 1s;
-          animation-delay: 1s;
+  -webkit-transform: translateY(100%);
+          transform: translateY(100%);
+  -webkit-animation-delay: 0.4s;
+          animation-delay: 0.4s;
 }
 .description-text-wrapper > div:nth-child(3) p {
-  -webkit-transform: translateY(180%);
-          transform: translateY(180%);
-  -webkit-animation-delay: 1.3s;
-          animation-delay: 1.3s;
+  -webkit-animation-delay: 0.7s;
+          animation-delay: 0.7s;
+  opacity: 0;
 }
 .wrap-description {
   background-color: #1D1D1D;
@@ -544,12 +549,8 @@ main {
   margin: 0 ;
   font-size: 3.020833333333333vw;
   font-weight: 800;
-  -webkit-transform: translateY(100%);
-          transform: translateY(100%);
   -webkit-animation-duration: 1s;
           animation-duration: 1s;
-  -webkit-animation-delay: 0.5s;
-          animation-delay: 0.5s;
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards;
   /*animation-name: description-text-animation;*/
@@ -561,12 +562,8 @@ main {
   line-height: 160%;
   width: 100%;
   font-family: 'GT Cinetype Mono';
-  -webkit-transform: translateY(100%);
-          transform: translateY(100%);
   -webkit-animation-duration: 1s;
           animation-duration: 1s;
-  -webkit-animation-delay: 0.5s;
-          animation-delay: 0.5s;
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards;
   /*animation-name: description-text-animation;*/
@@ -583,18 +580,25 @@ main {
   font-family: 'GT Cinetype Mono';
   overflow: hidden;
 }
-.contacts-text-wrapper > div:nth-child(3) {
-  overflow: hidden;
+/*.contacts-text-wrapper > div:nth-child(3) {
+	
+}*/
+.contacts-text-wrapper > div:nth-child(1) h3 {
+  -webkit-transform: translateY(100%);
+          transform: translateY(100%);
+  -webkit-animation-delay: 0.1s;
+          animation-delay: 0.1s;
 }
 .contacts-text-wrapper > div:nth-child(2) p {
-  -webkit-animation-delay: 1s;
-          animation-delay: 1s;
+  -webkit-transform: translateY(100%);
+          transform: translateY(100%);
+  -webkit-animation-delay: 0.4s;
+          animation-delay: 0.4s;
 }
 .contacts-text-wrapper > div:nth-child(3) p {
-  -webkit-transform: translateY(180%);
-          transform: translateY(180%);
-  -webkit-animation-delay: 1.3s;
-          animation-delay: 1.3s;
+  opacity: 0;
+  -webkit-animation-delay: 0.7s;
+          animation-delay: 0.7s;
 }
 /*Footer*/
 /*Container-footer*/
@@ -743,6 +747,35 @@ main {
     -webkit-transform: translateY(0);
             transform: translateY(0);
   }
+}
+/*FadeInUp*/
+@-webkit-keyframes fadeInUp {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 25%, 0);
+    transform: translate3d(0, 25%, 0);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 25%, 0);
+    transform: translate3d(0, 25%, 0);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+.fadeInUp {
+  -webkit-animation-name: fadeInUp;
+  animation-name: fadeInUp;
 }
 /*Animated*/
 .animated {

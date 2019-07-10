@@ -23,6 +23,14 @@ $(document).ready(function(){
              	.setClassToggle('#text-magic', 'text-animation')
              	/*.addIndicators({name: "des"})*/
              	.addTo(controller);
+                  // Description-text animation FadeInUp
+                  var ourScene = new ScrollMagic.Scene({
+                        triggerElement: '#description-trigger',
+                        reverse: true
+                  })
+                  .setClassToggle('#text-magic_fade', 'fadeInUp')
+                  /*.addIndicators({name: "des"})*/
+                  .addTo(controller);
 
                   /*Contacts animation*/
                   let ourScene6 = new ScrollMagic.Scene({
@@ -32,6 +40,14 @@ $(document).ready(function(){
                   })
                   .setClassToggle('#contacts-text-magic', 'text-contacts-animation')
                   /*.addIndicators({name: "contacts"})*/
+                  .addTo(controller);
+                  // Contacts-text animation FadeInUp
+                  var ourScene = new ScrollMagic.Scene({
+                        triggerElement: '#dcontacts-trigger',
+                        reverse: true
+                  })
+                  .setClassToggle('#text-magic_fade', 'fadeInUp')
+                  /*.addIndicators({name: "des"})*/
                   .addTo(controller);
                   
              //Description-img animation
