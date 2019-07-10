@@ -211,7 +211,7 @@ main {
 		}
 		a {
 			text-decoration: none;
-			color: #252525;
+			color: #1D1D1D;
 		}
 }
 .sup-item {
@@ -437,9 +437,28 @@ main {
 		font-size: 3.020833333333333vw;
 		font-weight: 800;
 		margin-bottom: 4.6875vw;
+		color: #1D1D1D;
 		p:first-child {
 			margin-bottom: 0.5208333333333333vw;
 		}
+		p {
+			transform: translateY(100%);
+			animation-duration: 1s;
+			animation-delay: 0.1s;
+			animation-fill-mode: forwards;
+		}
+	}
+	&__text > div:nth-child(1){
+		overflow: hidden;
+	}
+	&__text > div:nth-child(2){
+		overflow: hidden;
+	}
+	&__text > div:nth-child(1) p{
+	animation-delay: 0.1s;
+	}
+	&__text > div:nth-child(2) p{
+	animation-delay: 0.4s;
 	}
 	&__content {
 		img {
@@ -447,6 +466,7 @@ main {
 		}
 	}
 }
+
 
 
 /*Services*/
@@ -649,7 +669,8 @@ main {
 
 /*Animations*/
 .text-animation,
-.text-contacts-animation {
+.text-contacts-animation,
+.text-digital-sourcing-animation {
 	animation-name: description-text-animation;
 }
 	/*Primary*/

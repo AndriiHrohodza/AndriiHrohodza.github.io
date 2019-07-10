@@ -199,7 +199,7 @@ main {
 }
 .primary a {
   text-decoration: none;
-  color: #252525;
+  color: #1D1D1D;
 }
 .sup-item {
   overflow: hidden;
@@ -450,9 +450,34 @@ main {
   font-size: 3.020833333333333vw;
   font-weight: 800;
   margin-bottom: 4.6875vw;
+  color: #1D1D1D;
 }
 .digital-sourcing__text p:first-child {
   margin-bottom: 0.5208333333333333vw;
+}
+.digital-sourcing__text p {
+  -webkit-transform: translateY(100%);
+          transform: translateY(100%);
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-delay: 0.1s;
+          animation-delay: 0.1s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+.digital-sourcing__text > div:nth-child(1) {
+  overflow: hidden;
+}
+.digital-sourcing__text > div:nth-child(2) {
+  overflow: hidden;
+}
+.digital-sourcing__text > div:nth-child(1) p {
+  -webkit-animation-delay: 0.1s;
+          animation-delay: 0.1s;
+}
+.digital-sourcing__text > div:nth-child(2) p {
+  -webkit-animation-delay: 0.4s;
+          animation-delay: 0.4s;
 }
 .digital-sourcing__content img {
   width: 100%;
@@ -693,7 +718,8 @@ main {
 }
 /*Animations*/
 .text-animation,
-.text-contacts-animation {
+.text-contacts-animation,
+.text-digital-sourcing-animation {
   -webkit-animation-name: description-text-animation;
           animation-name: description-text-animation;
 }

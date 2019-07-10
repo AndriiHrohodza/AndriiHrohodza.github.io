@@ -32,6 +32,16 @@ $(document).ready(function(){
                   /*.addIndicators({name: "des"})*/
                   .addTo(controller);
 
+                  /*Digital-sourcing*/
+                  let ourScene9 = new ScrollMagic.Scene({
+                       triggerElement: '#digital-sourcing-trigger',
+                       reverse: true,
+                       triggerHook: 0.7
+                  })
+                  .setClassToggle('#text-digital-magic', 'text-digital-sourcing-animation')
+                  /*.addIndicators({name: "contacts"})*/
+                  .addTo(controller);
+
                   /*Contacts animation*/
                   let ourScene6 = new ScrollMagic.Scene({
                        triggerElement: '#contacts-trigger',
@@ -68,6 +78,8 @@ $(document).ready(function(){
                   .setClassToggle('#contacts-button_trigger', 'fadeInUp')
                   /*.addIndicators({name: "des"})*/
                   .addTo(controller);
+
+
                   
              //Description-img animation
              var ourScene2 = new ScrollMagic.Scene({
@@ -112,7 +124,7 @@ $(document).ready(function(){
              var ourScene8 = new ScrollMagic.Scene({
                   triggerElement: '#digital-sourcing-trigger',
                   reverse: true,
-                  triggerHook: 0.6
+                  triggerHook: 1
              })
              .setClassToggle('#wrap-description', 'digital-sourcing-bg')
              .addIndicators()
