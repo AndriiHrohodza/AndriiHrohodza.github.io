@@ -127,7 +127,7 @@ $(document).ready(function(){
                   triggerHook: 1
              })
              .setClassToggle('#wrap-description', 'digital-sourcing-bg')
-             .addIndicators()
+             /*.addIndicators()*/
              .addTo(controller);
 
        });
