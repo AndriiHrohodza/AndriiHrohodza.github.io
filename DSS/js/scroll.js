@@ -41,12 +41,31 @@ $(document).ready(function(){
                   .setClassToggle('#contacts-text-magic', 'text-contacts-animation')
                   /*.addIndicators({name: "contacts"})*/
                   .addTo(controller);
+
                   // Contacts-text animation FadeInUp
                   var ourScene = new ScrollMagic.Scene({
-                        triggerElement: '#dcontacts-trigger',
+                        triggerElement: '#contacts-trigger',
                         reverse: true
                   })
                   .setClassToggle('#text-magic_fade', 'fadeInUp')
+                  /*.addIndicators({name: "des"})*/
+                  .addTo(controller);
+
+                  // Contacts-text_fade animation FadeInUp
+                  var ourScene = new ScrollMagic.Scene({
+                        triggerElement: '#contacts-trigger',
+                        reverse: true
+                  })
+                  .setClassToggle('#contacts-text_fade', 'fadeInUp')
+                  /*.addIndicators({name: "des"})*/
+                  .addTo(controller);
+
+                  // Contacts-button animation FadeInUp
+                  var ourScene = new ScrollMagic.Scene({
+                        triggerElement: '#contacts-trigger',
+                        reverse: true
+                  })
+                  .setClassToggle('#contacts-button_trigger', 'fadeInUp')
                   /*.addIndicators({name: "des"})*/
                   .addTo(controller);
                   
@@ -59,7 +78,7 @@ $(document).ready(function(){
              /*.addIndicators()*/
              .addTo(controller);
 
-             /*Scroll primary-bg*/
+             /*Scroll-changing primary-bg*/
              var ourScene3 = new ScrollMagic.Scene({
                   triggerElement: '#description-trigger',
                   reverse: true,
@@ -89,7 +108,15 @@ $(document).ready(function(){
              /*.addIndicators()*/
              .addTo(controller);
 
-             
+             /*Scroll-changing features-bg*/
+             var ourScene8 = new ScrollMagic.Scene({
+                  triggerElement: '#scroll-trigger',
+                  reverse: true,
+                  triggerHook: 0
+             })
+             .setClassToggle('#wrap-description', 'digital-sourcing-bg')
+             .addIndicators()
+             .addTo(controller);
 
        });
 
