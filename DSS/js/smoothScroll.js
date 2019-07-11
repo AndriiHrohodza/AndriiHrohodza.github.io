@@ -3,9 +3,9 @@ var _win = $(window),
    _cAF = window.cancelAnimationFrame,
    _AF = undefined,
    _log = $('.log'),
-   _scroll_time = 300,
+   _scroll_time = 550,
    _isMac = /Mac/i.test(navigator.userAgent),
-   _scroll_distance = 300;
+   _scroll_distance = 150;
 
 console.log(_isMac);
 
@@ -13,7 +13,7 @@ function smoothScroll(){
    _win.on('mousewheel DOMMouseScroll', function(e){
       e.preventDefault();
       // console.log(e);
-      e = e.originalEvent.wheelDelta / 80 || -e.originalEvent.detail / 3;
+      e = e.originalEvent.wheelDelta / 50 || -e.originalEvent.detail / 3;
 
       e = -parseInt(_scroll_distance * e);
       log(e);

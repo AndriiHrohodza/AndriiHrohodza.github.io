@@ -1,5 +1,4 @@
-
-/*Features-scroll */
+/*Features-horizontal-scroll */
 $(document).ready(function(){
 var controller = new ScrollMagic.Controller();
 // pin 

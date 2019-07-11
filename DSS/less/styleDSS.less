@@ -54,8 +54,8 @@
 	clear: both;
 }
 
-/*Container-wrap*/
-.container-wrap {
+/*Container-wrapper*/
+.container-wrapper {
 	display: flex;
 	align-items: center;
 	margin: 0 9%;
@@ -65,11 +65,12 @@
 .container {
 	margin: 0 9%;
 }
-/*Wrapper-bg*/
-.wrapper-bg {
+/*Wrapper-primary-bg_black*/
+.wrapper-primary-bg_black {
 	background-color: #1D1D1D;
 }
-.wrap {
+/*Wrapper-primary*/
+.wrapper-primary {
 	opacity: 1;
 	transition: all 1s;
 	height: 100vh;
@@ -79,7 +80,6 @@
 
 /*btn*/
 .btn  {
-	/*padding: 1.979166666666667vw 3.854166666666667vw;*/
 	line-height: 4.6875vw;
 	max-width: 16.5625vw;
 	width: 100%;
@@ -106,7 +106,6 @@ html {
 }
 body {
 	width: 100%;
-	/*height: 100%;*/
 	.America();
 }
 
@@ -156,63 +155,34 @@ body {
 		padding-right: 0;
 		position: relative;
 	}
-	/*.form:after {
-		content: " + ";
-		display: block;
-		text-align: center;
-		line-height: 1.801801801801802vh;
-		/*width: 1.041666666666667vw;
-		height: 1.801801801801802vh;
-		color: @btn-color;
-		position: absolute;
-		top: 50%;
-		right: -17%;
-		transform: translateY(-50%);
-		cursor: pointer;
-	}*/
 }
 
-
-/*Main*/
-main {
-	width: 100%;
-}
-
-/*Main__Primary*/
+/*Primary*/
 .primary {
 	width: 100%;
-		p {
-			font-size: 1.09375vw;
-			margin: 0;
-			.Cinetype-Mono();
-			color: @btn-color;
-			/*transform: translateY(8rem);
-			animation-duration: 1s; 
-			animation-fill-mode: both;
-			animation-name: sup-text-animation;*/
-		}
-		h2 {
-			margin: 0;
-			font-size: 3.020833333333333vw;
-			font-weight: 800;
-			color: @btn-color;
-			transform: translateY(8rem);
-			animation-duration: 2s; 
-			animation-fill-mode: both;
-			animation-name: sub-text-animation;
-		}
-
-		button {
-			margin-top: 5vw;
-			/*transform: translateY(8rem);
-			animation-duration: 1s; 
-			animation-fill-mode: both;
-			animation-name: sup-text-animation;*/
-		}
-		a {
-			text-decoration: none;
-			color: #1D1D1D;
-		}
+	p {
+		font-size: 1.09375vw;
+		margin: 0;
+		.Cinetype-Mono();
+		color: @btn-color;
+	}
+	h2 {
+		margin: 0;
+		font-size: 3.020833333333333vw;
+		font-weight: 800;
+		color: @btn-color;
+		transform: translateY(8rem);
+		animation-duration: 2s; 
+		animation-fill-mode: both;
+		animation-name: sub-text-animation;
+	}
+	button {
+		margin-top: 5vw;
+	}
+	a {
+		text-decoration: none;
+		color: #1D1D1D;
+	}
 }
 .sup-item {
 	overflow: hidden;
@@ -240,19 +210,6 @@ main {
 	}
 }
 
-/*Primary-animation*/
-/*.cssanimation-sup {
-    animation-duration: 1s;
-    animation-delay: 0.4s;
-    animation-fill-mode: both;
-}*/
-/*.wipe-sup {
-	height: 0;
-	overflow: hidden;
-	margin: 0 auto;   
-	animation-name: wipe-two;
-}*/
-
 /*Scroll*/
 .scroll {
 	position: absolute;
@@ -270,6 +227,14 @@ main {
 	}
 }
 
+/*Main*/
+
+/*Wrapper-Description-Features-Digital*/
+.wrapper-description-digital {
+	background-color: #1D1D1D;
+	transition: all 0.4s ease;
+}
+
 /*Company-description*/
 .company-description {
 	background-color: #1D1D1D;
@@ -284,7 +249,6 @@ main {
 	&__img {
 		width: 50%;
 		z-index: 2;
-		/*height: 68.91891891891892vh;‬*/
 		margin: auto 0;
 		overflow: hidden;
 		img {
@@ -312,8 +276,6 @@ main {
 		display: flex;
 		align-items: center;
 		opacity: 1;
-		/*transform: translateY(15rem);
-		transition: all 2s ease;*/
 		h3 {
 		 margin: 0 ;
 		 font-size: 3.020833333333333vw;
@@ -322,7 +284,6 @@ main {
 		 animation-duration: 1s;
 		 animation-delay: 0.1s;
 		 animation-fill-mode: forwards;
-		 /*animation-name: description-text-animation;*/
 		}
 		p {
 			font-size: 1.09375vw;
@@ -333,7 +294,6 @@ main {
 			animation-duration: 1s; 
 			animation-delay: 0.3s;
 			animation-fill-mode: forwards;
-			/*animation-name: description-text-animation;*/
 		}
 	}
 }
@@ -344,9 +304,6 @@ main {
 	.Cinetype-Mono();
 	overflow: hidden;
 }
-/*.description-text-wrapper > div:nth-child(3) {
-	overflow: hidden;
-}*/
 .description-text-wrapper > div:nth-child(1) p{
 	transform: translateY(100%);
 	animation-delay: 0.1s;
@@ -359,11 +316,6 @@ main {
 	animation-delay: 0.7s;
 	opacity: 0;
 }
-
-.wrap-description {
-	background-color: #1D1D1D;
-	transition: all 0.4s ease;
-}
 .img-scale {
 	animation-name: scale;
 	animation-duration: 10s;
@@ -372,44 +324,31 @@ main {
 	animation-iteration-count: normal;
 }
 
-
-
 /*Features*/
 .features {
 	position: relative;
-	/*background-color: #1D1D1D;*/
-	padding-bottom: 38vw;
-	
-	
-	/*padding-top: 7.92792792792793vh;*/
-	
+	padding-bottom: 38vw;	
 }
 .features-content {
 	position: relative;
 	display: flex;
 	color: white;
 	height: 31.53153153153153vh;
-	
 	&__items {
 		display: flex;
 		width: 46.875vw;
 		margin-right: 8.4375vw;
-		/*padding-top: 0.2604166666666667vw;*/
 		.items-img {
 			margin: auto 0;
 			img {
 				width: 9.635416666666667vw; // 18.5rem
 				height: auto; // 29rem
-				/*max-width: 100%;*/
-
 			}
 		}
 		.items-text {
 			padding: 1.197916666666667vw 0 1.145833333333333vw 4.21875vw;
 			display: flex;
-			/*flex-direction: column;*/
 			align-items: center;
-			/*max-height: 22.52252252252252vh;*/
 		}
 			h3 {
 				font-size: 3.020833333333333vw;
@@ -425,7 +364,6 @@ main {
 		margin: 0;
 	}
 }
-
 
 /*Digital-Sourcing*/
 .digital-sourcing {
@@ -466,10 +404,7 @@ main {
 	}
 }
 
-
-
 /*Services*/
-
 .services__sup-content,
 .services__sub-content {
 	display: flex;
@@ -509,10 +444,7 @@ main {
 	margin: 0 0 0 9%;
 }
 .contacts {
-	background-color: #F9F9F9;
-	/*padding-top: 22.39583333333333vw;//38.28828828828829vh*/
-	/*padding-bottom: 22.39583333333333vw;*/
-	
+	background-color: #F9F9F9;	
 }
 .contacts-content {
 	display: flex;
@@ -520,9 +452,7 @@ main {
 	position: relative;
 	padding: 6.25vw 0;
 	&__img {
-		/*width: 50%;*/
 		z-index: 2;
-		/*height: 68.91891891891892vh;‬*/
 		margin: auto 0;
 		overflow: hidden;
 		img {
@@ -536,8 +466,6 @@ main {
 		align-items: center;
 		opacity: 1;
 		color: #252525;
-		/*transform: translateY(15rem);
-		transition: all 2s ease;*/
 		.contacts-text-wrapper {
 			width: 79%;
 		}
@@ -551,7 +479,6 @@ main {
 		 font-weight: 800; 
 		 animation-duration: 1s;
 		 animation-fill-mode: forwards;
-		 /*animation-name: description-text-animation;*/
 		}
 		p {
 			font-size: 1.09375vw;
@@ -562,7 +489,6 @@ main {
 			.Cinetype-Mono();
 			animation-duration: 1s; 
 			animation-fill-mode: forwards;
-			/*animation-name: description-text-animation;*/
 		}
 	}
 	.contacts-btn {
@@ -578,9 +504,6 @@ main {
 	.Cinetype-Mono();
 	overflow: hidden;
 }
-/*.contacts-text-wrapper > div:nth-child(3) {
-	
-}*/
 .contacts-text-wrapper > div:nth-child(1) h3{
 	transform: translateY(100%);
 	animation-delay: 0.1s;
@@ -595,6 +518,7 @@ main {
 }
 
 /*Footer*/
+
 /*Container-footer*/
 .container-footer {
 	margin: 0 9%;
@@ -606,12 +530,11 @@ main {
 	background-color: white;
 	height: 100%;
 }
-/*Sup*/
+/*Footer__Sup-Content*/
 .footer__sup-content {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	/*height: 4.054054054054054vh;*/
 	width: 100%;
 	padding: 3.125vw 0;
 	border-bottom: 0.0520833333333333vw solid #CDCDCD;
@@ -646,7 +569,7 @@ main {
 		position: relative;
 	}
 }
-/*Sub*/
+/*Footer__Sub-Content*/
 .footer__sub-content {
 	display: flex;
 	justify-content: space-between;
@@ -660,7 +583,7 @@ main {
 	font-size: 0.8854166666666667vw;
 	.Cinetype-Mono();
 }
-.by {
+.sign {
 	font-size: 0.8854166666666667vw;
 	.Cinetype-Mono();
 }
@@ -704,33 +627,31 @@ main {
 		    transform: translate3d(0, 0, 0);
 		  }
 		}
-
 		.fadeInUp {
 		  -webkit-animation-name: fadeInUp;
 		  animation-name: fadeInUp;
 		}
+		/*Animated*/
+		.animated {
+			animation-delay: 1.3s;
+		}
 
-	/*Animated*/
-	.animated {
-		animation-delay: 1.3s;
-	}
-
-/*Scroll description bg*/
-.wrap-bg {
+/*Wrapper-Primary-bg Opacity-Zero*/
+.wrapper-primary-bg_opacity-zero {
 	transition: all 1s ease;
 	opacity: 0;
 }
-/*Button none*/
-.button-none {
+/*Primary-Button none*/
+.primary-button_none {
 	opacity: 0;
 }
-/*Scroll-down-none*/
-.scroll-down-none {
+/*Scroll-down none*/
+.scroll-down_none {
 	opacity: 0;
 }
 
-/*Scroll digital-sourcing bg*/
-.digital-sourcing-bg {
+/*Scroll Digital-Sourcing bg*/
+.digital-sourcing-bg_white {
 	background: white;
 	transition: all 0.4s ease;
 	-webkit-transition: all 0.4s ease;

@@ -27,8 +27,8 @@
   display: table;
   clear: both;
 }
-/*Container-wrap*/
-.container-wrap {
+/*Container-wrapper*/
+.container-wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -42,11 +42,12 @@
 .container {
   margin: 0 9%;
 }
-/*Wrapper-bg*/
-.wrapper-bg {
+/*Wrapper-primary-bg_black*/
+.wrapper-primary-bg_black {
   background-color: #1D1D1D;
 }
-.wrap {
+/*Wrapper-primary*/
+.wrapper-primary {
   opacity: 1;
   -webkit-transition: all 1s;
   transition: all 1s;
@@ -56,7 +57,6 @@
 }
 /*btn*/
 .btn {
-  /*padding: 1.979166666666667vw 3.854166666666667vw;*/
   line-height: 4.6875vw;
   max-width: 16.5625vw;
   width: 100%;
@@ -84,7 +84,6 @@ html {
 }
 body {
   width: 100%;
-  /*height: 100%;*/
   font-family: 'GT America';
 }
 /*Header*/
@@ -128,20 +127,6 @@ body {
   display: -ms-flexbox;
   display: flex;
   position: relative;
-  /*.form:after {
-		content: " + ";
-		display: block;
-		text-align: center;
-		line-height: 1.801801801801802vh;
-		/*width: 1.041666666666667vw;
-		height: 1.801801801801802vh;
-		color: @btn-color;
-		position: absolute;
-		top: 50%;
-		right: -17%;
-		transform: translateY(-50%);
-		cursor: pointer;
-	}*/
 }
 .header__section-nav .header-item a {
   text-decoration: none;
@@ -158,11 +143,7 @@ body {
   padding-right: 0;
   position: relative;
 }
-/*Main*/
-main {
-  width: 100%;
-}
-/*Main__Primary*/
+/*Primary*/
 .primary {
   width: 100%;
 }
@@ -171,10 +152,6 @@ main {
   margin: 0;
   font-family: 'GT Cinetype Mono';
   color: #ffffff;
-  /*transform: translateY(8rem);
-			animation-duration: 1s; 
-			animation-fill-mode: both;
-			animation-name: sup-text-animation;*/
 }
 .primary h2 {
   margin: 0;
@@ -192,10 +169,6 @@ main {
 }
 .primary button {
   margin-top: 5vw;
-  /*transform: translateY(8rem);
-			animation-duration: 1s; 
-			animation-fill-mode: both;
-			animation-name: sup-text-animation;*/
 }
 .primary a {
   text-decoration: none;
@@ -233,18 +206,6 @@ main {
   -webkit-animation-delay: 0.7s;
           animation-delay: 0.7s;
 }
-/*Primary-animation*/
-/*.cssanimation-sup {
-    animation-duration: 1s;
-    animation-delay: 0.4s;
-    animation-fill-mode: both;
-}*/
-/*.wipe-sup {
-	height: 0;
-	overflow: hidden;
-	margin: 0 auto;   
-	animation-name: wipe-two;
-}*/
 /*Scroll*/
 .scroll {
   position: absolute;
@@ -260,6 +221,13 @@ main {
 .scroll-button a {
   text-decoration: none;
   color: #ffffff;
+}
+/*Main*/
+/*Wrapper-Description-Features-Digital*/
+.wrapper-description-digital {
+  background-color: #1D1D1D;
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.4s ease;
 }
 /*Company-description*/
 .company-description {
@@ -277,7 +245,6 @@ main {
 .description-content__img {
   width: 50%;
   z-index: 2;
-  /*height: 68.91891891891892vh;‬*/
   margin: auto 0;
   overflow: hidden;
 }
@@ -310,8 +277,6 @@ main {
       -ms-flex-align: center;
           align-items: center;
   opacity: 1;
-  /*transform: translateY(15rem);
-		transition: all 2s ease;*/
 }
 .description-content__text h3 {
   margin: 0 ;
@@ -325,7 +290,6 @@ main {
           animation-delay: 0.1s;
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards;
-  /*animation-name: description-text-animation;*/
 }
 .description-content__text p {
   font-size: 1.09375vw;
@@ -339,7 +303,6 @@ main {
           animation-delay: 0.3s;
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards;
-  /*animation-name: description-text-animation;*/
 }
 .description-text-wrapper > div:nth-child(1) {
   overflow: hidden;
@@ -348,9 +311,6 @@ main {
   font-family: 'GT Cinetype Mono';
   overflow: hidden;
 }
-/*.description-text-wrapper > div:nth-child(3) {
-	overflow: hidden;
-}*/
 .description-text-wrapper > div:nth-child(1) p {
   -webkit-transform: translateY(100%);
           transform: translateY(100%);
@@ -368,11 +328,6 @@ main {
           animation-delay: 0.7s;
   opacity: 0;
 }
-.wrap-description {
-  background-color: #1D1D1D;
-  -webkit-transition: all 0.4s ease;
-  transition: all 0.4s ease;
-}
 .img-scale {
   -webkit-animation-name: scale;
           animation-name: scale;
@@ -388,9 +343,7 @@ main {
 /*Features*/
 .features {
   position: relative;
-  /*background-color: #1D1D1D;*/
   padding-bottom: 38vw;
-  /*padding-top: 7.92792792792793vh;*/
 }
 .features-content {
   position: relative;
@@ -406,7 +359,6 @@ main {
   display: flex;
   width: 46.875vw;
   margin-right: 8.4375vw;
-  /*padding-top: 0.2604166666666667vw;*/
 }
 .features-content__items .items-img {
   margin: auto 0;
@@ -414,18 +366,15 @@ main {
 .features-content__items .items-img img {
   width: 9.635416666666667vw;
   height: auto;
-  /*max-width: 100%;*/
 }
 .features-content__items .items-text {
   padding: 1.197916666666667vw 0 1.145833333333333vw 4.21875vw;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  /*flex-direction: column;*/
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  /*max-height: 22.52252252252252vh;*/
 }
 .features-content__items h3 {
   font-size: 3.020833333333333vw;
@@ -536,8 +485,6 @@ main {
 }
 .contacts {
   background-color: #F9F9F9;
-  /*padding-top: 22.39583333333333vw;//38.28828828828829vh*/
-  /*padding-bottom: 22.39583333333333vw;*/
 }
 .contacts-content {
   display: -webkit-box;
@@ -548,9 +495,7 @@ main {
   padding: 6.25vw 0;
 }
 .contacts-content__img {
-  /*width: 50%;*/
   z-index: 2;
-  /*height: 68.91891891891892vh;‬*/
   margin: auto 0;
   overflow: hidden;
 }
@@ -568,8 +513,6 @@ main {
           align-items: center;
   opacity: 1;
   color: #252525;
-  /*transform: translateY(15rem);
-		transition: all 2s ease;*/
 }
 .contacts-content__text .contacts-text-wrapper {
   width: 79%;
@@ -586,7 +529,6 @@ main {
           animation-duration: 1s;
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards;
-  /*animation-name: description-text-animation;*/
 }
 .contacts-content__text p {
   font-size: 1.09375vw;
@@ -599,7 +541,6 @@ main {
           animation-duration: 1s;
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards;
-  /*animation-name: description-text-animation;*/
 }
 .contacts-content .contacts-btn {
   background-color: #252525;
@@ -613,9 +554,6 @@ main {
   font-family: 'GT Cinetype Mono';
   overflow: hidden;
 }
-/*.contacts-text-wrapper > div:nth-child(3) {
-	
-}*/
 .contacts-text-wrapper > div:nth-child(1) h3 {
   -webkit-transform: translateY(100%);
           transform: translateY(100%);
@@ -647,7 +585,7 @@ main {
   background-color: white;
   height: 100%;
 }
-/*Sup*/
+/*Footer__Sup-Content*/
 .footer__sup-content {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -658,7 +596,6 @@ main {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  /*height: 4.054054054054054vh;*/
   width: 100%;
   padding: 3.125vw 0;
   border-bottom: 0.0520833333333333vw solid #CDCDCD;
@@ -693,7 +630,7 @@ main {
   padding-right: 0;
   position: relative;
 }
-/*Sub*/
+/*Footer__Sub-Content*/
 .footer__sub-content {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -711,7 +648,7 @@ main {
   font-size: 0.8854166666666667vw;
   font-family: 'GT Cinetype Mono';
 }
-.by {
+.sign {
   font-size: 0.8854166666666667vw;
   font-family: 'GT Cinetype Mono';
 }
@@ -816,22 +753,22 @@ main {
   -webkit-animation-delay: 1.3s;
           animation-delay: 1.3s;
 }
-/*Scroll description bg*/
-.wrap-bg {
+/*Wrapper-Primary-bg Opacity-Zero*/
+.wrapper-primary-bg_opacity-zero {
   -webkit-transition: all 1s ease;
   transition: all 1s ease;
   opacity: 0;
 }
-/*Button none*/
-.button-none {
+/*Primary-Button none*/
+.primary-button_none {
   opacity: 0;
 }
-/*Scroll-down-none*/
-.scroll-down-none {
+/*Scroll-down none*/
+.scroll-down_none {
   opacity: 0;
 }
-/*Scroll digital-sourcing bg*/
-.digital-sourcing-bg {
+/*Scroll Digital-Sourcing bg*/
+.digital-sourcing-bg_white {
   background: white;
   transition: all 0.4s ease;
   -webkit-transition: all 0.4s ease;
