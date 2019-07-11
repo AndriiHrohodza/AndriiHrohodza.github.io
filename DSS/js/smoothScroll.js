@@ -1,4 +1,4 @@
-var _win = $(window),
+/*var _win = $(window),
    _rAF = window.requestAnimationFrame,
    _cAF = window.cancelAnimationFrame,
    _AF = undefined,

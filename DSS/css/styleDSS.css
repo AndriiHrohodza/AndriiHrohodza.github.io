@@ -85,6 +85,7 @@ html {
 body {
   width: 100%;
   font-family: 'GT America';
+  cursor: none;
 }
 /*Header*/
 .header {
@@ -249,7 +250,7 @@ body {
   overflow: hidden;
 }
 .description-content__img img {
-  width: 39.84375vw;
+  width: 100%;
   height: 100%;
 }
 .description-content__img:before {
@@ -413,6 +414,9 @@ body {
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards;
 }
+.digital-sourcing__content {
+  overflow: hidden;
+}
 .digital-sourcing__text > div:nth-child(1) {
   overflow: hidden;
 }
@@ -544,8 +548,11 @@ body {
 }
 .contacts-content .contacts-btn {
   background-color: #252525;
-  color: #ffffff;
   margin-top: 4.6875vw;
+}
+.contacts-content a {
+  text-decoration: none;
+  color: white;
 }
 .contacts-text-wrapper > div:nth-child(1) {
   overflow: hidden;
@@ -774,7 +781,7 @@ body {
   -webkit-transition: all 0.4s ease;
 }
 /*Cursor*/
-.cursor-container {
+.dot {
   position: absolute;
   z-index: 9999;
   -webkit-user-select: none;
@@ -782,10 +789,32 @@ body {
       -ms-user-select: none;
           user-select: none;
   pointer-events: none;
-}
-.cursor-container .cursor {
-  width: 10px;
-  height: 10px;
-  background-color: black32,29166666666667;
+  width: 7px;
+  height: 7px;
+  background-color: black;
   border-radius: 50%;
+}
+.cursor {
+  width: 20px;
+  height: 20px;
+  z-index: 9998;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  pointer-events: none;
+  border: 2px solid white;
+  /* background-color: black; */
+  border-radius: 50%;
+  position: absolute;
+  -webkit-transition-duration: 100ms;
+          transition-duration: 100ms;
+  -webkit-transition-timing-function: ease-out;
+          transition-timing-function: ease-out;
+}
+.cursor-bg_black {
+  border: 2px solid black;
+}
+.cursor-bg_white {
+  border: 2px solid white;
 }

@@ -43,14 +43,24 @@ $(document).ready(function(){
       /*.addIndicators()*/
       .addTo(controller);
 
-      /*Digital-sourcing*/
+      /*Digital-Sourcing*/
+      //Digital-Sourcing text animation
       let digitalSourcingScene = new ScrollMagic.Scene({
            triggerElement: '#digital-sourcing-trigger',
            reverse: true,
-           triggerHook: 0.7
+           triggerHook: 0.85
       })
       .setClassToggle('#text-digital-magic', 'text-digital-sourcing-animation')
-      /*.addIndicators({name: "contacts"})*/
+      /*.addIndicators({name: "digit"})*/
+      .addTo(controller);
+
+      //Digital-Sourcing img animation
+      let DigitalImgScene = new ScrollMagic.Scene({
+            triggerElement: '#digital-sourcing-trigger',
+            reverse: true
+      })
+      .setClassToggle('#digital-img-magic img', 'img-scale')
+      /*.addIndicators()*/
       .addTo(controller);
 
       /*Contacts animation*/
@@ -80,6 +90,15 @@ $(document).ready(function(){
       })
       .setClassToggle('#contacts-button_trigger', 'fadeInUp')
       /*.addIndicators({name: "des"})*/
+      .addTo(controller);
+
+      //Contacts img animation
+      let ContactImgScene = new ScrollMagic.Scene({
+            triggerElement: '#contacts-trigger',
+            reverse: true
+      })
+      .setClassToggle('#contacts-img-magic img', 'img-scale')
+      /*.addIndicators()*/
       .addTo(controller);
                   
              
@@ -121,6 +140,16 @@ $(document).ready(function(){
            triggerHook: 1
       })
       .setClassToggle('#wrapper-description-digital', 'digital-sourcing-bg_white')
+      /*.addIndicators()*/
+      .addTo(controller);
+
+      /*Cursor*/
+      let cursorBorderWhiteScene = new ScrollMagic.Scene({
+           triggerElement: '#digital-sourcing-trigger',
+           reverse: true,
+           triggerHook: 1
+      })
+      .setClassToggle('#cursorBorderWhite', 'cursor-bg_black')
       /*.addIndicators()*/
       .addTo(controller);
 

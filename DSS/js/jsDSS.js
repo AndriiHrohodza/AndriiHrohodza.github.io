@@ -72,3 +72,37 @@ function loop() {
 }
 
 setInterval(loop, 1000 / 60);*/
+
+const cursor = document.querySelector('.cursor');
+
+document.addEventListener('mousemove', e => {
+
+	cursor.setAttribute("style", "top: "+(e.pageY - 10)+"px; left: "+(e.pageX - 10)+"px;")
+
+})
+
+const dot = document.querySelector('.dot');
+
+document.addEventListener('mousemove', e => {
+
+	dot.setAttribute("style", "top: "+(e.pageY - 3.5)+"px; left: "+(e.pageX - 3.5)+"px;")
+
+})
+
+let btnBorderBlack = document.getElementById("primary-button_trigger");
+
+btnBorderBlack.addEventListener("mouseover", () => {
+	cursor.classList.add("cursor-bg_black");
+})
+btnBorderBlack.addEventListener("mouseleave", () => {
+	cursor.classList.remove("cursor-bg_black");
+})
+
+let btnBorderWhite = document.getElementById("contacts-button_trigger");
+
+btnBorderWhite.addEventListener("mouseover", () => {
+	cursor.classList.add("cursor-bg_white");
+})
+btnBorderWhite.addEventListener("mouseleave", () => {
+	cursor.classList.remove("cursor-bg_white");
+})
