@@ -55,4 +55,5 @@ function scrollToAnimation(o, time, opt){
 
 function log(e){
    _log.text(e);
-}
+}*/
+

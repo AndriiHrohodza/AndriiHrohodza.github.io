@@ -73,7 +73,10 @@ function loop() {
 
 setInterval(loop, 1000 / 60);*/
 
-const cursor = document.querySelector('.cursor');
+
+/*Cursor*/
+
+/*
 
 document.addEventListener('mousemove', e => {
 
@@ -85,24 +88,68 @@ const dot = document.querySelector('.dot');
 
 document.addEventListener('mousemove', e => {
 
-	dot.setAttribute("style", "top: "+(e.pageY - 3.5)+"px; left: "+(e.pageX - 3.5)+"px;")
+	dot.setAttribute("style", "top: "+(e.pageY)+"px; left: "+(e.pageX)+"px;")
 
-})
+})*/
 
+
+/*Cursor*/
+
+$(document).ready(function(){
+	var $c = $("[data-custom-cursor]");
+
+	$(window).on("mousemove",function(e){
+		x = e.clientX;
+		y = e.clientY;
+		console.log(x,y);
+		$c.css("transform","matrix(1, 0, 0, 1, "+x+","+y+")");
+	});
+});
+
+$(document).ready(function(){
+	var $c = $("[data-cursor_border]");
+	var $h = $(".btn, button, a");
+
+	$(window).on("mousemove",function(e){
+		x = e.clientX;
+		y = e.clientY;
+		console.log(x,y);
+		$c.css("transform","matrix(1, 0, 0, 1, "+x+","+y+")");
+	});
+
+	/*Cursor_hover*/
+	$h.on("mouseenter",function(e){
+		$c.addClass("cursor_hover");
+	});
+
+	$h.on("mouseleave",function(e){
+		$c.removeClass("cursor_hover");
+	});
+});
+
+/*Cursor-border_active*/
+const cursor = document.querySelector('.cursor_border');
+
+/*Cursor-bg_black*/
 let btnBorderBlack = document.getElementById("primary-button_trigger");
 
 btnBorderBlack.addEventListener("mouseover", () => {
-	cursor.classList.add("cursor-bg_black");
+   cursor.classList.add("cursor-bg_black");
 })
 btnBorderBlack.addEventListener("mouseleave", () => {
-	cursor.classList.remove("cursor-bg_black");
+   cursor.classList.remove("cursor-bg_black");
 })
 
+/*Cursor-bg_white*/
 let btnBorderWhite = document.getElementById("contacts-button_trigger");
 
 btnBorderWhite.addEventListener("mouseover", () => {
-	cursor.classList.add("cursor-bg_white");
+   cursor.classList.add("cursor-bg_white");
 })
 btnBorderWhite.addEventListener("mouseleave", () => {
-	cursor.classList.remove("cursor-bg_white");
+   cursor.classList.remove("cursor-bg_white");
 })
+
+
+
+
