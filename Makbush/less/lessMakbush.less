@@ -1,0 +1,142 @@
+/*Fonts*/
+@font-face {
+    font-family: 'Gerbera';
+    src: url('../fonts/Gerbera.eot');
+    src: url('Gerbera.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Gerbera.woff2') format('woff2'),
+        url('../fonts/Gerbera.woff') format('woff'),
+        url('../fonts/Gerbera.ttf') format('truetype'),
+        url('../fonts/Gerbera.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Muller';
+    src: url('../fonts/MullerRegular.eot');
+    src: url('MullerRegular.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/MullerRegular.woff2') format('woff2'),
+        url('../fonts/MullerRegular.woff') format('woff'),
+        url('../fonts/MullerRegular.ttf') format('truetype'),
+        url('../fonts/MullerRegular.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+.gerbera-reg() {
+	font-family: 'Gerbera', sans-serif;
+}
+.muller-reg() {
+	font-family: 'Muller' , sans-serif;
+}
+
+/*Colors*/
+@btn-color: #fff;
+@return-call: #59A329;
+
+/*btn*/
+.btn {
+    font-size: 0.8854166666666667vw;
+    padding: 0.9895833333333333vw 4.270833333333333vw 1.041666666666667vw 4.322916666666667vw;
+    border: 0.0520833333333333vw solid @btn-color;
+    background-color: transparent;
+    margin-top: 0.0520833333333333vw;
+    outline: none;
+    color: #fff;
+    .gerbera-reg();
+}
+
+/*Container*/
+.container {
+    margin: 0 9%;
+}
+
+/*Clearfix*/
+.clearfix {
+    content: "";
+    display: table;
+    clear: both;
+}
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html {
+    font-size: 10px;
+    overflow-x: hidden;
+}
+body {
+    width: 100%;
+    height: 100%;
+    .muller-reg();
+    background-color: #fafaf3;
+}
+
+/*Wrapper-back*/
+.wrapper-back {
+    height: 100vh;
+    width: 100%;
+    background: url("../img/Primary/Back-bg.jpg") center no-repeat;
+    background-size: cover;
+    padding: 1.5625vw;
+}
+/*Wrapper-front*/
+.wrapper-front {
+    height: 100%;
+    background: url("../img/Primary/Front-bg.jpg") center no-repeat;
+    background-size: cover;
+}
+
+/*Header*/
+.header {
+    width: 100%;
+    padding-top: 1.041666666666667vw;
+}
+.navigation {
+    display: flex;
+    justify-content: flex-start;
+    .call-back {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding:  0.390625vw 0;
+        margin-right: 5.104166666666667vw;
+        a:not(.call-back__text) {
+            text-decoration: none;
+        }
+        &__number {
+            display: block;
+            font-size: 0.8854166666666667vw;
+            .gerbera-reg;
+            margin-bottom: 0.3125vw;
+            strong {
+                color: @btn-color;
+            }
+        }
+        &__text {
+            font-size: 0.78125vw;
+            color: @return-call;
+        }
+    }
+    .address {
+        padding: 0.390625vw 0;
+        margin-right: 13.4375vw;
+        align-items: center;
+        color: white;
+        &__text_sup {
+            font-size: 0.8854166666666667vw;
+            margin-bottom: 0.5208333333333333vw;
+        }
+        &__text_sub {
+            font-size: 0.8854166666666667vw;
+        }
+    }
+    .logo {
+        margin-right: 20.46875vw;
+        display: flex;
+        align-items: center;
+        img {
+            width: 13.54166666666667vw;
+        }
+    }
+}
