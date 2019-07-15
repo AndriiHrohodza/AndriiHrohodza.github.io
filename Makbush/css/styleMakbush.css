@@ -72,7 +72,7 @@ body {
 /*Wrapper-front*/
 .wrapper-front {
   height: 100%;
-  background: url("../img/Front-bg.jpg") center no-repeat;
+  /* background: url("../img/Front-bg.jpg") center no-repeat; */
   background-size: cover;
 }
 /*Header*/
@@ -222,6 +222,8 @@ body {
   display: -ms-flexbox;
   display: flex;
   overflow: hidden;
+  cursor: pointer;
+  width: 28.5rem;
 }
 .slider-pagination img {
   width: 100%;
@@ -239,4 +241,17 @@ body {
 }
 .slider-pagination__item:nth-child(3) {
   margin-left: 3.5rem;
+}
+li {
+  display: block;
+  position: relative;
+  list-style: none;
+}
+.active {
+  position: absolute;
+  opacity: 1;
+  width: 100%;
+  height: 100%;
+  display: block;
+  background: rgba(0, 0, 0, 0.5);
 }

@@ -89,7 +89,7 @@ body {
 /*Wrapper-front*/
 .wrapper-front {
     height: 100%;
-    background: url("../img/Front-bg.jpg") center no-repeat;
+    /* background: url("../img/Front-bg.jpg") center no-repeat; */
     background-size: cover;
 }
 
@@ -211,9 +211,12 @@ body {
     right: 0; */
     display: flex;
     margin-bottom: 6rem;
+
     &__item {
         display: flex;
         overflow: hidden;
+        cursor: pointer;
+        width: 28.5rem;
     }
     img {
         width: 100%;
@@ -233,3 +236,17 @@ body {
         margin-left: 3.5rem;
     }
 }
+li{
+    display: block;
+    position: relative;
+    list-style: none;
+}
+.active {
+    position: absolute;
+    opacity: 1;
+    width: 100%;
+    height: 100%;
+    display: block;
+    background: rgba(0,0,0,0.5);
+}
+

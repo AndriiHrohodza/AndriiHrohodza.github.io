@@ -9,7 +9,7 @@
   </head>
   <body>
   	<div class="wrapper-back">
-  		<div class="wrapper-front">
+  		<div class="wrapper-front" style='background-image: url(../Makbush/img/Front-bg.jpg);'>
   			<div class="container">
   				<header class="header">
   					<div class="navigation clearfix">
@@ -55,20 +55,20 @@
                 <span>Youtube</span>
               </div>
             </div>
-            <div class="slider-pagination">
-              <div class="slider-pagination__item">
-                <div><img src="img/primary/slider-pagination/coffee.png" alt="coffee"></div>
-                <!-- <div class="slider-pagination__btn"></div> -->
-              </div>
-              <div class="slider-pagination__item">
-                <div><img src="img/primary/slider-pagination/bags.png" alt="bags"></div>
-                <!-- <div class="slider-pagination__btn"></div> -->
-              </div>
-              <div class="slider-pagination__item">
-                <div><img src="img/primary/slider-pagination/folders.png" alt="folders"></div>
-                <!-- <div class="slider-pagination__btn"></div> -->
-              </div>
-            </div>
+            <ul class="slider-pagination">
+              <li class="slider-pagination__item coffe">
+                <div class="opacity_dark active"></div>
+                <img src="img/primary/slider-pagination/coffee.png" alt="coffee">
+              </li>
+              <li class="slider-pagination__item bags">
+                <div class="opacity_dark"></div>
+                <img src="img/primary/slider-pagination/bags.png" alt="bags">
+              </li>
+              <li class="slider-pagination__item folders">
+                <div class="opacity_dark"></div>
+                <img src="img/primary/slider-pagination/folders.png" alt="folders">
+              </li>
+            </ul>
           </div>
   			</div>
   		</div>
@@ -78,5 +78,7 @@
   	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
   	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 
+    <!-- Main JS -->
+    <script src="js/mainJS.js"></script>
   </body>
 </html>
