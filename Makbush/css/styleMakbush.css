@@ -30,6 +30,7 @@
   /* margin-top: 0.0520833333333333vw; */
   outline: none;
   color: #fff;
+  cursor: pointer;
   font-family: 'Gerbera', sans-serif;
 }
 /*Container*/
@@ -45,7 +46,7 @@
           align-items: center;
 }
 /*Clearfix*/
-.clearfix {
+.clearfix:after {
   content: "";
   display: table;
   clear: both;
@@ -65,15 +66,34 @@ body {
 .wrapper-back {
   height: 100vh;
   width: 100%;
-  background: url("../img/Back-bg.jpg") center no-repeat;
+  background: url("../img/1font.png") center no-repeat;
   background-size: cover;
   padding: 3.5rem;
+  -webkit-transition: all 3s;
+  transition: all 3s;
 }
 /*Wrapper-front*/
 .wrapper-front {
   height: 100%;
-  /* background: url("../img/Front-bg.jpg") center no-repeat; */
+  background: url("../img/1font.png") center no-repeat;
   background-size: cover;
+  -webkit-transition: all 3s;
+  transition: all 3s;
+}
+.wrapper-front:after {
+  content: "";
+  display: block;
+  background: rgba(0, 0, 0, 0.5);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  -webkit-transform: translateY(-10%);
+          transform: translateY(-10%);
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  z-index: 1;
 }
 /*Header*/
 .header {
@@ -81,6 +101,7 @@ body {
   top: 0;
   width: 100%;
   padding-top: 1.041666666666667vw;
+  z-index: 999;
 }
 .navigation {
   display: -webkit-box;
@@ -157,6 +178,20 @@ body {
 /*Primary*/
 .primary {
   width: 100%;
+  height: 20.8rem;
+  z-index: 999;
+}
+.primary__coffee {
+  position: absolute;
+  display: none;
+}
+.primary__bags {
+  position: absolute;
+  display: none;
+}
+.primary__folders {
+  position: absolute;
+  display: none;
 }
 .primary__sup-text {
   font-size: 3.75vw;
@@ -189,6 +224,7 @@ body {
       -ms-flex-align: end;
           align-items: flex-end;
   margin-bottom: 6.5rem;
+  z-index: 999;
 }
 .primary-contacts .instagram {
   margin-right: 6rem;
@@ -207,6 +243,10 @@ body {
   color: #B7B7B7;
   line-height: 160%;
 }
+.primary-contacts a {
+  text-decoration: none;
+  color: #B7B7B7;
+}
 /*Slider-pagination*/
 .slider-pagination {
   /* position: absolute;
@@ -216,6 +256,7 @@ body {
   display: -ms-flexbox;
   display: flex;
   margin-bottom: 6rem;
+  z-index: 999;
 }
 .slider-pagination__item {
   display: -webkit-box;
