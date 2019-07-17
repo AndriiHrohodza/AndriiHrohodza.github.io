@@ -85,6 +85,54 @@
   background-color: #3d3d3d;
   opacity: 0.5;
 }
+/*p selection*/
+p::-moz-selection {
+  background: #3d3d3d;
+  color: white;
+  /* Safari */
+}
+p::selection {
+  background: #3d3d3d;
+  color: white;
+  /* Safari */
+}
+p::-moz-selection {
+  background: #3d3d3d;
+  color: white;
+  /* Firefox */
+}
+/*h2 selection*/
+h2::-moz-selection {
+  background: #3d3d3d;
+  color: white;
+  /* Safari */
+}
+h2::selection {
+  background: #3d3d3d;
+  color: white;
+  /* Safari */
+}
+h2::-moz-selection {
+  background: #3d3d3d;
+  color: white;
+  /* Firefox */
+}
+/*h3 selection*/
+h3::-moz-selection {
+  background: #3d3d3d;
+  color: white;
+  /* Safari */
+}
+h3::selection {
+  background: #3d3d3d;
+  color: white;
+  /* Safari */
+}
+h3::-moz-selection {
+  background: #3d3d3d;
+  color: white;
+  /* Firefox */
+}
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
