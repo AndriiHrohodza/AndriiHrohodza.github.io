@@ -133,7 +133,7 @@ $(document).ready(function(){
       /*.addIndicators()*/
       .addTo(controller);
 
-      /*Scroll-Changing Features bg white*/
+      /*Scroll-Changing Digital-Sourcing bg white*/
       let scrollChangingFeaturesBgScene = new ScrollMagic.Scene({
            triggerElement: '#digital-sourcing-trigger',
            reverse: true,
@@ -144,6 +144,16 @@ $(document).ready(function(){
       .addTo(controller);
 
       /*Cursor*/
+      let cursorWhiteScene = new ScrollMagic.Scene({
+           triggerElement: '#digital-sourcing-trigger',
+           reverse: true,
+           triggerHook: 1
+      })
+      .setClassToggle('#cursorWhite', 'cursor_black')
+      /*.addIndicators()*/
+      .addTo(controller);
+
+      /*Cursor Border*/
       let cursorBorderWhiteScene = new ScrollMagic.Scene({
            triggerElement: '#digital-sourcing-trigger',
            reverse: true,
