@@ -73,7 +73,7 @@
 }
 /*ScrollBar*/
 ::-webkit-scrollbar {
-  width: 7px;
+  width: 5px;
 }
 ::-webkit-scrollbar-thumb {
   -webkit-box-shadow: inset 0 0 50px #ffffff;
@@ -863,6 +863,9 @@ body {
 /*Cursor*/
 .cursor_black {
   background-color: black;
+}
+.cursor_white {
+  background-color: white;
 }
 /*Cursor Border*/
 .cursor-bg_black {

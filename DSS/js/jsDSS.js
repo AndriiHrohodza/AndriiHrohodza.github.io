@@ -97,6 +97,8 @@ document.addEventListener('mousemove', e => {
 
 $(document).ready(function(){
 	var $c = $("[data-custom-cursor]");
+   var $h = $("#primary-button_trigger");
+   var $p = $("#contacts-button_trigger");
 
 	$(window).on("mousemove",function(e){
 		x = e.clientX;
@@ -104,6 +106,23 @@ $(document).ready(function(){
 		console.log(x,y);
 		$c.css("transform","matrix(1, 0, 0, 1, "+x+","+y+")");
 	});
+
+   $h.on("mouseenter",function(e){
+      $c.addClass("cursor_black");
+   });
+
+   $h.on("mouseleave",function(e){
+      $c.removeClass("cursor_black");
+   });
+
+   $p.on("mouseenter",function(e){
+      $c.addClass("cursor_white");
+   });
+
+   $p.on("mouseleave",function(e){
+      $c.removeClass("cursor_white");
+   });
+
 });
 
 $(document).ready(function(){
