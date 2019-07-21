@@ -496,6 +496,9 @@ body {
           justify-content: flex-end;
 }
 /*Solution*/
+.solution {
+  margin-bottom: 31rem;
+}
 .solution__content {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -505,7 +508,6 @@ body {
           justify-content: space-between;
   width: 100%;
   height: 76.5rem;
-  margin-bottom: 31rem;
 }
 .solution__text {
   width: 63.5rem;
@@ -591,28 +593,69 @@ body {
   border: 1px solid #4C4C4C;
   z-index: 999;
 }
-/* .solution__square:before {
-	content: "";
-	display: block;
-	position: absolute;
-	bottom: 5.3rem;
-	left: -6rem;
-	width: 40.7rem;
-	height: 40.7rem;
-	border: 1px solid #4C4C4C;
-	z-index: 999;
-} */
-/* .solution__square:after {
-	content: "";
-	display: block;
-	position: absolute;
-	top: 11rem;
-	right: -10.7rem;
-	width: 57.6rem;
-	height: 43.3rem;
-	border: 1px solid #4C4C4C;
-	z-index: 999;
-} */
+/*Card*/
+.card {
+  margin-bottom: 31rem;
+}
+.card__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+  height: 87.5rem;
+  margin-bottom: 31rem;
+  background-color: #252525;
+}
+.card__text {
+  width: 76.8rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: white;
+  padding-left: 13.3rem;
+}
+.card__text .text-wrapper-caption {
+  font-family: 'GT America';
+  font-weight: 900;
+  margin-bottom: 3.4rem;
+}
+.card__text .text-wrapper-caption h2 {
+  font-size: 5.8rem;
+  line-height: 125%;
+}
+.card__text .text-wrapper-desc {
+  width: 95%;
+  font-family: 'GT America';
+  font-size: 2.1rem;
+  line-height: 160%;
+}
+.card__img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.card__img .image {
+  width: 71.3rem;
+  padding: 2.4rem 0 2.4rem 2.4rem;
+  background-color: #1D1D1D;
+}
+.card__img .image img {
+  width: 100%;
+  height: 100%;
+}
 /*Features*/
 .features {
   position: relative;
