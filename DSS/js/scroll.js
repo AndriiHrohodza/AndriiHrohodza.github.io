@@ -43,6 +43,48 @@ $(document).ready(function(){
       /*.addIndicators()*/
       .addTo(controller);
 
+      /*Task*/
+      //Task text animation
+      let taskScene = new ScrollMagic.Scene({
+           triggerElement: '#task',
+           reverse: true,
+           triggerHook: 0.85
+      })
+      .setClassToggle('#task-text-magic', 'text-animation')
+      .addIndicators({name: "task"})
+      .addTo(controller);
+
+      // Task-text animation FadeInUp
+      let taskFadeInScene = new ScrollMagic.Scene({
+           triggerElement: '#task',
+           reverse: true,
+           triggerHook: 0.85
+      })
+      .setClassToggle('#task-text-magic_fade', 'fadeInUp')
+      .addIndicators({name: "task"})
+      .addTo(controller);
+
+      /*Solution*/
+      //Solution text animation
+      let solutionScene = new ScrollMagic.Scene({
+           triggerElement: '#smart_staffing',
+           reverse: true,
+           triggerHook: 0.85
+      })
+      .setClassToggle('#solution-text-magic', 'text-animation')
+      /*.addIndicators({name: "solution"})*/
+      .addTo(controller);
+
+      //Solution-text animation FadeInUp
+      let solutionFadeScene = new ScrollMagic.Scene({
+           triggerElement: '#smart_staffing',
+           reverse: true,
+           triggerHook: 0.85
+      })
+      .setClassToggle('#solution-text-magic_fade', 'fadeInUp')
+      .addIndicators({name: "task"})
+      .addTo(controller);
+
       /*Digital-Sourcing*/
       //Digital-Sourcing text animation
       let digitalSourcingScene = new ScrollMagic.Scene({
