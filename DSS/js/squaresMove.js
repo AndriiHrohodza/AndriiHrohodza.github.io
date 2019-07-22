@@ -32,7 +32,7 @@ $(document).ready(function() {
     TweenMax.to(box, 0.6, {
       x: x,
       y: y,
-      ease: Power4.easeOut
+      ease: Power1.easeOut
     });
   });
 });
