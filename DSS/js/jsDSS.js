@@ -168,7 +168,3 @@ btnBorderWhite.addEventListener("mouseover", () => {
 btnBorderWhite.addEventListener("mouseleave", () => {
    cursor.classList.remove("cursor-bg_white");
 })
-
-
-
-

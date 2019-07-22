@@ -157,11 +157,9 @@
           <div class="container">
             <div class="solution__content">
               <div id="#" class="solution__square">
-                <div class="square">
-                  <!-- <div class="min-square"></div> -->
-                </div>
-                <div class="square--left"></div>
-                <div class="square--right"></div>
+                <div class="square"></div>
+                <div class="square--left" data-left></div>
+                <div class="square--right" data-right></div>
               </div>
               <div class="solution__text">
                 <div class="text-wrapper-caption">
@@ -179,7 +177,7 @@
                   </div>
                   <br>
                   <div>
-                    <p>
+                    <p id="solution-text-magic_fade">
                       You do not have to change the system that is convenient for you. Do you manage tasks in Jira or Bugzill? Go on! Now you have time to concentrate directly on the project and not be distracted by management processes.
                     </p>
                   </div>
@@ -454,5 +452,7 @@
     <script src="js/scroll.js"></script>
     <!-- Main JS -->
     <script src="js/jsDSS.js"></script>
+    <!-- Squares Move-->
+    <script src="js/squaresMove.js"></script>
   </body>
 </html>
