@@ -51,7 +51,7 @@ $(document).ready(function(){
            triggerHook: 0.85
       })
       .setClassToggle('#task-text-magic', 'text-animation')
-      .addIndicators({name: "task"})
+      /*.addIndicators({name: "task"})*/
       .addTo(controller);
 
       // Task-text animation FadeInUp
@@ -61,7 +61,7 @@ $(document).ready(function(){
            triggerHook: 0.85
       })
       .setClassToggle('#task-text-magic_fade', 'fadeInUp')
-      .addIndicators({name: "task"})
+      /*.addIndicators({name: "task"})*/
       .addTo(controller);
 
       /*Solution*/
@@ -82,7 +82,7 @@ $(document).ready(function(){
            triggerHook: 0.85
       })
       .setClassToggle('#solution-text-magic_fade', 'fadeInUp')
-      .addIndicators({name: "task"})
+      /*.addIndicators({name: "sol"})*/
       .addTo(controller);
 
       /*Digital-Sourcing*/
