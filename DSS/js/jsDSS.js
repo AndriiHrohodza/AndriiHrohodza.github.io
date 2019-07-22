@@ -4,7 +4,7 @@ var controller = new ScrollMagic.Controller();
 // pin 
 var pinFeatureScene = new ScrollMagic.Scene({
 	triggerElement: '#features-pin',
-	triggerHook: 0.25,
+	triggerHook: 0.3,
 	duration: '150%'
 })
 .setPin('#features-pin')

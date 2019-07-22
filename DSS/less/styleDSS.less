@@ -10,7 +10,7 @@
     font-weight: 900;
     font-style: normal;
 }
-@font-face {
+/* @font-face {
     font-family: 'GT Cinetype';
     src: url('../fonts/GTCinetype-Bold.eot');
     src: url('GTCinetype-Bold.eot?#iefix') format('embedded-opentype'),
@@ -20,7 +20,7 @@
         url('../fonts/GTCinetype-Bold.svg') format('svg');
     font-weight: bold;
     font-style: normal;
-}
+} */
 
 @font-face {
     font-family: 'GT America';
@@ -33,15 +33,30 @@
     font-weight: normal;
     font-style: normal;
 }
+@font-face {
+    font-family: 'GT America Bold';
+    src: url('../fonts/GTAmerica-Bold.eot');
+    src: url('GTAmerica-Bold.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/GTAmerica-Bold.woff2') format('woff2'),
+        url('../fonts/GTAmerica-Bold.woff') format('woff'),
+        url('../fonts/GTAmerica-Bold.ttf') format('truetype'),
+        url('../fonts/GTAmerica-Bold.svg') format('svg');
+    font-weight: bold;
+    font-style: normal;
+}
+
 .America() {
 	font-family: 'GT America';
+}
+.America-Bold() {
+	font-family: 'GT America Bold';
 }
 .Cinetype-Mono() {
 	font-family: 'GT Cinetype Mono';
 }
-.Cinetype-Bold() {
+/* .Cinetype-Bold() {
 	font-family: 'GT Cinetype';
-}
+} */
 
 /*Colors*/
 @btn-color: #fff;
@@ -73,21 +88,21 @@
 	opacity: 1;
 	transition: all 1s;
 	height: 100vh;
-	background: url(../img/photo_back.png) center no-repeat;
+	background: url(../img/photo_back.jpg)  center no-repeat;
 	background-size: cover;
 }
 
 /*btn*/
 .btn  {
 	line-height: 4.6875vw;
-	max-width: 16.5625vw;
+	max-width: 17.1875vw;
 	width: 100%;
 	background-color: @btn-color;
 	border: none;
 	outline: none;
 	transition: all 0.5s;
 	font-size: 1.09375vw;
-	.Cinetype-Bold();
+	.America();
 }
 .btn:hover {
 	letter-spacing: 0.125rem;
@@ -176,6 +191,7 @@ body {
 		font-size: 1.666666666666667vw;
 		font-weight: bold;
 		padding: 0;
+		.America-Bold();
 	}
 	.header-item a {
 		text-decoration: none;
@@ -237,6 +253,7 @@ body {
 }
 .sub-item {
 	margin-top: 0.666666666666667vw;
+	.America-Bold();
 	&__text {
 		overflow: hidden;
 		padding-bottom: 1vh;
@@ -350,9 +367,11 @@ body {
 }
 .description-text-wrapper > div:nth-child(1) {
 	overflow: hidden;
+	.America-Bold();
 }
 .description-text-wrapper > div:nth-child(2) {
 	overflow: hidden;
+	.America-Bold();
 }
 .description-text-wrapper > div:nth-child(3) {
 	.Cinetype-Mono();
@@ -392,7 +411,6 @@ body {
 	margin-bottom: 9.895833333333333vw;
 	color: white;
 	h3 {
-		.Cinetype-Bold();
 		font-size: 3.020833333333333vw;
 		line-height: 125%;
 		margin-bottom: 1.302083333333333vw;
@@ -410,6 +428,7 @@ body {
 }
 .task__title > div:nth-child(1) {
 	overflow: hidden;
+	.America-Bold();
 }
 .task__content {
 	display: flex;
@@ -438,10 +457,14 @@ body {
 				font-size: 1.09375vw;
 				line-height: 160%;
 				opacity: 0.2;
+				transition: all 0.5s;
 			}
-			p:hover {
+			/* p:hover {
 				opacity: 1;
-			}
+			} */
+		}
+		.item:hover p {
+			opacity: 1;
 		}
 		.item:nth-child(1) {
 			margin-bottom: 0.78125vw;
@@ -478,7 +501,7 @@ body {
 	justify-content: center;
 	color: white;
 	.text-wrapper-caption {
-		.America();
+		.America-Bold();
 		font-weight: 900;
 		margin-bottom: 3.4rem;
 		h2 {
@@ -676,6 +699,7 @@ body {
 				font-size: 3.020833333333333vw;
 				margin-bottom: 1.302083333333333vw;
 				line-height: 120%;
+				.America-Bold();
 			}
 			p {
 				font-size: 1.09375vw;
@@ -700,6 +724,7 @@ body {
 		font-weight: 800;
 		margin-bottom: 4.6875vw;
 		color: #1D1D1D;
+		.America-Bold();
 		p:first-child {
 			margin-bottom: 0.5208333333333333vw;
 		}
@@ -811,14 +836,14 @@ body {
 		.contacts-text-wrapper {
 			width: 79%;
 		}
-		.contacts-text-wrapper > div:nth-child(3) p {
+		.contacts-text-wrapper > div:nth-child(4) p {
 			.America();
 			line-height: 160%;
 		}
 		h3 {
 		 margin: 0 ;
 		 font-size: 3.020833333333333vw;
-		 font-weight: 800; 
+		 .America-Bold();
 		 animation-duration: 1s;
 		 animation-fill-mode: forwards;
 		}
@@ -904,6 +929,7 @@ body {
 		font-size: 1.666666666666667vw;
 		font-weight: bold;
 		padding: 0;
+		.America-Bold();
 	}
 	.footer-item a {
 		text-decoration: none;
