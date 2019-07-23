@@ -161,6 +161,7 @@ body {
   width: 100%;
   font-family: 'GT America';
   cursor: none;
+  overflow-x: hidden;
 }
 /*Header*/
 .header {
@@ -1341,9 +1342,6 @@ a {
 }
 /*Responsive*/
 @media screen and (max-width: 768px) {
-  * {
-    /* overflow-x: hidden; */
-  }
   .btn {
     max-width: 19.5rem;
     height: 5.4rem;
