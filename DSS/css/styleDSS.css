@@ -1017,6 +1017,8 @@ body {
 .contacts-content .contacts-btn {
   background-color: #252525;
   margin-top: 4.6875vw;
+  -webkit-animation-delay: 1.2s;
+          animation-delay: 1.2s;
 }
 .contacts-content a {
   text-decoration: none;
@@ -1028,13 +1030,12 @@ body {
 }
 .contacts-text-wrapper > div:nth-child(1) {
   font-family: 'GT Cinetype Mono';
-  overflow: hidden;
 }
 .contacts-text-wrapper > div:nth-child(1) p {
-  -webkit-transform: translateY(320%);
-          transform: translateY(320%);
-  -webkit-animation-delay: 1.2s;
-          animation-delay: 1.2s;
+  /* transform: translateY(320%); */
+  -webkit-animation-delay: 0.7s;
+          animation-delay: 0.7s;
+  opacity: 0;
 }
 .contacts-text-wrapper > div:nth-child(2) h3 {
   -webkit-transform: translateY(100%);

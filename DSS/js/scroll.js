@@ -112,7 +112,7 @@ $(document).ready(function(){
            reverse: true,
            triggerHook: 0.7
       })
-      .setClassToggle('#contacts-text-magic', 'text-contacts-animation')
+      .setClassToggle('#contacts-text-magic', 'fadeInUp')
       /*.addIndicators({name: "contacts"})*/
       .addTo(controller);
 
