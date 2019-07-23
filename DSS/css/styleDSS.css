@@ -430,8 +430,8 @@ body {
 .img-scale {
   -webkit-animation-name: scale;
           animation-name: scale;
-  -webkit-animation-duration: 10s;
-          animation-duration: 10s;
+  -webkit-animation-duration: 12s;
+          animation-duration: 12s;
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards;
   -webkit-animation-timing-function: linear;
@@ -1336,4 +1336,10 @@ a {
 /*a, button Hover affect*/
 .cursor_hover {
   opacity: 1;
+}
+/*Responsive*/
+@media screen and (max-width: 320px) {
+  .container-wrapper {
+    margin: 0;
+  }
 }
