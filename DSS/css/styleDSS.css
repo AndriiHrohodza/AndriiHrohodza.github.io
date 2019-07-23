@@ -66,7 +66,7 @@
   -webkit-transition: all 1s;
   transition: all 1s;
   height: 100vh;
-  background: url(../img/photo_back.jpg) center no-repeat;
+  background: url(../img/photo_back.jpg) top no-repeat;
   background-size: cover;
 }
 /*btn*/
@@ -929,6 +929,7 @@ body {
   -webkit-box-align: end;
       -ms-flex-align: end;
           align-items: flex-end;
+  height: 6.481481481481481vh;
   margin-bottom: 1.979166666666667vw;
 }
 .services__sup-content .items .first-row p,
