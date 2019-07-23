@@ -1413,6 +1413,10 @@ a {
   .sub-item__text h2 {
     font-size: 2.3rem;
   }
+  /*Scroll*/
+  .scroll {
+    display: none;
+  }
   /*Company-Description*/
   .company-description {
     padding-top: 13rem;
@@ -1489,10 +1493,13 @@ a {
   }
   .task__title h3 {
     font-size: 2.3rem;
-    margin-bottom: 1.5rem;
+    margin-bottom: 0;
   }
   .task__title p {
     font-size: 1.4rem;
+  }
+  .task__title > div:nth-child(1) {
+    margin-bottom: 1.5rem;
   }
   .task__content {
     display: block;
