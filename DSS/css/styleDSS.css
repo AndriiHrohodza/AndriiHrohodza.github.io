@@ -1280,8 +1280,8 @@ body {
 }
 .cursor_border {
   position: fixed;
-  top: -0.72916667vw;
-  left: -0.703125vw;
+  top: -1.5%;
+  left: -0.65%;
   width: 1.5625vw;
   height: 1.5625vw;
   z-index: 9998;
