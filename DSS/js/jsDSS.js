@@ -1,5 +1,5 @@
 /*Features-horizontal-scroll */
-/*$(document).ready(function(){
+$(document).ready(function(){
 var controller = new ScrollMagic.Controller();
 // pin 
 var pinFeatureScene = new ScrollMagic.Scene({
@@ -10,9 +10,9 @@ var pinFeatureScene = new ScrollMagic.Scene({
 .setPin('#features-pin')
 .setTween(TweenMax.staggerFromTo(".features-content", 2, {left: '50vw'}, {left: '-120vw', easeInOut: Back.easeOut}, 0.15))
 /*.addIndicators({name: "pin"})*/
-/*.addTo(controller);
-});*/
-*/
+.addTo(controller);
+});
+
 /*Cursor*/
 /*document.body.style.cursor = 'none';
 function lerp(start, end, amt) {
