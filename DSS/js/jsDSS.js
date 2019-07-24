@@ -13,6 +13,17 @@ var pinFeatureScene = new ScrollMagic.Scene({
 .addTo(controller);
 });
 
+/*Nav*/
+$('.toggle-button').click(function(){
+/*береш своє меню яке має випадати наприклад:*/
+$('.main-menu').toggleClass('toggle-active')
+})
+
+
+
+
+
+
 /*Cursor*/
 /*document.body.style.cursor = 'none';
 function lerp(start, end, amt) {
@@ -168,3 +179,39 @@ btnBorderWhite.addEventListener("mouseover", () => {
 btnBorderWhite.addEventListener("mouseleave", () => {
    cursor.classList.remove("cursor-bg_white");
 })
+
+/*Scroll = (
+    function(){
+          var x,y;
+         function hndlr(){
+            window.scrollTo(x,y);
+            //return;
+          }  
+          return {
+
+               disable : function(x1,y1){
+                    x = x1;
+                    y = y1;
+                   if(window.addEventListener){
+                       window.addEventListener("scroll",hndlr);
+                   } 
+                   else{
+                        window.attachEvent("onscroll", hndlr);
+                   }     
+
+               },
+               enable: function(){
+                      if(window.removeEventListener){
+                         window.removeEventListener("scroll",hndlr);
+                      }
+                      else{
+                        window.detachEvent("onscroll", hndlr);
+                      }
+               } 
+
+          }
+    })();
+ //for disabled scroll bar.
+Scroll.disable(0,document.body.scrollTop);
+//for enabled scroll bar.
+Scroll.enable();*/
