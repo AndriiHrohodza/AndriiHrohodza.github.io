@@ -1425,7 +1425,7 @@ a {
     /* transform: translateY(-50%);
 			transform: translateX(-50%); */
     left: -10%;
-    background-color: #1C1C1C;
+    background-color: red;
     z-index: 800;
   }
   .header .main-menu li {
