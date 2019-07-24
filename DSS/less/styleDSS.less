@@ -1202,6 +1202,28 @@ button, a {
 			background-color: red;//1C1C1C
 			z-index: 800;
 		}
+		.main-menu:after {
+			display: block;
+			content: "";
+			width: 6rem;
+			height: 6rem;
+			position: absolute;
+			bottom: 0;
+			left: 2%;
+			border: 1px solid #4C4C4C;
+			border-bottom: none;
+		}
+		.main-menu:before {
+			display: block;
+			content: "";
+			width: 6rem;
+			height: 6rem;
+			position: absolute;
+			bottom: 0;
+			right: 0;
+			border: 1px solid #4C4C4C;
+			border-bottom: none;
+		}
 		.main-menu li {
 			width: 100%;
 			display: block;
@@ -1217,7 +1239,7 @@ button, a {
 		.main-menu a {
 			display: block;
 		}
-		.form:after {
+		/* .form:after {
 			content: "";
 			display: block;
 			position: absolute;
@@ -1227,9 +1249,9 @@ button, a {
 			height: 6rem;
 			border: 1px solid #4C4C4C;
 			border-bottom: none;
-			/* background-color: red; */
-		}
-		.form:before {
+			background-color: red;
+		} */
+		/* .form:before {
 			content: "";
 			display: block;
 			position: absolute;
@@ -1239,8 +1261,8 @@ button, a {
 			height: 6rem;
 			border: 1px solid #4C4C4C;
 			border-bottom: none;
-			/* background-color: red; */
-		}
+			background-color: red;
+		} */
 		.toggle-button {
 			text-align: center;
 			display: block;
