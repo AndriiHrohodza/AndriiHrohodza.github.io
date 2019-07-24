@@ -87,21 +87,22 @@ body {
   color: white;
   font-family: 'Cuprum', sans-serif;
 }
-.header__nav .search__input:before {
+.header__nav .search__input::before {
   content: "0x1f50d";
 }
-.header__nav .search__input:focus {
+.header__nav .search__input::focus {
   background-color: #ffffff;
   color: black;
   opacity: 1;
 }
-.header__nav .search__input:focus + label {
+.header__nav .search__input::focus + label {
   color: red;
   opacity: 1;
 }
-.header__nav .search__input:hover + label {
+.header__nav .search__input::hover + label {
   opacity: 1;
-  
+  background-color: #ffffff;
+  color: black;
 }
 .header__nav .search__label {
   background: none;

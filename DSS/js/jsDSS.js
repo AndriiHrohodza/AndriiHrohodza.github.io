@@ -14,8 +14,33 @@ var pinFeatureScene = new ScrollMagic.Scene({
 });
 
 /*Nav*/
+$( document ).ready(function() {
+   let toggle = false
+    $('.toggle-button').click(function(){
+      $('ul').toggleClass('toggle-active');
+      toggle = !toggle
+      toggleFunc(toggle, $(this));
+   })
+   $('ul li a').click(function(){
+      $('ul').removeClass('toggle-active');
+      toggleFunc(false, $('.toggle-button'));
+      toggle = false
+   })
+   function toggleFunc(tgl, jq){
+      if(tgl)$(jq).text('Close');
+      else $(jq).text('Menu +');
+   }
+   /*$('.toggle-button').click(function(){
+      $('.main-menu').toggleClass('text-opacity')
+   })*/
+});
+
+
+
+
+
 /*$('.toggle-button').click(function(){
-$('.main-menu').toggleClass('toggle-active')
+$('.main-menu').toggleClass('toggle-active toggle-animation')
 })
 $('.toggle-button').click(function(){
 
@@ -30,12 +55,12 @@ $('.toggle-button').click(function(){
 $('.main-menu:before').css('opacity', '1')
 })*/
 
-function toggleMenu() {
+/*function toggleMenu() {
   $(".main-menu").fadeToggle(800);
 }
 
 $(".toggle-button").click(toggleMenu);
-$("li.header-item a").click(toggleMenu);
+$("li.header-item a").click(toggleMenu);*/
 
 
 

@@ -1167,7 +1167,7 @@ button, a {
 	/*Header*/
 	.container-wrapper {
 		margin: 0 6%; 
-		height: 55.5rem;
+		height: 100vh;
 	}
 	.header {
 		width: 88%;
@@ -1193,6 +1193,7 @@ button, a {
 				font-size: 2.1rem;
 			}
 		}
+
 		.hidden {
 			display: none;
 		}
@@ -1204,21 +1205,21 @@ button, a {
 			justify-content: flex-end;
 		}
 		.main-menu {
-			/* display: block; */
-			width: 113.7%;
+			display: block;
+			width: 100%;
 			height: 100vh;
 			position: fixed;
 			top: 0;
-			left: -7%;
-			/* transform: translateY(-100%);
-						 */			background-color: #1C1C1C;//1C1C1C
+			left: 0;
+			transform: translateY(-100%);
+			transition: all 0.3s linear;
+			background-color: #1C1C1C;//1C1C1C
 			/* animation-name: nav-animation;
 			animation-duration: 2s;
 			animation-fill-mode: forwards;
 			transition: all 1.5s linear; */
 			z-index: 888;
-
-			/* transform: translateY(-100%); */
+			
 		}
 		.main-menu:after {
 			display: block;
@@ -1230,7 +1231,7 @@ button, a {
 			left: 0;
 			border: 1px solid #4C4C4C;
 			border-bottom: none;
-			opacity: 0;
+			opacity: 1;
 		}
 		.main-menu:before {
 			display: block;
@@ -1243,8 +1244,9 @@ button, a {
 			border: 1px solid #4C4C4C;
 			border-right: none;
 			border-bottom: none;
-			opacity: 0;
+			opacity: 1;
 		}
+
 		.main-menu li {
 			width: 100%;
 			display: block;
@@ -1253,51 +1255,27 @@ button, a {
 			padding-left: 20%;
 			margin-bottom: 5rem;
 			text-align: center;
-			transition: all 0.5s;
-			animation-duration: 1s;
-			animation-delay: 1.3s;
-			animation-fill-mode: forwards;
-			/* opacity: 0; */
+			opacity: 1;
+			transition:all .5s linear;
 		}
-		/*Animation opacity*/
-		.text-opacity {
-			animation-name: fadeIn;
+		/* .text-opacity {
+			opacity: 1;
+			animation-name: opacity-text;
 		}
-		@keyframes fadeIn {
+		Animation opacity
+		@keyframes opacity-text {
 			to {
-			  opacity: 1;
-			}
-		}
+		    opacity: 1;
+		    
+		  }
+		} */
 		.main-menu li:nth-child(1) {
 			margin-top: 12rem;
 		}
 		.main-menu a {
 			display: block;
+			
 		}
-		/* .form:after {
-			content: "";
-			display: block;
-			position: absolute;
-			left: 2%;
-			top: 325%;
-			width: 6rem;
-			height: 6rem;
-			border: 1px solid #4C4C4C;
-			border-bottom: none;
-			background-color: red;
-		} */
-		/* .form:before {
-			content: "";
-			display: block;
-			position: absolute;
-			right: 0;
-			top: 325%;
-			width: 6rem;
-			height: 6rem;
-			border: 1px solid #4C4C4C;
-			border-bottom: none;
-			background-color: red;
-		} */
 		.toggle-button {
 			text-align: center;
 			display: block;
@@ -1308,32 +1286,30 @@ button, a {
 			z-index: 999;
 			transition:all .5s linear;
 		}
-		.toggle-button:after {
-		content: attr(data-open);
-			display: block;
+		.toggle-button a{
+			text-decoration: none;
+			color: white;
 		}
-		
 		/*Active*/
 		.toggle-active {
 			display: block;
+			transform: translateY(0);
 			position:fixed;
 			left: 0;
 			top:0;
 			transition:all .5s linear;
 		}
+		
 		.toggle-nav {
 			color: black;
 		}
 		.toggle-logo a{
 			color: black;
 		}
-		/* .toggle-animation {
-			animation-name: nav-animation;
-		} */
-		/*Nav animation*/
-		@keyframes nav-animation {
-			to { transform: translateY(0) }
+		.toggle-animation {
+			transform: translateY(0);
 		}
+
 		/* #menu-checkbox:checked + nav[role="navigation"] .main-menu {
 			display: block;
 		}*/
