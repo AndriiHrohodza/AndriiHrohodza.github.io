@@ -35,7 +35,7 @@ function toggleMenu() {
 }
 
 $(".toggle-button").click(toggleMenu);
-$("a").click(toggleMenu);
+$("li.header-item a").click(toggleMenu);
 
 
 
@@ -51,6 +51,7 @@ $(this).text( 'close')
 $(this).text( 'menu')
 }
 })
+
 
 
 
