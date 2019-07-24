@@ -144,7 +144,25 @@ $(document).ready(function(){
       .addTo(controller);
                   
              
+      /*Mobile Menu Nav bg*/
+      let mobileNavScene = new ScrollMagic.Scene({
+           triggerElement: '#digital-sourcing-trigger',
+           reverse: true,
+           triggerHook: 1
+      })
+      .setClassToggle('#toggle-trigger', 'toggle-nav')
+      .addIndicators()
+      .addTo(controller);
 
+      /*Mobile Logo Nav bg*/
+      let mobileLogoScene = new ScrollMagic.Scene({
+           triggerElement: '#digital-sourcing-trigger',
+           reverse: true,
+           triggerHook: 1
+      })
+      .setClassToggle('#logo-trigger', 'toggle-logo')
+      .addIndicators()
+      .addTo(controller);
       /*Scroll-Changing Primary bg opacity zero*/
       let scrollChangingPrimaryBgScene = new ScrollMagic.Scene({
            triggerElement: '#description-trigger',

@@ -14,11 +14,43 @@ var pinFeatureScene = new ScrollMagic.Scene({
 });
 
 /*Nav*/
-$('.toggle-button').click(function(){
-/*береш своє меню яке має випадати наприклад:*/
+/*$('.toggle-button').click(function(){
 $('.main-menu').toggleClass('toggle-active')
 })
+$('.toggle-button').click(function(){
 
+$('.main-menu li').toggleClass('text-opacity')
+})
+$('.toggle-button').click(function(){
+
+$('.main-menu:after').toggleClass('text-opacity')
+})
+$('.toggle-button').click(function(){
+
+$('.main-menu:before').css('opacity', '1')
+})*/
+
+function toggleMenu() {
+  $(".main-menu").fadeToggle(800);
+}
+
+$(".toggle-button").click(toggleMenu);
+$("a").click(toggleMenu);
+
+
+
+
+/*$('.toggle-button').click(function(){
+береш своє меню яке має випадати наприклад:
+$('.main-menu').toggleClass('mob-animation')
+})*/
+$('.toggle-menu').click(function(){
+if($('.toggle-menu').has('.active')){
+$(this).text( 'close')
+}else{
+$(this).text( 'menu')
+}
+})
 
 
 
