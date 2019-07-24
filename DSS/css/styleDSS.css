@@ -200,30 +200,36 @@ body {
   text-decoration: none;
   color: #ffffff;
 }
-.header__section-nav {
+#menu-checkbox {
+  display: none;
+}
+.header-item a {
+  text-decoration: none;
+  color: #ffffff;
+}
+.main-menu {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   position: relative;
 }
-.header__section-nav .header-item a {
-  text-decoration: none;
-  color: #ffffff;
+.main-menu li {
+  list-style: none;
 }
-.header__section-nav .header-item {
+.header-item {
   font-size: 1.09375vw;
   padding: 0 2.864583333333333vw;
 }
-.header__section-nav .header-item:nth-child(1) {
+.header-item:nth-child(1) {
   padding-left: 0;
 }
-.header__section-nav .header-item:nth-child(5) {
+.header-item:nth-child(5) {
   padding-right: 0;
   position: relative;
 }
-.header__section-nav .more {
-  display: none;
-}
+/* .more {
+		display: none;
+	} */
 /*Primary*/
 .primary {
   width: 100%;
@@ -1342,6 +1348,12 @@ a {
 }
 /*Responsive*/
 @media screen and (max-width: 768px) {
+  html {
+    overflow-x: hidden;
+  }
+  body {
+    overflow-x: hidden;
+  }
   .btn {
     max-width: 19.5rem;
     height: 5.4rem;
@@ -1349,6 +1361,12 @@ a {
   }
   .container {
     margin: 0 6%;
+  }
+  .custom-cursor {
+    display: none;
+  }
+  .cursor_border {
+    display: none;
   }
   /*Header*/
   .container-wrapper {
@@ -1366,31 +1384,128 @@ a {
     left: 6%;
   }
   .header__content {
+    width: 100%;
     height: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
     padding-top: 3rem;
+  }
+  .header__content a {
+    /* margin-right: -115rem; */
+  }
+  .header__section-logo {
+    z-index: 999;
   }
   .header__section-logo .logo {
     font-size: 2.1rem;
   }
-  .header__section-nav ._about {
-    display: none;
+  .header nav {
+    width: 100%;
+    height: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
   }
-  .header__section-nav ._task {
+  .header .main-menu {
     display: none;
+    width: 117%;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    /* transform: translateY(-50%);
+			transform: translateX(-50%); */
+    left: -10%;
+    background-color: #1C1C1C;
+    z-index: 800;
   }
-  .header__section-nav ._smart-staffing {
-    display: none;
-  }
-  .header__section-nav ._services {
-    display: none;
-  }
-  .header__section-nav .form {
-    display: none;
-  }
-  .header__section-nav .more {
+  .header .main-menu li {
+    width: 100%;
     display: block;
-    padding: 0;
-    font-size: 1.7rem;
+    font-size: 2.1rem;
+    padding-right: 20%;
+    padding-left: 20%;
+    margin-bottom: 5rem;
+    text-align: center;
+  }
+  .header .main-menu li:nth-child(1) {
+    margin-top: 12rem;
+  }
+  .header .main-menu a {
+    display: block;
+  }
+  .header .form:after {
+    content: "";
+    display: block;
+    position: absolute;
+    left: 2%;
+    top: 325%;
+    width: 6rem;
+    height: 6rem;
+    border: 1px solid #4C4C4C;
+    border-bottom: none;
+    /* background-color: red; */
+  }
+  .header .form:before {
+    content: "";
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 325%;
+    width: 6rem;
+    height: 6rem;
+    border: 1px solid #4C4C4C;
+    border-bottom: none;
+    /* background-color: red; */
+  }
+  .header .toggle-button {
+    text-align: center;
+    display: block;
+    font-size: 1.4rem;
+    cursor: pointer;
+    color: white;
+    z-index: 999;
+  }
+  .header .toggle-button:after {
+    content: attr(data-open);
+    display: block;
+  }
+  .header #menu-checkbox:checked + nav[role="navigation"] .main-menu {
+    display: block;
+  }
+  .header #menu-checkbox:checked + nav[role="navigation"] .toggle-button:after {
+    content: attr(data-close);
+  }
+  .header__section-nav {
+    /* ._about {
+				display: none;
+			}
+			._task {
+				display: none;
+			}
+			._smart-staffing {
+				display: none;
+			}
+			._services {
+				display: none;
+			}
+			.form {
+				display: none;
+			}
+			.more {
+				display: block;
+				padding: 0;
+				font-size: 1.7rem;
+			} */
   }
   /*Primary*/
   .primary button {
