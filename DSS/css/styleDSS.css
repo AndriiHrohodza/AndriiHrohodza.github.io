@@ -1442,13 +1442,13 @@ a {
   }
   .header .main-menu {
     display: none;
-    width: 117%;
+    width: 113.8%;
     height: 100vh;
     position: absolute;
     top: 0;
     /* transform: translateY(-50%);
 			transform: translateX(-50%); */
-    left: -10%;
+    left: -7%;
     background-color: red;
     z-index: 800;
   }
@@ -1459,7 +1459,7 @@ a {
     height: 6rem;
     position: absolute;
     bottom: 0;
-    left: 2%;
+    left: 0;
     border: 1px solid #4C4C4C;
     border-bottom: none;
   }
@@ -1472,6 +1472,7 @@ a {
     bottom: 0;
     right: 0;
     border: 1px solid #4C4C4C;
+    border-right: none;
     border-bottom: none;
   }
   .header .main-menu li {
