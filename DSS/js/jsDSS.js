@@ -24,9 +24,17 @@ $( document ).ready(function() {
     $('.toggle-button').click(function(){
       $('ul li').toggleClass('text-opacity')
    })
+    $('.toggle-button').click(function(){
+      $('nav .toggle-button').toggleClass('toggle-btn_white')
+   })
+    $('.toggle-button').click(function(){
+      $('.logo').toggleClass('toggle-logo_white')
+   })
    $('ul li a').click(function(){
       $('ul').removeClass('toggle-active');
       $('ul li').removeClass('text-opacity');
+      $('nav .toggle-button').removeClass('toggle-btn_white');
+      $('#logo-trigger').removeClass('toggle-logo_white');
       toggleFunc(false, $('.toggle-button'));
       toggle = false
    })

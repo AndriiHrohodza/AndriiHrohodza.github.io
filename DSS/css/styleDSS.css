@@ -1522,8 +1522,7 @@ a {
     cursor: pointer;
     color: white;
     z-index: 999;
-    -webkit-transition: all .5s linear;
-    transition: all .5s linear;
+    /* transition:all .5s linear; */
   }
   .header .toggle-button a {
     text-decoration: none;
@@ -1539,11 +1538,17 @@ a {
     -webkit-transition: all .5s linear;
     transition: all .5s linear;
   }
-  .header .toggle-nav a {
+  .header .toggle-nav {
     color: black;
   }
   .header .toggle-logo a {
     color: black;
+  }
+  .header .toggle-btn_white {
+    color: white;
+  }
+  .header .toggle-logo_white a {
+    color: white;
   }
   .header .toggle-animation {
     -webkit-transform: translateY(0);

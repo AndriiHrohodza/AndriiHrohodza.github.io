@@ -161,7 +161,7 @@ $(document).ready(function(){
            triggerHook: 1
       })
       .setClassToggle('#logo-trigger', 'toggle-logo')
-      .addIndicators()
+      /*.addIndicators()*/
       .addTo(controller);
       /*Scroll-Changing Primary bg opacity zero*/
       let scrollChangingPrimaryBgScene = new ScrollMagic.Scene({
