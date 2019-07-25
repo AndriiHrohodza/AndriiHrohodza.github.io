@@ -187,6 +187,9 @@ body {
 	height: 4.054054054054054vh;
 	width: 100%;
 }
+.main-menu div {
+	display: flex;
+}
 .header__section-logo {
 	.logo {
 		font-size: 1.666666666666667vw;
@@ -1218,7 +1221,9 @@ button, a {
 			justify-content: flex-end;
 		}
 		.main-menu {
-			display: block;
+			display: flex;
+			align-items: center;
+			justify-content: center;
 			width: 100%;
 			height: 100vh;
 			position: fixed;
@@ -1232,9 +1237,13 @@ button, a {
 			animation-fill-mode: forwards;
 			transition: all 1.5s linear; */
 			z-index: 888;
-			
 		}
-		.main-menu:after {
+		.main-menu div {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+		}
+		/* .main-menu:after {
 			display: block;
 			content: "";
 			width: 6rem;
@@ -1258,10 +1267,10 @@ button, a {
 			border-right: none;
 			border-bottom: none;
 			opacity: 1;
-		}
+		} */
 
 		.main-menu li {
-			width: 100%;
+			
 			display: block;
 			font-size: 2.1rem;
 			padding-right: 20%;
@@ -1271,8 +1280,8 @@ button, a {
 			transition:all .5s linear;
 		}
 			
-		.main-menu li:nth-child(1) {
-			margin-top: 12rem;
+		.main-menu li:nth-child(5) {
+			margin-bottom: 0; 
 		}
 		.main-menu a {
 			display: block;
@@ -1310,7 +1319,7 @@ button, a {
 		}
 		/*Active*/
 		.toggle-active {
-			display: block;
+			/* display: block; */
 			transform: translateY(0);
 			position:fixed;
 			left: 0;

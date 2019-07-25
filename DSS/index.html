@@ -8,6 +8,8 @@
     <link rel="stylesheet" href="css/normalize.css">
     <!-- Animate -->
     <link rel="stylesheet" href="css/animation.css">
+    <!-- Form -->
+    <link rel="stylesheet" href="css/form.css">
     <!-- Main Style -->
     <link rel="stylesheet" href="css/styleDSS.css">
     <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
@@ -31,23 +33,26 @@
                 data-close="CLOSE" onclick>
                 </label> -->
                 <div id="toggle-trigger" class="toggle-button">
-                  Menu
+                  Menu +
                 </div>
                 <ul class="main-menu ">
-                  <li id="test" class="header-item _about"><a href="#wrapper-description-digital">About.</a>
-                  </li>
-                  <li id="test" class="header-item _task">
-                    <a href="#task">Task.</a>
-                  </li>
-                  <li id="test" class="header-item _smart-staffing">
-                    <a href="#smart_staffing">SmartStaffing.</a>
-                  </li>
-                  <li class="header-item _services">
-                    <a href="#services">Services.</a>
-                  </li>
-                  <li class="header-item form">
-                    <a href="#">Form +</a>
-                  </li>
+                  <div>
+                    <li id="test" class="header-item _about"><a href="#wrapper-description-digital">About.</a>
+                    </li>
+                    <li id="test" class="header-item _task">
+                      <a href="#task">Task.</a>
+                    </li>
+                    <li id="test" class="header-item _smart-staffing">
+                      <a href="#smart_staffing">SmartStaffing.</a>
+                    </li>
+                    <li class="header-item _services">
+                      <a href="#services">Services.</a>
+                    </li>
+                    <li class="header-item form">
+                      <a href="#">Form +</a>
+                    </li>
+                  </div>
+                  
                 </ul>
                   <!-- <div class="header-item more">
                     <a href="#">More +</a>
@@ -392,7 +397,93 @@
     <div id="cursorBorderWhite" class="cursor_border" data-cursor_border><svg class viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
       <circle cx="12" cy="12" r="12" class="fill"/>
     </svg>  
-  </div>
+    </div>
+
+    <!--Form-->
+    <div class="form">
+      <div class="container">
+        
+      </div>
+    </div>
+    
+
+
+
+
+
+
+    <!-- <div class="covering">
+      <div class="container-fluid table-class">
+        <div class="black " >
+          <div class="inner cover">
+            <div class="centerUp">
+              <div class="questionaire">
+                <form>
+                  <ul class="progress-form">
+                    <li class="form-group animated fadeInRightBig  activate" data-color="#E1523D" data-percentage="20%">
+                      <label for="nameInput">
+                        <h1>Request a Specialist Form.</h1>
+                        1. How we can search you?
+                      </label>
+                      <input type="text" class="form-control getName" id="q1" placeholder="Herby"  required="required"/>
+                    </li>
+                    <li class="form-group animated hide inactive" data-color="#7C6992"  data-percentage="40%">
+                      <label for="exampleInputEmail1">
+                        <h1>Request a Specialist Form.</h1>
+                        2. What is your business?
+                      </label>
+                      <input type="email" class="form-control" id="q2" placeholder="youremail@domain.com" required="required"/>
+                    </li>
+                    <li class="form-group animated hide" data-color="#00AF66"  data-percentage="60%">
+                      <label for="exampleInputEmail1">
+                        <h1>Let's talk  why you're here.</h1>
+                        Why are you doing this and why does the customer need you?
+                      </label>
+                      <textarea class="form-control" id="q3"  required/></textarea>
+                      <button type="button" class="btn btn-xs btn-danger help pull-right" style="margin:5px 0; border-radius: 36px; padding: 3px 10px;" data-toggle="popover" data-placement="top" title="What's the big idea?" data-content="It's important to know all of your evironments (PEST).  Don't just assume you know your them, you need research to back it up">?</button>
+                    </li>
+                    <li class="form-group animated hide" data-color="#00AF66"  data-percentage="80%">
+                      <label for="exampleInputEmail1">
+                        <h1>Now, what's the problem?</h1>
+                        Why is there a need for this big idea? Spill it. (Also, the answer is not to increase brand awareness, so don't even try it)
+                      </label>
+                      <textarea class="form-control" id="q4" placeholder="These are the tough questions" required/></textarea>
+                    </li>
+                    <li class="form-group animated hide" data-color="#00AF66"  data-percentage="100%">
+                      <label for="exampleInputEmail1">
+                        <h1>Let's talk big idea</h1>
+                        Why are you doing this and why does the customer need you?
+                      </label>
+                      <textarea class="form-control" id="q5" placeholder="These are the tough questions" required/></textarea>
+                    </li>
+                    <li class="form-group animated hide scrollable" data-color="#00AF66"  data-percentage="100%">
+                      <h3>Please Review Your Answers (click on any of them to edit):</h3>
+                      <div class=" editable">
+                        <div class="break answer1" contenteditable="true"></div>
+                        <div class="break answer2" contenteditable="true"></div>
+                        <div class="break answer3" contenteditable="true"></div>
+                        <div class="break answer4" contenteditable="true"></div>
+                        <div class="break answer5" contenteditable="true"></div>
+                      </div>
+                    </li>
+                  </ul>
+                </form>
+              </div>
+              <button class="btn btn-default btn-lg nxt animated hide" >Next <span class="icon-next"></span></button>
+            </div>
+            <div class="clearfix"></div>
+          </div>
+        </div>
+        <form >
+          <input hidden="" class="answer1" style="color:#444"/>
+          <input hidden="" class="answer2" style="color:#444"/>
+          <input hidden="" class="answer3" style="color:#444"/>
+          <input hidden="" class="answer4" style="color:#444"/>
+          <input hidden="" class="answer5" style="color:#444"/>
+          <input type="submit" class="btn btn-default btn-lg hide submit" value="Ready to Send"/>
+        </form>
+      </div>
+    </div> -->
     
 
 
@@ -416,6 +507,8 @@
     <script src="js/smoothScroll.js"></script>
     <!-- Scroll JS -->
     <script src="js/scroll.js"></script>
+    <!-- Form -->
+    <script src="js/form.js"></script>
     <!-- Main JS -->
     <script src="js/jsDSS.js"></script>
     <!-- Squares Move-->
