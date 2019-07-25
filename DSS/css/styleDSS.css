@@ -1633,7 +1633,7 @@ a {
   }
   .description-content__img:before {
     height: 34.5rem;
-    min-width: 50.3125vw;
+    min-width: 57%;
     position: absolute;
     top: 14rem;
     left: -7%;
