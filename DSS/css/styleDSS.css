@@ -1634,9 +1634,10 @@ a {
   .description-content__img:before {
     height: 34.5rem;
     min-width: 57%;
+    width: 57%;
     position: absolute;
     top: 14rem;
-    background-color: red;
+    background-color: green;
     left: -7%;
   }
   .description-content__text {
