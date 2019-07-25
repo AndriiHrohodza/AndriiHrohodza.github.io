@@ -21,8 +21,12 @@ $( document ).ready(function() {
       toggle = !toggle
       toggleFunc(toggle, $(this));
    })
+    $('.toggle-button').click(function(){
+      $('ul li').toggleClass('text-opacity')
+   })
    $('ul li a').click(function(){
       $('ul').removeClass('toggle-active');
+      $('ul li').removeClass('text-opacity');
       toggleFunc(false, $('.toggle-button'));
       toggle = false
    })
@@ -30,9 +34,7 @@ $( document ).ready(function() {
       if(tgl)$(jq).text('Close');
       else $(jq).text('Menu +');
    }
-   /*$('.toggle-button').click(function(){
-      $('.main-menu').toggleClass('text-opacity')
-   })*/
+   
 });
 
 

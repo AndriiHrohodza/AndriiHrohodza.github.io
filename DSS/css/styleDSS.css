@@ -229,6 +229,9 @@ body {
   padding-right: 0;
   position: relative;
 }
+.toggle-button {
+  display: none;
+}
 /* .more {
 		display: none;
 	} */
@@ -1388,21 +1391,7 @@ a {
         -ms-flex-align: center;
             align-items: center;
     left: 6%;
-    /* .text-opacity {
-			opacity: 1;
-			animation-name: opacity-text;
-		}
-		Animation opacity
-		@keyframes opacity-text {
-			to {
-		    opacity: 1;
-		    
-		  }
-		} */
     /*Active*/
-    /* #menu-checkbox:checked + nav[role="navigation"] .main-menu {
-			display: block;
-		}*/
   }
   .header__content {
     width: 100%;
@@ -1425,9 +1414,6 @@ a {
   }
   .header__section-logo .logo {
     font-size: 2.1rem;
-  }
-  .header .hidden {
-    display: none;
   }
   .header nav {
     width: 100%;
@@ -1493,7 +1479,6 @@ a {
     padding-left: 20%;
     margin-bottom: 5rem;
     text-align: center;
-    opacity: 1;
     -webkit-transition: all .5s linear;
     transition: all .5s linear;
   }
@@ -1502,6 +1487,32 @@ a {
   }
   .header .main-menu a {
     display: block;
+  }
+  .header .header-item {
+    opacity: 0;
+    -webkit-transition: all 5s linear;
+    transition: all 5s linear;
+  }
+  .header .text-opacity {
+    -webkit-animation-name: fadeInText;
+            animation-name: fadeInText;
+    -webkit-animation-delay: 0.5s;
+            animation-delay: 0.5s;
+    -webkit-animation-fill-mode: forwards;
+            animation-fill-mode: forwards;
+  }
+  .header .logo {
+    opacity: 1;
+  }
+  @-webkit-keyframes fadeInText {
+    to {
+      opacity: 1;
+    }
+  }
+  @keyframes fadeInText {
+    to {
+      opacity: 1;
+    }
   }
   .header .toggle-button {
     text-align: center;
@@ -1528,7 +1539,7 @@ a {
     -webkit-transition: all .5s linear;
     transition: all .5s linear;
   }
-  .header .toggle-nav {
+  .header .toggle-nav a {
     color: black;
   }
   .header .toggle-logo a {
@@ -1537,9 +1548,6 @@ a {
   .header .toggle-animation {
     -webkit-transform: translateY(0);
             transform: translateY(0);
-  }
-  .header #menu-checkbox:checked + nav[role="navigation"] .toggle-button:after {
-    content: attr(data-close);
   }
   .header__section-nav {
     /* ._about {
