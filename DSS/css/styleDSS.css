@@ -87,10 +87,10 @@
 }
 /*ScrollBar*/
 ::-webkit-scrollbar {
-  width: 5px;
+  width: 0.2604166666666667vw;
 }
 ::-webkit-scrollbar-thumb {
-  -webkit-box-shadow: inset 0 0 50px #ffffff;
+  -webkit-box-shadow: inset 0 0 2.60416667vw #ffffff;
 }
 /* ::-webkit-scrollbar-thumb:hover {
 	border: 5px solid rgba(255,255,255,1);
@@ -585,8 +585,8 @@ body {
 }
 /*Solution*/
 .solution {
-  padding-top: 31rem;
-  margin-bottom: 31rem;
+  padding-top: 16.14583333333333vw;
+  margin-bottom: 16.14583333333333vw;
 }
 .solution__content {
   display: -webkit-box;
@@ -596,10 +596,10 @@ body {
       -ms-flex-pack: justify;
           justify-content: space-between;
   width: 100%;
-  height: 76.5rem;
+  height: 39.84375vw;
 }
 .solution__text {
-  width: 63.5rem;
+  width: 33.07291666666667vw;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -615,10 +615,10 @@ body {
 .solution__text .text-wrapper-caption {
   font-family: 'GT America Bold';
   font-weight: 900;
-  margin-bottom: 3.4rem;
+  margin-bottom: 1.770833333333333vw;
 }
 .solution__text .text-wrapper-caption h2 {
-  font-size: 5.8rem;
+  font-size: 3.020833333333333vw;
   line-height: 125%;
   -webkit-transform: translateY(120%);
           transform: translateY(120%);
@@ -646,7 +646,7 @@ body {
 .solution__text .text-wrapper-desc {
   width: 95%;
   font-family: 'GT America';
-  font-size: 2.1rem;
+  font-size: 1.09375vw;
   line-height: 160%;
 }
 .solution__text .text-wrapper-desc p {
@@ -665,7 +665,7 @@ body {
 }
 .solution__square .square {
   position: relative;
-  width: 76.5rem;
+  width: 39.84375vw;
   height: 100%;
   border: 1px solid #4C4C4C;
   overflow: hidden;
@@ -675,9 +675,9 @@ body {
   display: block;
   position: absolute;
   top: 0;
-  left: -10.7rem;
-  width: 57.6rem;
-  height: 43.3rem;
+  left: -5.57291667vw;
+  width: 30vw;
+  height: 22.55208333333333vw;
   border: 1px solid #4C4C4C;
   background-color: #1D1D1D;
   overflow: hidden;
@@ -689,133 +689,109 @@ body {
   display: block;
   position: absolute;
   bottom: 0;
-  right: -8rem;
-  width: 40.7rem;
-  height: 40.7rem;
-  border: 1px solid #4C4C4C;
+  right: -4.16666667vw;
+  width: 21.19791666666667vw;
+  height: 21.19791666666667vw;
+  border: 0.0520833333333333vw solid #4C4C4C;
   z-index: 1;
   -webkit-transition: background 100ms linear;
   transition: background 100ms linear;
 }
 /*Card*/
-.card {
-  margin-bottom: 42.2rem;
+/* .card {
+	margin-bottom: 42.2rem;
 }
 .card__content {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  width: 100%;
-  height: 87.5rem;
-  margin-bottom: 31rem;
-  background-color: #252525;
+	display: flex;
+	justify-content: space-between;
+	width: 100%;
+	height: 87.5rem;
+	margin-bottom: 31rem;
+	background-color: #252525;
 }
 .card__text {
-  width: 76.8rem;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  color: white;
-  padding-left: 13.3rem;
-}
-.card__text .text-wrapper-caption {
-  font-family: 'GT America';
-  font-weight: 900;
-  margin-bottom: 3.4rem;
-}
-.card__text .text-wrapper-caption h2 {
-  font-size: 5.8rem;
-  line-height: 125%;
-}
-.card__text .text-wrapper-desc {
-  width: 95%;
-  font-family: 'GT America';
-  font-size: 2.1rem;
-  line-height: 160%;
+	width: 76.8rem;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	color: white;
+	padding-left: 13.3rem;
+	.text-wrapper-caption {
+		.America();
+		font-weight: 900;
+		margin-bottom: 3.4rem;
+		h2 {
+			font-size: 5.8rem;
+			line-height: 125%;
+		}
+	}
+	.text-wrapper-desc {
+		width: 95%;
+		.America();
+		font-size: 2.1rem;
+		line-height: 160%;
+	}
 }
 .card__img {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-.card__img .image {
-  width: 71.3rem;
-  padding: 2.4rem 0 2.4rem 2.4rem;
-  background-color: #1D1D1D;
-}
-.card__img .image img {
-  width: 100%;
-  height: 100%;
-}
+	display: flex;
+	align-items: center;
+	.image {
+		width: 71.3rem;
+		padding: 2.4rem 0 2.4rem 2.4rem;
+		background-color: #1D1D1D;
+		img {
+			width: 100%;
+			height: 100%;
+		}
+	}
+} */
 /*Mobile*/
-.mobile {
-  margin-bottom: 31rem;
+/* .mobile {
+	margin-bottom: 31rem;
 }
 .mobile__content {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  position: relative;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  width: 100%;
-  height: 87.5rem;
-  margin-bottom: 31rem;
-  background-color: #252525;
+	display: flex;
+	position: relative;
+	justify-content: space-between;
+	width: 100%;
+	height: 87.5rem;
+	margin-bottom: 31rem;
+	background-color: #252525;
 }
 .mobile__text {
-  width: 76.8rem;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  color: white;
-  padding-left: 13.3rem;
-}
-.mobile__text .text-wrapper-caption {
-  font-family: 'GT America';
-  font-weight: 900;
-  margin-bottom: 3.4rem;
-}
-.mobile__text .text-wrapper-caption h2 {
-  font-size: 5.8rem;
-  line-height: 125%;
-}
-.mobile__text .text-wrapper-desc {
-  width: 95%;
-  font-family: 'GT America';
-  font-size: 2.1rem;
-  line-height: 160%;
+	width: 76.8rem;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	color: white;
+	padding-left: 13.3rem;
+	.text-wrapper-caption {
+		.America();
+		font-weight: 900;
+		margin-bottom: 3.4rem;
+		h2 {
+			font-size: 5.8rem;
+			line-height: 125%;
+		}
+	}
+	.text-wrapper-desc {
+		width: 95%;
+		.America();
+		font-size: 2.1rem;
+		line-height: 160%;
+	}
 }
 .mobile__img {
-  position: absolute;
-  top: -11.2rem;
-  right: 18.3rem;
-}
-.mobile__img .image img {
-  width: 100%;
-  height: 100%;
-}
+	position: absolute;
+	top: -11.2rem;
+	right: 18.3rem;
+	.image {
+		img {
+			width: 100%;
+			height: 100%;
+		}
+	}
+} */
 /*Features*/
 .features {
   position: relative;
@@ -926,9 +902,9 @@ body {
 .digital-sourcing__border-wrapper .border_grey {
   width: 85%;
   height: 6.25vw;
-  border-left: 1px solid #CDCDCD;
-  border-right: 1px solid #CDCDCD;
-  border-bottom: 1px solid #CDCDCD;
+  border-left: 0.0520833333333333vw solid #CDCDCD;
+  border-right: 0.0520833333333333vw solid #CDCDCD;
+  border-bottom: 0.0520833333333333vw solid #CDCDCD;
 }
 /*Services*/
 .services {
@@ -1352,10 +1328,10 @@ body {
 }
 /*Cursor Border*/
 .cursor-bg_black {
-  border: 3px solid black;
+  border: 0.15625vw solid black;
 }
 .cursor-bg_white {
-  border: 3px solid white;
+  border: 0.15625vw solid white;
 }
 /*btn,a Cursor None*/
 button,
@@ -1825,7 +1801,7 @@ input.invalid {
     z-index: 99;
   }
   .description-content__img img {
-    width: 28rem;
+    width: 48rem;
     height: 100%;
   }
   .description-content__border {
@@ -1833,7 +1809,7 @@ input.invalid {
     top: -4%;
     left: -7%;
     width: 57%;
-    height: 34.5rem;
+    height: 55rem;
   }
   .description-content__text {
     display: -webkit-box;
@@ -1967,19 +1943,19 @@ input.invalid {
     margin-top: 5rem;
   }
   .solution__content .solution__square .square {
-    width: 28rem;
-    height: 28rem;
+    width: 40rem;
+    height: 40rem;
   }
   .solution__content .solution__square .square--left {
-    width: 21.3rem;
-    height: 16rem;
+    width: 25.3rem;
+    height: 20rem;
     position: absolute;
     top: 10%;
     left: -5%;
   }
   .solution__content .solution__square .square--right {
-    width: 15rem;
-    height: 15rem;
+    width: 20rem;
+    height: 20rem;
     position: absolute;
     bottom: 6%;
     right: -5%;
@@ -2211,5 +2187,55 @@ input.invalid {
   .footer__sub-content .sign {
     font-size: 1.4rem;
     padding-bottom: 3.5rem;
+  }
+}
+@media screen and (max-width: 500px) {
+  /*Description-content*/
+  .description-content__border {
+    height: 40rem;
+  }
+  .description-content__img {
+    width: 33rem;
+  }
+  .description-content__img img {
+    width: 100%;
+  }
+  /*Solution*/
+  .square {
+    width: 35rem;
+    height: 35rem;
+  }
+  .square--left {
+    width: 23rem;
+    height: 18rem;
+  }
+  .square--right {
+    width: 15rem;
+    height: 15rem;
+  }
+}
+@media screen and (max-width: 380px) {
+  /*Description-content*/
+  .description-content__border {
+    height: 35rem;
+  }
+  .description-content__img {
+    width: 28rem;
+  }
+  .description-content__img img {
+    width: 100%;
+  }
+  /*Solution*/
+  .solution__content .solution__square .square {
+    width: 28rem;
+    height: 28rem;
+  }
+  .solution__content .solution__square .square--left {
+    width: 21.3rem;
+    height: 16rem;
+  }
+  .solution__content .solution__square .square--right {
+    width: 15rem;
+    height: 15rem;
   }
 }
