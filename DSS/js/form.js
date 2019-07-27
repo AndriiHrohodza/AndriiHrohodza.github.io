@@ -1,3 +1,185 @@
+/*Popup*/
+$(document).ready(function(){
+  $('.popup-btn').on('click', function(event) {
+    event.preventDefault();
+    $('.form').fadeIn();
+  });
+  $('.popup-close').on('click', function(event) {
+    event.preventDefault();
+    $('.form').fadeOut();
+  });
+})
+
+
+
+$( document ).ready(function() {
+     let data ={
+      name:'',
+      business:'',
+      specialist:'',
+      alarm:'',
+      date:'',
+      country:'',
+      city:'',
+      time:'',
+      email:'',
+    },
+    name = $('#name')//name
+    business = $('#business')//s_name
+    specialist = $('#specialist')//email
+    alarm = $('#alarm')//textarea
+    date = $('#date')
+    country = $('#country')
+    city = $('#city')
+    time = $('#time')
+    email = $('#email')
+    
+
+    let nextSlideBtn = $('.swiper-button-next')
+
+    var swiper = new Swiper('.swiper-container', {
+      noSwiping: true,
+      allowTouchMove:false,
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+    });
+    
+    // 
+  /*nextSlideBtn.hide()*/
+ /* $('#submit').click(function(e){
+    e.preventDefault()
+  })*/
+ 
+  nextSlideBtn.click(function(){
+    
+    if(swiper.isEnd) {
+      
+      $('.swiper-slide ul .name').text(data.name)
+      $('.swiper-slide ul .business').text(data.business)
+      $('.swiper-slide ul .specialist').text(data.specialist)
+      $('.swiper-slide ul .alarm').text(data.alarm)
+      $('.swiper-slide ul .date').text(data.date)
+      $('.swiper-slide ul .country').text(data.country)
+      $('.swiper-slide ul .city').text(data.city)
+      $('.swiper-slide ul .time').text(data.time)
+      $('.swiper-slide ul .email').text(data.email)
+    }
+  })
+    name.change(function(){
+      data.name = $(this).val()
+      showNextStepBtn(data.name,true)
+    })
+    business.change(function(){
+      data.business = $(this).val()
+      showNextStepBtn(data.business,true)
+    })
+  specialist.change(function(){
+      data.specialist = $(this).val()
+      showNextStepBtn(data.specialist,true)
+
+    })
+  alarm.change(function(){
+    data.alarm = $(this).val()
+      showNextStepBtn(data.alarm,true)
+    })
+  date.change(function(){
+    data.date = $(this).val()
+      showNextStepBtn(data.date,true)
+    })
+  country.change(function(){
+    data.country = $(this).val()
+      showNextStepBtn(data.country,true)
+    })
+  city.change(function(){
+    data.city = $(this).val()
+      showNextStepBtn(data.city,true)
+    })
+  time.change(function(){
+    data.time = $(this).val()
+      showNextStepBtn(data.time,true)
+    })
+  email.change(function(){
+    data.email = $(this).val()
+      showNextStepBtn(data.email,true)
+    })
+    function showNextStepBtn (val,val2){
+      if(!val2) {
+      return
+      } else {
+        if(val.length) nextSlideBtn.show()
+      else nextSlideBtn.hide()
+      }
+    }
+});
+
+
+
+
+
+/*var currentTab = 0; // Current tab is set to be the first tab (0)
+showTab(currentTab); // Display the current tab
+
+function showTab(n) {
+  // This function will display the specified tab of the form ...
+  var x = document.getElementsByClassName("tab");
+  x[n].style.display = "block";
+  // ... and fix the Previous/Next buttons:
+  if (n == 0) {
+    document.getElementById("prevBtn").style.display = "none";
+    document.getElementById("prevBtn").style.float = "left";
+  } else {
+    document.getElementById("prevBtn").style.display = "inline";
+  }
+  if (n == (x.length - 1)) {
+    document.getElementById("nextBtn").innerHTML = "Submit";
+  } else {
+    document.getElementById("nextBtn").innerHTML = "Next +";
+  }
+  // ... and run a function that displays the correct step indicator:
+}
+
+function nextPrev(n) {
+  // This function will figure out which tab to display
+  var x = document.getElementsByClassName("tab");
+  // Exit the function if any field in the current tab is invalid:
+  if (n == 1 && !validateForm()) return false;
+  // Hide the current tab:
+  x[currentTab].style.display = "none";
+  // Increase or decrease the current tab by 1:
+  currentTab = currentTab + n;
+  // if you have reached the end of the form... :
+  if (currentTab >= x.length) {
+    //...the form gets submitted:
+    document.getElementById("regForm").submit();
+    return false;
+  }
+  // Otherwise, display the correct tab:
+  showTab(currentTab);
+}
+
+function validateForm() {
+  // This function deals with validation of the form fields
+  var x, y, i, valid = true;
+  x = document.getElementsByClassName("tab");
+  y = x[currentTab].getElementsByTagName("input");
+  // A loop that checks every input field in the current tab:
+  for (i = 0; i < y.length; i++) {
+    // If a field is empty...
+    if (y[i].value == "") {
+      // add an "invalid" class to the field:
+      y[i].className += " invalid";
+      // and set the current valid status to false:
+      valid = false;
+    }
+  }
+  // If the valid status is true, mark the step as finished and valid:
+  if (valid) {
+    document.getElementsByClassName("step")[currentTab].className += " finish";
+  }
+  return valid; // return the valid status
+}*/
 
 
 

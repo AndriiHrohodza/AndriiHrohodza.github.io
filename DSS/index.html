@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="css/animation.css">
     <!-- Form -->
     <link rel="stylesheet" href="css/form.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/css/swiper.min.css">
     <!-- Main Style -->
     <link rel="stylesheet" href="css/styleDSS.css">
     <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
@@ -45,7 +46,7 @@
                     <li class="header-item _services">
                       <a href="#services">Services.</a>
                     </li>
-                    <li class="header-item form">
+                    <li class="header-item _form popup-btn">
                       <a href="#">Form +</a>
                     </li>
                   </div>
@@ -63,7 +64,7 @@
               <div class="sub-item__text"><h2 >LLC develops your business</h2></div>
               <div class="sub-item__text"><h2>through innovation.</h2></div>
             </div>
-            <button id="primary-button_trigger" class="btn animated fadeInUp"><a class="active" href="#">Request a Specialist +</a></button>
+            <button id="primary-button_trigger" class="btn animated fadeInUp popup-btn"><a class="active" href="#">Request a Specialist +</a></button>
           </section>
           <!--Scroll-->
           <div id="scroll-down-trigger" class="scroll">
@@ -361,7 +362,7 @@
               <div class="footer-item _services">
                 <a href="#services">Services.</a>
               </div>
-              <div class="footer-item form">
+              <div class="footer-item _form">
                 <a href="#">Form +</a>
               </div>
             </div>
@@ -394,10 +395,164 @@
 
     <!--Form-->
     <div class="form">
-      <div class="container">
-        
+      <div class="form-wrapper">
+        <form  method="POST" action="https://formspree.io/ahrohodza1@gmail.com" id="regForm" class="regform">
+          <div class="content-form-wrapper">
+            <h1>Request a Specialist Form.</h1>
+            <div class="swiper-container">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <p>1. How we can search you?</p>
+                  <input type="text" id="name" name="name" placeholder="Enter your name" autofocus>
+                </div>
+                <div class="swiper-slide">
+                  <p>2. What is your business?</p>
+                  <input type="text" id="business" name="business" placeholder="Enter your business">
+                </div>
+                <div class="swiper-slide">
+                  <p>3. What a specialist you need?</p>
+                  <input type="text" id="specialist" name="specialist" placeholder="Specialist">
+                </div>
+                <div class="swiper-slide"><!-- textaria -->
+                  <div class="tab-wrapper">
+                    <div class="tab-wrapper_time">
+                      <p>4. Srochnost zadachi</p>
+                      <p><input type="text" id="alarm" placeholder="Time" name="alarm" oninput="this.className = ''"></p>
+                    </div>
+                    <div class="tab-wrapper_date">
+                      <p>Date</p>
+                      <p><input type="text" id="date" name="date" placeholder="Date" oninput="this.className = ''"></p>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="tab-wrapper">
+                    <div class="tab-wrapper_country">
+                      <p>5. Country</p>
+                      <p><input type="text" id="country" name="country" placeholder="Country" oninput="this.className = ''"></p>
+                    </div>
+                    <div class="tab-wrapper_city">
+                      <p>City</p>
+                      <p><input type="text" id="city" name="city" placeholder="City" oninput="this.className = ''"></p>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="tab-wrapper">
+                    <div class="tab-wrapper_phone">
+                      <p>6. How we can contact with you?</p>
+                      <p><input type="text" id="time" name="time" placeholder="Time" oninput="this.className = ''"></p>
+                    </div>
+                    <div class="tab-wrapper_mail">
+                      <p></p>
+                      <p><input type="text" id="email" name="email" placeholder="Email" oninput="this.className = ''"></p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="form-btn" style="overflow:auto;">
+              <div>
+                <!-- Add Arrows -->
+                <button class="popup-close">Close</button>
+                <button class="swiper-button-prev btn">Back -</button>
+                <button class="swiper-button-next btn">Next +</button>
+                <button id="submit" type="submit">submit</button>
+              </div>
+            </div>
+          </div>
+        </form>
       </div>
     </div>
+
+
+
+
+
+    <!-- <div class="form">
+    
+      <div class="form-wrapper">
+        <form id="regForm" class="reg-form" action="http:///andriihrohodza.top/www/b0.php" target="_blank" method="post" name="f1">
+          <div class="content-form-wrapper">
+            <h1>Request a Specialist Form.</h1>
+    
+            One "tab" for each step in the form:
+            <div class="tab">
+              <p>1. How we can search you?</p>
+              <p><input type="text" name="name" placeholder="Enter your name" oninput="this.className = ''"></p>
+              <p><input placeholder="Last name..." oninput="this.className = ''"></p>
+            </div>
+    
+            <div class="tab">
+              <p>2. What is your business?</p>
+              <p><input type="text" name="bussnes" placeholder="Enter your business" oninput="this.className = ''"></p>placeholder="E-mail..."
+            </div>
+    
+            <div class="tab">
+              <p>3. What a specialist you need?</p>
+              <p><input type="text" name="specialist" placeholder="Opishi kriterii specialista" oninput="this.className = ''"></p>
+            </div>
+    
+            <div class="tab">
+              <div class="tab-wrapper">
+                <div class="tab-wrapper_time">
+                  <p>4. Srochnost zadachi</p>
+                  <p><input placeholder="Time" name="time" oninput="this.className = ''"></p>
+                </div>
+                <div class="tab-wrapper_date">
+                  <p>Date</p>
+                  <p><input type="date" placeholder="Date" oninput="this.className = ''"></p>
+                </div>
+              </div>
+            </div>
+    
+            <div class="tab">
+              <div class="tab-wrapper">
+                <div class="tab-wrapper_country">
+                  <p>5. Country</p>
+                  <p><input type="text" placeholder="Country" oninput="this.className = ''"></p>
+                </div>
+                <div class="tab-wrapper_city">
+                  <p>City</p>
+                  <p><input t<div class="tab-wrapper">
+                <div class="tab-wrapper_phone">
+                  <p>6. How we can contact with you?</p>
+                  <p><input type="text" placeholder="Time" oninput="this.className = ''"></p>
+                </div>
+                <div class="tab-wrapper_mail">
+                  <p></p>
+                  <p><input type="email" placeholder="Date" oninput="this.className = ''"></p>
+                </div>
+              </div>ype="text" placeholder="City" oninput="this.className = ''"></p>
+                </div>
+              </div>
+            </div>
+            <input type="submit" value="Send">
+            <div class="tab">
+              
+            </div>
+            <button class="popup-close">Close</button>
+            <div class="form-btn" style="overflow:auto;">
+              <div>
+                <button type="button" id="prevBtn" class="btn f-btn" style="float: left;" onclick="nextPrev(-1)">- Back</button>
+                <button type="button" id="nextBtn" class="btn f-btn" style="float: right;" onclick="nextPrev(1)">Next +</button>
+              </div>
+            </div>
+    
+            Circles which indicates the steps of the form:
+            <div style="display: none">
+              <span class="step"></span>
+              <span class="step"></span>
+              <span class="step"></span>
+              <span class="step"></span>
+            </div>
+          </div>
+          
+    
+        </form>
+      </div>
+      
+    </div> -->
     
 
 
@@ -501,6 +656,8 @@
     <!-- Scroll JS -->
     <script src="js/scroll.js"></script>
     <!-- Form -->
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/js/swiper.min.js"></script>
     <script src="js/form.js"></script>
     <!-- Main JS -->
     <script src="js/jsDSS.js"></script>

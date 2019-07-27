@@ -1157,6 +1157,155 @@ button, a {
 	opacity: 1;
 }
 
+/*Form*/
+
+.form {
+	display: none;
+	width: 100%;
+	height: 100vh;
+	position: fixed;
+	top: 0;
+	left: 0;
+	background-color: white;
+	z-index: 978;
+}
+.form-wrapper {
+ 
+  height: 100%;
+  padding: 5%;
+  
+}
+.content-form-wrapper {
+	width: 53.64583333333333vw;
+}
+#regForm {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #ffffff;
+  height: 100%;
+  border: 1px solid #4C4C4C;
+
+  padding: 2.083333333333333vw;
+  
+
+}
+.content-form-wrapper h1 {
+  font-size: 3.020833333333333vw;
+  .America-Bold();
+  margin-bottom: 4.322916666666667vw;
+}
+
+/* Style the input fields */
+input {
+  padding: 1.5625vw 3.125vw;
+  width: 100%;
+  /* height: 8.7rem; */
+  font-size: 1.09375vw;
+  /* border: 1px solid #252525; */
+  .America();
+  cursor: none;
+}
+
+/* Mark input boxes that gets an error on validation: */
+input.invalid {
+  background-color: #ffdddd;
+}
+
+.swiper-slide {
+  display: none;
+  font-size: 1.09375vw;
+  .Cinetype-Mono();
+
+}
+.swiper-slide p:nth-child(1) {
+	margin-bottom: 1.302083333333333vw;
+}
+.form-btn {
+	margin-top: 2.604166666666667vw;
+}
+.form-btn div{
+	display: flex;
+	justify-content: space-between;
+}
+.f-btn {
+	background-color: #252525;
+	color: white;
+}
+.swiper-button-prev,
+.swiper-button-next {
+	background: none;
+	position: relative;
+	max-width: 17.1875vw;
+	height: 100%;
+	min-height: 4.6875vw;//8.333333333333333vh
+	background-color: black;
+	color :white;
+	margin-top: 0;
+	top: 0;
+
+}
+.swiper-button-prev {
+	left: 0;
+}
+.swiper-button-next {
+	right: 0;
+}
+.swiper-wrapper .swiper-slide {
+	width: 100%;
+	display: block;
+	/* margin-top: 6rem; */
+}
+.swiper-slide ul li{
+	list-style: none;
+}
+.popup-close {
+	display: block;
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 5.208333333333333vw;
+	height: 2.604166666666667vw;
+	/* height: 2.604166666666667vw; */
+	border: none;
+	outline: none;
+	font-size: 1.09375vw;
+	.America();
+	background-color: transparent; 
+	
+}
+.tab-wrapper {
+	display: flex;
+	justify-content: space-between;
+	&__time {
+		display: block;
+	}
+}
+
+.tab-wrapper_time {
+	width: 33.33333333333333vw;
+}
+.tab-wrapper_country,
+.tab-wrapper_city,
+.tab-wrapper_phone,
+.tab-wrapper_mail {
+	width: 25.26041666666667vw;
+}
+.tab-wrapper_mail {
+	display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+
+
+
+
+
+
+
 /*Responsive*/
 @media screen and (max-width: 768px) {
 	html {
@@ -1358,7 +1507,7 @@ button, a {
 			._services {
 				display: none;
 			}
-			.form {
+			._form {
 				display: none;
 			}
 			.more {
@@ -1742,7 +1891,7 @@ button, a {
 				font-size: 2.1rem;
 				margin-bottom: 5rem;
 			}
-			.form {
+			._form {
 				padding: 0;
 				font-size: 2.1rem;
 				margin-bottom: 5rem;
