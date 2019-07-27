@@ -1344,14 +1344,14 @@ a {
 }
 /*Form*/
 .form {
-  display: none;
+  /* display: none; */
   width: 100%;
   height: 100vh;
   position: fixed;
   top: 0;
   left: 0;
   background-color: white;
-  z-index: 978;
+  z-index: 998;
 }
 .form-wrapper {
   height: 100%;
@@ -1388,12 +1388,13 @@ a {
 /* Style the input fields */
 input {
   padding: 1.5625vw 3.125vw;
-  width: 100%;
+  width: 99.9%;
   /* height: 8.7rem; */
   font-size: 1.09375vw;
   /* border: 1px solid #252525; */
   font-family: 'GT America';
   cursor: none;
+  outline: none;
 }
 /* Mark input boxes that gets an error on validation: */
 input.invalid {
@@ -1685,7 +1686,7 @@ input.invalid {
     font-size: 1.4rem;
     cursor: pointer;
     color: white;
-    z-index: 999;
+    z-index: 988;
     /* transition:all .5s linear; */
   }
   .header .toggle-button a {
@@ -2188,6 +2189,89 @@ input.invalid {
     font-size: 1.4rem;
     padding-bottom: 3.5rem;
   }
+  /*Form*/
+  .content-form-wrapper {
+    width: 50rem;
+  }
+  .content-form-wrapper h1 {
+    font-size: 5.8rem;
+  }
+  .content-form-wrapper .swiper-wrapper .swiper-slide p {
+    font-size: 2.1rem;
+  }
+  .content-form-wrapper .swiper-wrapper .swiper-slide input {
+    padding: 2rem 3rem;
+  }
+  .content-form-wrapper .swiper-wrapper .swiper-slide input[type='text'] {
+    font-size: 24px;
+  }
+  .content-form-wrapper .swiper-wrapper .swiper-slide .tab-wrapper p {
+    min-height: 4.8rem;
+  }
+  .content-form-wrapper .swiper-wrapper .swiper-slide .tab-wrapper .tab-wrapper_time {
+    width: 50%;
+  }
+  .content-form-wrapper .swiper-wrapper .swiper-slide .tab-wrapper .tab-wrapper_date {
+    width: 50%;
+  }
+  .content-form-wrapper .swiper-wrapper .swiper-slide .tab-wrapper .tab-wrapper_city {
+    width: 50%;
+  }
+  .content-form-wrapper .swiper-wrapper .swiper-slide .tab-wrapper .tab-wrapper_country {
+    width: 50%;
+  }
+  .content-form-wrapper .swiper-wrapper .swiper-slide .tab-wrapper .tab-wrapper_mail {
+    width: 50%;
+  }
+  .content-form-wrapper .swiper-wrapper .swiper-slide .tab-wrapper .tab-wrapper_phone {
+    width: 50%;
+  }
+  .content-form-wrapper .form-btn .popup-close {
+    width: 9rem;
+    height: 4rem;
+    z-index: 999;
+    font-size: 3rem;
+  }
+  .content-form-wrapper .form-btn .btn {
+    font-size: 2.2rem;
+  }
+}
+@media screen and (max-width: 600px) {
+  /*Form*/
+  .content-form-wrapper {
+    width: 40rem;
+  }
+  .content-form-wrapper h1 {
+    font-size: 4.8rem;
+  }
+  .content-form-wrapper .swiper-wrapper .swiper-slide p {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+  }
+  .content-form-wrapper .swiper-wrapper .swiper-slide input {
+    padding: 1.8rem 2.5rem;
+  }
+  .content-form-wrapper .swiper-wrapper .swiper-slide input[type='text'] {
+    font-size: 16px;
+  }
+  .content-form-wrapper .swiper-wrapper .swiper-slide .tab-wrapper_time {
+    width: 26rem;
+  }
+  .content-form-wrapper .swiper-wrapper .swiper-slide .tab-wrapper p {
+    min-height: 1.7rem;
+    margin-bottom: 2rem;
+  }
+  .content-form-wrapper .form-btn {
+    /* margin-top: 0; */
+  }
+  .content-form-wrapper .form-btn .popup-close {
+    font-size: 2.5rem;
+  }
+  .content-form-wrapper .form-btn .btn {
+    width: 16rem;
+    height: 5rem;
+    font-size: 2rem;
+  }
 }
 @media screen and (max-width: 500px) {
   /*Description-content*/
@@ -2213,7 +2297,51 @@ input.invalid {
     width: 15rem;
     height: 15rem;
   }
+  .content-form-wrapper {
+    width: 100%;
+  }
+  .content-form-wrapper h1 {
+    font-size: 4.8rem;
+  }
+  .content-form-wrapper .swiper-wrapper .swiper-slide {
+    width: 100%;
+  }
+  .content-form-wrapper .swiper-wrapper .swiper-slide p {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+  }
+  .content-form-wrapper .swiper-wrapper .swiper-slide input {
+    padding: 1.8rem 2.5rem;
+  }
+  .content-form-wrapper .swiper-wrapper .swiper-slide input[type='text'] {
+    font-size: 16px;
+  }
+  .content-form-wrapper .swiper-wrapper .swiper-slide .tab-wrapper_time {
+    width: 26rem;
+  }
+  .content-form-wrapper .swiper-wrapper .swiper-slide .tab-wrapper_date p {
+    min-height: 3.4rem;
+  }
+  .content-form-wrapper .swiper-wrapper .swiper-slide .tab-wrapper p {
+    min-height: 1.7rem;
+    margin-bottom: 2rem;
+  }
+  .content-form-wrapper .form-btn {
+    /* margin-top: 0; */
+    /* .btn {
+			width: 7rem;
+			height: 3rem;
+		
+		} */
+  }
+  .content-form-wrapper .form-btn .popup-close {
+    width: 7rem;
+    height: 3rem;
+    font-size: 1.7rem;
+  }
 }
+/*Form*/
+/*Form*/
 @media screen and (max-width: 380px) {
   /*Description-content*/
   .description-content__border {
