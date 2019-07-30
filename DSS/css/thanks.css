@@ -1,0 +1,56 @@
+@font-face {
+    font-family: 'GT America';
+    src: url('../fonts/GTAmerica-Regular.eot');
+    src: url('GTAmerica-Regular.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/GTAmerica-Regular.woff2') format('woff2'),
+        url('../fonts/GTAmerica-Regular.woff') format('woff'),
+        url('../fonts/GTAmerica-Regular.ttf') format('truetype'),
+        url('../fonts/GTAmerica-Regular.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'GT America Bold';
+    src: url('../fonts/GTAmerica-Bold.eot');
+    src: url('GTAmerica-Bold.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/GTAmerica-Bold.woff2') format('woff2'),
+        url('../fonts/GTAmerica-Bold.woff') format('woff'),
+        url('../fonts/GTAmerica-Bold.ttf') format('truetype'),
+        url('../fonts/GTAmerica-Bold.svg') format('svg');
+    font-weight: bold;
+    font-style: normal;
+}
+
+.AmericaThanks() {
+	font-family: 'GT America';
+}
+.America-Bold() {
+	font-family: 'GT America Bold';
+}
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+html {
+	font-size: 10px;
+}
+
+.thanks-wrapper {
+	width: 100%;
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.thanks {
+	width: 80%;
+	text-align: center;
+}
+.thanks h1{
+	font-size: 5.8rem;
+	.America-Bold();
+	color: #1D1D1D;
+
+}

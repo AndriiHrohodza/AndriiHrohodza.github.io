@@ -8,7 +8,7 @@ var pinFeatureScene = new ScrollMagic.Scene({
 	duration: '150%'
 })
 .setPin('#features-pin')
-.setTween(TweenMax.staggerFromTo(".features-content", 2, {left: '50rem'}, {left: '-220rem', easeInOut: Back.easeOut}, 0.15))// 50vw, -120vw
+.setTween(TweenMax.staggerFromTo(".features-content", 2, {left: '18rem'}, {left: '-300rem', easeInOut: Back.easeOut}, 0.15))// 50vw, -120vw
 /*.addIndicators({name: "pin"})*/
 .addTo(controller);
 });
@@ -24,6 +24,9 @@ $( document ).ready(function() {
     $('.toggle-button').click(function(){
       $('ul li').toggleClass('text-opacity')
    })
+     /*$('.toggle-button').click(function(){
+       $('._form').toggleClass('text-opacity')
+    })*/
     $('.toggle-button').click(function(){
       $('nav .toggle-button').toggleClass('toggle-btn_white')
    })
@@ -39,12 +42,54 @@ $( document ).ready(function() {
       toggle = false
    })
    function toggleFunc(tgl, jq){
-      if(tgl)$(jq).text('Close');
-      else $(jq).text('Menu +');
+      if(tgl)$(jq).text('Close -');
+      else $(jq).text('More +');
    }
    
 });
 
+/*Form cursor bg*/
+$( document ).ready(function() {
+  /*Custom-cursor*/
+  $('.popup-btn').click(function(){
+      $('.custom-cursor').addClass('cursor-form_black')
+  })
+  /*cursor_border*/
+  $('.popup-btn').click(function(){
+      $('.cursor_border').addClass('cursor-form-bg_black')
+  })
+
+  $('.popup-close').click(function(){
+      $('.custom-cursor').removeClass('cursor-form_black');
+      $('.cursor_border').removeClass('cursor-form-bg_black');
+      
+   })
+});
+$( document ).ready(function() {
+  
+  $('.popup-btn').click(function(){
+      $('html').addClass('scroll-off')
+  })
+ 
+ 
+
+  $('.popup-close').click(function(){
+      $('html').removeClass('scroll-off');
+      
+      
+   })
+});
+$( document ).ready(function() {
+  
+  $('.toggle-button').click(function(){
+      $('body').toggleClass('scroll-off')
+  })
+  $('.toggle-button').click(function(){
+      $('body').removeClass('scroll-off');
+      
+      
+   })
+});
 
 
 
@@ -206,7 +251,7 @@ $(document).ready(function(){
 
 $(document).ready(function(){
 	var $c = $("[data-cursor_border]");
-	var $h = $(".btn, button, a");
+	var $h = $(".btn,.popup-btn, button, a");
 
 	$(window).on("mousemove",function(e){
 		x = e.clientX;
@@ -248,6 +293,18 @@ btnBorderWhite.addEventListener("mouseleave", () => {
    cursor.classList.remove("cursor-bg_white");
 })
 
+/*Cursor-bg_white Form*/
+
+let btnFormBorderWhite = document.getElementById("form-button_trigger");
+
+btnFormBorderWhite.addEventListener("mouseover", () => {
+   cursor.classList.add("cursor-from-bg_white");
+})
+btnFormBorderWhite.addEventListener("mouseleave", () => {
+  cursor.classList.remove("cursor-from-bg_white");
+  
+})
+
 /*Scroll = (
     function(){
           var x,y;
@@ -283,3 +340,31 @@ btnBorderWhite.addEventListener("mouseleave", () => {
 Scroll.disable(0,document.body.scrollTop);
 //for enabled scroll bar.
 Scroll.enable();*/
+
+
+
+/*$("#phone").iNumberEntry({
+  numberParts: [
+    {
+      length: 3,
+      prefix: "(",
+      postfix: ") ",
+      value: "123",
+      maxValue: -1,
+      minValue: 0,
+      step: 1,
+      snapToStep: false, // snaps the numeric value to the closest "step"
+      toString: function(){}, // returns the formatted NumberPart
+      totalLength: function(){} // returns the total length
+    },
+    {
+      length: 3,
+      postfix: "-",
+      value: "456"
+    },
+    {
+      length: 4,
+      value: "7890"
+    }
+  ]
+});*/

@@ -119,7 +119,8 @@ $(document).ready(function(){
       // Contacts-text_fade animation FadeInUp
       let contactsTextFadeScene = new ScrollMagic.Scene({
             triggerElement: '#contacts-trigger',
-            reverse: true
+            reverse: true,
+            triggerHook: 0.7
       })
       .setClassToggle('#contacts-text_fade', 'fadeInUp')
       /*.addIndicators({name: "des"})*/
@@ -128,7 +129,8 @@ $(document).ready(function(){
       // Contacts-button animation FadeInUp
       let contactsButtonScene = new ScrollMagic.Scene({
             triggerElement: '#contacts-trigger',
-            reverse: true
+            reverse: true,
+            triggerHook: 0.7
       })
       .setClassToggle('#contacts-button_trigger', 'fadeInUp')
       /*.addIndicators({name: "des"})*/
@@ -151,7 +153,7 @@ $(document).ready(function(){
            triggerHook: 1
       })
       .setClassToggle('#toggle-trigger', 'toggle-nav')
-      .addIndicators()
+      /*.addIndicators()*/
       .addTo(controller);
 
       /*Mobile Logo Nav bg*/
