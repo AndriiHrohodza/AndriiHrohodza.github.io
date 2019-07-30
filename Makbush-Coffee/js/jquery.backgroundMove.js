@@ -46,7 +46,7 @@ $(function () { // wait for document ready
 		var scene = new ScrollMagic.Scene({triggerElement: "#goods", duration: 750})
 						/*.setPin("#target")*/
 						.setTween(tween)
-						.addIndicators() // add indicators (requires plugin)
+						/*.addIndicators() // add indicators (requires plugin)*/
 						.addTo(controller);
 	})
 
@@ -82,6 +82,6 @@ $(function () { // wait for document ready
 		var scene = new ScrollMagic.Scene({triggerElement: "#goods", duration: 750})
 						/*.setPin("#target")*/
 						.setTween(tween)
-						.addIndicators() // add indicators (requires plugin)
+						/*.addIndicators() // add indicators (requires plugin)*/
 						.addTo(controller);
 	})
