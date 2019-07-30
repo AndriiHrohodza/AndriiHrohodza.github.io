@@ -1894,6 +1894,19 @@ input.invalid {
   .input-wrapper-phone {
     min-height: 20.9rem;
   }
+  .label-wrapper_email {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    /* justify-content: space-between; */
+  }
+  .input-wrapper {
+    width: 100%;
+  }
   /* html {
 		overflow-x: hidden;
 		overflow: hidden;
