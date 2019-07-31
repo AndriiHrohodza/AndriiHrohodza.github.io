@@ -39,7 +39,7 @@
     color: transparent;
     border: none;
     outline: none;
-    background: url(../img/goods/LeftArrow.png) center no-repeat;
+    background: url(../img/goods/LeftArrow-Selected.png) center no-repeat;
     z-index: 99;
     
 }
@@ -65,20 +65,20 @@
     color: transparent;
     border: none;
     outline: none;
-    background: url(../img/goods/RightArrow.png) center no-repeat;
+    background: url(../img/goods/RightArrow-Selected.png) center no-repeat;
     z-index: 99;
 }
-.slick-prev:hover,
+./* slick-prev:hover,
 .slick-prev:focus
 {
     
    background: url(../img/goods/LeftArrow-Selected.png) center no-repeat;
-}
+} */
 
-.slick-next:hover,
+/* .slick-next:hover,
 .slick-next:focus {
     background: url(../img/goods/RightArrow-Selected.png) center no-repeat;
-}
+} */
 .slick-prev:hover:before,
 .slick-prev:focus:before,
 .slick-next:hover:before,
@@ -108,11 +108,11 @@
 
 .slick-prev
 {
-    left: 1%;
+    left: 0;
 }
 [dir='rtl'] .slick-prev
 {
-    right: 1%;
+    right: 0;
     left: auto;
 }
 .slick-prev:before
@@ -126,12 +126,12 @@
 
 .slick-next
 {
-    right: 1%;
+    right: 0;
 }
 [dir='rtl'] .slick-next
 {
     right: auto;
-    left: 1%;
+    left: 0;
 }
 .slick-next:before
 {
