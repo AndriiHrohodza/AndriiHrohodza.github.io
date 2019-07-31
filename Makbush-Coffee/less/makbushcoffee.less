@@ -974,6 +974,7 @@ li{
 
 .animatedNav {
   animation-duration: 1.2s;
+  animation-delay: 0.8s;
   animation-fill-mode: both;
   
 }
@@ -999,8 +1000,8 @@ li{
 }
 
 .animated-sub {
-    animation-delay: 0.2s;
-  animation-duration: 0.7s;
+    animation-delay: 0.4s;
+  animation-duration: 1s;
   animation-fill-mode: forwards;
   animation-timing-function: ease-out;
 }
@@ -1009,14 +1010,16 @@ li{
 @keyframes fadeInRightImg {
   from {
     opacity: 0;
-    -webkit-transform: translate3d(40%, 0, 0);
-    transform: translate3d(40%, 0, 0);
+    -webkit-transform: translate3d(5%, 5%, 0);
+    transform: translate3d(5%, 5%, 0);
+    /* transform: scale(1.2); */
   }
 
   to {
     opacity: 1;
     -webkit-transform: translate3d(0, 0, 0);
     transform: translate3d(0, 0, 0);
+    /* transform: scale(1); */
   }
 }
 
@@ -1026,7 +1029,7 @@ li{
 }
 
 .animated-img {
-  animation-duration: 0.5s;
+  animation-duration: 1s;
   animation-fill-mode: both;
 } 
 

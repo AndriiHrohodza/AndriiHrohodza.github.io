@@ -1035,6 +1035,8 @@ li{
 .animatedNav {
   -webkit-animation-duration: 1.2s;
           animation-duration: 1.2s;
+  -webkit-animation-delay: 0.8s;
+          animation-delay: 0.8s;
   -webkit-animation-fill-mode: both;
           animation-fill-mode: both;
 }
@@ -1068,10 +1070,10 @@ li{
   animation-name: fadeInDownSub;
 }
 .animated-sub {
-  -webkit-animation-delay: 0.2s;
-          animation-delay: 0.2s;
-  -webkit-animation-duration: 0.7s;
-          animation-duration: 0.7s;
+  -webkit-animation-delay: 0.4s;
+          animation-delay: 0.4s;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards;
   -webkit-animation-timing-function: ease-out;
@@ -1081,25 +1083,29 @@ li{
 @-webkit-keyframes fadeInRightImg {
   from {
     opacity: 0;
-    -webkit-transform: translate3d(40%, 0, 0);
-    transform: translate3d(40%, 0, 0);
+    -webkit-transform: translate3d(5%, 5%, 0);
+    transform: translate3d(5%, 5%, 0);
+    /* transform: scale(1.2); */
   }
   to {
     opacity: 1;
     -webkit-transform: translate3d(0, 0, 0);
     transform: translate3d(0, 0, 0);
+    /* transform: scale(1); */
   }
 }
 @keyframes fadeInRightImg {
   from {
     opacity: 0;
-    -webkit-transform: translate3d(40%, 0, 0);
-    transform: translate3d(40%, 0, 0);
+    -webkit-transform: translate3d(5%, 5%, 0);
+    transform: translate3d(5%, 5%, 0);
+    /* transform: scale(1.2); */
   }
   to {
     opacity: 1;
     -webkit-transform: translate3d(0, 0, 0);
     transform: translate3d(0, 0, 0);
+    /* transform: scale(1); */
   }
 }
 .fadeInRightImg {
@@ -1107,8 +1113,8 @@ li{
   animation-name: fadeInRightImg;
 }
 .animated-img {
-  -webkit-animation-duration: 0.5s;
-          animation-duration: 0.5s;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
   -webkit-animation-fill-mode: both;
           animation-fill-mode: both;
 }
