@@ -77,6 +77,18 @@ $(window).on("mousemove click", function(e) {
 moveBackground();
 */
 
+/*Counts*/
+$('.count').each(function() {
+	$(this).prop('number', 0).animate({
+		number:$(this).text()
+	}, {
+		duration: 4000,
+		easing: 'swing',
+		step:function(now) {
+			$(this).text(Math.ceil(now))
+		}
+	});
+});
 
 
 

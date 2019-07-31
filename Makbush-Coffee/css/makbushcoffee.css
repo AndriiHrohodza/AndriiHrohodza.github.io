@@ -474,6 +474,9 @@ li{
   font-size: 12rem;
   text-align: center;
 }
+.features__items .number p {
+  font-family: 'Muller-Light', sans-serif;
+}
 .features__items .description {
   font-size: 2.1rem;
   position: relative;
