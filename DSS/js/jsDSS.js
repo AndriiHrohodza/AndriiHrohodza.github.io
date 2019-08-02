@@ -5,7 +5,7 @@ var controller = new ScrollMagic.Controller();
 var pinFeatureScene = new ScrollMagic.Scene({
 	triggerElement: '#features-pin',
 	triggerHook: 0.3,
-	duration: '150%'
+	duration: '200%'
 })
 .setPin('#features-pin')
 .setTween(TweenMax.staggerFromTo(".features-content", 2, {left: '18rem'}, {left: '-300rem', easeInOut: Back.easeOut}, 0.15))// 50vw, -120vw

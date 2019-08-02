@@ -11,7 +11,8 @@
     <!-- Form -->
     <link rel="stylesheet" href="css/form.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/css/swiper.min.css">
-    
+    <!-- InpuNumber -->
+    <!-- <link rel="stylesheet" href="css/intlTelInput.min.css"> -->
     <!-- Main Style -->
     <link rel="stylesheet" href="css/styleDSS.css">
     <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
@@ -240,7 +241,7 @@
               </div>
               <div class="items-text">
                 <div>
-                  <h3 class="">Analytics and reports on budget expenditures</h3>
+                  <h3 class="">Analytics and reports on budget expenditures.</h3>
                   <p>The project manager analyzes the working time of specialists and prepares a report on budget expenditures.</p>
                 </div>
               </div>
@@ -523,10 +524,10 @@
                     <label for="message">6. How we can contact with you?</label>
                     <span class="label-wrapper_email">
                       <span class="input-wrapper input-wrapper-phone">
-                        <input class="form-phone" type="text" name="phone" id="phone" placeholder="Your Phone" required>
+                        <input class="form-phone" type="tel" name="phone" id="phone"  required>
                       </span>
                       <span class="input-wrapper input-wrapper-post">
-                        <input class="form-control" type="email" name="email" id="email-address" placeholder="Email" required>
+                        <input  type="email" name="email" id="email-address" placeholder="Email" required>
                       </span>
                     </span>
                   </p>
@@ -820,33 +821,44 @@
     <script src="js/jquery.validate.js"></script>
     <script src="https://unpkg.com/jquery-input-mask-phone-number@1.0.11/dist/jquery-input-mask-phone-number.js"></script>
     <script>
-    	$(document).ready(function () {
-    	                $('#phone').usPhoneFormat({
-    	                    format: '(xxx) xxx-xxxx',
-    	                });
-    	               $(document).ready(function() {
-    	               	$('[name=date]').bind("change keyup input click", function() {
-    	               		if (this.value.match(/[^0-9]/g)) {
-    	               			this.value = this.value.replace(/[^0-9]/g, '');
-    	               		}
-    	               	});
-    	               });
-    	               $(document).ready(function() {
-    	               	$('[name=month]').bind("change keyup input click", function() {
-    	               		if (this.value.match(/[^0-9]/g)) {
-    	               			this.value = this.value.replace(/[^0-9]/g, '');
-    	               		}
-    	               	});
-    	               });
-    	               $(document).ready(function() {
-    	               	$('[name=year]').bind("change keyup input click", function() {
-    	               		if (this.value.match(/[^0-9]/g)) {
-    	               			this.value = this.value.replace(/[^0-9]/g, '');
-    	               		}
-    	               	});
-    	               });
-    	            });
+      $(document).ready(function () {
+                      $('#phone').usPhoneFormat({
+                          format: 'xxx-xxx-xxxx',
+                      });
+                     $(document).ready(function() {
+                       $('[name=date]').bind("change keyup input click", function() {
+                         if (this.value.match(/[^0-9]/g)) {
+                           this.value = this.value.replace(/[^0-9]/g, '');
+                         }
+                       });
+                     });
+                     $(document).ready(function() {
+                       $('[name=month]').bind("change keyup input click", function() {
+                         if (this.value.match(/[^0-9]/g)) {
+                           this.value = this.value.replace(/[^0-9]/g, '');
+                         }
+                       });
+                     });
+                     $(document).ready(function() {
+                       $('[name=year]').bind("change keyup input click", function() {
+                         if (this.value.match(/[^0-9]/g)) {
+                           this.value = this.value.replace(/[^0-9]/g, '');
+                         }
+                       });
+                     });
+                  });
     </script>
+    <!-- InputTel -->
+   <script src="js/intlTelInput.min.js"></script>
+   <script>
+     var input = document.querySelector("#phone");
+     var iti = window.intlTelInput(input, {
+      initialCountry: 'id' ,
+      nationalMode: true,
+      utilsScript: 'js/utils.js'
+     });
+   </script> -->
+
     <script src="js/form.js"></script>
     <!-- Main JS -->
     <script src="js/jsDSS.js"></script>

@@ -41,6 +41,15 @@
   display: table;
   clear: both;
 }
+/*InputNumber*/
+.iti__flag {
+  background-image: url("../img/flags.png");
+}
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+  .iti__flag {
+    background-image: url("../img/flags@2x.png");
+  }
+}
 /*Container-wrapper*/
 .container-wrapper {
   display: -webkit-box;
@@ -1611,6 +1620,8 @@ input.invalid {
 .input-wrapper-city,
 .input-wrapper-phone,
 .input-wrapper-post {
+  /* display: flex;
+	align-items: flex-end;	 */
   min-height: 11rem;
 }
 .input-wrapper-date {
@@ -1878,7 +1889,7 @@ input.invalid {
   .btn-prev,
   .btn-success,
   .btn-danger {
-    /* margin-top: 2.5rem; */
+    margin-top: 2.5rem;
     background-color: #252525;
     color: white;
     min-width: 25.27rem;
