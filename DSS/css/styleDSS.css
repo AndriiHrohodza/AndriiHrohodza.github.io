@@ -65,9 +65,14 @@
 .container {
   margin: 0 9%;
 }
+/*Privacy-container*/
+.privacy-container {
+  margin: 0 ;
+}
 /*Wrapper-primary-bg_black*/
 .wrapper-primary-bg_black {
   background-color: #1D1D1D;
+  padding-bottom: 11.97916666666667vw;
 }
 /*Wrapper-primary*/
 .wrapper-primary {
@@ -347,8 +352,8 @@ body {
 /*Company-description*/
 .company-description {
   background-color: #1D1D1D;
-  padding-top: 22.39583333333333vw;
-  padding-bottom: 6.25vw;
+  padding-top: 10.41666666666667vw;
+  padding-bottom: 14.58333333333333vw;
 }
 .description-content {
   display: -webkit-box;
@@ -490,7 +495,8 @@ body {
 .task {
   width: 100%;
   /* margin-bottom: 31rem; */
-  padding-top: 16.14583333333333vw;
+  padding-top: 7.8125vw;
+  padding-bottom: 8.333333333333333vw;
 }
 .task__title {
   width: 57%;
@@ -603,7 +609,7 @@ body {
 }
 /*Solution*/
 .solution {
-  padding-top: 16.14583333333333vw;
+  padding-top: 7.8125vw;
   margin-bottom: 16.14583333333333vw;
 }
 .solution__content {
@@ -816,7 +822,7 @@ body {
 /*Features*/
 .features {
   position: relative;
-  padding-bottom: 38vw;
+  padding-bottom: 10vw;
 }
 .features-content {
   position: relative;
@@ -870,6 +876,7 @@ body {
 .digital-sourcing {
   display: block;
   width: 100%;
+  padding-bottom: 8.21052631578947vw;
   /* margin-bottom: 16.14583333333333vw; */
 }
 .digital-sourcing__text {
@@ -930,7 +937,7 @@ body {
 }
 /*Services*/
 .services {
-  padding-top: 16.14583333333333vw;
+  padding-top: 7.8125vw;
 }
 .services__sup-content,
 .services__sub-content {
@@ -1170,6 +1177,9 @@ body {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+}
+.copyright-wrapper-sup {
+  line-height: 160%;
 }
 .copyright-wrapper-sub {
   display: -webkit-box;
@@ -1796,6 +1806,41 @@ input.invalid {
 }
 .multi-step-form .steps .active {
   background: #eee;
+}
+/*PopUp User Privacy Notice*/
+.privacy-notes {
+  position: relative;
+}
+.privacy-header {
+  position: absolute;
+  top: 0;
+  padding: 0 9%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+  -ms-flex-align: end;
+  align-items: flex-end;
+  width: 100%;
+  z-index: 999;
+  height: 9.459459459459459vh;
+}
+.privacy-header__content {
+  width: 100%;
+  height: 4.054054054054054vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.privacy-header__content p {
+  font-size: 3.2rem;
+  font-family: 'GT America Bold';
 }
 /*Responsive*/
 @media screen and (max-width: 1024px) {
