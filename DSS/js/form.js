@@ -13,6 +13,41 @@ $(document).ready(function(){
 
 })
 
+/*Privacy poppu*/
+/*Popup*/
+$(document).ready(function(){
+  $('.privacy-popup-btn').on('click', function(event) {
+    event.preventDefault();
+    $('.privacy-notes').fadeIn();
+  });
+  $('.privacy-popup-close-btn').on('click', function(event) {
+    event.preventDefault();
+    $('.privacy-notes').fadeOut();
+  });
+})
+
+$(document).ready(function(){
+  $('.cookies-popup-btn').on('click', function(event) {
+    event.preventDefault();
+    $('.cookies-notes').fadeIn();
+  });
+  $('.cookies-popup-close-btn').on('click', function(event) {
+    event.preventDefault();
+    $('.cookies-notes').fadeOut();
+  });
+})
+
+$(document).ready(function(){
+  $('.accessibility-popup-btn').on('click', function(event) {
+    event.preventDefault();
+    $('.accessibility-notes').fadeIn();
+  });
+  $('.accessibility-popup-close-btn').on('click', function(event) {
+    event.preventDefault();
+    $('.accessibility-notes').fadeOut();
+  });
+})
+
 
 /**
  * @name Multi-step form - WIP
