@@ -199,7 +199,7 @@ $(document).ready(function(){
       let scrollChangingFeaturesBgScene = new ScrollMagic.Scene({
            triggerElement: '#digital-sourcing-trigger',
            reverse: true,
-           triggerHook: 0.9
+           triggerHook: 0.85
       })
       .setClassToggle('#wrapper-description-digital', 'digital-sourcing-bg_white')
       .addIndicators()
