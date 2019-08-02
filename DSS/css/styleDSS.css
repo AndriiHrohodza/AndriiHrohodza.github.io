@@ -1821,7 +1821,8 @@ input.invalid {
   overflow: auto;
 }
 .privacy-header {
-  position: absolute;
+  position: fixed;
+  /* position: absolute; */
   top: 0;
   padding: 0 9%;
   display: -webkit-box;
@@ -1840,6 +1841,7 @@ input.invalid {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  /*  */
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -1848,7 +1850,7 @@ input.invalid {
           justify-content: space-between;
 }
 .privacy-header__content p {
-  font-size: 1.666666666666667;
+  font-size: 1.666666666666667vw;
   font-family: 'GT America Bold';
 }
 .privacy-header__content button {
@@ -1875,6 +1877,7 @@ input.invalid {
   font-size: 3.020833333333333vw;
   font-family: 'GT America Bold';
   margin-bottom: 1.71875vw;
+  line-height: 140%;
 }
 .privacy-content p {
   font-size: 1.09375vw;
@@ -1889,6 +1892,7 @@ input.invalid {
   font-size: 1.666666666666667vw;
   font-family: 'GT America Bold';
   padding-bottom: 1.71875vw;
+  line-height: 140%;
 }
 .privacy-content .item .mono {
   font-family: 'GT Cinetype Mono';
@@ -1985,6 +1989,7 @@ input.invalid {
   font-size: 3.020833333333333vw;
   font-family: 'GT America Bold';
   margin-bottom: 1.71875vw;
+  line-height: 140%;
 }
 .cookies-content p {
   font-size: 1.09375vw;
@@ -1999,6 +2004,7 @@ input.invalid {
   font-size: 1.666666666666667vw;
   font-family: 'GT America Bold';
   padding-bottom: 1.71875vw;
+  line-height: 140%;
 }
 .cookies-content .item .mono {
   font-family: 'GT Cinetype Mono';
@@ -2015,7 +2021,7 @@ input.invalid {
   content: "";
   display: block;
   position: absolute;
-  top: 9%;
+  top: 14%;
   left: -3.5%;
   width: 0.3645833333333333vw;
   height: 0.3645833333333333vw;
@@ -2028,18 +2034,38 @@ input.invalid {
   line-height: 160%;
   list-style: none;
 }
-.cookies-content .item ul li:before {
+.cookies-content .item ul .number-one:before {
   content: "";
   display: block;
   position: absolute;
-  top: 7%;
+  top: 10%;
+  left: -3.5%;
+  width: 0.3645833333333333vw;
+  height: 0.3645833333333333vw;
+  background-color: #252525;
+}
+.cookies-content .item ul .number-two:before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 9%;
+  left: -3.5%;
+  width: 0.3645833333333333vw;
+  height: 0.3645833333333333vw;
+  background-color: #252525;
+}
+.cookies-content .item ul .number-three:before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 3%;
   left: -3.5%;
   width: 0.3645833333333333vw;
   height: 0.3645833333333333vw;
   background-color: #252525;
 }
 .cookies-content .item ol {
-  padding-left: 1.666666666666667vw;
+  padding-left: 2.34375vw;
   font-family: 'GT America';
 }
 .cookies-content .item ol li {
@@ -2051,7 +2077,7 @@ input.invalid {
 }
 .cookies-content .item ol li span {
   position: absolute;
-  left: -3%;
+  left: -4%;
   top: 0;
   font-family: 'GT America Bold';
 }
@@ -2062,14 +2088,13 @@ input.invalid {
 .accessibility-notes {
   display: none;
   width: 100%;
-  max-height: 100%;
-  min-height: 100vh;
+  overflow: hidden;
+  height: 100vh;
   position: fixed;
   top: 0;
   left: 0;
   z-index: 998;
   background-color: white;
-  overflow: auto;
 }
 .accessibility-header {
   position: absolute;
@@ -2115,9 +2140,11 @@ input.invalid {
 }
 .accessibility-wrapper {
   padding: 1.5625vw;
+  height: 100%;
 }
 .accessibility-content_border {
   border: 0.0520833333333333vw solid #4C4C4C;
+  height: 100%;
 }
 .accessibility-content {
   padding: 13.02083333333333vw 21.84210526315789vw;
@@ -2254,6 +2281,407 @@ input.invalid {
   }
   .input-wrapper {
     width: 100%;
+  }
+  /*PopUp User Privacy Notice*/
+  .privacy-notes {
+    display: none;
+    width: 100%;
+    max-height: 100%;
+    /* height: 100%; */
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 998;
+    background-color: white;
+    overflow: auto;
+  }
+  .privacy-header {
+    position: fixed;
+    /* position: absolute; */
+    top: 0;
+    padding: 0 9%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: end;
+    -ms-flex-align: end;
+    align-items: flex-end;
+    width: 100%;
+    z-index: 999;
+    height: 11.21rem;
+  }
+  .privacy-header__content {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    /*  */
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    height: 5.51rem;
+  }
+  .privacy-header__content p {
+    display: none;
+  }
+  .privacy-header__content button {
+    display: block;
+    /* width: 5.208333333333333vw; */
+    /* height: 2.604166666666667vw; */
+    /* height: 2.604166666666667vw; */
+    border: none;
+    outline: none;
+    font-size: 3.23rem;
+    font-family: 'GT America';
+    background-color: transparent;
+  }
+  .privacy-wrapper {
+    padding: 0;
+  }
+  .privacy-content_border {
+    border: none;
+  }
+  .privacy-content {
+    padding: 19rem 3.8rem;
+  }
+  .privacy-content h2 {
+    font-size: 4rem;
+    font-family: 'GT America Bold';
+    margin-bottom: 2.85rem;
+    line-height: 140%;
+  }
+  .privacy-content p {
+    font-size: 2.66rem;
+    font-family: 'GT America';
+    line-height: 160%;
+    /* padding-bottom: 7rem; */
+  }
+  .privacy-content .item {
+    margin-top: 7.6rem;
+  }
+  .privacy-content .item h4 {
+    font-size: 4rem;
+    font-family: 'GT America Bold';
+    padding-bottom: 2.85rem;
+    line-height: 140%;
+  }
+  .privacy-content .item .mono {
+    font-family: 'GT Cinetype Mono';
+    padding-bottom: 2.85rem;
+  }
+  .privacy-content .item ul {
+    font-size: 2.66rem;
+    font-family: 'GT America';
+    padding-left: 3.8rem;
+  }
+  .privacy-content .item ul li {
+    padding-bottom: 3.8rem;
+    list-style: none;
+    position: relative;
+    line-height: 160%;
+  }
+  .privacy-content .item ul li:before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 7%;
+    left: -7.5%;
+    width: 0.95rem;
+    height: 0.95rem;
+    background-color: #252525;
+  }
+  .privacy-content .item ul > li:nth-child(1):before {
+    position: absolute;
+    top: 15%;
+    left: -5%;
+  }
+  .privacy-content .item ul > li:nth-child(2):before {
+    position: absolute;
+    top: 12%;
+    left: -5%;
+  }
+  .privacy-content .item ul > li:nth-child(3):before {
+    position: absolute;
+    top: 15%;
+    left: -5%;
+  }
+  .privacy-content .item ul > li:nth-child(4):before {
+    position: absolute;
+    top: 15%;
+    left: -5%;
+  }
+  .privacy-content .item ul > li:nth-child(5):before {
+    position: absolute;
+    top: 8%;
+    left: -5%;
+  }
+  .privacy-content .item p {
+    padding-bottom: 1.9rem;
+  }
+  /*PopUp Cookies Notice*/
+  .cookies-notes {
+    display: none;
+    width: 100%;
+    max-height: 100%;
+    /* height: 100%; */
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 998;
+    background-color: white;
+    overflow: auto;
+  }
+  .cookies-header {
+    position: fixed;
+    top: 0;
+    padding: 0 9%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: end;
+    -ms-flex-align: end;
+    align-items: flex-end;
+    width: 100%;
+    z-index: 999;
+    height: 11.21rem;
+  }
+  .cookies-header__content {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: end;
+    -ms-flex-pack: end;
+    justify-content: flex-end;
+    height: 5.51rem;
+  }
+  .cookies-header__content p {
+    display: none;
+  }
+  .cookies-header__content button {
+    display: block;
+    /* width: 5.208333333333333vw; */
+    /* height: 2.604166666666667vw; */
+    /* height: 2.604166666666667vw; */
+    border: none;
+    outline: none;
+    font-size: 3.23rem;
+    font-family: 'GT America';
+    background-color: transparent;
+  }
+  .cookies-wrapper {
+    padding: 0;
+  }
+  .cookies-content_border {
+    border: none;
+  }
+  .cookies-content {
+    padding: 19rem 3.8rem;
+  }
+  .cookies-content h2 {
+    font-size: 4rem;
+    font-family: 'GT America Bold';
+    margin-bottom: 2.85rem;
+    line-height: 140%;
+  }
+  .cookies-content p {
+    font-size: 2.66rem;
+    font-family: 'GT America';
+    line-height: 160%;
+    /* padding-bottom: 7rem; */
+  }
+  .cookies-content .item {
+    margin-top: 7.6rem;
+  }
+  .cookies-content .item h4 {
+    font-size: 4rem;
+    font-family: 'GT America Bold';
+    padding-bottom: 2.85rem;
+    line-height: 140%;
+  }
+  .cookies-content .item .mono {
+    font-family: 'GT Cinetype Mono';
+    padding-bottom: 5.32rem;
+  }
+  .cookies-content .item ul {
+    font-size: 2.66rem;
+    font-family: 'GT America';
+    padding-left: 3.8rem;
+  }
+  .cookies-content .item ul .cookies-part {
+    padding-left: 6.770833333333333vw;
+  }
+  .cookies-content .item ul .cookies-part li:before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 14%;
+    left: -3.5%;
+    width: 0.95rem;
+    height: 0.95rem;
+    background-color: #252525;
+  }
+  .cookies-content .item ul .cookies-part > li:nth-child(1):before {
+    position: absolute;
+    top: 10%;
+    left: -7.5%;
+  }
+  .cookies-content .item ul .cookies-part > li:nth-child(2):before {
+    position: absolute;
+    top: 9%;
+    left: -7.5%;
+  }
+  .cookies-content .item ul .cookies-part > li:nth-child(3):before {
+    position: absolute;
+    top: 13%;
+    left: -7.5%;
+  }
+  .cookies-content .item ul .cookies-part > li:nth-child(4):before {
+    position: absolute;
+    top: 12%;
+    left: -7.5%;
+  }
+  .cookies-content .item ul li {
+    position: relative;
+    font-size: 2.66rem;
+    padding-bottom: 3.8rem;
+    line-height: 160%;
+    list-style: none;
+  }
+  .cookies-content .item ul .number-one:before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 7%;
+    left: -5%;
+    width: 0.95rem;
+    height: 0.95rem;
+    background-color: #252525;
+  }
+  .cookies-content .item ul .number-two:before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 7%;
+    left: -5%;
+    width: 0.95rem;
+    height: 0.95rem;
+    background-color: #252525;
+  }
+  .cookies-content .item ul .number-three:before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 3%;
+    left: -5%;
+    width: 0.95rem;
+    height: 0.95rem;
+    background-color: #252525;
+  }
+  .cookies-content .item ol {
+    font-size: 2.66rem;
+    font-family: 'GT America';
+    padding-left: 3.8rem;
+  }
+  .cookies-content .item ol li {
+    padding-bottom: 3.8rem;
+    font-size: 2.66rem;
+    list-style: none;
+    position: relative;
+    line-height: 160%;
+  }
+  .cookies-content .item ol li span {
+    position: absolute;
+    left: -5%;
+    top: 0;
+    font-family: 'GT America Bold';
+  }
+  .cookies-content .item p {
+    padding-bottom: 1.9rem;
+  }
+  /*PopUp Accessibility Notice*/
+  .accessibility-notes {
+    display: none;
+    width: 100%;
+    overflow: hidden;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 998;
+    background-color: white;
+    overflow: auto;
+  }
+  .accessibility-header {
+    position: absolute;
+    top: 0;
+    padding: 0 9%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: end;
+    -ms-flex-align: end;
+    align-items: flex-end;
+    width: 100%;
+    z-index: 999;
+    height: 11.21rem;
+  }
+  .accessibility-header__content {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    height: 5.51rem;
+  }
+  .accessibility-header__content p {
+    display: none;
+  }
+  .accessibility-header__content button {
+    display: block;
+    /* width: 5.208333333333333vw; */
+    /* height: 2.604166666666667vw; */
+    /* height: 2.604166666666667vw; */
+    border: none;
+    outline: none;
+    font-size: 3.23rem;
+    font-family: 'GT America';
+    background-color: transparent;
+  }
+  .accessibility-wrapper {
+    padding: 0;
+    height: 100%;
+  }
+  .accessibility-content_border {
+    border: none;
+    height: 100%;
+  }
+  .accessibility-content {
+    padding: 19rem 3.8rem;
+  }
+  .accessibility-content h2 {
+    font-size: 4rem;
+    font-family: 'GT America Bold';
+    margin-bottom: 2.85rem;
+    line-height: 140%;
+  }
+  .accessibility-content p {
+    font-size: 2.66rem;
+    font-family: 'GT America';
+    line-height: 160%;
+    /* padding-bottom: 7rem
+			/* padding-bottom: 7rem; */
   }
   /* html {
 		overflow-x: hidden;
@@ -3282,6 +3710,382 @@ Form */
   }
   .form-header__content p {
     display: none;
+  }
+  /*PopUp User Privacy Notice*/
+  .privacy-notes {
+    display: none;
+    width: 100%;
+    max-height: 100%;
+    /* height: 100%; */
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 998;
+    background-color: white;
+    overflow: auto;
+  }
+  .privacy-header {
+    position: fixed;
+    /* position: absolute; */
+    top: 0;
+    padding: 0 9%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: end;
+    -ms-flex-align: end;
+    align-items: flex-end;
+    width: 100%;
+    z-index: 999;
+    height: 7rem;
+  }
+  .privacy-header__content {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    /*  */
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    height: 3.48rem;
+  }
+  .privacy-header__content p {
+    display: none;
+  }
+  .privacy-header__content button {
+    display: block;
+    /* width: 5.208333333333333vw; */
+    /* height: 2.604166666666667vw; */
+    /* height: 2.604166666666667vw; */
+    border: none;
+    outline: none;
+    font-size: 2rem;
+    font-family: 'GT America';
+    background-color: transparent;
+  }
+  .privacy-wrapper {
+    padding: 0;
+  }
+  .privacy-content_border {
+    border: none;
+  }
+  .privacy-content {
+    padding: 12rem 2.4rem;
+  }
+  .privacy-content h2 {
+    font-size: 2.52rem;
+    font-family: 'GT America Bold';
+    margin-bottom: 1.8rem;
+    line-height: 140%;
+  }
+  .privacy-content p {
+    font-size: 1.68rem;
+    font-family: 'GT America';
+    line-height: 160%;
+    /* padding-bottom: 7rem; */
+  }
+  .privacy-content .item {
+    margin-top: 4.8rem;
+  }
+  .privacy-content .item h4 {
+    font-size: 2.52rem;
+    font-family: 'GT America Bold';
+    padding-bottom: 1.8rem;
+    line-height: 140%;
+  }
+  .privacy-content .item .mono {
+    font-family: 'GT Cinetype Mono';
+    padding-bottom: 1.8rem;
+  }
+  .privacy-content .item ul {
+    font-size: 1.68rem;
+    font-family: 'GT America';
+    padding-left: 2.4rem;
+  }
+  .privacy-content .item ul li {
+    padding-bottom: 2.4rem;
+    list-style: none;
+    position: relative;
+    line-height: 160%;
+  }
+  .privacy-content .item ul li:before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 7%;
+    left: -7.5%;
+    width: 0.6rem;
+    height: 0.6rem;
+    background-color: #252525;
+  }
+  .privacy-content .item p {
+    padding-bottom: 1rem;
+  }
+  /*PopUp Cookies Notice*/
+  .cookies-notes {
+    display: none;
+    width: 100%;
+    max-height: 100%;
+    /* height: 100%; */
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 998;
+    background-color: white;
+    overflow: auto;
+  }
+  .cookies-header {
+    position: fixed;
+    top: 0;
+    padding: 0 9%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: end;
+    -ms-flex-align: end;
+    align-items: flex-end;
+    width: 100%;
+    z-index: 999;
+    height: 7rem;
+  }
+  .cookies-header__content {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: end;
+    -ms-flex-pack: end;
+    justify-content: flex-end;
+    height: 3.48rem;
+  }
+  .cookies-header__content p {
+    display: none;
+  }
+  .cookies-header__content button {
+    display: block;
+    /* width: 5.208333333333333vw; */
+    /* height: 2.604166666666667vw; */
+    /* height: 2.604166666666667vw; */
+    border: none;
+    outline: none;
+    font-size: 2rem;
+    font-family: 'GT America';
+    background-color: transparent;
+  }
+  .cookies-wrapper {
+    padding: 0;
+  }
+  .cookies-content_border {
+    border: none;
+  }
+  .cookies-content {
+    padding: 12rem 2.4rem;
+  }
+  .cookies-content h2 {
+    font-size: 2.52rem;
+    font-family: 'GT America Bold';
+    margin-bottom: 1.8rem;
+    line-height: 140%;
+  }
+  .cookies-content p {
+    font-size: 1.68rem;
+    font-family: 'GT America';
+    line-height: 160%;
+    /* padding-bottom: 7rem; */
+  }
+  .cookies-content .item {
+    margin-top: 4.8rem;
+  }
+  .cookies-content .item h4 {
+    font-size: 2.52rem;
+    font-family: 'GT America Bold';
+    padding-bottom: 1.8rem;
+    line-height: 140%;
+  }
+  .cookies-content .item .mono {
+    font-family: 'GT Cinetype Mono';
+    padding-bottom: 3.36rem;
+  }
+  .cookies-content .item ul {
+    font-size: 1.68rem;
+    font-family: 'GT America';
+    padding-left: 2.4rem;
+  }
+  .cookies-content .item ul .cookies-part {
+    padding-left: 6.770833333333333vw;
+  }
+  .cookies-content .item ul .cookies-part li:before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 14%;
+    left: -3.5%;
+    width: 0.6rem;
+    height: 0.6rem;
+    background-color: #252525;
+  }
+  .cookies-content .item ul .cookies-part > li:nth-child(1):before {
+    position: absolute;
+    top: 7%;
+    left: -7.5%;
+  }
+  .cookies-content .item ul .cookies-part > li:nth-child(2):before {
+    position: absolute;
+    top: 6%;
+    left: -7.5%;
+  }
+  .cookies-content .item ul .cookies-part > li:nth-child(3):before {
+    position: absolute;
+    top: 13%;
+    left: -7.5%;
+  }
+  .cookies-content .item ul .cookies-part > li:nth-child(4):before {
+    position: absolute;
+    top: 11%;
+    left: -7.5%;
+  }
+  .cookies-content .item ul li {
+    position: relative;
+    font-size: 1.68rem;
+    padding-bottom: 2.4rem;
+    line-height: 160%;
+    list-style: none;
+  }
+  .cookies-content .item ul .number-one:before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 5%;
+    left: -7.5%;
+    width: 0.6rem;
+    height: 0.6rem;
+    background-color: #252525;
+  }
+  .cookies-content .item ul .number-two:before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 5%;
+    left: -7.5%;
+    width: 0.6rem;
+    height: 0.6rem;
+    background-color: #252525;
+  }
+  .cookies-content .item ul .number-three:before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 2%;
+    left: -7.5%;
+    width: 0.6rem;
+    height: 0.6rem;
+    background-color: #252525;
+  }
+  .cookies-content .item ol {
+    font-size: 1.68rem;
+    font-family: 'GT America';
+    padding-left: 2rem;
+  }
+  .cookies-content .item ol li {
+    padding-bottom: 2.4rem;
+    font-size: 1.68rem;
+    list-style: none;
+    position: relative;
+    line-height: 160%;
+  }
+  .cookies-content .item ol li span {
+    position: absolute;
+    left: -7%;
+    top: 0;
+    font-family: 'GT America Bold';
+  }
+  .cookies-content .item p {
+    padding-bottom: 1.2rem;
+  }
+  /*PopUp Accessibility Notice*/
+  .accessibility-notes {
+    display: none;
+    width: 100%;
+    overflow: hidden;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 998;
+    background-color: white;
+    overflow: auto;
+  }
+  .accessibility-header {
+    position: absolute;
+    top: 0;
+    padding: 0 9%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: end;
+    -ms-flex-align: end;
+    align-items: flex-end;
+    width: 100%;
+    z-index: 999;
+    height: 7rem;
+  }
+  .accessibility-header__content {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    height: 8.7rem;
+  }
+  .accessibility-header__content p {
+    display: none;
+  }
+  .accessibility-header__content button {
+    display: block;
+    /* width: 5.208333333333333vw; */
+    /* height: 2.604166666666667vw; */
+    /* height: 2.604166666666667vw; */
+    border: none;
+    outline: none;
+    font-size: 2.04rem;
+    font-family: 'GT America';
+    background-color: transparent;
+  }
+  .accessibility-wrapper {
+    padding: 0;
+    height: 100%;
+  }
+  .accessibility-content_border {
+    border: none;
+    height: 100%;
+  }
+  .accessibility-content {
+    padding: 12rem 2.4rem;
+  }
+  .accessibility-content h2 {
+    font-size: 2.52rem;
+    font-family: 'GT America Bold';
+    margin-bottom: 1.8‬rem;
+    line-height: 140%;
+  }
+  .accessibility-content p {
+    font-size: 1.68rem;
+    font-family: 'GT America';
+    line-height: 160%;
+    /* padding-bottom: 7rem
+			/* padding-bottom: 7rem; */
   }
   .content-wrapper_border {
     padding: 0;
@@ -4438,6 +5242,385 @@ Form */
     height: 5.4rem;
     line-height: 0;
   }
+  /*PopUp User Privacy Notice*/
+  .privacy-notes {
+    display: none;
+    width: 100%;
+    max-height: 100%;
+    /* height: 100%; */
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 998;
+    background-color: white;
+    overflow: auto;
+  }
+  .privacy-header {
+    position: fixed;
+    /* position: absolute; */
+    top: 0;
+    padding: 0 9%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: end;
+    -ms-flex-align: end;
+    align-items: flex-end;
+    width: 100%;
+    z-index: 999;
+    height: 5.9rem;
+  }
+  .privacy-header__content {
+    width: 100%;
+    height: 4.054054054054054vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    /*  */
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    height: 2.9rem;
+  }
+  .privacy-header__content p {
+    display: none;
+  }
+  .privacy-header__content button {
+    display: block;
+    /* width: 5.208333333333333vw; */
+    /* height: 2.604166666666667vw; */
+    /* height: 2.604166666666667vw; */
+    border: none;
+    outline: none;
+    font-size: 1.7rem;
+    font-family: 'GT America';
+    background-color: transparent;
+  }
+  .privacy-wrapper {
+    padding: 0;
+  }
+  .privacy-content_border {
+    border: none;
+  }
+  .privacy-content {
+    padding: 10rem 2rem;
+  }
+  .privacy-content h2 {
+    font-size: 2.1rem;
+    font-family: 'GT America Bold';
+    margin-bottom: 1.5rem;
+    line-height: 140%;
+  }
+  .privacy-content p {
+    font-size: 1.4rem;
+    font-family: 'GT America';
+    line-height: 160%;
+    /* padding-bottom: 7rem; */
+  }
+  .privacy-content .item {
+    margin-top: 4rem;
+  }
+  .privacy-content .item h4 {
+    font-size: 2.1rem;
+    font-family: 'GT America Bold';
+    padding-bottom: 1.5rem;
+    line-height: 140%;
+  }
+  .privacy-content .item .mono {
+    font-family: 'GT Cinetype Mono';
+    padding-bottom: 1.5rem;
+  }
+  .privacy-content .item ul {
+    font-size: 1.4rem;
+    font-family: 'GT America';
+    padding-left: 2rem;
+  }
+  .privacy-content .item ul li {
+    padding-bottom: 2rem;
+    list-style: none;
+    position: relative;
+    line-height: 160%;
+  }
+  .privacy-content .item ul li:before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 7%;
+    left: -7.5%;
+    width: 0.5rem;
+    height: 0.5rem;
+    background-color: #252525;
+  }
+  .privacy-content .item p {
+    padding-bottom: 1rem;
+  }
+  /*PopUp Cookies Notice*/
+  .cookies-notes {
+    display: none;
+    width: 100%;
+    max-height: 100%;
+    /* height: 100%; */
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 998;
+    background-color: white;
+    overflow: auto;
+  }
+  .cookies-header {
+    position: fixed;
+    top: 0;
+    padding: 0 9%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: end;
+    -ms-flex-align: end;
+    align-items: flex-end;
+    width: 100%;
+    z-index: 999;
+    height: 5.9rem;
+  }
+  .cookies-header__content {
+    width: 100%;
+    height: 4.054054054054054vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: end;
+    -ms-flex-pack: end;
+    justify-content: flex-end;
+    height: 2.9rem;
+  }
+  .cookies-header__content p {
+    display: none;
+  }
+  .cookies-header__content button {
+    display: block;
+    /* width: 5.208333333333333vw; */
+    /* height: 2.604166666666667vw; */
+    /* height: 2.604166666666667vw; */
+    border: none;
+    outline: none;
+    font-size: 1.7rem;
+    font-family: 'GT America';
+    background-color: transparent;
+  }
+  .cookies-wrapper {
+    padding: 0;
+  }
+  .cookies-content_border {
+    border: none;
+  }
+  .cookies-content {
+    padding: 10rem 2rem;
+  }
+  .cookies-content h2 {
+    font-size: 2.1rem;
+    font-family: 'GT America Bold';
+    margin-bottom: 1.5rem;
+    line-height: 140%;
+  }
+  .cookies-content p {
+    font-size: 1.4rem;
+    font-family: 'GT America';
+    line-height: 160%;
+    /* padding-bottom: 7rem; */
+  }
+  .cookies-content .item {
+    margin-top: 4rem;
+  }
+  .cookies-content .item h4 {
+    font-size: 2.1rem;
+    font-family: 'GT America Bold';
+    padding-bottom: 1.5rem;
+    line-height: 140%;
+  }
+  .cookies-content .item .mono {
+    font-family: 'GT Cinetype Mono';
+    padding-bottom: 2.8rem;
+  }
+  .cookies-content .item ul {
+    font-size: 1.4rem;
+    font-family: 'GT America';
+    padding-left: 2rem;
+  }
+  .cookies-content .item ul .cookies-part {
+    padding-left: 6.770833333333333vw;
+  }
+  .cookies-content .item ul .cookies-part li:before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 14%;
+    left: -3.5%;
+    width: 0.5rem;
+    height: 0.5rem;
+    background-color: #252525;
+  }
+  .cookies-content .item ul .cookies-part > li:nth-child(1):before {
+    position: absolute;
+    top: 7%;
+    left: -7.5%;
+  }
+  .cookies-content .item ul .cookies-part > li:nth-child(2):before {
+    position: absolute;
+    top: 6%;
+    left: -7.5%;
+  }
+  .cookies-content .item ul .cookies-part > li:nth-child(3):before {
+    position: absolute;
+    top: 13%;
+    left: -7.5%;
+  }
+  .cookies-content .item ul .cookies-part > li:nth-child(4):before {
+    position: absolute;
+    top: 11%;
+    left: -7.5%;
+  }
+  .cookies-content .item ul li {
+    position: relative;
+    font-size: 1.4rem;
+    padding-bottom: 2rem;
+    line-height: 160%;
+    list-style: none;
+  }
+  .cookies-content .item ul .number-one:before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 5%;
+    left: -7.5%;
+    width: 0.5rem;
+    height: 0.5rem;
+    background-color: #252525;
+  }
+  .cookies-content .item ul .number-two:before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 5%;
+    left: -7.5%;
+    width: 0.5rem;
+    height: 0.5rem;
+    background-color: #252525;
+  }
+  .cookies-content .item ul .number-three:before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 2%;
+    left: -7.5%;
+    width: 0.5rem;
+    height: 0.5rem;
+    background-color: #252525;
+  }
+  .cookies-content .item ol {
+    font-size: 1.4rem;
+    font-family: 'GT America';
+    padding-left: 2rem;
+  }
+  .cookies-content .item ol li {
+    padding-bottom: 2rem;
+    font-size: 1.4rem;
+    list-style: none;
+    position: relative;
+    line-height: 160%;
+  }
+  .cookies-content .item ol li span {
+    position: absolute;
+    left: -7%;
+    top: 0;
+    font-family: 'GT America Bold';
+  }
+  .cookies-content .item p {
+    padding-bottom: 1rem;
+  }
+  /*PopUp Accessibility Notice*/
+  .accessibility-notes {
+    display: none;
+    width: 100%;
+    overflow: hidden;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 998;
+    background-color: white;
+    overflow: auto;
+  }
+  .accessibility-header {
+    position: absolute;
+    top: 0;
+    padding: 0 9%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: end;
+    -ms-flex-align: end;
+    align-items: flex-end;
+    width: 100%;
+    z-index: 999;
+    height: 5.9rem;
+  }
+  .accessibility-header__content {
+    width: 100%;
+    height: 4.054054054054054vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    height: 2.9rem;
+  }
+  .accessibility-header__content p {
+    display: none;
+  }
+  .accessibility-header__content button {
+    display: block;
+    /* width: 5.208333333333333vw; */
+    /* height: 2.604166666666667vw; */
+    /* height: 2.604166666666667vw; */
+    border: none;
+    outline: none;
+    font-size: 1.7rem;
+    font-family: 'GT America';
+    background-color: transparent;
+  }
+  .accessibility-wrapper {
+    padding: 0;
+    height: 100%;
+  }
+  .accessibility-content_border {
+    border: none;
+    height: 100%;
+  }
+  .accessibility-content {
+    padding: 10rem 2rem;
+  }
+  .accessibility-content h2 {
+    font-size: 2.1rem;
+    font-family: 'GT America Bold';
+    margin-bottom: 1.5rem;
+    line-height: 140%;
+  }
+  .accessibility-content p {
+    font-size: 1.4rem;
+    font-family: 'GT America';
+    line-height: 160%;
+    /* padding-bottom: 7rem
+			/* padding-bottom: 7rem; */
+  }
   /*Form*/
   .form-header {
     position: absolute;
@@ -4542,7 +5725,7 @@ Form */
   .step-two p:nth-child(1),
   .step-three p:nth-child(1),
   .step-four p:nth-child(1) {
-    min-height: 16.5rem;
+    min-height: 14.5rem;
   }
   /* .step-three p:nth-child(1) {
 	    min-height: 16.5rem;

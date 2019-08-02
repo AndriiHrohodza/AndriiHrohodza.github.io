@@ -202,7 +202,7 @@ $(document).ready(function(){
            triggerHook: 0.85
       })
       .setClassToggle('#wrapper-description-digital', 'digital-sourcing-bg_white')
-      .addIndicators()
+      /*.addIndicators()*/
       .addTo(controller);
 
       /*Cursor*/
