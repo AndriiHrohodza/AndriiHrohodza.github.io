@@ -11,8 +11,10 @@
     <!-- Form -->
     <link rel="stylesheet" href="css/form.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/css/swiper.min.css">
+
     <!-- InpuNumber -->
-    <!-- <link rel="stylesheet" href="css/intlTelInput.min.css"> -->
+    <!-- <link rel="stylesheet" href="css/intlTelInput.css"> -->
+
     <!-- Main Style -->
     <link rel="stylesheet" href="css/styleDSS.css">
     <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
@@ -376,13 +378,13 @@
             <div class="footer__section-copyright">
               <div class="footer-item copyright">
                 <div class="copyright-wrapper-sup">
-                  <a href="#">© 2019 All Right Reserved. Digital Sourcing & Staffing LLC.
-                    151 San Francisco Street San Juan, Puerto Rico, Estados Unidos 00901
-                  </a>
+                  © 2019 All Right Reserved. Digital Sourcing & Staffing LLC.
+                    151 San Francisco Street San Juan, Puerto Rico, 00901
+                  
                 </div>
                 <div class="copyright-wrapper-sub">
                   <div class="footer-phone">+1 (939) 439 89 79</div>
-                  <div class="footer-email">rg@dss.pr</div>  
+                  <div class="footer-email"><a href="mailto:rg@dss.pr">rg@dss.pr</a></div>  
                 </div>
                 
               </div> 
@@ -524,7 +526,7 @@
                     <label for="message">6. How we can contact with you?</label>
                     <span class="label-wrapper_email">
                       <span class="input-wrapper input-wrapper-phone">
-                        <input class="form-phone" type="tel" name="phone" id="phone"  required>
+                        <input class="form-phone form-control" type="tel" name="phone" id="phone" placeholder="Enter your phone"  required>
                       </span>
                       <span class="input-wrapper input-wrapper-post">
                         <input  type="email" name="email" id="email-address" placeholder="Email" required>
@@ -908,7 +910,7 @@
                   });
     </script>
     <!-- InputTel -->
-   <script src="js/intlTelInput.min.js"></script>
+   <!-- <script src="js/intlTelInput.min.js"></script>
    <script>
      var input = document.querySelector("#phone");
      var iti = window.intlTelInput(input, {
@@ -916,7 +918,13 @@
       nationalMode: true,
       utilsScript: 'js/utils.js'
      });
-   </script> -->
+   </script>
+    -->
+    <!-- <script src="js/intlTelInput.js"></script>
+    <script>
+      var input = document.querySelector("#phone");
+        window.intlTelInput(input);
+    </script> -->
 
     <script src="js/form.js"></script>
     <!-- Main JS -->

@@ -1030,10 +1030,10 @@ body {
 	display: flex;
 	justify-content: space-between;
 	padding: 1.666666666666667vw 0 3.125vw;
-	.America();
+	.Cinetype-Mono();
 }
 .footer__section-copyright {
-	width: 30.88541666666667vw;
+	width: 33.85416666666667vw;
 	display: flex;
 	justify-content: space-between;
 }
@@ -1054,8 +1054,11 @@ body {
 	.Cinetype-Mono();
 }
 .footer-item a {
-	text-decoration: none;
+		text-decoration: none;
 		color: #252525;
+}
+.footer-email {
+	text-decoration: underline;
 }
 .copyright,
 .policy,
@@ -1686,7 +1689,7 @@ input.invalid {
 	overflow: auto;
 }
 .cookies-header {
-	position: absolute;
+	position: fixed;
 	top: 0;
 	padding: 0 9%;
 	display: -webkit-box;
@@ -1911,7 +1914,11 @@ input.invalid {
 	}
 }
 
+.iti__flag {background-image: url("../img/flags.png");}
 
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+  .iti__flag {background-image: url("../img/flags@2x.png");}
+}
 
 
 

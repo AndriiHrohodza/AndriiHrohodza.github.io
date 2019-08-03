@@ -1167,10 +1167,10 @@ body {
       -ms-flex-pack: justify;
           justify-content: space-between;
   padding: 1.666666666666667vw 0 3.125vw;
-  font-family: 'GT America';
+  font-family: 'GT Cinetype Mono';
 }
 .footer__section-copyright {
-  width: 30.88541666666667vw;
+  width: 33.85416666666667vw;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1203,6 +1203,9 @@ body {
 .footer-item a {
   text-decoration: none;
   color: #252525;
+}
+.footer-email {
+  text-decoration: underline;
 }
 .copyright,
 .policy,
@@ -1935,7 +1938,7 @@ input.invalid {
   overflow: auto;
 }
 .cookies-header {
-  position: absolute;
+  position: fixed;
   top: 0;
   padding: 0 9%;
   display: -webkit-box;
@@ -2160,6 +2163,14 @@ input.invalid {
   line-height: 160%;
   padding-bottom: 1.041666666666667vw;
   /* padding-bottom: 7rem; */
+}
+.iti__flag {
+  background-image: url("../img/flags.png");
+}
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+  .iti__flag {
+    background-image: url("../img/flags@2x.png");
+  }
 }
 /*Responsive*/
 @media screen and (max-width: 1024px) {
