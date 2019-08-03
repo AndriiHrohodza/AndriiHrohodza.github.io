@@ -1915,11 +1915,26 @@ input.invalid {
   content: "";
   display: block;
   position: absolute;
-  top: 7%;
+  top: 12%;
   left: -3.5%;
   width: 0.3645833333333333vw;
   height: 0.3645833333333333vw;
   background-color: #252525;
+}
+.privacy-content .item ul > li:nth-child(1):before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 15%;
+  left: -3.5%;
+}
+.privacy-content .item ul > li:nth-child(3):before,
+.privacy-content .item ul > li:nth-child(4):before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 15%;
+  left: -3.5%;
 }
 .privacy-content .item p {
   padding-bottom: 1.041666666666667vw;
@@ -2029,6 +2044,14 @@ input.invalid {
   width: 0.3645833333333333vw;
   height: 0.3645833333333333vw;
   background-color: #252525;
+}
+.cookies-content .item ul .cookies-part > li:nth-child(3):before,
+.cookies-content .item ul .cookies-part > li:nth-child(4):before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 18%;
+  left: -3.5%;
 }
 .cookies-content .item ul li {
   position: relative;
@@ -2589,7 +2612,7 @@ input.invalid {
     content: "";
     display: block;
     position: absolute;
-    top: 3%;
+    top: 2.5%;
     left: -5%;
     width: 0.95rem;
     height: 0.95rem;
@@ -3833,6 +3856,41 @@ Form */
     height: 0.6rem;
     background-color: #252525;
   }
+  .privacy-content .item ul > li:nth-child(1):before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 9%;
+    left: -7.5%;
+  }
+  .privacy-content .item ul > li:nth-child(2):before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 8%;
+    left: -7.5%;
+  }
+  .privacy-content .item ul > li:nth-child(3):before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 11%;
+    left: -7.5%;
+  }
+  .privacy-content .item ul > li:nth-child(4):before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 8%;
+    left: -7.5%;
+  }
+  .privacy-content .item ul > li:nth-child(5):before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 8%;
+    left: -7.5%;
+  }
   .privacy-content .item p {
     padding-bottom: 1rem;
   }
@@ -3993,7 +4051,7 @@ Form */
     content: "";
     display: block;
     position: absolute;
-    top: 2%;
+    top: 1.5%;
     left: -7.5%;
     width: 0.6rem;
     height: 0.6rem;
@@ -5011,7 +5069,7 @@ Form */
     min-height: 11rem;
   }
   .input-wrapper-phone {
-    min-height: 13.7rem;
+    min-height: 11rem;
   }
   .content-wrapper {
     width: 100%;
@@ -5068,7 +5126,7 @@ Form */
   .step-two p:nth-child(1),
   .step-three p:nth-child(1),
   .step-four p:nth-child(1) {
-    min-height: 20rem;
+    min-height: 17rem;
   }
   /*Nav*/
   .header .main-menu li {
@@ -5365,6 +5423,27 @@ Form */
     width: 0.5rem;
     height: 0.5rem;
     background-color: #252525;
+  }
+  .privacy-content .item ul > li:nth-child(1):before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 14%;
+    left: -7.5%;
+  }
+  .privacy-content .item ul > li:nth-child(4):before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 14%;
+    left: -7.5%;
+  }
+  .privacy-content .item ul > li:nth-child(5):before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 6%;
+    left: -7.5%;
   }
   .privacy-content .item p {
     padding-bottom: 1rem;
@@ -5738,6 +5817,9 @@ Form */
   .step-three p:nth-child(1),
   .step-four p:nth-child(1) {
     min-height: 14.5rem;
+  }
+  .step-one p:nth-child(1) {
+    min-height: 12rem;
   }
   /* .step-three p:nth-child(1) {
 	    min-height: 16.5rem;

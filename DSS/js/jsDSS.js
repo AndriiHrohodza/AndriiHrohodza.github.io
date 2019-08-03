@@ -5,10 +5,10 @@ var controller = new ScrollMagic.Controller();
 var pinFeatureScene = new ScrollMagic.Scene({
 	triggerElement: '#features-pin',
 	triggerHook: 0.3,
-	duration: '250%'
+	duration: '200%'
 })
 .setPin('#features-pin')
-.setTween(TweenMax.staggerFromTo(".features-content", 2, {left: '18rem'}, {left: '-400rem', ease: Power0.easeNone}, 0.15))// 50vw, -120vw
+.setTween(TweenMax.staggerFromTo(".features-content", 2, {left: '18rem'}, {left: '-350rem', ease: Power0.easeNone}, 0.15))// 50vw, -120vw
 /*.addIndicators({name: "pin"})*/
 .addTo(controller);
 });
@@ -66,18 +66,33 @@ $( document ).ready(function() {
    })
 });
 $( document ).ready(function() {
-  
+  /*Form*/
   $('.popup-btn').click(function(){
       $('html').addClass('scroll-off')
   })
- 
- 
 
   $('.popup-close').click(function(){
       $('html').removeClass('scroll-off');
-      
-      
    })
+
+/*Privacy popUp*/
+  $('.privacy-popup-btn').click(function(){
+      $('html').addClass('scroll-off')
+  })
+
+  $('.privacy-popup-close-btn').click(function(){
+      $('html').removeClass('scroll-off');
+   })
+
+  /*Cookies popUp*/
+  $('.cookies-popup-btn').click(function(){
+      $('html').addClass('scroll-off')
+  })
+
+  $('.cookies-popup-close-btn').click(function(){
+      $('html').removeClass('scroll-off');
+   })
+
 });
 $( document ).ready(function() {
   
