@@ -8,7 +8,7 @@ var pinFeatureScene = new ScrollMagic.Scene({
 	duration: '200%'
 })
 .setPin('#features-pin')
-.setTween(TweenMax.staggerFromTo(".features-content", 2, {left: '18rem'}, {left: '-300rem', easeInOut: Back.easeOut}, 0.15))// 50vw, -120vw
+.setTween(TweenMax.staggerFromTo(".features-content", 2, {left: '18rem'}, {left: '-300rem', ease: Power0.easeNone}, 0.15))// 50vw, -120vw
 /*.addIndicators({name: "pin"})*/
 .addTo(controller);
 });

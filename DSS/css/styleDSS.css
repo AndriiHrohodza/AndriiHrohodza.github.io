@@ -4996,7 +4996,7 @@ Form */
     display: none;
   }
   .popup-close {
-    font-size: 1.7rem;
+    font-size: 2rem;
   }
   .content-wrapper_border {
     border: none;
@@ -5754,7 +5754,6 @@ Form */
     position: fixed;
     font-size: 1.7rem;
     cursor: pointer;
-    color: white;
     z-index: 988;
     /* transition: all .5s linear; */
   }
@@ -5782,6 +5781,9 @@ Form */
   }
   .sub-item__text h2 {
     font-size: 2.1rem;
+  }
+  .toggle-button {
+    color: black;
   }
   /*Description-content*/
   .description-content__border {
