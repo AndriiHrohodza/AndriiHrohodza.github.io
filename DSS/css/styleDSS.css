@@ -1636,6 +1636,7 @@ input.invalid {
   /* display: flex;
 	align-items: flex-end;	 */
   min-height: 11rem;
+  position: relative;
 }
 .input-wrapper-date {
   display: -webkit-box;
@@ -2287,7 +2288,7 @@ input.invalid {
   .btn-prev,
   .btn-success,
   .btn-danger {
-    margin-top: 2.5rem;
+    /* margin-top: 2.5rem; */
     background-color: #252525;
     color: white;
     min-width: 25.27rem;
@@ -2301,7 +2302,7 @@ input.invalid {
   .input-wrapper-city,
   .input-wrapper-post,
   .input-wrapper-phone {
-    min-height: 20.9rem;
+    min-height: 17.9rem;
   }
   .label-wrapper_email {
     display: -webkit-box;

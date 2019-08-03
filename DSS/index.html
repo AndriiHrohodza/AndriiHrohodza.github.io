@@ -13,7 +13,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/css/swiper.min.css">
 
     <!-- InpuNumber -->
-    <!-- <link rel="stylesheet" href="css/intlTelInput.css"> -->
+    
+    <link rel="stylesheet" href="css/pidie-0.0.8.css">
 
     <!-- Main Style -->
     <link rel="stylesheet" href="css/styleDSS.css">
@@ -525,8 +526,8 @@
                   <p>
                     <label for="message">6. How we can contact with you?</label>
                     <span class="label-wrapper_email">
-                      <span class="input-wrapper input-wrapper-phone">
-                        <input class="form-phone form-control" type="tel" name="phone" id="phone" placeholder="Enter your phone"  required>
+                      <span class="input-wrapper input-wrapper-phone pd-telephone-input">
+                        <input class="form-phone form-control" type="tel" name="phone" id="phone">
                       </span>
                       <span class="input-wrapper input-wrapper-post">
                         <input  type="email" name="email" id="email-address" placeholder="Email" required>
@@ -910,22 +911,32 @@
                   });
     </script>
     <!-- InputTel -->
-   <!-- <script src="js/intlTelInput.min.js"></script>
-   <script>
+   <!-- <script src="js/intlTelInput.min.js"></script> -->
+   <!-- <script>
      var input = document.querySelector("#phone");
      var iti = window.intlTelInput(input, {
       initialCountry: 'id' ,
       nationalMode: true,
       utilsScript: 'js/utils.js'
      });
-   </script>
-    -->
-    <!-- <script src="js/intlTelInput.js"></script>
+   </script> -->
+
+    <!-- <script src="js/intlTelInput.min.js"></script>
     <script>
-      var input = document.querySelector("#phone");
-        window.intlTelInput(input);
+      var input = document.querySelector("#telephone");
+      window.intlTelInput(input,({
+        allowDropdown: true,
+        autoHideDialCode: true,
+        autoPlaceholder: "polite",
+        customPlaceholder: null
+      }));
+    
     </script> -->
-  
+   <script src="js/pidie-0.0.8.js"></script>
+   <script>
+     new Pidie();
+   </script>
+
     <script src="js/form.js"></script>
     <!-- Main JS -->
     <script src="js/jsDSS.js"></script>
