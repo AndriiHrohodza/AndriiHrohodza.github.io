@@ -150,7 +150,7 @@ $(document).ready(function(){
       let mobileNavScene = new ScrollMagic.Scene({
            triggerElement: '#digital-sourcing-trigger',
            reverse: true,
-           triggerHook: 1
+           triggerHook: 0.85
       })
       .setClassToggle('#toggle-trigger', 'toggle-nav')
       /*.addIndicators()*/
@@ -160,7 +160,7 @@ $(document).ready(function(){
       let mobileLogoScene = new ScrollMagic.Scene({
            triggerElement: '#digital-sourcing-trigger',
            reverse: true,
-           triggerHook: 1
+           triggerHook: 0.85
       })
       .setClassToggle('#logo-trigger', 'toggle-logo')
       /*.addIndicators()*/

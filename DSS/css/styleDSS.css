@@ -5135,6 +5135,7 @@ Form */
   /*Services*/
   .features-content__items {
     width: 55rem;
+    margin-right: 24rem;
   }
   .features-content__items .items-img img {
     width: 14rem;
@@ -5848,6 +5849,9 @@ Form */
     margin-bottom: 1.5rem;
   }
   /*Features*/
+  .features-content__items {
+    margin-right: 20rem;
+  }
   .features-content__items .items-img img {
     width: 10rem;
     height: 100%;
