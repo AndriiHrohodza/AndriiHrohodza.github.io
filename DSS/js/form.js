@@ -236,7 +236,7 @@ $(document).ready(function(){
         alarm: "required",
         country: "required",
         city: "required",
-        phone: "required",
+        /*phone: "required",*/
         email: "required",
        },
        messages: {
@@ -252,10 +252,10 @@ $(document).ready(function(){
            required: "What type of specialist do you need?",
 
          },
-         phone: {
+         /*phone: {
            required: "Enter your phone",
             
-         },
+         },*/
          alarm: {
            required: "Alarm",
          },

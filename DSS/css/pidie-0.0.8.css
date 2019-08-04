@@ -993,10 +993,55 @@ input:checked + .pd-switch-slider:before {
 }
 .pd-telephone-input .pd-telephone-dropdown{
   position: absolute;
-  top: 45%;
-  transform: translateY(-45%);
+  top: 50%;
+  transform: translateY(-50%);
   z-index: 1;
   cursor: pointer;
+}
+@media screen and (max-width: 1024px) {
+  .pd-telephone-input .pd-telephone-dropdown{
+    position: absolute;
+    top: 32%;
+    transform: translateY(-50%);
+    z-index: 1;
+    cursor: pointer;
+  }
+  .pd-telephone-input{
+    font-size: 2rem;
+    color: #333;
+  }
+}
+@media screen and (max-width: 768px) {
+  .pd-telephone-input{
+    font-size: 1.8rem;
+    color: #333;
+  }
+}
+@media screen and (max-width: 400px) {
+  .pd-telephone-input .pd-telephone-dropdown{
+    position: absolute;
+    top: 38%;
+    transform: translateY(-50%);
+    z-index: 1;
+    cursor: pointer;
+  }
+  .pd-telephone-input{
+    font-size: 1.4rem;
+    color: #333;
+  }
+}
+@media screen and (max-width: 320px) {
+  .pd-telephone-input .pd-telephone-dropdown{
+    position: absolute;
+    top: 31%;
+    transform: translateY(-50%);
+    z-index: 1;
+    cursor: pointer;
+  }
+  .pd-telephone-input{
+    font-size: 1.4rem;
+    color: #333;
+  }
 }
 .pd-telephone-input .pd-telephone-flag{
   margin: 0.0520833333333333vw;

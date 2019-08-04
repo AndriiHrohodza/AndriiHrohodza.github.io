@@ -1575,6 +1575,7 @@ input.invalid {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  position: relative;
 }
 .label-wrapper_alarm {
   display: -webkit-box;
@@ -1636,7 +1637,7 @@ input.invalid {
   /* display: flex;
 	align-items: flex-end;	 */
   min-height: 11rem;
-  position: relative;
+  /* position: relative; */
 }
 .input-wrapper-date {
   display: -webkit-box;
