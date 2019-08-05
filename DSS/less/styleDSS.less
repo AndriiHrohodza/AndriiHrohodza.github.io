@@ -137,33 +137,37 @@
 	opacity: 0.5;
 } 
 
+::selection {
+	background-color: rgba(61,61,61,1);
+	color: white; 
+}
 /*p selection*/
-p::selection {
-	background: rgba(61,61,61,1);
-	color: white; /* Safari */
+/* p,a,h3,h4,h5,h6::selection {
+	background-color: rgba(61,61,61,1);
+	color: white; Safari
 }
-p::-moz-selection {
-	background: rgba(61,61,61,1);
-	color: white; /* Firefox */
+p,a,h3,h4,h5,h6::-moz-selection {
+	background-color: rgba(61,61,61,1);
+	color: white; Firefox
 }
-/*h2 selection*/
+h2 selection
 h2::selection {
 	background: rgba(61,61,61,1);
-	color: white; /* Safari */
+	color: white; Safari
 }
 h2::-moz-selection {
 	background: rgba(61,61,61,1);
-	color: white; /* Firefox */
+	color: white; Firefox
 }
-/*h3 selection*/
+h3 selection
 h3::selection {
 	background: rgba(61,61,61,1);
-	color: white; /* Safari */
+	color: white; Safari
 }
 h3::-moz-selection {
 	background: rgba(61,61,61,1);
-	color: white; /* Firefox */
-}
+	color: white; Firefox
+} */
 
 
 * {
@@ -4678,7 +4682,7 @@ Form */
 		font-size: 1.7rem;
 	}
 	input {
-		padding: 2rem 3.3rem;
+		padding: 2rem 2rem;
 		width: 100%;
 		/* height: 8.7rem; */
 		font-size: 1.7rem;
@@ -5367,7 +5371,7 @@ Form */
 	    font-size: 1.4rem;
 	}
 	input {
-	    padding: 1.7rem 2.8rem;
+	    padding: 1.7rem 2rem;
 	    width: 100%;
 	    /* height: 8.7rem; */
 	    font-size: 1.4rem;

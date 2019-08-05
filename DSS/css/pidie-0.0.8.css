@@ -1001,7 +1001,8 @@ input:checked + .pd-switch-slider:before {
 @media screen and (max-width: 1024px) {
   .pd-telephone-input .pd-telephone-dropdown{
     position: absolute;
-    top: 32%;
+    top: 33%;
+    padding-left: 0.5rem;
     transform: translateY(-50%);
     z-index: 1;
     cursor: pointer;
@@ -1020,7 +1021,8 @@ input:checked + .pd-switch-slider:before {
 @media screen and (max-width: 400px) {
   .pd-telephone-input .pd-telephone-dropdown{
     position: absolute;
-    top: 38%;
+    top: 39%;
+    padding-left: 0.7rem;
     transform: translateY(-50%);
     z-index: 1;
     cursor: pointer;

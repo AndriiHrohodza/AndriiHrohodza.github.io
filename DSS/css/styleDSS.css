@@ -113,54 +113,41 @@
   background-color: #3d3d3d;
   opacity: 0.5;
 }
+::-moz-selection {
+  background-color: #3d3d3d;
+  color: white;
+}
+::selection {
+  background-color: #3d3d3d;
+  color: white;
+}
 /*p selection*/
-p::-moz-selection {
-  background: #3d3d3d;
-  color: white;
-  /* Safari */
+/* p,a,h3,h4,h5,h6::selection {
+	background-color: rgba(61,61,61,1);
+	color: white; Safari
 }
-p::selection {
-  background: #3d3d3d;
-  color: white;
-  /* Safari */
+p,a,h3,h4,h5,h6::-moz-selection {
+	background-color: rgba(61,61,61,1);
+	color: white; Firefox
 }
-p::-moz-selection {
-  background: #3d3d3d;
-  color: white;
-  /* Firefox */
-}
-/*h2 selection*/
-h2::-moz-selection {
-  background: #3d3d3d;
-  color: white;
-  /* Safari */
-}
+h2 selection
 h2::selection {
-  background: #3d3d3d;
-  color: white;
-  /* Safari */
+	background: rgba(61,61,61,1);
+	color: white; Safari
 }
 h2::-moz-selection {
-  background: #3d3d3d;
-  color: white;
-  /* Firefox */
+	background: rgba(61,61,61,1);
+	color: white; Firefox
 }
-/*h3 selection*/
-h3::-moz-selection {
-  background: #3d3d3d;
-  color: white;
-  /* Safari */
-}
+h3 selection
 h3::selection {
-  background: #3d3d3d;
-  color: white;
-  /* Safari */
+	background: rgba(61,61,61,1);
+	color: white; Safari
 }
 h3::-moz-selection {
-  background: #3d3d3d;
-  color: white;
-  /* Firefox */
-}
+	background: rgba(61,61,61,1);
+	color: white; Firefox
+} */
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -5092,7 +5079,7 @@ Form */
     font-size: 1.7rem;
   }
   input {
-    padding: 2rem 3.3rem;
+    padding: 2rem 2rem;
     width: 100%;
     /* height: 8.7rem; */
     font-size: 1.7rem;
@@ -5778,7 +5765,7 @@ Form */
     font-size: 1.4rem;
   }
   input {
-    padding: 1.7rem 2.8rem;
+    padding: 1.7rem 2rem;
     width: 100%;
     /* height: 8.7rem; */
     font-size: 1.4rem;
