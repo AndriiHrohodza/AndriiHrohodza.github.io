@@ -18,57 +18,63 @@
 /* Arrows */
 .slick-prev
 {
-    font-size: 0;
-    line-height: 0;
-
     position: absolute;
     top: 50%;
-
     display: block;
-
     width: 4.4rem;
     height: 1.3rem;
-
     padding: 0;
-    -webkit-transform: translate(0, -50%);
-    -ms-transform: translate(0, -50%);
-    transform: translate(0, -50%);
-
     cursor: pointer;
-
     color: transparent;
     border: none;
     outline: none;
     background: url(../img/goods/LeftArrow-Selected.png) center no-repeat;
-    z-index: 99;
-    
+       
+}
+.slick-prev:before {
+    content: "";
+    display: block;
+    position: absolute;
+    left: -55%;
+    top: 50%;
+    border-radius: 0 12rem  12rem 0;
+    transform: translateY(-50%);
+    width: 6rem;
+    height: 9rem;
+    background-color: #F3F3F3;
+    z-index: -1;
 }
 .slick-next {
-    font-size: 0;
-    line-height: 0;
-
     position: absolute;
     top: 50%;
-
     display: block;
-
     width: 4.4rem;
     height: 1.3rem;
-
     padding: 0;
-    -webkit-transform: translate(0, -50%);
-    -ms-transform: translate(0, -50%);
-    transform: translate(0, -50%);
-
     cursor: pointer;
-
     color: transparent;
     border: none;
     outline: none;
     background: url(../img/goods/RightArrow-Selected.png) center no-repeat;
-    z-index: 99;
 }
-./* slick-prev:hover,
+.slick-next:before {
+    content: "";
+    display: block;
+    position: absolute;
+    right: -55%;
+    top: 50%;
+    border-radius: 12rem 0 0 12rem ;
+    transform: translateY(-50%);
+    width: 6rem;
+    height: 9rem;
+    background-color: #F3F3F3;
+    z-index: -1;
+}
+.slick-prev:hover:before,
+.slick-next:hover:before {
+    background-color: #FFF6E3;
+}
+/* slick-prev:hover,
 .slick-prev:focus
 {
     
@@ -108,38 +114,24 @@
 
 .slick-prev
 {
-    left: 0;
+    left: 1%;
 }
 [dir='rtl'] .slick-prev
 {
-    right: 0;
+    right: 1%;
     left: auto;
 }
-.slick-prev:before
-{
-    /*content: '←';*/
-}
-[dir='rtl'] .slick-prev:before
-{
-    /*content: '→';*/
-}
+
+
 
 .slick-next
 {
-    right: 0;
+    right: 1%;
 }
 [dir='rtl'] .slick-next
 {
     right: auto;
-    left: 0;
-}
-.slick-next:before
-{
-    /*content: '→';
-}
-[dir='rtl'] .slick-next:before
-{
-    content: '←';*/
+    left: 1%;
 }
 
 /* Dots */

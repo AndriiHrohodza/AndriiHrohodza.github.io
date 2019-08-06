@@ -77,8 +77,36 @@ $(window).on("mousemove click", function(e) {
 moveBackground();
 */
 
+
+
+/*Scroll Magic*/
+/*let controller = new ScrollMagic.Controller();*/
+
+/*Description Animation*/
+//Description-text animation
+/*let descriptionTextScene = new ScrollMagic.Scene({
+	triggerElement: '#features',
+	reverse: true,
+	triggerHook: 0.7
+})
+.setClassToggle('#text-magic', 'number')
+.addIndicators({name: "num"})
+.addTo(controller);*/
+
+
+/*let descriptionTextCountScene = new ScrollMagic.Scene({
+	triggerElement: '#features',
+	reverse: true,
+	triggerHook: 0.7
+})
+.setClassToggle('#text-count-magic', 'count')
+.addIndicators({name: "count"})
+.addTo(controller);*/
+
+
+
 /*Counts*/
-$('.count').each(function() {
+/*$('.count').each(function() {
 	$(this).prop('number', 0).animate({
 		number:$(this).text()
 	}, {
@@ -89,6 +117,71 @@ $('.count').each(function() {
 		}
 	});
 });
+*/
 
+/*Scroll Magic*/
+
+/*Achivments Animation*/
+let controller = new ScrollMagic.Controller();
+
+/*Coffee*/
+let coffeeScene = new ScrollMagic.Scene({
+	triggerElement: '#coffee',
+	reverse: true,
+	triggerHook: 0.9
+})
+.setClassToggle('#coffee', 'fadeInDownSubHead')
+/*.addIndicators({name: "coffee"})*/
+.addTo(controller);
+
+/*Exclusive*/
+let exclusiveScene = new ScrollMagic.Scene({
+	triggerElement: '#exclusive',
+	reverse: true,
+	triggerHook: 0.9
+})
+.setClassToggle('#exclusive', 'fadeInDownSubHead')
+/*.addIndicators({name: "exclusive"})*/
+.addTo(controller);
+
+/*GMO*/
+let GMOScene = new ScrollMagic.Scene({
+	triggerElement: '#GMO',
+	reverse: true,
+	triggerHook: 0.9
+})
+.setClassToggle('#GMO', 'fadeInDownSubHead')
+/*.addIndicators({name: "GMO"})*/
+.addTo(controller);
+
+/*Inovation*/
+let inovationScene = new ScrollMagic.Scene({
+	triggerElement: '#inovation',
+	reverse: true,
+	triggerHook: 0.9
+})
+.setClassToggle('#inovation', 'fadeInDownSubHead')
+/*.addIndicators({name: "inovation"})*/
+.addTo(controller);
+
+/*Modern*/
+let modernScene = new ScrollMagic.Scene({
+	triggerElement: '#modern',
+	reverse: true,
+	triggerHook: 0.9
+})
+.setClassToggle('#modern', 'fadeInDownSubHead')
+/*.addIndicators({name: "modern"})*/
+.addTo(controller);
+
+/*Desition*/
+let desitionScene = new ScrollMagic.Scene({
+	triggerElement: '#desition',
+	reverse: true,
+	triggerHook: 0.9
+})
+.setClassToggle('#desition', 'fadeInDownSubHead')
+/*.addIndicators({name: "desition"})*/
+.addTo(controller);
 
 
