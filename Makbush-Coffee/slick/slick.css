@@ -100,7 +100,7 @@
 }
 .slick-initialized .slick-slide
 {
-    height: 80rem;
+   /*  height: 80rem; */
     display: block;
 }
 .slick-loading .slick-slide

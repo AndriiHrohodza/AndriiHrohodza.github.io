@@ -25,12 +25,23 @@
   font-style: normal;
 }
 @font-face {
-  font-family: 'Muller-Light';
-  src: url('../fonts/MullerLight.eot');
-  src: url('MullerLight.eot?#iefix') format('embedded-opentype'), url('../fonts/MullerLight.woff2') format('woff2'), url('../fonts/MullerLight.woff') format('woff'), url('../fonts/MullerLight.ttf') format('truetype'), url('../fonts/MullerLight.svg') format('svg');
-  font-weight: 300;
+  font-family: 'Muller Thin DEMO';
+  src: url('../fonts/MullerThinDEMO.eot');
+  src: url('MullerThinDEMO.eot?#iefix') format('embedded-opentype'), url('../fonts/MullerThinDEMO.woff2') format('woff2'), url('../fonts/MullerThinDEMO.woff') format('woff'), url('../fonts/MullerThinDEMO.ttf') format('truetype'), url('../fonts/MullerThinDEMO.svg') format('svg');
+  font-weight: 100;
   font-style: normal;
 }
+/* @font-face {
+    font-family: 'Muller-Light';
+    src: url('../fonts/MullerLight.eot');
+    src: url('MullerLight.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/MullerLight.woff2') format('woff2'),
+        url('../fonts/MullerLight.woff') format('woff'),
+        url('../fonts/MullerLight.ttf') format('truetype'),
+        url('../fonts/MullerLight.svg') format('svg');
+    font-weight: 300;
+    font-style: normal;
+} */
 /* .gerbera-reg() {
     font-family: 'Gerbera', sans-serif;
 } */
@@ -46,7 +57,7 @@
   width: 12.8125vw;
   font-size: 0.8854166666666667vw;
   padding: 1.041666666666667vw  0;
-  border: none;
+  border: 0.0520833333333333vw solid #262829;
   background-color: transparent;
   /* margin-top: 0.0520833333333333vw; */
   outline: none;
@@ -304,13 +315,14 @@ body {
   font-size: 2.8125vw;
   font-family: 'Gerbera-Medium', sans-serif;
   color: #262829;
+  line-height: 120%;
   opacity: 0;
 }
 .primary__sub-text {
-  width: 90%;
+  width: 73%;
   line-height: 160%;
   font-size: 1.09375vw;
-  margin-top: 0.6770833333333333vw;
+  margin-top: 1.041666666666667vw;
   color: #262829;
   opacity: 0;
 }
@@ -318,13 +330,15 @@ body {
   width: 16.09375vw;
   height: 4.270833333333333vw;
   text-align: center;
-  margin-top: 4.166666666666667vw;
+  margin-top: 3.645833333333333vw;
   background-color: #262829;
   color: white;
   padding: 1.510416666666667vw 0;
   opacity: 0;
 }
 .primary__content-img {
+  width: 42.55208333333333vw;
+  height: 38.85416666666667vw;
   max-width: 50%;
   -webkit-animation-duration: 1s;
           animation-duration: 1s;
@@ -332,8 +346,8 @@ body {
           animation-timing-function: ease-in-out;
 }
 .primary__content-img img {
-  -webkit-transform: scale(0.9);
-          transform: scale(0.9);
+  -webkit-transform: scale(1);
+          transform: scale(1);
 }
 /* .js-primary-tabs {
     display: none;
@@ -461,7 +475,7 @@ li{
 .features-wrapper {
   width: 100%;
   height: 100%;
-  background: url(../img/features/features-bg.jpg) center center no-repeat;
+  background: url(../img/features/features-bg.jpg) center 0.05208333vw no-repeat;
 }
 .features__header {
   width: 100%;
@@ -471,16 +485,17 @@ li{
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  padding-top: 20rem;
-  padding-bottom: 9rem;
+  padding-top: 8.333333333333333vw;
+  padding-bottom: 4.6875vw;
 }
 .features__header p {
-  font-size: 5.4rem;
+  font-size: 2.8125vw;
   font-family: 'Gerbera-Medium', sans-serif;
   color: #262829;
+  line-height: 120%;
 }
 .features__header .header-text-wrapper {
-  width: 84.2rem;
+  width: 43.85416666666667vw;
   text-align: center;
 }
 .features__content {
@@ -494,7 +509,7 @@ li{
   color: #262829;
 }
 .features__items {
-  min-width: 24.6rem;
+  min-width: 12.8125vw;
   /* .description > p:nth-child(1) {
         content: "";
         display: block;
@@ -507,16 +522,16 @@ li{
     } */
 }
 .features__items .number {
-  font-size: 12rem;
+  font-size: 6.25vw;
   text-align: center;
 }
 .features__items .number p {
-  font-family: 'Muller-Light', sans-serif;
+  font-family: 'Muller Thin DEMO', sans-serif;
 }
 .features__items .description {
-  font-size: 2.1rem;
+  font-size: 1.09375vw;
   position: relative;
-  font-family: 'Muller-Light', sans-serif;
+  font-family: 'Muller', sans-serif;
 }
 .features__items .description p {
   text-align: center;
@@ -526,7 +541,7 @@ li{
   display: block;
   position: absolute;
   top: 8%;
-  left: -12%;
+  left: -1%;
   width: 0.6770833333333333vw;
   height: 0.6770833333333333vw;
   background: url(../img/features/Vector.svg) center center no-repeat;
@@ -537,37 +552,51 @@ li{
   display: block;
   position: absolute;
   top: 8%;
-  right: -12%;
+  right: -1%;
   width: 0.6770833333333333vw;
   height: 0.6770833333333333vw;
   background: url(../img/features/Vector.svg) center center no-repeat;
   background-size: contain;
 }
 .features__items .description > p:nth-child(1) {
-  margin-bottom: 1.6rem;
+  margin-bottom: 0.78125vw;
+}
+.features__items .reg p:nth-child(1):before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 8%;
+  left: -4%;
+}
+.features__items .reg p:nth-child(1):after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 8%;
+  right: -4%;
 }
 .features__items .minutes p:nth-child(1):before {
   content: "";
   display: block;
   position: absolute;
   top: 8%;
-  left: -8%;
+  left: 0;
 }
 .features__items .minutes p:nth-child(1):after {
   content: "";
   display: block;
   position: absolute;
   top: 8%;
-  right: -8%;
+  right: 0;
 }
 /*Goods*/
 /*Cards*/
 .cards {
   width: 100%;
   /* height: 74.5rem; */
-  padding-top: 25.5rem;
+  /* padding-top: 25.5rem; */
   position: relative;
-  margin-bottom: 11.2rem;
+  margin-bottom: 5.833333333333333vw;
 }
 .cards__coffee {
   display: -webkit-box;
@@ -592,8 +621,8 @@ li{
 .cards-slider::before {
   content: "";
   display: block;
-  width: 70rem;
-  height: 80rem;
+  width: 36.45833333333333vw;
+  height: 41.66666666666667vw;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -605,7 +634,7 @@ li{
 .cards-text {
   display: block;
   width: 100%;
-  font-size: 4rem;
+  font-size: 2.083333333333333vw;
   font-family: 'Muller', sans-serif;
   color: #262829;
   text-align: center;
@@ -621,7 +650,7 @@ li{
 }
 .goods-bg {
   width: 100%;
-  height: 6.7rem;
+  height: 3.489583333333333vw;
   background-color: red;
 }
 .cards-slider {
@@ -631,11 +660,11 @@ li{
 }
 .cards-slider__item {
   margin: 0 auto;
-  padding: 8rem 0 8rem 0;
-  height: 90rem;
+  padding: 6.25vw 0 6.25vw 0;
+  height: 46.875vw;
 }
 .cards-slider__item .items {
-  height: 80rem;
+  height: 41.66666666666667vw;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -651,10 +680,10 @@ li{
           justify-content: center;
 }
 .cards-slider__item .items p {
-  font-size: 4rem;
+  font-size: 2.083333333333333vw;
   font-family: 'Muller', sans-serif;
   color: #262829;
-  margin-top: 4rem;
+  margin-top: 2.083333333333333vw;
   opacity: 0;
 }
 .cards-slider__item .items .items-img {
@@ -675,14 +704,14 @@ li{
   text-align: center;
 }
 .cards-slider__item .items-text p {
-  font-size: 2.1rem;
+  font-size: 1.09375vw;
   font-family: 'Gerbera-Medium', sans-serif;
   color: #ffffff;
-  letter-spacing: 0.3rem;
-  margin-bottom: 0.8rem;
+  letter-spacing: 0.15625vw;
+  margin-bottom: 0.4166666666666667vw;
 }
 .cards-slider__item .items-text span {
-  font-size: 1.7rem;
+  font-size: 0.8854166666666667vw;
   color: #59A329;
 }
 .slider-btn-wrapper {
@@ -692,18 +721,18 @@ li{
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin-top: 10rem;
+  /* margin-top: 10rem; */
   /* background-color: red; */
 }
 .slider-btn {
-  width: 30.9rem;
-  height: 8.2rem;
-  font-size: 1.7rem;
-  padding: 2.7rem 0;
+  width: 16.09375vw;
+  height: 4.270833333333333vw;
+  font-size: 0.8854166666666667vw;
+  padding: 1.40625vw 0;
   background-color: #262829;
   font-family: 'Gerbera-Medium', sans-serif;
   color: white;
-  border: 1px solid #262829;
+  border: 0.0520833333333333vw solid #262829;
   /* margin-top: 8rem; */
   z-index: 999;
   cursor: pointer;
@@ -724,7 +753,7 @@ li{
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   width: 100%;
-  padding-top: 16rem;
+  padding-top: 8.333333333333333vw;
   background-color: #FEF9EF;
 }
 .partners__items {
@@ -734,8 +763,8 @@ li{
   position: relative;
   width: 33.3%;
   /* max-width: 39.4rem; */
-  height: 20.9rem;
-  border: 0.1rem solid #B7B7B7;
+  height: 10.88541666666667vw;
+  border: 0.0520833333333333vw solid #B7B7B7;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -764,12 +793,12 @@ li{
   position: absolute;
   top: 50%;
   left: 50%;
-  font-size: 2.1rem;
-  font-family: 'Muller-Light', sans-serif;
+  font-size: 1.09375vw;
+  font-family: 'Muller', sans-serif;
   opacity: 0;
   line-height: 160%;
   text-align: center;
-  width: 60%;
+  width: 65%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
   -webkit-transition: all 0.1s ease-in-out;
@@ -782,9 +811,9 @@ li{
   top: 50%;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
-  left: -12%;
-  width: 1rem;
-  height: 1rem;
+  left: -17%;
+  width: 0.0520833333333333vw;
+  height: 0.0520833333333333vw;
   background: url(../img/Partners/Vector.png) center center no-repeat;
 }
 .partners__items figcaption span:after {
@@ -794,9 +823,9 @@ li{
   top: 50%;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
-  right: -12%;
-  width: 1rem;
-  height: 1rem;
+  right: -17%;
+  width: 0.0520833333333333vw;
+  height: 0.0520833333333333vw;
   background: url(../img/Partners/Vector.png) center center no-repeat;
 }
 .partners__items:hover figcaption {
@@ -821,7 +850,7 @@ li{
   width: 100%;
   height: 100%;
   color: black;
-  font-size: 1.8rem;
+  font-size: 0.9375vw;
 }
 .partners-content {
   display: -webkit-box;
@@ -848,38 +877,39 @@ li{
   border-right: none;
 }
 .partners-content .one:hover {
-  padding-left: 1px;
-  padding-top: 1px;
+  padding-left: 0.0520833333333333vw;
+  padding-top: 0.0520833333333333vw;
 }
 .partners-content .one:hover ~ .two {
   border-left: none;
-  padding-left: 1px;
+  padding-left: 0.0520833333333333vw;
 }
 .partners-content .one:hover ~ .four {
-  padding-top: 1px;
+  padding-top: 0.0520833333333333vw;
   border-top: none;
 }
 .partners-content .two:hover {
-  padding-left: 1px;
-  padding-top: 1px;
+  /*  padding-left: 0.0520833333333333vw;
+       padding-top: 0.0520833333333333vw; */
 }
 .partners-content .two:hover ~ .three {
   border-left: none;
+  padding-left: 0.0520833333333333vw;
 }
 .partners-content .two:hover ~ .five {
   border-top: none;
-  padding-top: 1px;
+  padding-top: 0.0520833333333333vw;
 }
 .partners-content .three:hover {
-  padding-top: 1px;
+  padding-top: 0.0520833333333333vw;
 }
 .partners-content .three:hover ~ .four {
   border-left: none;
-  padding-left: 1px;
+  padding-left: 0.0520833333333333vw;
 }
 .partners-content .three:hover ~ .six {
   border-top: none;
-  padding-top: 1px;
+  padding-top: 0.0520833333333333vw;
 }
 .partners-content .four:hover ~ .eight {
   border-top: none;
@@ -889,17 +919,17 @@ li{
 }
 .partners-content .five:hover ~ .six {
   border-left: none;
-  padding-left: 1px;
+  padding-left: 0.0520833333333333vw;
 }
 .partners-content .six:hover {
-  padding-right: 1px;
+  padding-right: 0.0520833333333333vw;
 }
 .partners-content .six:hover ~ .seven {
   border-left: none;
 }
 .partners-content .seven:hover ~ .eight {
   border-left: none;
-  padding-left: 1px;
+  padding-left: 0.0520833333333333vw;
 }
 .partners-text {
   display: block;
@@ -907,10 +937,10 @@ li{
   font-family: 'Gerbera-Medium', sans-serif;
   text-align: center;
   color: #262829;
-  margin-bottom: 9rem;
+  margin-bottom: 4.6875vw;
 }
 .partners-text p {
-  font-size: 5.4rem;
+  font-size: 2.8125vw;
 }
 /*Achievments*/
 .achievments {
@@ -965,7 +995,7 @@ li{
 .achievments__content .achievments__item-left p {
   width: 85%;
   font-size: 2.1rem;
-  font-family: 'Muller-Light', sans-serif;
+  font-family: 'Muller Thin DEMO', sans-serif;
   color: #262829;
   line-height: 160%;
   position: relative;
@@ -1008,7 +1038,7 @@ li{
 }
 .achievments__content .achievments__item-right p {
   font-size: 2.1rem;
-  font-family: 'Muller-Light', sans-serif;
+  font-family: 'Muller Thin DEMO', sans-serif;
   color: #262829;
   line-height: 160%;
   position: relative;
