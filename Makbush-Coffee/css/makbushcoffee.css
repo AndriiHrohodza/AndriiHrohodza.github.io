@@ -788,6 +788,8 @@ li{
 .partners__items img {
   -webkit-transition: all 0.1s ease-in-out;
   transition: all 0.1s ease-in-out;
+  width: 14.0625vw;
+  height: 5.20833333vw;
 }
 .partners__items figcaption span {
   position: absolute;
@@ -912,11 +914,15 @@ li{
   border-top: none;
   padding-top: 0.0520833333333333vw;
 }
-.partners-content .four:hover ~ .eight {
-  border-top: none;
+.partners-content .four:hover {
+  padding-left: 0.0520833333333333vw;
 }
 .partners-content .four:hover ~ .five {
   border-left: none;
+  padding-left: 0.0520833333333333vw;
+}
+.partners-content .five:hover {
+  padding-left: 0.0520833333333333vw;
 }
 .partners-content .five:hover ~ .six {
   border-left: none;
@@ -924,13 +930,6 @@ li{
 }
 .partners-content .six:hover {
   padding-right: 0.0520833333333333vw;
-}
-.partners-content .six:hover ~ .seven {
-  border-left: none;
-}
-.partners-content .seven:hover ~ .eight {
-  border-left: none;
-  padding-left: 0.0520833333333333vw;
 }
 .partners-text {
   display: block;

@@ -21,8 +21,8 @@
     position: absolute;
     top: 50%;
     display: block;
-    width: 4.4rem;
-    height: 1.3rem;
+    width: 2.291666666666667vw;
+    height: 0.6770833333333333vw;
     padding: 0;
     cursor: pointer;
     color: transparent;
@@ -37,10 +37,10 @@
     position: absolute;
     left: -55%;
     top: 50%;
-    border-radius: 0 12rem  12rem 0;
+    border-radius: 0 6.25vw  6.25vw 0;
     transform: translateY(-50%);
-    width: 6rem;
-    height: 9rem;
+    width: 3.125vw;
+    height: 4.6875vw;
     background-color: #F3F3F3;
     z-index: -1;
 }
@@ -48,8 +48,8 @@
     position: absolute;
     top: 50%;
     display: block;
-    width: 4.4rem;
-    height: 1.3rem;
+    width: 2.291666666666667vw;
+    height: 0.6770833333333333vw;
     padding: 0;
     cursor: pointer;
     color: transparent;
@@ -63,10 +63,10 @@
     position: absolute;
     right: -55%;
     top: 50%;
-    border-radius: 12rem 0 0 12rem ;
+    border-radius: 6.25vw 0 0 6.25vw ;
     transform: translateY(-50%);
-    width: 6rem;
-    height: 9rem;
+    width: 3.125vw;
+    height: 4.6875vw;
     background-color: #F3F3F3;
     z-index: -1;
 }
