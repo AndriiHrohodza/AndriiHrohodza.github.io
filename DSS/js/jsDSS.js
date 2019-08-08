@@ -1,17 +1,72 @@
 /*Features-horizontal-scroll */
-$(document).ready(function(){
-var controller = new ScrollMagic.Controller();
-// pin 
-var pinFeatureScene = new ScrollMagic.Scene({
-	triggerElement: '#features-pin',
-	triggerHook: 0.3,
-	duration: '200%'
-})
-.setPin('#features-pin')
-.setTween(TweenMax.staggerFromTo(".features-content", 2, {left: '18rem'}, {left: '-350rem', ease: Power0.easeNone}, 0.15))// 50vw, -120vw
-/*.addIndicators({name: "slider"})*/
-.addTo(controller);
-});
+
+
+var mql = window.matchMedia('all and (max-width: 1440px)');
+var mql2 = window.matchMedia('all and (max-width: 425px)');
+var mql3 = window.matchMedia('all and (max-width: 1024px)');
+if (mql2.matches) {
+  $(document).ready(function(){
+  var controller = new ScrollMagic.Controller();
+  // pin 
+  var pinFeatureScene = new ScrollMagic.Scene({
+    triggerElement: '#features-pin',
+    triggerHook: 0.3,
+    duration: '200%'
+  })
+  .setPin('#features-pin')
+  .setTween(TweenMax.staggerFromTo(".features-content", 2, {left: '18rem'}, {left: '-370rem', ease: Power0.easeNone}, 0.15))// 50vw, -120vw
+ /* .addIndicators({name: "slider"})*/
+  .addTo(controller);
+  });
+}
+else if (mql3.matches) {
+  $(document).ready(function(){
+  var controller = new ScrollMagic.Controller();
+  // pin 
+  var pinFeatureScene = new ScrollMagic.Scene({
+    triggerElement: '#features-pin',
+    triggerHook: 0.3,
+    duration: '200%'
+  })
+  .setPin('#features-pin')
+  .setTween(TweenMax.staggerFromTo(".features-content", 2, {left: '18rem'}, {left: '-420rem', ease: Power0.easeNone}, 0.15))// 50vw, -120vw
+ /* .addIndicators({name: "slider"})*/
+  .addTo(controller);
+  });
+}
+else if (mql.matches) {
+    $(document).ready(function(){
+    var controller = new ScrollMagic.Controller();
+    // pin 
+    var pinFeatureScene = new ScrollMagic.Scene({
+      triggerElement: '#features-pin',
+      triggerHook: 0.3,
+      duration: '100%'
+    })
+    .setPin('#features-pin')
+    .setTween(TweenMax.staggerFromTo(".features-content", 2, {left: '18rem'}, {left: '-240rem', ease: Power0.easeNone}, 0.15))// 50vw, -120vw
+    /*.addIndicators({name: "slider"})*/
+    .addTo(controller);
+    });
+} else {
+    $(document).ready(function(){
+    var controller = new ScrollMagic.Controller();
+    // pin 
+    var pinFeatureScene = new ScrollMagic.Scene({
+      triggerElement: '#features-pin',
+      triggerHook: 0.3,
+      duration: '200%'
+    })
+    .setPin('#features-pin')
+    .setTween(TweenMax.staggerFromTo(".features-content", 2, {left: '18rem'}, {left: '-350rem', ease: Power0.easeNone}, 0.15))// 50vw, -120vw
+   /* .addIndicators({name: "slider"})*/
+    .addTo(controller);
+    });
+}
+
+
+
+
 
 /*Nav*/
 $( document ).ready(function() {

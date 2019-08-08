@@ -481,9 +481,9 @@
                     <label for="message">4. What Date Should A Specialist / Team Be Selected?</label>
                     <span class="label-wrapper_date">
                       
-                      <input class="form-date" type="text" name="date" id="form-date" placeholder="01"  maxlength="2">
-                      <input class="form-month" type="text" name="month" id="form-month" placeholder="01" maxlength="2">
-                      <input class="form-date" type="text" name="year" id="form-year" placeholder="2001" maxlength="4">
+                      <input class="form-date" type="text" name="date" id="form-date" placeholder="01"  maxlength="2" min="1" max="31" onKeyUp="if(this.value>31){this.value='31';}else if(this.value<0){this.value='0';}">
+                      <input class="form-month" type="text" name="month" id="form-month" placeholder="01" maxlength="2" min="1" max="12" onKeyUp="if(this.value>12){this.value='12';}else if(this.value<0){this.value='0';}">
+                      <input class="form-date" type="text" name="year" id="form-year" placeholder="2019" maxlength="4" min="2019" max="2099" onKeyUp="if(this.value>2099){this.value='2099';}else if(this.value<0){this.value='2019';}">
                     </span>
                     <!-- <span class="label-wrapper_date">
                       <label for="message">Date</label>
@@ -882,34 +882,34 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/js/swiper.min.js"></script>
     <script src="js/jquery.validate.js"></script>
     <script src="https://unpkg.com/jquery-input-mask-phone-number@1.0.11/dist/jquery-input-mask-phone-number.js"></script>
-    <script>
+    <!-- <script>
       $(document).ready(function () {
-                      $('#phone').usPhoneFormat({
-                          format: 'xxx-xxx-xxx-xxxx',
-                      });
-                     $(document).ready(function() {
-                       $('[name=date]').bind("change keyup input click", function() {
-                         if (this.value.match(/[^0-9]/g)) {
-                           this.value = this.value.replace(/[^0-9]/g, '');
-                         }
-                       });
-                     });
-                     $(document).ready(function() {
-                       $('[name=month]').bind("change keyup input click", function() {
-                         if (this.value.match(/[^0-9]/g)) {
-                           this.value = this.value.replace(/[^0-9]/g, '');
-                         }
-                       });
-                     });
-                     $(document).ready(function() {
-                       $('[name=year]').bind("change keyup input click", function() {
-                         if (this.value.match(/[^0-9]/g)) {
-                           this.value = this.value.replace(/[^0-9]/g, '');
-                         }
-                       });
-                     });
-                  });
-    </script>
+        $('#phone').usPhoneFormat({
+          format: 'xxx-xxx-xxx-xxxx',
+        });
+        $(document).ready(function() {
+         $('[name=date]').bind("change keyup input click", function() {
+           if (this.value.match(/[^0-9]/g)) {
+             this.value = this.value.replace(/[^0-9]/g, '');
+           }
+         });
+       });
+        $(document).ready(function() {
+         $('[name=month]').bind("change keyup input click", function() {
+           if (this.value.match(/[^0-9]/g)) {
+             this.value = this.value.replace(/[^0-9]/g, '');
+           }
+         });
+       });
+        $(document).ready(function() {
+         $('[name=year]').bind("change keyup input click", function() {
+           if (this.value.match(/[^0-9]/g)) {
+             this.value = this.value.replace(/[^0-9]/g, '');
+           }
+         });
+       });
+      });
+    </script> -->
     <!-- InputTel -->
    <!-- <script src="js/intlTelInput.min.js"></script> -->
    <!-- <script>
@@ -934,7 +934,16 @@
     </script> -->
    <script src="js/pidie-0.0.8.js"></script>
    <script>
-     new Pidie();
+     new Pidie({
+      initialCountry: "auto",
+        geoIpLookup: function(callback) {
+          $.get('https://ipinfo.io', function() {}, "jsonp").always(function(resp) {
+            var countryCode = (resp && resp.country) ? resp.country : "";
+            callback(countryCode);
+          });
+        },
+        utilsScript: "../../build/js/utils.js?1562189064761" // just for formatting/placeholders etc
+     });
    </script>
 
     <script src="js/form.js"></script>

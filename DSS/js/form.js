@@ -404,7 +404,6 @@ app.init();
 
 
 
-
 /*$( document ).ready(function() {
      let data ={
       name:'',
