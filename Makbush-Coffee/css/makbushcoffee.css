@@ -244,7 +244,7 @@ body {
       -ms-flex-pack: center;
           justify-content: center;
   /* padding: 0.390625vw 0; */
-  margin-right: 13.33333333333333vw;
+  margin-right: 14.01041666666667vw;
   color: #262829;
 }
 .navigation .address__text_sup {
@@ -256,7 +256,7 @@ body {
   font-size: 0.8854166666666667vw;
 }
 .navigation .logo {
-  margin-right: 21.14583333333333vw;
+  margin-right: 22.03125vw;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -265,7 +265,7 @@ body {
           align-items: center;
 }
 .navigation .logo img {
-  width: 13.54166666666667vw;
+  width: 11.97916666666667vw;
 }
 .navigation .button {
   position: relative;
@@ -322,7 +322,7 @@ body {
   width: 73%;
   line-height: 160%;
   font-size: 1.09375vw;
-  margin-top: 1.041666666666667vw;
+  margin-top: 1.302083333333333vw;
   color: #262829;
   opacity: 0;
 }
@@ -419,6 +419,9 @@ body {
 .primary-contacts a {
   text-decoration: none;
   color: #262829;
+}
+.primary-contacts a:hover {
+  color: #59a329;
 }
 /* Slider-pagination
 .slider-pagination {
@@ -525,6 +528,7 @@ li{
 .features__items .number {
   font-size: 6.25vw;
   text-align: center;
+  padding-bottom: 2.4rem;
 }
 .features__items .number p {
   font-family: 'Muller Thin DEMO', sans-serif;
@@ -532,6 +536,12 @@ li{
 .features__items .description {
   font-size: 1.09375vw;
   position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   font-family: 'Muller', sans-serif;
 }
 .features__items .description p {
@@ -541,8 +551,8 @@ li{
   content: "";
   display: block;
   position: absolute;
-  top: 8%;
-  left: -1%;
+  top: 15%;
+  left: 12%;
   width: 0.6770833333333333vw;
   height: 0.6770833333333333vw;
   background: url(../img/features/Vector.svg) center center no-repeat;
@@ -552,43 +562,45 @@ li{
   content: "";
   display: block;
   position: absolute;
-  top: 8%;
-  right: -1%;
+  top: 15%;
+  right: 12%;
   width: 0.6770833333333333vw;
   height: 0.6770833333333333vw;
   background: url(../img/features/Vector.svg) center center no-repeat;
   background-size: contain;
 }
 .features__items .description > p:nth-child(1) {
-  margin-bottom: 0.78125vw;
+  /* margin-bottom: 0.5208333333333333vw; */
+  line-height: 3.4rem;
+  width: 80%;
 }
 .features__items .reg p:nth-child(1):before {
   content: "";
   display: block;
   position: absolute;
-  top: 8%;
-  left: -4%;
+  top: 15%;
+  left: 2%;
 }
 .features__items .reg p:nth-child(1):after {
   content: "";
   display: block;
   position: absolute;
-  top: 8%;
-  right: -4%;
+  top: 15%;
+  right: 2%;
 }
 .features__items .minutes p:nth-child(1):before {
   content: "";
   display: block;
   position: absolute;
-  top: 8%;
-  left: 0;
+  top: 15%;
+  left: 7%;
 }
 .features__items .minutes p:nth-child(1):after {
   content: "";
   display: block;
   position: absolute;
-  top: 8%;
-  right: 0;
+  top: 15%;
+  right: 7%;
 }
 /*Goods*/
 /*Cards*/
@@ -743,8 +755,8 @@ li{
 }
 .slick-center .items p {
   opacity: 1;
-  -webkit-transition: all 1s 0.5s ease-in;
-  transition: all 1s 0.5s ease-in;
+  -webkit-transition: all 0.5s 0.5s ease-in;
+  transition: all 0.5s 0.5s ease-in;
 }
 /*Partners*/
 .partners {
@@ -764,7 +776,7 @@ li{
   position: relative;
   width: 33.3%;
   /* max-width: 39.4rem; */
-  height: 10.88541666666667vw;
+  height: 12.5vw;
   border: 0.0520833333333333vw solid #B7B7B7;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
@@ -816,8 +828,8 @@ li{
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
   left: -17%;
-  width: 0.0520833333333333vw;
-  height: 0.0520833333333333vw;
+  width: 0.5208333333333333vw;
+  height: 0.5208333333333333vw;
   background: url(../img/Partners/Vector.png) center center no-repeat;
 }
 .partners__items figcaption span:after {
@@ -828,8 +840,8 @@ li{
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
   right: -17%;
-  width: 0.0520833333333333vw;
-  height: 0.0520833333333333vw;
+  width: 0.5208333333333333vw;
+  height: 0.5208333333333333vw;
   background: url(../img/Partners/Vector.png) center center no-repeat;
 }
 .partners__items:hover figcaption {

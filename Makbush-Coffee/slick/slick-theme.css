@@ -28,7 +28,7 @@
     color: transparent;
     border: none;
     outline: none;
-    background: url(../img/goods/LeftArrow-Selected.png) center no-repeat;
+    background: url(../img/goods/LeftArrow.svg) center no-repeat;
        
 }
 .slick-prev:before {
@@ -41,7 +41,7 @@
     transform: translateY(-50%);
     width: 3.125vw;
     height: 4.6875vw;
-    background-color: #F3F3F3;
+    background-color:  #FFF6E3;
     z-index: -1;
 }
 .slick-next {
@@ -55,7 +55,7 @@
     color: transparent;
     border: none;
     outline: none;
-    background: url(../img/goods/RightArrow-Selected.png) center no-repeat;
+    background: url(../img/goods/RightArrow.svg) center no-repeat;
 }
 .slick-next:before {
     content: "";
@@ -67,24 +67,30 @@
     transform: translateY(-50%);
     width: 3.125vw;
     height: 4.6875vw;
-    background-color: #F3F3F3;
+    background-color:  #FFF6E3;
     z-index: -1;
 }
-.slick-prev:hover:before,
+/* .slick-prev:hover:before,
 .slick-next:hover:before {
     background-color: #FFF6E3;
-}
-/* slick-prev:hover,
+} */
+.slick-prev:hover,
 .slick-prev:focus
 {
     
-   background: url(../img/goods/LeftArrow-Selected.png) center no-repeat;
+   background: url(../img/goods/LeftArrow-Selected.svg) center no-repeat;
+}
+
+.slick-next:hover,
+.slick-next:focus {
+    background: url(../img/goods/RightArrow-Selected.svg) center no-repeat;
+}
+
+/* .slick-prev:hover,
+.slick-next:hover {
+    color: #59A329;
 } */
 
-/* .slick-next:hover,
-.slick-next:focus {
-    background: url(../img/goods/RightArrow-Selected.png) center no-repeat;
-} */
 .slick-prev:hover:before,
 .slick-prev:focus:before,
 .slick-next:hover:before,

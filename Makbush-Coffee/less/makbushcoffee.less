@@ -236,7 +236,6 @@ body {
             text-decoration: none;
         }
         &__number {
-
             display: block;
             font-size: 0.9895833333333333vw;
             .gerbera-med();
@@ -258,7 +257,7 @@ body {
         align-items: center;
         justify-content: center;
         /* padding: 0.390625vw 0; */
-        margin-right: 13.33333333333333vw;//25.4rem
+        margin-right: 14.01041666666667vw;//25.4rem
         color: #262829;
         .address-wrapper {
 
@@ -273,11 +272,11 @@ body {
         }
     }
     .logo {
-        margin-right: 21.14583333333333vw;
+        margin-right: 22.03125vw;
         display: flex;
         align-items: center;
         img {
-            width: 13.54166666666667vw;
+            width: 11.97916666666667vw;
 
         }
     }
@@ -333,7 +332,7 @@ body {
         width: 73%;
         line-height: 160%;
         font-size: 1.09375vw;
-        margin-top: 1.041666666666667vw;
+        margin-top: 1.302083333333333vw;//2.5rem
         color: #262829;
         opacity: 0;
     }
@@ -412,6 +411,9 @@ body {
     a {
         text-decoration: none;
         color: #262829;
+    }
+    a:hover {
+        color: #59a329;
     }
 }
 
@@ -503,9 +505,9 @@ li{
 .features__items {
     min-width: 12.8125vw;
     .number {
-
         font-size: 6.25vw;
         text-align: center;
+        padding-bottom: 2.4rem;
         p {
             .muller-demo();
         }
@@ -513,6 +515,8 @@ li{
     .description {
         font-size: 1.09375vw;
         position: relative;
+        display: flex;
+        justify-content: center;
         .muller-reg();
         p {
             text-align: center;
@@ -521,8 +525,8 @@ li{
             content: "";
             display: block;
             position: absolute;
-            top: 8%;
-            left: -1%;
+            top: 15%;
+            left: 12%;
             width: 0.6770833333333333vw;
             height: 0.6770833333333333vw;
             background: url(../img/features/Vector.svg) center center no-repeat;
@@ -532,8 +536,8 @@ li{
             content: "";
             display: block;
             position: absolute;
-            top: 8%;
-            right: -1%;
+            top: 15%;
+            right: 12%;
             width: 0.6770833333333333vw;
             height: 0.6770833333333333vw;
             background: url(../img/features/Vector.svg) center center no-repeat;
@@ -541,36 +545,38 @@ li{
         }
     }
     .description >p:nth-child(1) {
-        margin-bottom: 0.78125vw;
+        /* margin-bottom: 0.5208333333333333vw; */
+        line-height: 3.4rem;
+        width: 80%;
     }
     .reg p:nth-child(1):before {
         content: "";
         display: block;
         position: absolute;
-        top: 8%;
-        left: -4%;
+        top: 15%;
+        left: 2%;
     }
     .reg p:nth-child(1):after {
         content: "";
         display: block;
         position: absolute;
-        top: 8%;
-        right: -4%;
+        top: 15%;
+        right: 2%;
     }
 
     .minutes p:nth-child(1):before {
         content: "";
         display: block;
         position: absolute;
-        top: 8%;
-        left: 0;
+        top: 15%;
+        left: 7%;
     }
     .minutes p:nth-child(1):after {
         content: "";
         display: block;
         position: absolute;
-        top: 8%;
-        right: 0;
+        top: 15%;
+        right: 7%;
     }
     /* .description > p:nth-child(1) {
         content: "";
@@ -722,13 +728,14 @@ li{
     cursor: pointer;
 }
 
+
 .slick-list {
     z-index: -1;
 }
 
 .slick-center .items p {
     opacity: 1;
-    transition: all 1s 0.5s ease-in;
+    transition: all 0.5s 0.5s ease-in;
 }
 /*Partners*/
 .partners {
@@ -742,7 +749,7 @@ li{
         position: relative;
         width: 33.3%;
         /* max-width: 39.4rem; */
-        height: 10.88541666666667vw;//20.9rem
+        height: 12.5vw;//24rem
         border: 0.0520833333333333vw solid #B7B7B7;
         justify-content: center;
         align-items: center;
@@ -784,8 +791,8 @@ li{
             top: 50%;
             transform: translateY(-50%);
             left: -17%;
-            width: 0.0520833333333333vw;
-            height: 0.0520833333333333vw;
+            width: 0.5208333333333333vw;
+            height: 0.5208333333333333vw;
             background: url(../img/Partners/Vector.png) center center no-repeat;
         }
         figcaption span:after {
@@ -795,8 +802,8 @@ li{
             top: 50%;
             transform: translateY(-50%);
             right: -17%;
-            width: 0.0520833333333333vw;
-            height: 0.0520833333333333vw;
+            width: 0.5208333333333333vw;
+            height: 0.5208333333333333vw;
             background: url(../img/Partners/Vector.png) center center no-repeat;
         }
     }
