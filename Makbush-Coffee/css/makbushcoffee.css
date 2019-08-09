@@ -284,7 +284,7 @@ body {
   display: block;
   width: 100%;
   height: 100%;
-  background: url(../img/goods/RightArrow-Selected.svg) center no-repeat;
+  background: url(../img/primary/btn-right.svg) center no-repeat;
   position: absolute;
   top: 50%;
   -webkit-transform: translateY(-50%);
@@ -297,7 +297,7 @@ body {
   top: 53%;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
-  right: -40%;
+  right: -38%;
 }
 /* Animation
 @keyframes nav-animation {
@@ -800,10 +800,37 @@ li{
   background-color: #262829;
   font-family: 'Gerbera-Medium', sans-serif;
   color: white;
+  overflow: hidden;
+  position: relative;
   border: 0.0520833333333333vw solid #262829;
   /* margin-top: 8rem; */
   z-index: 999;
   cursor: pointer;
+}
+.slider-btn:after {
+  width: 100%;
+  display: block;
+  height: 100%;
+  -webkit-transform: translateY(100%);
+          transform: translateY(100%);
+  top: 0;
+  left: 0;
+  background-color: #0C0D0E;
+}
+.slider-btn:hover {
+  color: white;
+}
+.slider-btn:hover:after,
+.slider-btn:active:after {
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+}
+.slider-btn:after {
+  content: '';
+  position: absolute;
+  z-index: -1;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
 }
 .slick-list {
   z-index: -1;
