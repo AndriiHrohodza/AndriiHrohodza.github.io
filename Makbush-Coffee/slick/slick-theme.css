@@ -74,15 +74,13 @@
 .slick-next:hover:before {
     background-color: #FFF6E3;
 } */
-.slick-prev:hover,
-.slick-prev:focus
+.slick-prev:hover
 {
     
    background: url(../img/goods/LeftArrow-Selected.svg) center no-repeat;
 }
 
-.slick-next:hover,
-.slick-next:focus {
+.slick-next:hover {
     background: url(../img/goods/RightArrow-Selected.svg) center no-repeat;
 }
 

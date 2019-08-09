@@ -4,7 +4,8 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    
+
+    <link rel="shortcut icon" href="../favicon.ico"> 
     <!-- <script src="js/jquery.backgroundMove.js"></script> -->
     <link rel="stylesheet" href="slick/slick.css">
     <link rel="stylesheet" href="slick/slick-theme.css">
@@ -36,9 +37,9 @@
   								<img src="img/primary/logo.svg" alt="logo">
   							</div>
   						</div>
-  						<div class="button">
-  							<button class="btn">MakBush Shop</button>
-  						</div>
+  						
+  							<button class="btn btn-nav">MakBush Shop</button>
+  						
   					</div>
   				</header>
           <div class="primary clearfix">
@@ -50,7 +51,7 @@
                 <p class="primary__sub-text animated-sub fadeInDownSub">
                   Кофе, как человеческие отношения, не терпит ошибок. На протяжении 15 лет мы сохраняем качество кофе и его вкус, не используя ГМО и консерванты.
                 </p>
-                <div class="primary-btn btn animated-sub-btn fadeInDownSubBtn">Узнать больше</div>
+                <button class="primary-btn btn btn-1b animated-sub-btn fadeInDownSubBtn">Узнать больше</button>
               </div>
               <div class="primary__content-img animated-img fadeInRightImg">
                 <img src="img/primary/3.png" alt="" style="width: 100%; height: 100%;">
@@ -309,7 +310,7 @@
    <script>
     $(".dummy").viewportChecker({
       callbackFunction:function(){
-        $('.count-one').animateNumber({ number: 99 },4000);
+        $('.count-one').animateNumber({ number: 99 },5000);
          $('.count-two').animateNumber({ number: 20 },5000);
          $('.count-three').animateNumber({ number: 2 },2000);
       }
