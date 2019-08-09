@@ -569,6 +569,7 @@ li{
 }
 .features__items {
   min-width: 12.8125vw;
+  max-width: 35rem;
   /* .description > p:nth-child(1) {
         content: "";
         display: block;
@@ -584,6 +585,7 @@ li{
   font-size: 6.25vw;
   text-align: center;
   padding-bottom: 2.4rem;
+  min-width: 35rem;
 }
 .features__items .number p {
   font-family: 'Muller Thin DEMO', sans-serif;
@@ -607,7 +609,7 @@ li{
   display: block;
   position: absolute;
   top: 15%;
-  left: 12%;
+  left: 9%;
   width: 0.6770833333333333vw;
   height: 0.6770833333333333vw;
   background: url(../img/features/Vector.svg) center center no-repeat;
@@ -618,7 +620,7 @@ li{
   display: block;
   position: absolute;
   top: 15%;
-  right: 12%;
+  right: 9%;
   width: 0.6770833333333333vw;
   height: 0.6770833333333333vw;
   background: url(../img/features/Vector.svg) center center no-repeat;
@@ -634,28 +636,28 @@ li{
   display: block;
   position: absolute;
   top: 15%;
-  left: 2%;
+  left: 10%;
 }
 .features__items .reg p:nth-child(1):after {
   content: "";
   display: block;
   position: absolute;
   top: 15%;
-  right: 2%;
+  right: 10%;
 }
 .features__items .minutes p:nth-child(1):before {
   content: "";
   display: block;
   position: absolute;
   top: 15%;
-  left: 7%;
+  left: 12%;
 }
 .features__items .minutes p:nth-child(1):after {
   content: "";
   display: block;
   position: absolute;
   top: 15%;
-  right: 7%;
+  right: 12%;
 }
 /*Goods*/
 /*Cards*/
