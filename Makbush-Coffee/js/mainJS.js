@@ -185,3 +185,43 @@ let desitionScene = new ScrollMagic.Scene({
 .addTo(controller);
 
 
+/*Team*/
+//Head-text
+let headTextScene = new ScrollMagic.Scene({
+	triggerElement: '#price',
+	reverse: true,
+	triggerHook: 1
+})
+.setClassToggle('#price-head-text', 'fadeInDownSubHead')
+/*.addIndicators({name: "desition"})*/
+.addTo(controller);
+
+// Main Text
+let mainTextScene = new ScrollMagic.Scene({
+	triggerElement: '#price',
+	reverse: true,
+	triggerHook: 1
+})
+.setClassToggle('#price-main-text', 'fadeInDownSub')
+/*.addIndicators({name: "desition"})*/
+.addTo(controller);
+
+//Price Btn
+let priceBtnScene = new ScrollMagic.Scene({
+	triggerElement: '#price',
+	reverse: true,
+	triggerHook: 1
+})
+.setClassToggle('#price-btn', 'fadeInDownSubBtn')
+/*.addIndicators({name: "team"})*/
+.addTo(controller);
+
+//Price Img
+let priceImgScene = new ScrollMagic.Scene({
+	triggerElement: '#price',
+	reverse: true,
+	triggerHook: 1
+})
+.setClassToggle('#price-img', 'fadeInRightImg')
+/*.addIndicators({name: "team"})*/
+.addTo(controller);
