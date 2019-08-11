@@ -225,3 +225,29 @@ let priceImgScene = new ScrollMagic.Scene({
 .setClassToggle('#price-img', 'fadeInRightImg')
 /*.addIndicators({name: "team"})*/
 .addTo(controller);
+
+
+
+
+/*Form Open and Close*/
+$(document).ready(function(){
+	$('.form-open').on('click', function(event) {
+		event.preventDefault();
+		$('.form').fadeIn();
+	});
+	$('.form-close').on('click', function(event) {
+		event.preventDefault();
+		$('.form').fadeOut();
+	});
+})
+
+/*Scroll-off From*/
+$(document).ready(function(){
+	$('.form-open').click(function(){
+		$('html').addClass('scroll-off')
+	})
+
+	$('.form-close').click(function(){
+		$('html').removeClass('scroll-off');
+	});
+})

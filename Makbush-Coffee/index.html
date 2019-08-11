@@ -11,6 +11,21 @@
     <link rel="stylesheet" href="slick/slick-theme.css">
     <!-- <link rel="stylesheet" href="css/animation.css"> -->
     <link rel="stylesheet" href="css/makbushcoffee.css">
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script>
+       function agreeForm(f) {
+        // Если поставлен флажок, снимаем блокирование кнопки
+        if (f.agree.checked) {
+          f.submit.disabled = 0
+                  f.submit.style.opacity = "1" 
+        } 
+        // В противном случае вновь блокируем кнопку
+        else {
+          f.submit.disabled = 1
+                    f.submit.style.opacity = "0.5" 
+        } 
+       }
+      </script>
     <title>Makbush</title>      
   </head>
   <body>
@@ -18,6 +33,11 @@
   		<div class="wrapper-front">
   			<div class="primary-container">
   				<header class="header ">
+            <div class="mob-nav">
+              <div class="phone"></div>
+              <div class="mob-logo"><img src="img/mob-nav/лого.svg" alt="logo"></div>
+              <div class="mob-shop"></div>
+            </div>
   					<div class="navigation clearfix">
   						<div class="call-back">
   							<a class="call-back__number" href="tel:7-908-710-59-49">
@@ -45,13 +65,13 @@
           <div class="primary clearfix">
               <div class="primary__content-text ">
                 <p class="primary__sup-text animated-sub-head fadeInDownSubHead">
-                  Кофе «Маkbush»: делаем <br>
+                  Кофе «Маkbush»: делаем 
                   каждый момент лучше
                 </p>
                 <p class="primary__sub-text animated-sub fadeInDownSub">
                   Кофе, как человеческие отношения, не терпит ошибок. На протяжении 15 лет мы сохраняем качество кофе и его вкус, не используя ГМО и консерванты.
                 </p>
-                <button class="primary-btn btn btn-1b animated-sub-btn fadeInDownSubBtn">Узнать больше</button>
+                <button class="primary-btn btn btn-1b animated-sub-btn fadeInDownSubBtn form-open">Узнать больше</button>
               </div>
               <div class="primary__content-img animated-img fadeInRightImg">
                 <img src="img/primary/3.png" alt="" style="width: 100%; height: 100%;">
@@ -266,9 +286,21 @@
     <section class="team">
 
       <div class="team-slider">
-        <div><img src="img/team/Team.jpg" alt="" style="margin: auto;"></div>
-        <div><img src="img/team/Team.jpg" alt="" style="margin: auto;"></div>
-        <div><img src="img/team/Team.jpg" alt="" style="margin: auto;"></div>
+        <div class="items">
+          <div class="items-img">
+            <img src="img/team/Team.jpg" alt="" style="margin: auto;">
+          </div>
+        </div>
+        <div class="items">
+          <div class="items-img">
+            <img src="img/team/Team.jpg" alt="" style="margin: auto;">
+          </div>
+        </div>
+        <div class="items">
+          <div class="items-img">
+            <img src="img/team/Team.jpg" alt="" style="margin: auto;">
+          </div>
+        </div>
 
       </div>
 
@@ -313,7 +345,38 @@
       </div>
     </footer>
 
+    <!-- PopUp Form -->
+    <div class="form">
+      <div class="form_blur"></div>
+      <div class="form-wrapper">
+        <div class="form-content">
+          <div class="form-item form-feedback">
+            <p>Обратная связь</p>
+            <form class="form-box" action="">
+              <input type="text" placeholder="Ваше имя *">
+              <input type="tel" placeholder="Номер телефона">
+              <input type="email" placeholder="E-mail ">
+              <span class="checkbox-form">
+                <label class="checkbox">
+                  <input id="check" name="agree" onclick="agreeForm(this.form)"  class="check" type="checkbox" />
+                  <span class="checkmark"></span>
+                  <label>Нажимая кнопку “Отправить заявку” я соглашаюсь с  правилами <a href="" class="privacy-popup-btn">Политики конфединциальности</a>  </label>
+                </label>
+              </span>
+              
+              <button class="btn-form btn" type="submit" id="submit" class="submit" disabled>Отправить заявку</button>
+            </form>
+          </div>
+          <div class="form-item form-img">
+            <button id="form-close" class="form-close">Закрыть &times</button>
+            <img src="img/Form/form-coffee.png" alt="form-coffee">
 
+          </div>
+        </div>
+      </div>   
+
+      
+    </div>
 
 
 
