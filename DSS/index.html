@@ -19,6 +19,20 @@
     <!-- Main Style -->
     <link rel="stylesheet" href="css/styleDSS.css">
     <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script>
+       function agreeForm(f) {
+        // Если поставлен флажок, снимаем блокирование кнопки
+        if (f.agree.checked) {
+          f.submit.disabled = 0
+                  f.submit.style.opacity = "1" 
+        } 
+        // В противном случае вновь блокируем кнопку
+        else {
+          f.submit.disabled = 1
+                    f.submit.style.opacity = "0.5" 
+        } 
+       }
+      </script>
 
     <title>DSS</title>
   </head>
@@ -418,7 +432,14 @@
       <circle cx="12" cy="12" r="12" class="fill"/>
     </svg>  
     </div>
+    
 
+    <script type="text/javascript">
+      $(function(){
+        var mail_valid=/^([A-Za-z0-9_\-\.])+\@([A-Za-z0-9_\-\.])+\.([A-Za-z]{2,4})$/,phone_valid=/^[0-9-+()]+$/; $(".bmail_form").submit(function(){var b=$(this);$(".bmail_form *",b).removeClass("b_err");var a=0;$(".b_req",b).each(function(){if(!$(this).val()||$(this).hasClass("b_mail")&&!mail_valid.test($(this).val().toLowerCase())||$(this).hasClass("b_phone")&&!phone_valid.test($(this).val().toLowerCase()))a+=1,$(this).addClass("b_err")});if(0<a)return!1;$.ajax({type:"POST",url:"/mail.php",data:$(this).serialize()+"&to="+$(this).attr("data-to"),success:function(a){"1"==a?(window.location = '../thanks/index.html'):alert("Error")}});return!1});$("body").on("mouseover","input.b_err",function(){$(this).removeClass("b_err")});$("body").append("<style>.b_err{border-color:#f00 !important;-moz-box-shadow:inset 0 0 0 2px #ea1313 !important;-webkit-box-shadow:inset 0 0 0 2px #ea1313 !important;box-shadow:inset 0 0 0 2px #ea1313 !important}</style>");});
+      </script>
+
+      
     <!--Form-->
     <section class="multi-step-form">
 
@@ -438,13 +459,11 @@
 
               <h1>Request a Specialist Form.</h1>
               
-              <form method="POST" action="https://formspree.io/ahrohodza1@gmail.com" id="regform" class="regform" >
-                <input type="hidden" name="_next" value="http://thanks.andriihrohodza.top/index.html" />
-                <input type="text" name="_gotcha" style="display:none" />
+              <form data-to="ahrohodza1@gmail.com" method="POST" action="" id="regform" class="regform bmail_form" >
                 <fieldset aria-label="Step One" class="step-one" tabindex="-1" id="step-1">
                   <p>
                     <label for="first-name">1. How Can We Call You?</label>
-                    <input class="form-name" type="text" name="name" id="first-name" placeholder="Enter your name" autofocus  >
+                    <input class="form-name field b_req" type="text" name="Name" id="first-name" placeholder="Enter your name" autofocus  >
                   </p>
                   <p style="display: flex; justify-content: flex-end;">
                     <button id="form-button_trigger" class="btn btn-default btn-next" type="button" aria-controls="step-2">Next  +</button>
@@ -455,7 +474,7 @@
 
                   <p>
                     <label for="email-address">2. In What Field Do You Develop Your Business?</label>
-                    <input class="form-control" type="text" name="business" id="email-address"  placeholder="Enter the type of business" required>
+                    <input class="form-control b_req" type="text" name="Business" id="business"  placeholder="Enter the type of business" required>
                   </p>
                   <p style="display: flex; justify-content: space-between;">
                     <button id="form-button_trigger" class="btn btn-default btn-prev" type="button" aria-controls="step-1">-  Previous</button>
@@ -467,7 +486,7 @@
 
                   <p>
                     <label for="message">3. What Type Of Specialist Or Team Do You Need?</label>
-                    <input class="form-control" type="text" name="specialist" id="email-address" placeholder="IT, marketing, advertising, consulting ... other" required>
+                    <input class="form-control b_req" type="text" name="Specialist" id="specialist" placeholder="IT, marketing, advertising, consulting ... other" required>
                   </p>
                   <p style="display: flex; justify-content: space-between;">
                     <button id="form-button_trigger" class="btn btn-default btn-prev" type="button" aria-controls="step-1">-  Previous</button>
@@ -483,7 +502,7 @@
                       
                       <input class="form-date" type="text" name="date" id="form-date" placeholder="01"  maxlength="2" min="1" max="31" onKeyUp="if(this.value>31){this.value='31';}else if(this.value<0){this.value='0';}">
                       <input class="form-month" type="text" name="month" id="form-month" placeholder="01" maxlength="2" min="1" max="12" onKeyUp="if(this.value>12){this.value='12';}else if(this.value<0){this.value='0';}">
-                      <input class="form-date" type="text" name="year" id="form-year" placeholder="2019" maxlength="4" min="2019" max="2099" onKeyUp="if(this.value>2099){this.value='2099';}else if(this.value<0){this.value='2019';}">
+                      <input class="form-date" type="text" name="year" id="form-year" placeholder="2019" maxlength="4" min="0" max="2099" onKeyUp="if(this.value>2099){this.value='2099';}else if(this.value<0){this.value='2019';}">
                     </span>
                     <!-- <span class="label-wrapper_date">
                       <label for="message">Date</label>
@@ -507,17 +526,17 @@
                     <label for="message">5. Country / City Of Service</label>
                     <span class="label-wrapper_email">
                       <span class="input-wrapper input-wrapper-email">
-                        <input class="form-phone" type="text" name="country" id="country" placeholder="United States" required>
+                        <input class="form-phone" type="text" name="Country" id="country" placeholder="United States" required>
                       </span>
                       <span class="input-wrapper input-wrapper-city">
-                        <input class="form-control" type="text" name="city" id="city" placeholder="Puerto Rico" required>
+                        <input class="form-control" type="text" name="City" id="city" placeholder="Puerto Rico" required>
                       </span>
                     </span>
                     
                   </p>
                   <p style="display: flex; justify-content: space-between;">
                     <button id="form-button_trigger" class="btn btn-default btn-prev" type="button" aria-controls="step-1">-  Previous</button>
-                    <button id="form-button_trigger" class="btn btn-default btn-next" type="button" aria-controls="step-3">Next  +</button>
+                    <button id="form-button_trigger" class="btn btn-default btn-next" type="button"  aria-controls="step-3">Next  +</button>
                   </p>
                 </fieldset>
 
@@ -527,15 +546,31 @@
                     <label for="message">6. How we can contact with you?</label>
                     <span class="label-wrapper_email">
                       <span class="input-wrapper input-wrapper-phone pd-telephone-input">
-                        <input class="form-phone form-control" type="tel" name="phone" id="phone">
+                        <input class="form-phone form-control b_phone" type="tel" name="Phone" id="phone">
                       </span>
                       <span class="input-wrapper input-wrapper-post">
-                        <input  type="email" name="email" id="email-address" placeholder="Email" required>
+                        <input class="b_mail" type="email" name="email" id="email-address" placeholder="Email">
                       </span>
                     </span>
+                    <span class="checkbox-form">
+                      <label class="checkbox">
+                        <input id="check" name="agree" onclick="agreeForm(this.form)"  class="check" type="checkbox" />
+                        <span class="checkmark"></span>
+                        <label>I accept the <a href="" class="privacy-popup-btn">Privacy Policy</a>  </label>
+                      </label>
+                      
+                      
+                      
+                    </span>
                   </p>
-                  <p style="display: flex; justify-content: flex-end;">
-                    <button id="form-button_trigger" class="btn btn-success" type="submit">Submit</button> 
+                  <!-- <p class="" style="display: flex; justify-content: space-between;">
+                    <label for="check">Check me</label>
+                    <input id="check" class="check" type="checkbox" />
+                  </p> -->
+                  <p style="display: flex; justify-content: space-between;">
+                    <button id="form-button_trigger" class="btn btn-default btn-prev" type="button" aria-controls="step-1">-  Previous</button>
+                    
+                    <button id="form-button_trigger"  class="btn btn-success" name="submit" type="submit" disabled>Submit</button> 
                     <!-- <button class="btn btn-default btn-edit" type="button">Edit</button>  -->
                     <!-- <button id="form-button_trigger" class="btn btn-danger" type="reset">Start Over</button> -->
                   </p>
@@ -882,7 +917,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/js/swiper.min.js"></script>
     <script src="js/jquery.validate.js"></script>
     <script src="https://unpkg.com/jquery-input-mask-phone-number@1.0.11/dist/jquery-input-mask-phone-number.js"></script>
-    <!-- <script>
+    <script>
       $(document).ready(function () {
         $('#phone').usPhoneFormat({
           format: 'xxx-xxx-xxx-xxxx',
@@ -908,8 +943,15 @@
            }
          });
        });
+        $(document).ready(function() {
+         $('[name=Phone]').bind("change keyup input click", function() {
+           if (this.value.match(/[^0-9]/g)) {
+             this.value = this.value.replace(/[^0-9]/g, '');
+           }
+         });
+       });
       });
-    </script> -->
+    </script>
     <!-- InputTel -->
    <!-- <script src="js/intlTelInput.min.js"></script> -->
    <!-- <script>
@@ -945,7 +987,9 @@
         utilsScript: "../../build/js/utils.js?1562189064761" // just for formatting/placeholders etc
      });
    </script>
-
+    
+     <!-- Send Form -->
+     <script src="js/js.js"></script>
     <script src="js/form.js"></script>
     <!-- Main JS -->
     <script src="js/jsDSS.js"></script>

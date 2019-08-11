@@ -237,7 +237,7 @@ $(document).ready(function(){
         country: "required",
         city: "required",
         /*phone: "required",*/
-        email: "required",
+        /*email: "required",*/
        },
        messages: {
          name: {
@@ -265,9 +265,9 @@ $(document).ready(function(){
          country: {
            required: "Enter your location",
          },
-         email: {
+         /*email: {
            required: "Enter your email address",   
-         },
+         },*/
        },
        
 

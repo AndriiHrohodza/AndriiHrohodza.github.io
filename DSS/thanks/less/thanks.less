@@ -12,41 +12,40 @@
   font-weight: bold;
   font-style: normal;
 }
-::-moz-selection {
-  background-color: #3d3d3d;
-  color: white;
+
+.AmericaThanks() {
+    font-family: 'GT America';
+}
+.America-Bold() {
+    font-family: 'GT America Bold';
 }
 ::selection {
-  background-color: #3d3d3d;
-  color: white;
+    background-color: rgba(61,61,61,1);
+    color: white; 
 }
 * {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  margin: 0;
-  padding: 0;
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
 }
 html {
-  font-size: 10px;
+	font-size: 10px;
 }
+
 .thanks-wrapper {
-  width: 100%;
-  height: 100vh;
-  padding: 1.5625vw;
+	width: 100%;
+	height: 100vh;
+	
+    padding: 1.5625vw;
+	
 }
 .thanks-wrapper_border {
-  width: 100%;
-  height: 100%;
-  border: 0.0520833333333333vw solid #4C4C4C;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+    width: 100%;
+    height: 100%;
+    border: 0.0520833333333333vw solid #4C4C4C;
+    display: flex;
+    justify-content: center;
+        align-items: center;
 }
 .form-header {
   position: absolute;
@@ -61,6 +60,7 @@ html {
   width: 100%;
   z-index: 999;
   height: 9.459459459459459vh;
+
 }
 .form-header__content {
   width: 100%;
@@ -74,36 +74,39 @@ html {
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
-  font-family: 'GT America';
+  .AmericaThanks();
 }
 .form-header p {
-  font-size: 1.666666666666667vw;
-  font-family: 'GT America';
-  font-weight: 700;
+    font-size: 1.666666666666667vw;
+    .AmericaThanks();
+    font-weight: 700;
 }
 .form-header a {
   font-size: 1.09375vw;
+  
   text-decoration: none;
   color: #4C4C4C;
 }
 .thanks {
-  width: 50%;
-  text-align: left;
+	width: 50%;
+	text-align: left;
 }
-.thanks h1 {
-  font-size: 3.020833333333333vw;
-  font-family: 'GT America';
-  color: #1D1D1D;
-  line-height: 125%;
+.thanks h1{
+	font-size: 3.020833333333333vw;
+	.AmericaThanks();
+	color: #1D1D1D;
+    line-height: 125%;
+
 }
+
 @media screen and (max-width: 1024px) {
-  .thanks-wrapper {
-    padding: 0;
-  }
-  .thanks-wrapper_border {
-    border: none;
-  }
-  .form-header {
+    .thanks-wrapper {
+        padding: 0;
+    }
+    .thanks-wrapper_border {
+        border: none;
+    }
+    .form-header {
     position: absolute;
     top: 0;
     padding: 0;
@@ -122,8 +125,8 @@ html {
     display: -ms-flexbox;
     display: flex;
     -webkit-box-pack: end;
-    -ms-flex-pack: end;
-    justify-content: space-between;
+        -ms-flex-pack: end;
+            justify-content: space-between;
     padding: 0 ;
     padding-right: 3.8rem;
     padding-left: 3.8rem;
@@ -131,7 +134,7 @@ html {
   }
   .form-header p {
     font-size: 4rem;
-  }
+}
   .form-header a {
     font-size: 3.23rem;
   }
@@ -144,14 +147,16 @@ html {
     line-height: 140%;
   }
 }
+
+
 @media screen and (max-width: 425px) {
-  .thanks-wrapper {
-    padding: 0;
-  }
-  .thanks-wrapper_border {
-    border: none;
-  }
-  .form-header {
+    .thanks-wrapper {
+        padding: 0;
+    }
+    .thanks-wrapper_border {
+        border: none;
+    }
+    .form-header {
     position: absolute;
     top: 0;
     padding: 0;
@@ -170,15 +175,15 @@ html {
     display: -ms-flexbox;
     display: flex;
     -webkit-box-pack: end;
-    -ms-flex-pack: end;
-    justify-content: space-between;
+        -ms-flex-pack: end;
+            justify-content: space-between;
     padding: 0 ;
     padding-right: 2rem;
     padding-left: 2rem;
     height: 2.9rem;
   }
-  .form-header p {
-    font-size: 2.5rem;
+    .form-header p {
+      font-size: 2.5rem;
   }
   .form-header a {
     font-size: 2rem;
@@ -192,14 +197,16 @@ html {
     line-height: 140%;
   }
 }
+
+
 @media screen and (max-width: 360px) {
-  .thanks-wrapper {
-    padding: 0;
-  }
-  .thanks-wrapper_border {
-    border: none;
-  }
-  .form-header {
+    .thanks-wrapper {
+        padding: 0;
+    }
+    .thanks-wrapper_border {
+        border: none;
+    }
+    .form-header {
     position: absolute;
     top: 0;
     padding: 0;
@@ -218,8 +225,8 @@ html {
     display: -ms-flexbox;
     display: flex;
     -webkit-box-pack: end;
-    -ms-flex-pack: end;
-    justify-content: space-between;
+        -ms-flex-pack: end;
+            justify-content: space-between;
     padding: 0 ;
     padding-left: 2rem;
     padding-right: 2rem;
@@ -227,7 +234,7 @@ html {
   }
   .form-header p {
     font-size: 2.1rem;
-  }
+}
   .form-header a {
     font-size: 1.7rem;
   }

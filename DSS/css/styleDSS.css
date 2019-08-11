@@ -296,7 +296,7 @@ img {
 }
 .sub-item__text {
   overflow: hidden;
-  padding-bottom: 1vh;
+  /* padding-bottom: 1vh; */
 }
 .sub-item__text:nth-child(1) h2 {
   -webkit-animation-duration: 1s;
@@ -453,12 +453,14 @@ img {
           transform: translateY(100%);
   -webkit-animation-delay: 0.1s;
           animation-delay: 0.1s;
+  /* line-height: 125%; */
 }
 .description-text-wrapper > div:nth-child(2) h3 {
   -webkit-transform: translateY(100%);
           transform: translateY(100%);
   -webkit-animation-delay: 0.4s;
           animation-delay: 0.4s;
+  /* line-height: 125%; */
 }
 .description-text-wrapper > div:nth-child(3) p {
   -webkit-animation-delay: 0.7s;
@@ -495,7 +497,7 @@ img {
 }
 .task__title h3 {
   font-size: 3.020833333333333vw;
-  line-height: 125%;
+  /* line-height: 125%; */
   margin-bottom: 1.302083333333333vw;
   -webkit-transform: translateY(120%);
           transform: translateY(120%);
@@ -649,6 +651,7 @@ img {
 .solution__text .text-wrapper-caption > div:nth-child(1) h2 {
   -webkit-animation-delay: 0.1s;
           animation-delay: 0.1s;
+  /* line-height: 125%; */
 }
 .solution__text .text-wrapper-caption > div:nth-child(2) {
   overflow: hidden;
@@ -656,6 +659,7 @@ img {
 .solution__text .text-wrapper-caption > div:nth-child(2) h2 {
   -webkit-animation-delay: 0.4s;
           animation-delay: 0.4s;
+  /* line-height: 125%; */
 }
 .solution__text .text-wrapper-desc > div:nth-child(1) p {
   margin-bottom: 1.5625vw;
@@ -848,7 +852,7 @@ img {
 .features-content__items h3 {
   font-size: 3.020833333333333vw;
   margin-bottom: 1.302083333333333vw;
-  line-height: 120%;
+  line-height: 125%;
   font-family: 'GT America Bold';
 }
 .features-content__items p {
@@ -877,7 +881,8 @@ img {
   font-family: 'GT America Bold';
 }
 .digital-sourcing__text p:first-child {
-  margin-bottom: 0.5208333333333333vw;
+  /* margin-bottom: 0.5208333333333333vw; */
+  /* line-height: 125%; */
 }
 .digital-sourcing__text p {
   -webkit-transform: translateY(100%);
@@ -1068,10 +1073,11 @@ img {
   -webkit-animation-delay: 0.1s;
           animation-delay: 0.1s;
   font-weight: bold;
+  /* line-height: 125%; */
 }
 .contacts-text-wrapper > div:nth-child(2) {
   overflow: hidden;
-  margin-bottom: 1rem;
+  /* margin-bottom: 1rem; */
 }
 .contacts-text-wrapper > div:nth-child(3) h3 {
   -webkit-transform: translateY(100%);
@@ -1079,6 +1085,7 @@ img {
   -webkit-animation-delay: 0.4s;
           animation-delay: 0.4s;
   font-weight: bold;
+  /* line-height: 125%; */
 }
 .contacts-text-wrapper > div:nth-child(3) {
   overflow: hidden;
@@ -1406,6 +1413,7 @@ img {
 button,
 a {
   cursor: none;
+  color: #252525;
 }
 /*a, button Hover affect*/
 .cursor_hover {
@@ -1626,7 +1634,7 @@ input.invalid {
 .input-wrapper-post {
   /* display: flex;
 	align-items: flex-end;	 */
-  max-height: 11rem;
+  max-height: 5.729166666666667vw;
   position: relative;
 }
 .input-wrapper-date {
@@ -1658,6 +1666,87 @@ input.invalid {
 .input-wrapper-date input:nth-child(3) {
   border: none;
 }
+.checkbox-form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 1.302083333333333vw;
+}
+.checkbox-form label {
+  font-family: 'GT America';
+  padding-left: 1.041666666666667vw;
+  cursor: none;
+}
+.checkbox-form label a {
+  color: #252525;
+}
+.checkbox-form input {
+  margin: 0;
+  width: 1.041666666666667vw;
+  height: 1.041666666666667vw;
+  margin-right: 1.041666666666667vw;
+}
+.checkbox {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  position: relative;
+}
+.checkbox input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 1.25vw;
+  width: 1.25vw;
+  background-color: transparent;
+  border: 0.0520833333333333vw solid #252525;
+}
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+.checkbox input:checked ~ .checkmark:after {
+  display: block;
+}
+.checkbox .checkmark:after {
+  left: 40%;
+  top: 20%;
+  width: 0.2604166666666667vw;
+  height: 0.5208333333333333vw;
+  border: solid black;
+  border-width: 0 0.15625vw 0.15625vw 0;
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+/* .checkbox label:after {
+	content:'';
+	display:block;
+	height:20px;
+	width:20px;
+	outline:1px solid #939598;
+	position:absolute;
+	top:0;
+	left:0;
+}
+.checkbox input[type=checkbox]:checked + label:after {
+	outline:1px solid #939598;
+	border:2px solid #fff;
+	width:10px;
+	height:10px;
+	background-color:#63849F;
+} */
 .swiper-slide {
   display: none;
   font-size: 1.09375vw;
@@ -1688,6 +1777,9 @@ input.invalid {
   margin-top: 1.041666666666667vw;
   background-color: #252525;
   color: white;
+}
+.btn-success {
+  opacity: 0.5;
 }
 .swiper-button-prev,
 .swiper-button-next {
@@ -1999,7 +2091,7 @@ input.invalid {
   font-size: 3.020833333333333vw;
   font-family: 'GT America Bold';
   margin-bottom: 1.71875vw;
-  line-height: 140%;
+  line-height: 125%;
 }
 .cookies-content p {
   font-size: 1.09375vw;
@@ -2187,6 +2279,29 @@ input.invalid {
     background-image: url("../img/flags@2x.png");
   }
 }
+@media screen and (min-width: 1025px) {
+  .primary h2 {
+    line-height: 125%;
+  }
+  .description-text-wrapper > div:nth-child(1) h3,
+  .description-text-wrapper > div:nth-child(2) h3 {
+    line-height: 125%;
+  }
+  .task__title h3 {
+    line-height: 125%;
+  }
+  .solution__text .text-wrapper-caption > div:nth-child(1) h2,
+  .solution__text .text-wrapper-caption > div:nth-child(2) h2 {
+    line-height: 125%;
+  }
+  .digital-sourcing__text p:first-child {
+    line-height: 125%;
+  }
+  .contacts-text-wrapper > div:nth-child(2) h3,
+  .contacts-text-wrapper > div:nth-child(3) h3 {
+    line-height: 125%;
+  }
+}
 @media screen and (max-width: 1024px) {
   .btn {
     max-width: 37rem;
@@ -2217,7 +2332,7 @@ input.invalid {
         -ms-flex-pack: end;
             justify-content: flex-end;
     padding: 0 ;
-    padding-right: 3.8rem;
+    padding-right: 6%;
     height: 5.51rem;
   }
   .form-header__content p {
@@ -2307,6 +2422,50 @@ input.invalid {
   .input-wrapper {
     width: 100%;
     position: relative;
+  }
+  .checkbox {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    position: relative;
+  }
+  .checkbox label {
+    padding-left: 6rem;
+  }
+  .checkbox input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+  }
+  .checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 4.2rem;
+    width: 4.2rem;
+    background-color: transparent;
+    border: 1px solid #252525;
+  }
+  .checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+  }
+  .checkbox input:checked ~ .checkmark:after {
+    display: block;
+  }
+  .checkbox .checkmark:after {
+    left: 35%;
+    top: 25%;
+    width: 1rem;
+    height: 1.5rem;
+    border: solid black;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
   }
   /*PopUp User Privacy Notice*/
   .privacy-notes {
@@ -2402,6 +2561,7 @@ input.invalid {
     font-size: 2.66rem;
     font-family: 'GT America';
     padding-left: 3.8rem;
+    padding-top: 0.95rem;
   }
   .privacy-content .item ul li {
     padding-bottom: 3.8rem;
@@ -2446,6 +2606,9 @@ input.invalid {
   }
   .privacy-content .item p {
     padding-bottom: 1.9rem;
+  }
+  .privacy-content .item:nth-child(3) {
+    margin-top: 9.5rem;
   }
   .privacy-content .item:nth-child(9) {
     margin-top: 5.7rem;
@@ -2523,6 +2686,7 @@ input.invalid {
     font-size: 2.66rem;
     font-family: 'GT America';
     line-height: 160%;
+    word-break: break-all;
     /* padding-bottom: 7rem; */
   }
   .cookies-content .item {
@@ -2542,9 +2706,11 @@ input.invalid {
     font-size: 2.66rem;
     font-family: 'GT America';
     padding-left: 3.8rem;
+    padding-top: 0.95rem;
   }
   .cookies-content .item ul .cookies-part {
     padding-left: 6.770833333333333vw;
+    padding-top: 0;
   }
   .cookies-content .item ul .cookies-part li:before {
     content: "";
@@ -2586,6 +2752,9 @@ input.invalid {
     line-height: 160%;
     list-style: none;
   }
+  .cookies-content .item ul li:nth-child(1) {
+    padding-bottom: 2.85rem;
+  }
   .cookies-content .item ul .number-one:before {
     content: "";
     display: block;
@@ -2620,6 +2789,7 @@ input.invalid {
     font-size: 2.66rem;
     font-family: 'GT America';
     padding-left: 3.8rem;
+    padding-top: 0.95rem;
   }
   .cookies-content .item ol li {
     padding-bottom: 3.8rem;
@@ -2640,8 +2810,10 @@ input.invalid {
   .cookies-content .item:nth-child(1) {
     margin-top: 0;
   }
-  .cookies-content .item:nth-child(5),
   .cookies-content .item:nth-child(4) {
+    margin-top: 3.8rem;
+  }
+  .cookies-content .item:nth-child(5) {
     margin-top: 5.7rem;
   }
   /*PopUp Accessibility Notice*/
@@ -2719,6 +2891,7 @@ input.invalid {
     font-size: 2.66rem;
     font-family: 'GT America';
     line-height: 160%;
+    padding-bottom: 1.9rem;
     /* padding-bottom: 7rem
 			/* padding-bottom: 7rem; */
   }
@@ -2967,6 +3140,9 @@ input.invalid {
 			} */
   }
   /*Primary*/
+  .wrapper-primary-bg_black {
+    padding-bottom: 0;
+  }
   .primary button {
     margin-top: 6.65rem;
   }
@@ -2992,7 +3168,7 @@ input.invalid {
   }
   /*Company-Description*/
   .company-description {
-    padding-top: 24.7rem;
+    padding-top: 25.6rem;
     padding-bottom: 0;
     overflow: hidden;
   }
@@ -3065,6 +3241,9 @@ input.invalid {
   }
   .description-content__text .description-text-wrapper > div:nth-child(3) {
     margin-bottom: 2.85rem;
+  }
+  .description-content__text .description-text-wrapper > div:nth-child(3) p {
+    margin-top: 0;
   }
   .description-content__text .description-text-wrapper > div:nth-child(4) p {
     margin-top: 2.85rem;
@@ -3175,7 +3354,7 @@ input.invalid {
             justify-content: center;
     width: 100%;
     /* height: 100%; */
-    margin-top: 9.5rem;
+    margin-top: 6.65rem;
   }
   .solution__content .solution__square .square {
     width: 76rem;
@@ -3208,6 +3387,9 @@ input.invalid {
     font-size: 4rem;
     margin-bottom: 0.95rem;
   }
+  .solution__content .text-wrapper-caption > div:nth-child(2) h2 {
+    margin-bottom: 0;
+  }
   .solution__content .text-wrapper-desc {
     width: 100%;
     font-size: 2.66rem;
@@ -3228,7 +3410,7 @@ input.invalid {
   }
   .features-content__items .items-text > div h3 {
     font-size: 4.37rem;
-    padding-bottom: 2.851.5rem;
+    padding-bottom: 2.85rem;
     line-height: 140%;
     margin-bottom: 0;
   }
@@ -3546,6 +3728,14 @@ input.invalid {
   .content-form-wrapper .form-btn .btn {
     font-size: 4.18rem;
   }
+  .checkbox-form {
+    margin-top: 0;
+    margin-bottom: 3rem;
+  }
+  .checkbox-form input {
+    width: 4.2rem;
+    height: 4.2rem;
+  }
 }
 /* @media screen and (max-width: 768px) {
 	Form
@@ -3757,7 +3947,7 @@ Form */
         -ms-flex-pack: end;
             justify-content: flex-end;
     padding: 0 ;
-    padding-right: 2rem;
+    padding-right: 6%;
     height: 2.9rem;
   }
   .form-header__content p {
@@ -3803,7 +3993,7 @@ Form */
     -webkit-box-pack: end;
         -ms-flex-pack: end;
             justify-content: flex-end;
-    height: 3.48rem;
+    height: 2.9rem;
   }
   .privacy-header__content p {
     display: none;
@@ -3826,7 +4016,7 @@ Form */
     border: none;
   }
   .privacy-content {
-    padding: 10rem 2.4rem;
+    padding: 10rem 2rem;
   }
   .privacy-content h2 {
     font-size: 2.52rem;
@@ -3865,6 +4055,9 @@ Form */
     position: relative;
     line-height: 160%;
   }
+  .privacy-content .item ul li:nth-child(5) {
+    padding-bottom: 1rem;
+  }
   .privacy-content .item ul li:before {
     content: "";
     display: block;
@@ -3879,7 +4072,7 @@ Form */
     content: "";
     display: block;
     position: absolute;
-    top: 9%;
+    top: 12%;
     left: -7.5%;
   }
   .privacy-content .item ul > li:nth-child(2):before {
@@ -3900,7 +4093,7 @@ Form */
     content: "";
     display: block;
     position: absolute;
-    top: 8%;
+    top: 13%;
     left: -7.5%;
   }
   .privacy-content .item ul > li:nth-child(5):before {
@@ -3914,7 +4107,7 @@ Form */
     padding-bottom: 1rem;
   }
   .privacy-content .item:nth-child(9) {
-    margin-top: 2rem;
+    margin-top: 3rem;
   }
   /*PopUp Cookies Notice*/
   .cookies-notes {
@@ -3954,7 +4147,7 @@ Form */
     -webkit-box-pack: end;
     -ms-flex-pack: end;
     justify-content: flex-end;
-    height: 3.48rem;
+    height: 2.9rem;
   }
   .cookies-header__content p {
     display: none;
@@ -4054,6 +4247,9 @@ Form */
     line-height: 160%;
     list-style: none;
   }
+  .cookies-content .item ul li p {
+    padding-bottom: 1.5rem;
+  }
   .cookies-content .item ul li:nth-child(1) {
     padding-bottom: 1.5rem;
   }
@@ -4117,7 +4313,7 @@ Form */
     margin-top: 0;
   }
   .cookies-content .item:nth-child(4) {
-    margin-top: 0;
+    margin-top: 0.5rem;
   }
   .cookies-content .item:nth-child(5) {
     margin-top: 2rem;
@@ -4160,7 +4356,7 @@ Form */
     -webkit-box-pack: end;
         -ms-flex-pack: end;
             justify-content: flex-end;
-    height: 3.48rem;
+    height: 2.9rem;
   }
   .accessibility-header__content p {
     display: none;
@@ -4289,6 +4485,9 @@ Form */
     display: none;
   }
   /*Header*/
+  .wrapper-primary-bg_black {
+    padding-bottom: 0;
+  }
   .container-wrapper {
     margin: 0 6%;
     height: 100vh;
@@ -4540,7 +4739,7 @@ Form */
   }
   /*Company-Description*/
   .company-description {
-    padding-top: 10rem;
+    padding-top: 13.5rem;
     padding-bottom: 0;
     overflow: hidden;
   }
@@ -5110,7 +5309,7 @@ Form */
         -ms-flex-pack: end;
             justify-content: flex-end;
     padding: 0 ;
-    padding-right: 2rem;
+    padding-right: 6%;
     height: 2.9rem;
   }
   .form-header__content p {
@@ -5182,6 +5381,27 @@ Form */
   fieldset p:nth-child(1) label {
     font-size: 1.7rem;
     line-height: 160%;
+  }
+  .checkbox-form input {
+    width: 2.7rem;
+    height: 2.7rem;
+  }
+  .checkbox-form label {
+    width: 100%;
+    padding-left: 0;
+  }
+  .checkbox label {
+    padding-left: 4rem;
+  }
+  .checkmark {
+    width: 2.7rem;
+    height: 2.7rem;
+  }
+  .checkbox .checkmark:after {
+    left: 33%;
+    top: 15%;
+    width: 1rem;
+    height: 1.5rem;
   }
   .step-five p:nth-child(1),
   .step-six p:nth-child(1) {
@@ -5295,7 +5515,7 @@ Form */
   }
   .contacts-content__text .contacts-text-wrapper > div:nth-child(1) p {
     font-size: 1.7rem;
-    margin-bottom: 0.5rem;
+    margin-bottom: 1.2rem;
   }
   .contacts-content__text .contacts-text-wrapper > div:nth-child(2) h3 {
     font-size: 2.7rem;
@@ -5515,7 +5735,7 @@ Form */
     content: "";
     display: block;
     position: absolute;
-    top: 6%;
+    top: 7%;
     left: -7.5%;
   }
   .privacy-content .item p {
@@ -5905,6 +6125,14 @@ Form */
     font-size: 1.4rem;
     line-height: 160%;
   }
+  .checkmark {
+    position: absolute;
+    top: -10%;
+  }
+  .checkmark {
+    width: 2.7rem;
+    height: 2.7rem;
+  }
   /* .step-two p:nth-child(1) {
 	    min-height: 13rem;
 	} */
@@ -6165,6 +6393,9 @@ Form */
   }
   .footer__sup-content .footer__section-nav .footer-item:nth-child(5) {
     margin-bottom: 5rem;
+  }
+  .footer__section-nav {
+    padding-bottom: 0;
   }
   .footer__section-sign {
     width: 100%;
