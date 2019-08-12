@@ -620,8 +620,8 @@ li{
   position: absolute;
   top: 15%;
   left: 9%;
-  width: 0.5208333333333333vw;
-  height: 0.5208333333333333vw;
+  width: 0.5729166666666667vw;
+  height: 0.5729166666666667vw;
   background: url(../img/features/Vector.svg) center center no-repeat;
   background-size: contain;
 }
@@ -631,8 +631,8 @@ li{
   position: absolute;
   top: 15%;
   right: 9%;
-  width: 0.5208333333333333vw;
-  height: 0.5208333333333333vw;
+  width: 0.5729166666666667vw;
+  height: 0.5729166666666667vw;
   background: url(../img/features/Vector.svg) center center no-repeat;
   background-size: contain;
 }
@@ -1125,7 +1125,7 @@ li{
   color: #262829;
   line-height: 160%;
   position: relative;
-  margin-left: 2.5rem;
+  padding-left: 4rem;
   margin-top: 1.5rem;
 }
 .achievments__content .achievments__item-left p:before {
@@ -1133,7 +1133,7 @@ li{
   display: block;
   position: absolute;
   top: 20%;
-  left: -5%;
+  left: 0;
   width: 1.1rem;
   height: 1.1rem;
   background: url(../img/achievments/Vector.svg) center center no-repeat;
@@ -1144,14 +1144,14 @@ li{
   display: block;
   position: absolute;
   top: 11%;
-  left: -5%;
+  left: 0;
 }
 .achievments__content .achievments__item-left:nth-child(3) p:before {
   content: "";
   display: block;
   position: absolute;
   top: 9%;
-  left: -5%;
+  left: 0;
 }
 .achievments__content .achievments__item-right {
   opacity: 0;
@@ -1168,7 +1168,7 @@ li{
   color: #262829;
   line-height: 160%;
   position: relative;
-  margin-right: 2.5rem;
+  padding-right: 4rem;
   margin-top: 1.5rem;
   padding-left: 3rem;
 }
@@ -1177,7 +1177,7 @@ li{
   display: block;
   position: absolute;
   top: 11%;
-  right: -5%;
+  right: 0;
   width: 1.1rem;
   height: 1.1rem;
   background: url(../img/achievments/Vector.svg) center center no-repeat;
@@ -1187,7 +1187,7 @@ li{
   display: block;
   position: absolute;
   top: 12%;
-  right: -5%;
+  right: 0;
 }
 .achievments__content:nth-child(2) {
   height: 100%;
@@ -1440,7 +1440,7 @@ li{
   width: 100%;
   height: 100vh;
   /* padding: 12.7rem 27.7rem; */
-  background-color: white;
+  /* background-color: white; */
   z-index: 999;
 }
 /* .form_blur {
@@ -1475,6 +1475,24 @@ li{
   background-color: white;
   overflow: hidden;
 }
+/* .form_blur {
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left:0;
+}
+.form_blur:before {
+
+        position: absolute;
+        content: '';
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, .5);
+
+} */
 .popup-btn_mob {
   display: none;
 }
