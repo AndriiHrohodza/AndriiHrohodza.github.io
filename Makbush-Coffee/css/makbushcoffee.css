@@ -620,8 +620,8 @@ li{
   position: absolute;
   top: 15%;
   left: 9%;
-  width: 0.6770833333333333vw;
-  height: 0.6770833333333333vw;
+  width: 0.5208333333333333vw;
+  height: 0.5208333333333333vw;
   background: url(../img/features/Vector.svg) center center no-repeat;
   background-size: contain;
 }
@@ -631,8 +631,8 @@ li{
   position: absolute;
   top: 15%;
   right: 9%;
-  width: 0.6770833333333333vw;
-  height: 0.6770833333333333vw;
+  width: 0.5208333333333333vw;
+  height: 0.5208333333333333vw;
   background: url(../img/features/Vector.svg) center center no-repeat;
   background-size: contain;
 }
@@ -932,9 +932,9 @@ li{
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
   left: -17%;
-  width: 0.5208333333333333vw;
-  height: 0.5208333333333333vw;
-  background: url(../img/Partners/Vector.png) center center no-repeat;
+  width: 0.5729166666666667vw;
+  height: 0.5729166666666667vw;
+  background: url(../img/achievments/Vector.svg) center center no-repeat;
 }
 .partners__items figcaption span:after {
   content: "";
@@ -944,9 +944,9 @@ li{
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
   right: -17%;
-  width: 0.5208333333333333vw;
-  height: 0.5208333333333333vw;
-  background: url(../img/Partners/Vector.png) center center no-repeat;
+  width: 0.5729166666666667vw;
+  height: 0.5729166666666667vw;
+  background: url(../img/achievments/Vector.svg) center center no-repeat;
 }
 .partners__items:hover figcaption {
   background: white;
@@ -1134,9 +1134,9 @@ li{
   position: absolute;
   top: 20%;
   left: -5%;
-  width: 1rem;
-  height: 1rem;
-  background: url(../img/features/Vector.png) center center no-repeat;
+  width: 1.1rem;
+  height: 1.1rem;
+  background: url(../img/achievments/Vector.svg) center center no-repeat;
 }
 .achievments__content .achievments__item-left:nth-child(1) p:before,
 .achievments__content .achievments__item-left:nth-child(2) p:before {
@@ -1170,7 +1170,7 @@ li{
   position: relative;
   margin-right: 2.5rem;
   margin-top: 1.5rem;
-  padding-left: 5rem;
+  padding-left: 3rem;
 }
 .achievments__content .achievments__item-right p:after {
   content: "";
@@ -1178,9 +1178,9 @@ li{
   position: absolute;
   top: 11%;
   right: -5%;
-  width: 1rem;
-  height: 1rem;
-  background: url(../img/features/Vector.png) center center no-repeat;
+  width: 1.1rem;
+  height: 1.1rem;
+  background: url(../img/achievments/Vector.svg) center center no-repeat;
 }
 .achievments__content .achievments__item-right:nth-child(2) p:after {
   content: "";
@@ -1216,7 +1216,7 @@ li{
   font-family: 'Gerbera-Medium', sans-serif;
   font-size: 5.4rem;
   color: #262829;
-  padding-bottom: 2rem;
+  padding-bottom: 2.5rem;
   line-height: 120%;
 }
 .about-items p {
@@ -1308,7 +1308,7 @@ li{
   line-height: 120%;
   color: #262829;
   font-family: 'Gerbera-Medium', sans-serif;
-  margin-bottom: 2rem;
+  margin-bottom: 2.5rem;
   opacity: 0;
 }
 .price-text p {
@@ -1868,7 +1868,7 @@ li{
     height: 100%;
   }
   .primary-container {
-    margin: 0 4rem;
+    margin: 0 5rem;
     display: block;
   }
   .header {
@@ -1988,7 +1988,7 @@ li{
     position: relative;
   }
   .features-container {
-    margin: 0 4rem;
+    margin: 0 5rem;
   }
   .features__header {
     padding-bottom: 0;
@@ -2052,7 +2052,7 @@ li{
   }
   .features__items .description > p:nth-child(1) {
     position: relative;
-    width: 60%;
+    width: 50%;
     line-height: 160%;
   }
   .features__items .description p:nth-child(1):before {
@@ -2128,7 +2128,7 @@ li{
     padding-bottom: 12rem;
   }
   .cards-container {
-    margin: 0 4rem;
+    margin: 0 5rem;
   }
   .partners-text {
     margin-bottom: 6rem;
@@ -2260,7 +2260,7 @@ li{
     position: relative;
   }
   .achievments .container {
-    margin: 0 4rem;
+    margin: 0 5rem;
   }
   .achievments__content {
     width: 100%;
@@ -2374,7 +2374,7 @@ li{
     padding-bottom: 12rem;
   }
   .about .container {
-    margin: 0 4rem;
+    margin: 0 5rem;
   }
   .about-wrapper {
     display: -webkit-box;
@@ -2407,16 +2407,88 @@ li{
   .team-slider .items .items-img {
     width: 100%;
     height: 84rem;
-    background: url(../img/team-mob/MaskGroup.jpg) no-repeat;
-    background-size: cover;
+    /* background: url(../img/team-mob/MaskGroup.jpg) no-repeat;
+                    background-size: cover; */
   }
   .team-slider .items .items-img img {
     width: 0;
     height: 0;
   }
-  .team-slider > .items:nth-child(2) .items-img {
-    background-color: black;
+  .team-slider .items-1 .items-img {
+    width: 100%;
+    height: 84rem;
+    background: url(../img/team/Team.jpg) -49rem center no-repeat;
+    background-size: cover;
   }
+  .team-slider .items-1 .items-img img {
+    width: 0;
+    height: 0;
+  }
+  .team-slider .items-2 .items-img {
+    width: 100%;
+    height: 84rem;
+    background: url(../img/team/2.jpg) -49rem center no-repeat;
+    background-size: cover;
+  }
+  .team-slider .items-2 .items-img img {
+    width: 0;
+    height: 0;
+  }
+  .team-slider .items-3 .items-img {
+    width: 100%;
+    height: 84rem;
+    background: url(../img/team/3.jpg) -49rem center no-repeat;
+    background-size: cover;
+  }
+  .team-slider .items-3 .items-img img {
+    width: 0;
+    height: 0;
+  }
+  .team-slider .items-4 .items-img {
+    width: 100%;
+    height: 84rem;
+    background: url(../img/team/4.jpg) -49rem center no-repeat;
+    background-size: cover;
+  }
+  .team-slider .items-4 .items-img img {
+    width: 0;
+    height: 0;
+  }
+  .team-slider .items-5 .items-img {
+    width: 100%;
+    height: 84rem;
+    background: url(../img/team/5.jpg) -49rem center no-repeat;
+    background-size: cover;
+  }
+  .team-slider .items-5 .items-img img {
+    width: 0;
+    height: 0;
+  }
+  .team-slider .items-6 .items-img {
+    width: 100%;
+    height: 84rem;
+    background: url(../img/team/6.jpg) -49rem center no-repeat;
+    background-size: cover;
+  }
+  .team-slider .items-6 .items-img img {
+    width: 0;
+    height: 0;
+  }
+  .team-slider .items-7 .items-img {
+    width: 100%;
+    height: 84rem;
+    background: url(../img/team/7.jpg) -49rem center no-repeat;
+    background-size: cover;
+  }
+  .team-slider .items-7 .items-img img {
+    width: 0;
+    height: 0;
+  }
+  /* .team-slider > .items:nth-child(2) {
+                .items-img {
+                    background-color: black;
+                }
+            } */
   .team-text {
     padding-top: 7rem;
   }
@@ -2434,7 +2506,7 @@ li{
   .price .price-content {
     width: 100%;
     height: 100%;
-    padding: 12rem 4rem;
+    padding: 12rem 5rem;
   }
   .price .price-items {
     display: -webkit-box;
@@ -2448,6 +2520,7 @@ li{
   }
   .price .price-items .price-text {
     padding: 0;
+    padding-top: 4rem;
   }
   .price .price-items .price-text #price-main-text {
     font-size: 3rem;
@@ -2487,7 +2560,7 @@ li{
     padding: 12rem 0;
   }
   .footer .footer-container {
-    margin: 0 4rem;
+    margin: 0 5rem;
   }
   .footer-content {
     display: -webkit-box;
@@ -2536,12 +2609,13 @@ li{
     font-size: 3rem;
   }
   /*Form*/
+  /*Form*/
   .form-wrapper {
     background-color: black;
   }
   .form-content {
     width: 100%;
-    height: 106rem;
+    height: 81rem;
     position: relative;
   }
   .popup-btn_mob {
@@ -2549,46 +2623,45 @@ li{
     position: absolute;
     top: 0;
     right: 0;
-    width: 2.2rem;
-    height: 2.2rem;
+    width: 1.8rem;
+    height: 1.8rem;
     background: url(../img/form-mob/Group.svg) no-repeat;
-    background-size: cover;
     color: #262829;
   }
   .form-close {
-    margin-top: 3rem;
-    margin-right: 4rem;
+    margin-top: 2.5rem;
+    margin-right: 3.4rem;
   }
   .form-item {
-    padding: 9rem 4rem;
+    padding: 7.5rem 3.4rem;
   }
   .form-item p {
-    font-size: 4.4rem;
+    font-size: 3.7rem;
     line-height: 130%;
-    margin-bottom: 4.1rem;
+    margin-bottom: 3.5rem;
     text-align: center;
   }
   .form-item .form-box input {
     width: 100%;
-    height: 9.6rem;
-    padding: 2.4rem 5rem;
-    margin-bottom: 5rem;
-    font-size: 3rem;
+    height: 8rem;
+    padding: 2rem 4rem;
+    margin-bottom: 4rem;
+    font-size: 2.5rem;
     line-height: 160%;
   }
   .form-item .form-box .checkbox label {
     width: 100%;
-    font-size: 2.2rem;
+    font-size: 1.8rem;
     line-height: 160%;
   }
   .form-item .form-box .btn-form {
     width: 100%;
-    height: 13.6rem;
-    font-size: 3rem;
-    margin-top: 7rem;
+    height: 11.5rem;
+    font-size: 2.5rem;
+    margin-top: 6rem;
   }
   .form-item .form-box > input:nth-child(3) {
-    margin-bottom: 3rem;
+    margin-bottom: 2.5rem;
   }
   .form-img {
     display: none;
@@ -2628,6 +2701,10 @@ li{
     width: 2rem;
     height: 3rem;
     background: url(../img/mob-nav/mackbushshop.svg) center center no-repeat;
+  }
+  .mob-nav .mob-logo {
+    width: 16.8rem;
+    height: auto;
   }
   .navigation {
     display: none;
@@ -2781,9 +2858,9 @@ li{
     display: block;
     position: absolute;
     top: 15%;
-    left: -20%;
-    width: 1.5rem;
-    height: 0.8rem;
+    left: -8%;
+    width: 1.2rem;
+    height: 0.9rem;
     background: url(../img/features/Vector.svg) center center no-repeat;
     background-size: contain;
   }
@@ -2792,9 +2869,9 @@ li{
     display: block;
     position: absolute;
     top: 15%;
-    right: -20%;
-    width: 1.5rem;
-    height: 0.8rem;
+    right: -8%;
+    width: 1.2rem;
+    height: 0.9rem;
     background: url(../img/features/Vector.svg) center center no-repeat;
     background-size: contain;
   }
@@ -2891,13 +2968,13 @@ li{
   }
   .partners-content .partners__items figcaption span:before {
     left: -13%;
-    width: 1.1rem;
-    height: 0.8rem;
+    width: 1.2rem;
+    height: 0.9rem;
   }
   .partners-content .partners__items figcaption span:after {
     right: -13%;
-    width: 1.1rem;
-    height: 0.8rem;
+    width: 1.2rem;
+    height: 0.9rem;
   }
   .partners-content .partners__items:nth-child(1),
   .partners-content .partners__items:nth-child(2),
@@ -2993,16 +3070,16 @@ li{
         -ms-flex-direction: column;
             flex-direction: column;
   }
-  .achievments-wrapper:after {
-    content: '';
-    display: block;
-    position: absolute;
-    top: 0;
-    right: 0;
-    width: 5rem;
-    height: 100%;
-    background: url(../img/achievment-mob/MaskGroup.png) no-repeat;
-  }
+  /* .achievments-wrapper:after {
+            content: '';
+            display: block;
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 5rem;
+            height: 100%;
+            background: url(../img/achievments/Vector.svg) no-repeat;
+        } */
   .achievments-wrapper > .achievments__content:nth-child(1) .achievments__item,
   .achievments-wrapper > .achievments__content:nth-child(3) .achievments__item {
     margin-bottom: 3.5rem;
@@ -3029,6 +3106,8 @@ li{
     position: absolute;
     top: 6%;
     left: 0;
+    width: 1.2rem;
+    height: 0.9rem;
   }
   #exclusive p:before {
     content: "";
@@ -3036,6 +3115,8 @@ li{
     position: absolute;
     top: 6%;
     left: 0;
+    width: 1.2rem;
+    height: 0.9rem;
   }
   #GMO p:before {
     content: "";
@@ -3043,6 +3124,8 @@ li{
     position: absolute;
     top: 5%;
     left: 0;
+    width: 1.2rem;
+    height: 0.9rem;
   }
   .achievments-wrapper > .achievments__content:nth-child(2) {
     display: none;
@@ -3067,9 +3150,9 @@ li{
     position: absolute;
     top: 5%;
     left: 0;
-    width: 1rem;
-    height: 1rem;
-    background: url(../img/features/Vector.png) center center no-repeat;
+    width: 1.2rem;
+    height: 0.9rem;
+    background: url(../img/achievments/Vector.svg) center center no-repeat;
   }
   /*About*/
   .about {
@@ -3110,15 +3193,82 @@ li{
   .team-slider .items .items-img {
     width: 100%;
     height: 50rem;
-    background: url(../img/team/Team.jpg) center center no-repeat;
-    background-size: cover;
+    /* background: url(../img/team/2.jpg) center center no-repeat;
+                    background-size: cover; */
   }
   .team-slider .items .items-img img {
+    width: 100%;
+    height: 50rem;
+  }
+  .team-slider .items-1 .items-img {
+    width: 100%;
+    height: 50rem;
+    background: url(../img/team/Team.jpg) -27rem center no-repeat;
+    background-size: cover;
+  }
+  .team-slider .items-1 .items-img img {
     width: 0;
     height: 0;
   }
-  .team-slider > .items:nth-child(2) .items-img {
-    background-color: black;
+  .team-slider .items-2 .items-img {
+    width: 100%;
+    height: 50rem;
+    background: url(../img/team/2.jpg) -27rem center no-repeat;
+    background-size: cover;
+  }
+  .team-slider .items-2 .items-img img {
+    width: 0;
+    height: 0;
+  }
+  .team-slider .items-3 .items-img {
+    width: 100%;
+    height: 50rem;
+    background: url(../img/team/3.jpg) -27rem center no-repeat;
+    background-size: cover;
+  }
+  .team-slider .items-3 .items-img img {
+    width: 0;
+    height: 0;
+  }
+  .team-slider .items-4 .items-img {
+    width: 100%;
+    height: 50rem;
+    background: url(../img/team/4.jpg) -27rem center no-repeat;
+    background-size: cover;
+  }
+  .team-slider .items-4 .items-img img {
+    width: 0;
+    height: 0;
+  }
+  .team-slider .items-5 .items-img {
+    width: 100%;
+    height: 50rem;
+    background: url(../img/team/5.jpg) -27rem center no-repeat;
+    background-size: cover;
+  }
+  .team-slider .items-5 .items-img img {
+    width: 0;
+    height: 0;
+  }
+  .team-slider .items-6 .items-img {
+    width: 100%;
+    height: 50rem;
+    background: url(../img/team/6.jpg) -27rem center no-repeat;
+    background-size: cover;
+  }
+  .team-slider .items-6 .items-img img {
+    width: 0;
+    height: 0;
+  }
+  .team-slider .items-7 .items-img {
+    width: 100%;
+    height: 50rem;
+    background: url(../img/team/7.jpg) -27rem center no-repeat;
+    background-size: cover;
+  }
+  .team-slider .items-7 .items-img img {
+    width: 0;
+    height: 0;
   }
   .team-text {
     padding-top: 3.5rem;
@@ -3163,6 +3313,7 @@ li{
     font-size: 3.2rem;
     line-height: 130%;
     margin-bottom: 1rem;
+    margin-top: 2.5rem;
   }
   .price-text .price-btn {
     width: 100%;
@@ -3213,6 +3364,8 @@ li{
             justify-content: center;
   }
   .footer-logo {
+    width: 16.8rem;
+    height: 3.3rem;
     margin-bottom: 3.5rem;
   }
   .footer-address {
@@ -3220,15 +3373,16 @@ li{
     padding-left: 0;
     font-size: 1.8rem;
     margin-bottom: 3.5rem;
+    text-align: center;
   }
   .footer-phone {
     font-size: 1.8rem;
     width: 100%;
     padding-left: 0;
-    text-align: center;
     margin-bottom: 1.5rem;
+    text-align: center;
   }
-  .footer-privacy {
+  .footer-privacy a {
     font-size: 1.8rem;
   }
   /*Form*/
@@ -3323,6 +3477,10 @@ li{
     width: 2rem;
     height: 3rem;
     background: url(../img/mob-nav/mackbushshop.svg) center center no-repeat;
+  }
+  .mob-nav .mob-logo {
+    width: 14rem;
+    height: 2.8rem;
   }
   .navigation {
     display: none;
@@ -3476,9 +3634,9 @@ li{
     display: block;
     position: absolute;
     top: 15%;
-    left: -20%;
-    width: 1.5rem;
-    height: 0.8rem;
+    left: -8%;
+    width: 1.2rem;
+    height: 0.9rem;
     background: url(../img/features/Vector.svg) center center no-repeat;
     background-size: contain;
   }
@@ -3487,9 +3645,9 @@ li{
     display: block;
     position: absolute;
     top: 15%;
-    right: -20%;
-    width: 1.5rem;
-    height: 0.8rem;
+    right: -8%;
+    width: 1.2rem;
+    height: 0.9rem;
     background: url(../img/features/Vector.svg) center center no-repeat;
     background-size: contain;
   }
@@ -3586,13 +3744,13 @@ li{
   }
   .partners-content .partners__items figcaption span:before {
     left: -13%;
-    width: 1.1rem;
-    height: 0.8rem;
+    width: 1.2rem;
+    height: 0.9rem;
   }
   .partners-content .partners__items figcaption span:after {
     right: -13%;
-    width: 1.1rem;
-    height: 0.8rem;
+    width: 1.2rem;
+    height: 0.9rem;
   }
   .partners-content .partners__items:nth-child(1),
   .partners-content .partners__items:nth-child(2),
@@ -3710,7 +3868,7 @@ li{
   }
   .achievments-wrapper > .achievments__content:nth-child(1) .achievments__item p,
   .achievments-wrapper > .achievments__content:nth-child(3) .achievments__item p {
-    width: 86%;
+    width: 100%;
     font-size: 1.5rem;
     line-height: 160%;
     margin-top: 1rem;
@@ -3724,6 +3882,8 @@ li{
     position: absolute;
     top: 6%;
     left: 0;
+    width: 1.2rem;
+    height: 0.9rem;
   }
   #exclusive p:before {
     content: "";
@@ -3731,6 +3891,8 @@ li{
     position: absolute;
     top: 6%;
     left: 0;
+    width: 1.2rem;
+    height: 0.9rem;
   }
   #GMO p:before {
     content: "";
@@ -3738,6 +3900,8 @@ li{
     position: absolute;
     top: 5%;
     left: 0;
+    width: 1.2rem;
+    height: 0.9rem;
   }
   .achievments-wrapper > .achievments__content:nth-child(2) {
     display: none;
@@ -3762,8 +3926,8 @@ li{
     position: absolute;
     top: 5%;
     left: 0;
-    width: 1rem;
-    height: 1rem;
+    width: 1.2rem;
+    height: 0.9rem;
     background: url(../img/features/Vector.png) center center no-repeat;
   }
   /*About*/
@@ -3805,14 +3969,81 @@ li{
   .team-slider .items .items-img {
     width: 100%;
     height: 42rem;
-    background: url(../img/team-mob/MaskGroup.jpg) no-repeat;
+    /* background: url(../img/team-mob/MaskGroup.jpg) center no-repeat; */
   }
   .team-slider .items .items-img img {
     width: 0;
     height: 0;
   }
-  .team-slider > .items:nth-child(2) .items-img {
-    background-color: black;
+  .team-slider .items-1 .items-img {
+    width: 100%;
+    height: 42rem;
+    background: url(../img/team/Team.jpg) -27rem center no-repeat;
+    background-size: cover;
+  }
+  .team-slider .items-1 .items-img img {
+    width: 0;
+    height: 0;
+  }
+  .team-slider .items-2 .items-img {
+    width: 100%;
+    height: 42rem;
+    background: url(../img/team/2.jpg) -27rem center no-repeat;
+    background-size: cover;
+  }
+  .team-slider .items-2 .items-img img {
+    width: 0;
+    height: 0;
+  }
+  .team-slider .items-3 .items-img {
+    width: 100%;
+    height: 42rem;
+    background: url(../img/team/3.jpg) -27rem center no-repeat;
+    background-size: cover;
+  }
+  .team-slider .items-3 .items-img img {
+    width: 0;
+    height: 0;
+  }
+  .team-slider .items-4 .items-img {
+    width: 100%;
+    height: 42rem;
+    background: url(../img/team/4.jpg) -27rem center no-repeat;
+    background-size: cover;
+  }
+  .team-slider .items-4 .items-img img {
+    width: 0;
+    height: 0;
+  }
+  .team-slider .items-5 .items-img {
+    width: 100%;
+    height: 42rem;
+    background: url(../img/team/5.jpg) -27rem center no-repeat;
+    background-size: cover;
+  }
+  .team-slider .items-5 .items-img img {
+    width: 0;
+    height: 0;
+  }
+  .team-slider .items-6 .items-img {
+    width: 100%;
+    height: 42rem;
+    background: url(../img/team/6.jpg) -27rem center no-repeat;
+    background-size: cover;
+  }
+  .team-slider .items-6 .items-img img {
+    width: 0;
+    height: 0;
+  }
+  .team-slider .items-7 .items-img {
+    width: 100%;
+    height: 42rem;
+    background: url(../img/team/7.jpg) -27rem center no-repeat;
+    background-size: cover;
+  }
+  .team-slider .items-7 .items-img img {
+    width: 0;
+    height: 0;
   }
   .team-text {
     padding-top: 3.5rem;
@@ -3857,6 +4088,7 @@ li{
     font-size: 2.7rem;
     line-height: 130%;
     margin-bottom: 1rem;
+    margin-top: 2rem;
   }
   .price-text .price-btn {
     width: 100%;
@@ -3907,6 +4139,8 @@ li{
             justify-content: center;
   }
   .footer-logo {
+    width: 14rem;
+    height: 2.8rem;
     margin-bottom: 3.5rem;
   }
   .footer-address {

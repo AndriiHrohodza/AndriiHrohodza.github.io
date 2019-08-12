@@ -42,7 +42,7 @@
   						<div class="call-back">
   							<a class="call-back__number" href="tel:7-908-710-59-49">
                   <strong>+7 (908) 710 59 49</strong></a>
-  							<a class="call-back__text" href="">Обратный звонок</a>
+  							<a class="call-back__text form-open" href="">Обратный звонок</a>
   						</div>
   						<div class="address">
                 <div class="address-wrapper">
@@ -241,7 +241,7 @@
             </div>
           </div>
           <div class="achievments__content">
-            <img src="img/achievments/Mask Group.svg" alt="">
+            <img src="img/achievments/Mask Group.png" alt="">
           </div>
           <div class="achievments__content">
             <div id="inovation" class="achievments__item achievments__item-right animated-achiv">
@@ -286,19 +286,39 @@
     <section class="team">
 
       <div class="team-slider">
-        <div class="items">
+        <div class="items items-1">
           <div class="items-img">
             <img src="img/team/Team.jpg" alt="" style="margin: auto;">
           </div>
         </div>
-        <div class="items">
+        <div class="items items-2">
           <div class="items-img">
-            <img src="img/team/Team.jpg" alt="" style="margin: auto;">
+            <img src="img/team/2.jpg" alt="" style="margin: auto;">
           </div>
         </div>
-        <div class="items">
+        <div class="items items-3">
           <div class="items-img">
-            <img src="img/team/Team.jpg" alt="" style="margin: auto;">
+            <img src="img/team/3.jpg" alt="" style="margin: auto;">
+          </div>
+        </div>
+        <div class="items items-4">
+          <div class="items-img">
+            <img src="img/team/4.jpg" alt="" style="margin: auto;">
+          </div>
+        </div>
+        <div class="items items-5">
+          <div class="items-img">
+            <img src="img/team/5.jpg" alt="" style="margin: auto;">
+          </div>
+        </div>
+        <div class="items items-6">
+          <div class="items-img">
+            <img src="img/team/6.jpg" alt="" style="margin: auto;">
+          </div>
+        </div>
+        <div class="items items-7">
+          <div class="items-img">
+            <img src="img/team/7.jpg" alt="" style="margin: auto;">
           </div>
         </div>
 
@@ -336,7 +356,7 @@
             <img src="img/Footer/лого.svg" alt="logo">
           </div>
           <div>
-            <div class="footer-privacy"><a href="">Политика конфединциальности</a></div>
+            <div class="footer-privacy"><a href="">Политика конфиденциальности</a></div>
             <div class="footer-address">г. Сыктывкар, ул. Громова, д.81</div>
             <div class="footer-phone"><a href="tel:7-908-710-59-49">+7 (908) 710 59 49</a></div>
           </div>
@@ -347,15 +367,16 @@
 
     <!-- PopUp Form -->
     <div class="form">
-      <div class="form_blur"></div>
+      
       <div class="form-wrapper">
+        <div class="form_blur"></div>
         <div class="form-content">
           <div class="popup-btn_mob form-close"></div>
           <div class="form-item form-feedback">
             <p>Обратная связь</p>
             <form class="form-box" action="">
               <input type="text" placeholder="Ваше имя *">
-              <input type="tel" placeholder="Номер телефона">
+              <input id="phone" name="phone" type="tel" placeholder="Номер телефона">
               <input type="email" placeholder="E-mail ">
               <span class="checkbox-form">
                 <label class="checkbox">
@@ -494,5 +515,30 @@
         });
       });
     </script>
+
+    <!-- Form -->
+    <script src="js/jquery.validate.js"></script>
+    <script src="https://unpkg.com/jquery-input-mask-phone-number@1.0.11/dist/jquery-input-mask-phone-number.js"></script>
+    <script>
+      $(document).ready(function () {
+        $('#phone').usPhoneFormat({
+          format: 'xxx-xxx-xxx-xxxx',
+        });
+        $(document).ready(function() {
+         $('[name=phone]').bind("change keyup input click", function() {
+           if (this.value.match(/[^0-9]/g)) {
+             this.value = this.value.replace(/[^0-9]/g, '');
+           }
+         });
+       });
+      });
+    </script>
+
+
+
+
+
+
+
   </body>
 </html>

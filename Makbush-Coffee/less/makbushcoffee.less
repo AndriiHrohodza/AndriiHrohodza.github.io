@@ -593,8 +593,8 @@ li{
             position: absolute;
             top: 15%;
             left: 9%;
-            width: 0.6770833333333333vw;
-            height: 0.6770833333333333vw;
+            width: 0.5208333333333333vw;
+            height: 0.5208333333333333vw;
             background: url(../img/features/Vector.svg) center center no-repeat;
             background-size: contain;
         }
@@ -604,8 +604,8 @@ li{
             position: absolute;
             top: 15%;
             right: 9%;
-            width: 0.6770833333333333vw;
-            height: 0.6770833333333333vw;
+            width: 0.5208333333333333vw;
+            height: 0.5208333333333333vw;
             background: url(../img/features/Vector.svg) center center no-repeat;
             background-size: contain;
         }
@@ -885,9 +885,9 @@ li{
             top: 50%;
             transform: translateY(-50%);
             left: -17%;
-            width: 0.5208333333333333vw;
-            height: 0.5208333333333333vw;
-            background: url(../img/Partners/Vector.png) center center no-repeat;
+            width: 0.5729166666666667vw;
+            height: 0.5729166666666667vw;
+            background: url(../img/achievments/Vector.svg) center center no-repeat;
         }
         figcaption span:after {
             content: "";
@@ -896,9 +896,9 @@ li{
             top: 50%;
             transform: translateY(-50%);
             right: -17%;
-            width: 0.5208333333333333vw;
-            height: 0.5208333333333333vw;
-            background: url(../img/Partners/Vector.png) center center no-repeat;
+            width: 0.5729166666666667vw;
+            height: 0.5729166666666667vw;
+            background: url(../img/achievments/Vector.svg) center center no-repeat;
         }
     }
    /*  &__items:nth-child(2) figcaption span {
@@ -1081,9 +1081,9 @@ li{
             position: absolute;
             top: 20%;
             left: -5%;
-            width: 1rem;
-            height: 1rem;
-            background: url(../img/features/Vector.png) center center no-repeat;
+            width: 1.1rem;
+            height: 1.1rem;
+            background: url(../img/achievments/Vector.svg) center center no-repeat;
         }
         /* p:after {
             content: "";
@@ -1129,7 +1129,7 @@ li{
             position: relative;
             margin-right: 2.5rem;
             margin-top: 1.5rem;
-            padding-left: 5rem;
+            padding-left: 3rem;
         }
         p:after {
             content: "";
@@ -1137,9 +1137,9 @@ li{
             position: absolute;
             top: 11%;
             right: -5%;
-            width: 1rem;
-            height: 1rem;
-            background: url(../img/features/Vector.png) center center no-repeat;
+            width: 1.1rem;
+            height: 1.1rem;
+            background: url(../img/achievments/Vector.svg) center center no-repeat;
         }
     }
     .achievments__item-right:nth-child(2) p:after {
@@ -1174,7 +1174,7 @@ li{
         .gerbera-med();
         font-size: 5.4rem;
         color: #262829;
-        padding-bottom: 2rem;
+        padding-bottom: 2.5rem;
         line-height: 120%;
     }
     p {
@@ -1251,7 +1251,7 @@ li{
         line-height: 120%;
         color: #262829;
         .gerbera-med();
-        margin-bottom: 2rem;
+        margin-bottom: 2.5rem;
         opacity: 0;
     }
     p {
@@ -1400,6 +1400,15 @@ li{
     background-color: white;
     overflow: hidden;
 }
+
+.form_blur {
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left:0;
+}
+
 .popup-btn_mob {
     display: none;
 }
@@ -1705,7 +1714,7 @@ animation-delay: 1.3s;
         height: 100%;
     }
     .primary-container {
-        margin: 0 4rem;
+        margin: 0 5rem;
         display: block;
     }
     .header {
@@ -1814,7 +1823,7 @@ animation-delay: 1.3s;
             position: relative;
         }
         .features-container {
-            margin: 0 4rem;
+            margin: 0 5rem;
         }
         .features__header {
             padding-bottom: 0;
@@ -1880,7 +1889,7 @@ animation-delay: 1.3s;
         }
         .features__items .description > p:nth-child(1) {
             position: relative;
-            width: 60%;
+            width: 50%;
             line-height: 160%;
         }
         .features__items .description p:nth-child(1):before {
@@ -1962,7 +1971,7 @@ animation-delay: 1.3s;
             padding-bottom: 12rem;
         }
         .cards-container {
-            margin: 0 4rem;
+            margin: 0 5rem;
         }
         .partners-text {
             margin-bottom: 6rem;
@@ -2102,7 +2111,7 @@ animation-delay: 1.3s;
             padding-bottom: 5rem;
             position: relative;
             .container {
-                margin: 0 4rem;
+                margin: 0 5rem;
             }
         }
         .achievments__content {
@@ -2217,7 +2226,7 @@ animation-delay: 1.3s;
             padding-top: 12rem;
             padding-bottom: 12rem;
             .container {
-                margin: 0 4rem;
+                margin: 0 5rem;
             }
         }
         .about-wrapper {
@@ -2251,8 +2260,92 @@ animation-delay: 1.3s;
                 .items-img {
                     width: 100%;
                     height: 84rem;
-                    background: url(../img/team-mob/MaskGroup.jpg) no-repeat;
-                    background-size: cover;
+                    /* background: url(../img/team-mob/MaskGroup.jpg) no-repeat;
+                    background-size: cover; */
+                    img {
+                        width: 0;
+                        height: 0;
+                    }
+                }
+            }
+            .items-1 {
+                .items-img {
+                    width: 100%;
+                    height: 84rem;
+                    background: url(../img/team/Team.jpg) -49rem center no-repeat;
+                     background-size: cover;
+                    img {
+                        width: 0;
+                        height: 0;
+                    }
+                }
+            }
+            .items-2 {
+                .items-img {
+                    width: 100%;
+                    height: 84rem;
+                    background: url(../img/team/2.jpg) -49rem center no-repeat;
+                     background-size: cover;
+                    img {
+                        width: 0;
+                        height: 0;
+                    }
+                }
+            }
+            .items-3 {
+                .items-img {
+                    width: 100%;
+                    height: 84rem;
+                    background: url(../img/team/3.jpg) -49rem center no-repeat;
+                     background-size: cover;
+                    img {
+                        width: 0;
+                        height: 0;
+                    }
+                }
+            }
+            .items-4 {
+                .items-img {
+                    width: 100%;
+                    height: 84rem;
+                    background: url(../img/team/4.jpg) -49rem center no-repeat;
+                     background-size: cover;
+                    img {
+                        width: 0;
+                        height: 0;
+                    }
+                }
+            }
+            .items-5 {
+                .items-img {
+                    width: 100%;
+                    height: 84rem;
+                    background: url(../img/team/5.jpg) -49rem center no-repeat;
+                     background-size: cover;
+                    img {
+                        width: 0;
+                        height: 0;
+                    }
+                }
+            }
+            .items-6 {
+                .items-img {
+                    width: 100%;
+                    height: 84rem;
+                    background: url(../img/team/6.jpg) -49rem center no-repeat;
+                     background-size: cover;
+                    img {
+                        width: 0;
+                        height: 0;
+                    }
+                }
+            }
+            .items-7 {
+                .items-img {
+                    width: 100%;
+                    height: 84rem;
+                    background: url(../img/team/7.jpg) -49rem center no-repeat;
+                     background-size: cover;
                     img {
                         width: 0;
                         height: 0;
@@ -2261,11 +2354,11 @@ animation-delay: 1.3s;
             }
             
         }
-        .team-slider > .items:nth-child(2) {
+        /* .team-slider > .items:nth-child(2) {
                 .items-img {
                     background-color: black;
                 }
-            }
+            } */
         .team-text {
             padding-top: 7rem;
             p {
@@ -2283,7 +2376,7 @@ animation-delay: 1.3s;
             .price-content {
                 width: 100%;
                 height: 100%;
-                padding: 12rem 4rem;
+                padding: 12rem 5rem;
             }
             .price-items {
                 display: flex;
@@ -2292,6 +2385,7 @@ animation-delay: 1.3s;
 
                 .price-text {
                     padding: 0;
+                    padding-top: 4rem;
 
                     #price-main-text {
                         font-size: 3rem;
@@ -2335,7 +2429,7 @@ animation-delay: 1.3s;
             height: 100%;
             padding: 12rem 0;
             .footer-container {
-                margin: 0 4rem;
+                margin: 0 5rem;
             }
         }
         .footer-content {
@@ -2378,6 +2472,7 @@ animation-delay: 1.3s;
 
 
         /*Form*/
+        /*Form*/
         .form {
 
         }
@@ -2386,7 +2481,7 @@ animation-delay: 1.3s;
         }
         .form-content {
             width: 100%;
-            height: 106rem;
+            height: 81rem;
             position: relative;
         }
         .popup-btn_mob {
@@ -2394,48 +2489,47 @@ animation-delay: 1.3s;
             position: absolute;
             top: 0;
             right: 0;
-            width: 2.2rem;
-            height: 2.2rem;
+            width: 1.8rem;
+            height: 1.8rem;
             background: url(../img/form-mob/Group.svg) no-repeat;
-            background-size: cover;
             color: #262829;
         }
         .form-close {
-            margin-top: 3rem;
-            margin-right: 4rem;
+            margin-top: 2.5rem;
+            margin-right: 3.4rem;
         }
         .form-item {
-                padding: 9rem 4rem;
+                padding: 7.5rem 3.4rem;
                 p {
-                    font-size: 4.4rem;
+                    font-size: 3.7rem;
                     line-height: 130%;
-                    margin-bottom: 4.1rem;
+                    margin-bottom: 3.5rem;
                     text-align: center;
                 }
                 .form-box {
                     input {
                         width: 100%;
-                        height: 9.6rem;
-                        padding: 2.4rem 5rem;
-                        margin-bottom: 5rem;
-                        font-size: 3rem;
+                        height: 8rem;
+                        padding: 2rem 4rem;
+                        margin-bottom: 4rem;
+                        font-size: 2.5rem;
                         line-height: 160%;
                     }
                     .checkbox label{
                             width: 100%;
-                            font-size: 2.2rem;
+                            font-size: 1.8rem;
                             line-height: 160%;
                     }
                     .btn-form {
                         width: 100%;
-                        height: 13.6rem;
-                        font-size: 3rem;
+                        height: 11.5rem;
+                        font-size: 2.5rem;
 
-                        margin-top: 7rem;
+                        margin-top: 6rem;
                     }
                 }
                 .form-box > input:nth-child(3) {
-                    margin-bottom: 3rem;
+                    margin-bottom: 2.5rem;
                 }
         }
         .form-img {
@@ -2487,6 +2581,10 @@ animation-delay: 1.3s;
             width: 2rem;
             height: 3rem;
             background: url(../img/mob-nav/mackbushshop.svg) center center no-repeat;
+        }
+        .mob-logo {
+            width: 16.8rem;
+            height: auto;
         }
     }
     .navigation {
@@ -2637,9 +2735,9 @@ animation-delay: 1.3s;
                 display: block;
                 position: absolute;
                 top: 15%;
-                left: -20%;
-                width: 1.5rem;
-                height: 0.8rem;
+                left: -8%;
+                width: 1.2rem;
+                height: 0.9rem;
                 background: url(../img/features/Vector.svg) center center no-repeat;
                 background-size: contain;
         }
@@ -2648,9 +2746,9 @@ animation-delay: 1.3s;
                 display: block;
                 position: absolute;
                 top: 15%;
-                right: -20%;
-                width: 1.5rem;
-                height: 0.8rem;
+                right: -8%;
+                width: 1.2rem;
+                height: 0.9rem;
                 background: url(../img/features/Vector.svg) center center no-repeat;
                 background-size: contain;
         }
@@ -2745,13 +2843,13 @@ animation-delay: 1.3s;
             }
             .partners__items figcaption span:before {
                 left: -13%;
-                width: 1.1rem;
-                height: 0.8rem;
+                width: 1.2rem;
+                height: 0.9rem;
             }
             .partners__items figcaption span:after {
                 right: -13%;
-                width: 1.1rem;
-                height: 0.8rem;
+                width: 1.2rem;
+                height: 0.9rem;
             }
             .partners__items:nth-child(1),
             .partners__items:nth-child(2),
@@ -2859,7 +2957,7 @@ animation-delay: 1.3s;
             display: flex;
             flex-direction: column;
         }
-        .achievments-wrapper:after {
+        /* .achievments-wrapper:after {
             content: '';
             display: block;
             position: absolute;
@@ -2867,8 +2965,8 @@ animation-delay: 1.3s;
             right: 0;
             width: 5rem;
             height: 100%;
-            background: url(../img/achievment-mob/MaskGroup.png) no-repeat;
-        }
+            background: url(../img/achievments/Vector.svg) no-repeat;
+        } */
         .achievments-wrapper > .achievments__content:nth-child(1),
         .achievments-wrapper > .achievments__content:nth-child(3){
             .achievments__item {
@@ -2893,6 +2991,8 @@ animation-delay: 1.3s;
                     position: absolute;
                     top: 6%;
                     left: 0;
+                    width: 1.2rem;
+                    height: 0.9rem;
                 }
             }
         }
@@ -2903,6 +3003,8 @@ animation-delay: 1.3s;
                 position: absolute;
                 top: 6%;
                 left: 0;
+                width: 1.2rem;
+                height: 0.9rem;
             }
         }
         #GMO {
@@ -2912,6 +3014,8 @@ animation-delay: 1.3s;
                 position: absolute;
                 top: 5%;
                 left: 0;
+                width: 1.2rem;
+                height: 0.9rem;
             }
         }
         .achievments-wrapper > .achievments__content:nth-child(2) {
@@ -2936,9 +3040,9 @@ animation-delay: 1.3s;
                 position: absolute;
                 top: 5%;
                 left: 0;
-                width: 1rem;
-                height: 1rem;
-                background: url(../img/features/Vector.png) center center no-repeat;
+                width: 1.2rem;
+                height: 0.9rem;
+                background: url(../img/achievments/Vector.svg) center center no-repeat;
             }
         }
 
@@ -2982,8 +3086,92 @@ animation-delay: 1.3s;
                 .items-img {
                     width: 100%;
                     height: 50rem;
-                    background: url(../img/team/Team.jpg) center center no-repeat;
-                    background-size: cover;
+                    /* background: url(../img/team/2.jpg) center center no-repeat;
+                    background-size: cover; */
+                    img {
+                        width: 100%;
+                        height: 50rem;
+                    }
+                }
+            }
+            .items-1 {
+                .items-img {
+                    width: 100%;
+                    height: 50rem;
+                    background: url(../img/team/Team.jpg) -27rem center no-repeat;
+                     background-size: cover;
+                    img {
+                        width: 0;
+                        height: 0;
+                    }
+                }
+            }
+            .items-2 {
+                .items-img {
+                    width: 100%;
+                    height: 50rem;
+                    background: url(../img/team/2.jpg) -27rem center no-repeat;
+                     background-size: cover;
+                    img {
+                        width: 0;
+                        height: 0;
+                    }
+                }
+            }
+            .items-3 {
+                .items-img {
+                    width: 100%;
+                    height: 50rem;
+                    background: url(../img/team/3.jpg) -27rem center no-repeat;
+                     background-size: cover;
+                    img {
+                        width: 0;
+                        height: 0;
+                    }
+                }
+            }
+            .items-4 {
+                .items-img {
+                    width: 100%;
+                    height: 50rem;
+                    background: url(../img/team/4.jpg) -27rem center no-repeat;
+                     background-size: cover;
+                    img {
+                        width: 0;
+                        height: 0;
+                    }
+                }
+            }
+            .items-5 {
+                .items-img {
+                    width: 100%;
+                    height: 50rem;
+                    background: url(../img/team/5.jpg) -27rem center no-repeat;
+                     background-size: cover;
+                    img {
+                        width: 0;
+                        height: 0;
+                    }
+                }
+            }
+            .items-6 {
+                .items-img {
+                    width: 100%;
+                    height: 50rem;
+                    background: url(../img/team/6.jpg) -27rem center no-repeat;
+                     background-size: cover;
+                    img {
+                        width: 0;
+                        height: 0;
+                    }
+                }
+            }
+            .items-7 {
+                .items-img {
+                    width: 100%;
+                    height: 50rem;
+                    background: url(../img/team/7.jpg) -27rem center no-repeat;
+                     background-size: cover;
                     img {
                         width: 0;
                         height: 0;
@@ -2992,11 +3180,7 @@ animation-delay: 1.3s;
             }
             
         }
-        .team-slider > .items:nth-child(2) {
-                .items-img {
-                    background-color: black;
-                }
-            }
+        
         .team-text {
             padding-top: 3.5rem;
             p {
@@ -3039,6 +3223,7 @@ animation-delay: 1.3s;
             font-size: 3.2rem;
             line-height: 130%;
             margin-bottom: 1rem;
+            margin-top: 2.5rem;
         }
         .price-text .price-btn {
             width: 100%;
@@ -3079,6 +3264,8 @@ animation-delay: 1.3s;
             justify-content: center;
         }
         .footer-logo {
+            width: 16.8rem;
+            height: 3.3rem;
             margin-bottom: 3.5rem;
         }
         .footer-address {
@@ -3086,6 +3273,7 @@ animation-delay: 1.3s;
             padding-left: 0;
             font-size: 1.8rem;
             margin-bottom: 3.5rem;
+            text-align: center;
         }
         .footer-phone {
             font-size: 1.8rem;
@@ -3093,8 +3281,9 @@ animation-delay: 1.3s;
             padding-left: 0;
             text-align: center;
             margin-bottom: 1.5rem;
+            text-align: center;
         }
-        .footer-privacy {
+        .footer-privacy a{
             font-size: 1.8rem;
         }
 
@@ -3197,6 +3386,10 @@ animation-delay: 1.3s;
             width: 2rem;
             height: 3rem;
             background: url(../img/mob-nav/mackbushshop.svg) center center no-repeat;
+        }
+        .mob-logo {
+            width: 14rem;
+            height: 2.8rem;
         }
     }
     .navigation {
@@ -3347,9 +3540,9 @@ animation-delay: 1.3s;
                 display: block;
                 position: absolute;
                 top: 15%;
-                left: -20%;
-                width: 1.5rem;
-                height: 0.8rem;
+                left: -8%;
+                width: 1.2rem;
+                height: 0.9rem;
                 background: url(../img/features/Vector.svg) center center no-repeat;
                 background-size: contain;
         }
@@ -3358,9 +3551,9 @@ animation-delay: 1.3s;
                 display: block;
                 position: absolute;
                 top: 15%;
-                right: -20%;
-                width: 1.5rem;
-                height: 0.8rem;
+                right: -8%;
+                width: 1.2rem;
+                height: 0.9rem;
                 background: url(../img/features/Vector.svg) center center no-repeat;
                 background-size: contain;
         }
@@ -3455,13 +3648,13 @@ animation-delay: 1.3s;
             }
             .partners__items figcaption span:before {
                 left: -13%;
-                width: 1.1rem;
-                height: 0.8rem;
+                width: 1.2rem;
+                height: 0.9rem;
             }
             .partners__items figcaption span:after {
                 right: -13%;
-                width: 1.1rem;
-                height: 0.8rem;
+                width: 1.2rem;
+                height: 0.9rem;
             }
             .partners__items:nth-child(1),
             .partners__items:nth-child(2),
@@ -3590,7 +3783,7 @@ animation-delay: 1.3s;
                     
                 }
                 p {
-                    width: 86%;
+                    width: 100%;
                     font-size: 1.5rem;
                     line-height: 160%;
                     margin-top: 1rem;
@@ -3603,6 +3796,8 @@ animation-delay: 1.3s;
                     position: absolute;
                     top: 6%;
                     left: 0;
+                    width: 1.2rem;
+                    height: 0.9rem;
                 }
             }
         }
@@ -3613,6 +3808,8 @@ animation-delay: 1.3s;
                 position: absolute;
                 top: 6%;
                 left: 0;
+                width: 1.2rem;
+                height: 0.9rem;
             }
         }
         #GMO {
@@ -3622,6 +3819,8 @@ animation-delay: 1.3s;
                 position: absolute;
                 top: 5%;
                 left: 0;
+                width: 1.2rem;
+                height: 0.9rem;
             }
         }
         .achievments-wrapper > .achievments__content:nth-child(2) {
@@ -3646,8 +3845,8 @@ animation-delay: 1.3s;
                 position: absolute;
                 top: 5%;
                 left: 0;
-                width: 1rem;
-                height: 1rem;
+                width: 1.2rem;
+                height: 0.9rem;
                 background: url(../img/features/Vector.png) center center no-repeat;
             }
         }
@@ -3692,7 +3891,91 @@ animation-delay: 1.3s;
                 .items-img {
                     width: 100%;
                     height: 42rem;
-                    background: url(../img/team-mob/MaskGroup.jpg) no-repeat;
+                    /* background: url(../img/team-mob/MaskGroup.jpg) center no-repeat; */
+                    img {
+                        width: 0;
+                        height: 0;
+                    }
+                }
+            }
+            .items-1 {
+                .items-img {
+                    width: 100%;
+                    height: 42rem;
+                    background: url(../img/team/Team.jpg) -27rem center no-repeat;
+                    background-size: cover;
+                    img {
+                        width: 0;
+                        height: 0;
+                    }
+                }
+            }
+            .items-2 {
+                .items-img {
+                    width: 100%;
+                    height: 42rem;
+                    background: url(../img/team/2.jpg) -27rem center no-repeat;
+                     background-size: cover;
+                    img {
+                        width: 0;
+                        height: 0;
+                    }
+                }
+            }
+            .items-3 {
+                .items-img {
+                    width: 100%;
+                    height: 42rem;
+                    background: url(../img/team/3.jpg) -27rem center no-repeat;
+                     background-size: cover;
+                    img {
+                        width: 0;
+                        height: 0;
+                    }
+                }
+            }
+            .items-4 {
+                .items-img {
+                    width: 100%;
+                    height: 42rem;
+                    background: url(../img/team/4.jpg) -27rem center no-repeat;
+                     background-size: cover;
+                    img {
+                        width: 0;
+                        height: 0;
+                    }
+                }
+            }
+            .items-5 {
+                .items-img {
+                    width: 100%;
+                    height: 42rem;
+                    background: url(../img/team/5.jpg) -27rem center no-repeat;
+                     background-size: cover;
+                    img {
+                        width: 0;
+                        height: 0;
+                    }
+                }
+            }
+            .items-6 {
+                .items-img {
+                    width: 100%;
+                    height: 42rem;
+                    background: url(../img/team/6.jpg) -27rem center no-repeat;
+                     background-size: cover;
+                    img {
+                        width: 0;
+                        height: 0;
+                    }
+                }
+            }
+            .items-7 {
+                .items-img {
+                    width: 100%;
+                    height: 42rem;
+                    background: url(../img/team/7.jpg) -27rem center no-repeat;
+                     background-size: cover;
                     img {
                         width: 0;
                         height: 0;
@@ -3701,11 +3984,7 @@ animation-delay: 1.3s;
             }
             
         }
-        .team-slider > .items:nth-child(2) {
-                .items-img {
-                    background-color: black;
-                }
-            }
+        
         .team-text {
             padding-top: 3.5rem;
             p {
@@ -3747,6 +4026,7 @@ animation-delay: 1.3s;
             font-size: 2.7rem;
             line-height: 130%;
             margin-bottom: 1rem;
+            margin-top: 2rem;
         }
         .price-text .price-btn {
             width: 100%;
@@ -3787,6 +4067,8 @@ animation-delay: 1.3s;
             justify-content: center;
         }
         .footer-logo {
+            width: 14rem;
+            height: 2.8rem;
             margin-bottom: 3.5rem;
         }
         .footer-address {
