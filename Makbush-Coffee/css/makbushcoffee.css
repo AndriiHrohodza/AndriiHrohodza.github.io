@@ -1637,9 +1637,9 @@ li{
   color: white;
   opacity: 0.5;
 }
-.scroll-off {
-  overflow: hidden;
-}
+/* .scroll-off {
+    overflow: hidden;
+} */
 /*Animation*/
 /*Nav*/
 @-webkit-keyframes fadeInDownNav {
