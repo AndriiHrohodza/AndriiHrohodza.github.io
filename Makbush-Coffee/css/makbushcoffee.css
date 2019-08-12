@@ -2334,7 +2334,7 @@ li{
     left: 0;
     width: 2rem;
     height: 2rem;
-    background: url(../img/features/Vector.png) center center no-repeat;
+    background: url(../img/achievments/Vector.svg) center center no-repeat;
     background-size: contain;
   }
   #exclusive p:before {
@@ -2345,7 +2345,7 @@ li{
     left: 0;
     width: 2rem;
     height: 2rem;
-    background: url(../img/features/Vector.png) center center no-repeat;
+    background: url(../img/achievments/Vector.svg) center center no-repeat;
     background-size: contain;
   }
   #GMO p:before {
@@ -2356,7 +2356,7 @@ li{
     left: 0;
     width: 2rem;
     height: 2rem;
-    background: url(../img/features/Vector.png) center center no-repeat;
+    background: url(../img/achievments/Vector.svg) center center no-repeat;
     background-size: contain;
   }
   .achievments-wrapper > .achievments__content:nth-child(2) {
@@ -2384,7 +2384,7 @@ li{
     left: 0;
     width: 2rem;
     height: 2rem;
-    background: url(../img/features/Vector.png) center center no-repeat;
+    background: url(../img/achievments/Vector.svg) center center no-repeat;
     background-size: contain;
   }
   /*About*/
@@ -3127,6 +3127,7 @@ li{
     left: 0;
     width: 1.2rem;
     height: 0.9rem;
+    background: url(../img/achievments/Vector.svg) center center no-repeat;
   }
   #exclusive p:before {
     content: "";
@@ -3136,6 +3137,7 @@ li{
     left: 0;
     width: 1.2rem;
     height: 0.9rem;
+    background: url(../img/achievments/Vector.svg) center center no-repeat;
   }
   #GMO p:before {
     content: "";
@@ -3145,6 +3147,7 @@ li{
     left: 0;
     width: 1.2rem;
     height: 0.9rem;
+    background: url(../img/achievments/Vector.svg) center center no-repeat;
   }
   .achievments-wrapper > .achievments__content:nth-child(2) {
     display: none;
@@ -3903,6 +3906,7 @@ li{
     left: 0;
     width: 1.2rem;
     height: 0.9rem;
+    background: url(../img/achievments/Vector.svg) center center no-repeat;
   }
   #exclusive p:before {
     content: "";
@@ -3912,6 +3916,7 @@ li{
     left: 0;
     width: 1.2rem;
     height: 0.9rem;
+    background: url(../img/achievments/Vector.svg) center center no-repeat;
   }
   #GMO p:before {
     content: "";
@@ -3921,6 +3926,7 @@ li{
     left: 0;
     width: 1.2rem;
     height: 0.9rem;
+    background: url(../img/achievments/Vector.svg) center center no-repeat;
   }
   .achievments-wrapper > .achievments__content:nth-child(2) {
     display: none;
@@ -3947,7 +3953,7 @@ li{
     left: 0;
     width: 1.2rem;
     height: 0.9rem;
-    background: url(../img/features/Vector.png) center center no-repeat;
+    background: url(../img/achievments/Vector.svg) center center no-repeat;
   }
   /*About*/
   .about {
