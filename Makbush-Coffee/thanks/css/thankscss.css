@@ -85,6 +85,7 @@
 		    /* justify-content: space-between; */
 		    padding: 12rem 14rem;
 		    color: #262829;
+		    width: 77rem;
 
 		}
 		.wrapper {
@@ -111,6 +112,7 @@
 		    flex-direction: column;
 		    justify-content: space-between;
 		    align-items: flex-end;
+		    position: relative;
 		    background-color: rgb(254,249,239);
 
 
@@ -121,6 +123,8 @@
 		    background-color: transparent;
 		    border: none;
 		    outline: none;
+		    position: absolute;
+		    right: 0;
 		    margin-top: 2.5rem;
 		    margin-right: 3.5rem;
 		    font-size: 1.7rem;
