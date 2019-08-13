@@ -1933,6 +1933,21 @@ li{
     position: relative;
     padding-top: 5rem;
   }
+  /*Head Hesive*/
+  .headhesive {
+    background-color: white;
+    position: fixed;
+    -webkit-transform: translateY(-100%);
+            transform: translateY(-100%);
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    padding: 1rem 5rem;
+    z-index: 9999;
+  }
+  .headhesive--stick {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
   .mob-nav {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1943,6 +1958,7 @@ li{
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    width: 100%;
   }
   .mob-nav .phone {
     width: 4rem;
@@ -2766,6 +2782,21 @@ li{
     position: relative;
     padding-top: 2.5rem;
   }
+  /*Head Hesive*/
+  .headhesive {
+    background-color: white;
+    position: fixed;
+    -webkit-transform: translateY(-100%);
+            transform: translateY(-100%);
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    padding: 0.5rem 2rem;
+    z-index: 9999;
+  }
+  .headhesive--stick {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
   .mob-nav {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -2776,6 +2807,7 @@ li{
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    width: 100%;
   }
   .mob-nav .phone {
     width: 2rem;
@@ -3572,6 +3604,20 @@ li{
     position: relative;
     padding-top: 2.5rem;
   }
+  .headhesive {
+    background-color: white;
+    position: fixed;
+    -webkit-transform: translateY(-100%);
+            transform: translateY(-100%);
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    padding: 0.5rem 2rem;
+    z-index: 9999;
+  }
+  .headhesive--stick {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
   .mob-nav {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -3582,6 +3628,7 @@ li{
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    width: 100%;
   }
   .mob-nav .phone {
     width: 2rem;
