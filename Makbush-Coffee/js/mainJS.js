@@ -251,3 +251,18 @@ $(document).ready(function(){
 		$('html').removeClass('scroll-off');
 	});
 })
+
+
+
+
+
+/*BLur*/
+$( document ).ready(function() {
+
+	$('.form-open').click(function(){
+		$('.wrapper-back, .features, .goods, .partners, .achievments, .about, .team, .price, .footer').addClass('blur')
+	})
+	$('.form-close').click(function(){
+		$('.wrapper-back, .features, .goods, .partners, .achievments, .about, .team, .price, .footer').removeClass('blur');  
+	})
+});
