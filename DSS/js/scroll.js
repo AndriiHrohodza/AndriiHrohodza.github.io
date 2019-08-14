@@ -12,6 +12,47 @@ $(document).ready(function(){
             }   
       });
 
+      /*Space Anchor Scroll*/
+      var i = 1;
+
+      $(window).on("keypress", function(e) {
+       if (e.keyCode == 0 || e.keyCode == 32) {
+         var $a = $('.anchor');
+         $('html, body').animate({scrollTop: $a.eq( i ).offset().top}, 350);
+         i = ( i === $a.length - 1 ) ? ( 0 ) : ( i + 1 );
+
+       }
+     });
+
+
+
+
+      /*$(document).on('keypress',function(e) {
+        var $page = $('html, body');
+        $('a[href*="#"]').keypress(function(e) {
+         $page.animate({
+           scrollTop: $($.attr(this, 'href')).offset().top
+         }, 400);
+         return false;
+       });
+      });*/
+
+
+/*
+     var $page = $('html, body');
+          $('a[href*="#"]').click(function() {
+              $page.animate({
+                  scrollTop: $($.attr(this, 'href')).offset().top
+              }, 400);
+              return false;
+          });*/
+
+
+
+
+
+
+
       /*Animation*/
       let controller = new ScrollMagic.Controller();
 
