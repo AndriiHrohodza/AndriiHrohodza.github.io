@@ -5,12 +5,22 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <link rel="shortcut icon" href="../favicon.ico"> 
+    
     <!-- <script src="js/jquery.backgroundMove.js"></script> -->
     <link rel="stylesheet" href="slick/slick.css">
     <link rel="stylesheet" href="slick/slick-theme.css">
     <!-- <link rel="stylesheet" href="css/animation.css"> -->
     <link rel="stylesheet" href="css/makbushcoffee.css">
+
+
+
+   <!--  <link rel="stylesheet" href="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.css">
+   <script src="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.js"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.maskedinput/1.4.1/jquery.maskedinput.min.js"></script> -->
+
+
+
+
     <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
     <script>
        function agreeForm(f) {
@@ -376,8 +386,8 @@
             <p>Обратная связь</p>
             <form class="form-box" action="">
               <input type="text" placeholder="Ваше имя *">
-              <input id="phone" name="phone" type="tel" placeholder="Номер телефона">
-              <input type="email" placeholder="E-mail ">
+              <input id="form-phone" class="form-phone" name="phone" type="tel" placeholder="Номер телефона" minlength="10" maxlength="10" >
+              <input id="form-mail" class="form-mail" name="form-mail" type="email" placeholder="E-mail"  >
               <span class="checkbox-form">
                 <label class="checkbox">
                   <input id="check" name="agree" onclick="agreeForm(this.form)"  class="check" type="checkbox" />
@@ -411,10 +421,10 @@
       });
     
     </script> -->
-    <script
+    <!-- <script
     src="https://code.jquery.com/jquery-3.4.1.js"
     integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
-    crossorigin="anonymous"></script>
+    crossorigin="anonymous"></script> -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js" integrity="sha256-lPE3wjN2a7ABWHbGz7+MKBJaykyzqCbU96BJWjio86U=" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/pixi.js/5.1.0/pixi.min.js" integrity="sha256-9K0F+bAVduNF0RTB8H8qL81o3yuPVaEPHrbXorjNuwQ=" crossorigin="anonymous"></script>
     <!-- Scroll Magic -->
@@ -429,8 +439,25 @@
     <script src="js/jquery.backgroundMove.js"></script>
     <!-- Slic -->
     <script src="slick/slick.min.js"></script>
-    <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script>
-    <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/debug.addIndicators.min.js"></script>
+    <!-- <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/debug.addIndicators.min.js"></script> -->
+
+
+
+    <!-- <script src="js/jquery.validate.md.min.js"></script>
+    <script>
+      $('.form-box').initValidate({
+      },
+      {
+        tel: { minlengthphone: "Insert number +7 (999) 999-9999" }
+      }, true);
+    
+    
+      $('.form-phone').focus().mask('+7 (999) 999-9999').click(function () {
+        $(this).focus();
+      });
+    </script> -->
+
 
     <!-- jQuery-viewport-checker -->
    <script src="js/jquery.animateNumber.min.js"></script>
@@ -519,11 +546,9 @@
     <!-- Form -->
     <script src="js/jquery.validate.js"></script>
     <script src="https://unpkg.com/jquery-input-mask-phone-number@1.0.11/dist/jquery-input-mask-phone-number.js"></script>
-    <script>
+    <script src="js/form.js"></script>
+    <!-- <script>
       $(document).ready(function () {
-        $('#phone').usPhoneFormat({
-          format: 'xxx-xxx-xxx-xxxx',
-        });
         $(document).ready(function() {
          $('[name=phone]').bind("change keyup input click", function() {
            if (this.value.match(/[^0-9]/g)) {
@@ -532,7 +557,15 @@
          });
        });
       });
+    </script> -->
+
+    <script src="js/jquery.mask.min.js"></script>
+    <script>
+      $(document).ready(function(){
+        $('.form-phone').mask('+7 (000) 000-0000');
+      });
     </script>
+
 
     <!-- HeadHesive -->
     <script src="js/headhesive.min.js"></script>
