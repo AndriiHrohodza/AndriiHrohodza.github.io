@@ -13,14 +13,31 @@ $(document).ready(function(){
       });
 
       /*Space Anchor Scroll*/
-      var i = 1;
+      /*var i = 1;
 
       $(window).on("keypress", function(e) {
-       if (e.keyCode == 0 || e.keyCode == 32) {
+       if (e.keyCode == 0) {
          var $a = $('.anchor');
          $('html, body').animate({scrollTop: $a.eq( i ).offset().top}, 350);
          i = ( i === $a.length - 1 ) ? ( 0 ) : ( i + 1 );
 
+       }
+     });*/
+
+     var i = 1;
+
+     $(window).on("keydown", function(e) {
+
+       if ($('html, body').is(':animated')) { // <--
+         return;                              // <--
+       }                                      // <--
+
+       if (e.keyCode == 0 || e.keyCode == 32) {
+         var $a = $('.anchor');
+         $('html, body').animate({
+           scrollTop: $a.eq( i ).offset().top
+         }, 350);
+         i = ( i === $a.length - 1 ) ? ( 0 ) : ( i + 1 );
        }
      });
 
