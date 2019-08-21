@@ -101,8 +101,35 @@
 	opacity: 1;
 	transition: all 1s;
 	height: 100vh;
-	background: url(../img/photo_back.jpg)  top no-repeat;
+	/* background: url(../img/photo_back.jpg)  top no-repeat; */
 	background-size: cover;
+}
+#video-bg {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    overflow: hidden;
+    z-index: 0;
+    background-size: cover;
+}
+
+#video-bg > video {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: auto;
+    height: auto; 
+}
+.overlay {
+    background: rgba(0,0,0,0.3);
+    position: absolute;
+    top:0;
+    left:0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
 }
 
 /*btn*/
@@ -302,7 +329,7 @@ img {
 	animation-delay: 0.8s;
 }
 .sub-item {
-	margin-top: 0.666666666666667vw;
+	margin-top: 1.09375vw;
 	.America-Bold();
 	&__text {
 		overflow: hidden;
@@ -425,6 +452,7 @@ img {
 		}
 	}
 }
+
 .description-text-wrapper {
 	width: 33.07291666666667vw;
 }
@@ -943,11 +971,12 @@ img {
 		background-color: #252525;
 		margin-top: 4.6875vw;
 		animation-delay: 1.2s;
-	}
-	a {
-		text-decoration: none;
 		color: white;
 	}
+	/* a {
+		text-decoration: none;
+		
+	} */
 }
 
 .contacts-text-wrapper > div:nth-child(1) p{
@@ -1062,7 +1091,7 @@ img {
 	}
 }
 .footer__section-sign {
-	width: 41.875vw;
+	width: 38.90625vw;
 	display: flex;
 	justify-content: space-between;
 	.Cinetype-Mono();
@@ -1108,7 +1137,7 @@ img {
 		/*Img*/
 		@keyframes scale {
 	 	 0%   {transform: scale(1);}
-	  	100% {transform: scale(1.15);}
+	  	100% {transform: scale(1.10);}
 		}
 		/*text*/
 		@keyframes description-text-animation {
@@ -2089,6 +2118,32 @@ input.invalid {
 
 }
 
+
+@media screen and (min-width: 2560px)  {
+	#video-bg > video {
+		right: 0;
+		width: auto;
+		height: 100%;
+	}
+}
+
+@media screen and (min-width: 1920px) {
+	#video-bg > video {
+		right: 0;
+		width: 100%;
+		height: auto;
+	}
+}
+
+@media screen and (min-width: 1366px) and (max-width: 1366px) {
+	#video-bg > video {
+		right: 0;
+		width: 100%;
+		height: auto;
+	}
+}
+
+/*Tablet*/
 @media screen and (max-width: 1024px) {
 
 	.btn {
@@ -2711,6 +2766,11 @@ input.invalid {
 	.container-wrapper {
 		margin: 0 6%; 
 		height: 100vh;
+	}
+	#video-bg > video {
+		right: -35%;
+		width: auto;
+		height: 100%;
 	}
 	.header {
 		width: 88%;
@@ -3439,176 +3499,26 @@ input.invalid {
 
 	}
 }
-@media screen and (max-width: 768px) {
-	
+
+/*Laptop 1024px*/
+@media screen and (max-width: 1024px) and (max-height: 717px) {
+	#video-bg > video {
+		right: 0;
+		width: auto;
+		height: 100%;
+	}
 }
 
-
-/* @media screen and (max-width: 768px) {
-	Form
-	.form-header {
-	    position: absolute;
-	    top: 0;
-	    padding: 0;
-	    display: -webkit-box;
-	    display: -ms-flexbox;
-	    display: flex;
-	    -webkit-box-align: end;
-	    -ms-flex-align: end;
-	    align-items: flex-end;
-	    width: 100%;
-	    z-index: 999;
-	    height: 5.9rem;
-	    &__content {
-	    	display: flex;
-	    	justify-content: flex-end;
-	    	padding: 0 ;
-	    	padding-right: 2rem;
-	    	height: 2.9rem;
-	    	
-	    	p {
-	    		display: none;
-	    	}
-	    	
-	    }
-	}
-	.step-two p:nth-child(1){
-		min-height: 16.5rem;
-	}
-	.step-three p:nth-child(1){
-		min-height: 16.5rem;
-	}
-	.step-four p:nth-child(1){
-		min-height: 16.5rem;
-	}
-	.popup-close {
-		font-size: 1.7rem;
-	}
-	.content-wrapper_border {
-		border: none;
-	}
-	.form-wrapper  {
-		padding: 0;
-	}
-	.content-wrapper {
-		width: 90%;
-	}
-	.content-wrapper h1 {
-		font-size: 2.3rem;
-		font-family: 'GT America Bold';
-		margin-bottom: 3.5rem;
-	}
-	fieldset p:nth-child(1) {
-	    font-size: 1.4rem;
-	    font-family: 'GT Cinetype Mono';
-	    min-height: 9.8375vw;
-	}
-	fieldset p:nth-child(1) label {
-	    font-size: 1.4rem;
-	}
-	input {
-	    padding: 1.7rem 2.8rem;
-	    width: 100%;
-	    height: 8.7rem;
-	    font-size: 1.4rem;
-	    font-family: 'GT America';
-	    cursor: none;
-	    outline: none;
-	    margin-top: 2rem;
-	    border: 0.0520833333333333vw solid #252525;
-	}
-	fieldset p:nth-child(1) {
-	    font-size: 1.4rem;
-	    font-family: 'GT Cinetype Mono';
-	    min-height: 13rem;
-	}
-	.btn-next, .btn-prev, .btn-success, .btn-danger {
-	    margin-top: 2.5rem;
-	    background-color: #252525;
-	    color: white;
-	    min-width: 13.3rem;
-	    max-width: 13.3rem;
-	}
-	fieldset p:nth-child(1) label {
-	    font-size: 1.4rem;
-	    line-height: 160%;
-	}
-	Description-content
-	.description-content {
-		&__border {
-			height:  40rem;
+/*Tablet Landscape*/
+@media screen and (max-width: 1024px) and (min-width: 1023px) and (min-height: 768px) and (orientation: landscape) {
+		#video-bg > video {
+			right: 0;
+			width: auto;
+			height: 100%;
 		}
-		&__img {
-			width: 33rem;
-			img {
-				width: 100%;
-			}
-		}
-	}
-	Solution
-	.square {
-		width: 35rem;
-		height: 35rem;
-	}
-	.square--left {
-		width: 23rem;
-		height: 18rem;
-	}
-	.square--right {
-		width: 15rem;
-		height: 15rem;
-	}
-	.content-form-wrapper {
-		width: 100%;
-		h1 {
-			font-size: 4.8rem;
-		}
-		
-		.swiper-wrapper {
-			.swiper-slide {
-				width: 100%;
-				p{
-					font-size: 1.5rem;
-					margin-bottom: 2rem;
-				}
-				input {
-					padding: 1.8rem 2.5rem;
-				}
-				input[type='text'] { 
-					font-size: 16px; 
-				}
-				.tab-wrapper_time {
-					width: 26rem;
-				}
-				.tab-wrapper_date p{
-					min-height: 3.4rem; 
-				}
-				.tab-wrapper {
-					p {
-						
-						min-height: 1.7rem;
-						margin-bottom: 2rem;
-					}						
-				}
-			}
-		}
-		.form-btn {
-		.popup-close {
-			width: 7rem;
-			height: 3rem;
-			font-size: 1.7rem;
-		}
-		margin-top: 0;
-		.btn {
-			width: 7rem;
-			height: 3rem;
-		
-		}
-
-	}
 }
-}
-Form */
+
+/* Form  */
 @media screen and (max-width: 768px) {
 	.description-content__border {
 	    position: absolute;
@@ -3629,11 +3539,16 @@ Form */
 
 
 
-
+/*Mob LandScape*/
 @media screen and (min-width: 480px) and (max-width: 823px) and (orientation: landscape) {
-	.wrapper-primary {
+	/* .wrapper-primary {
 		background: url(../img/photo_back.jpg) center center no-repeat;
 		background-size: cover;
+	} */
+	#video-bg > video {
+		right: 0;
+		width: auto;
+		height: 100%;
 	}
 	/*Form*/
 	.form-header {
@@ -5258,7 +5173,20 @@ Form */
 	}
 	 */
 }
-
+@media screen and (min-width: 822px) and (max-width: 823px) and (min-height: 410px) and (orientation: landscape) {
+	#video-bg > video {
+		right: 0;
+		width: 100%;
+		height: auto;
+	}
+}
+@media screen and (min-width: 812px) and (max-width: 813px) and (min-height: 375px) and (orientation: landscape) {
+	#video-bg > video {
+		right: 0;
+		width: 100%;
+		height: auto;
+	}
+}
 @media screen and (min-width: 751px) and (max-width: 824px) and (orientation: landscape) {
 	.description-content__border {
 		height: 70%;
@@ -5297,12 +5225,13 @@ Form */
 	}
 }
 	
+/*Mob*/	
 @media screen and (max-width: 479px) {
 
-	.wrapper-primary {
+	/* .wrapper-primary {
 		background: url(../img/photo_back.jpg) -40rem center no-repeat;
 		background-size: cover;
-	}
+	} */
 	/*Form*/
 	.form-header {
 	    position: absolute;
@@ -5870,6 +5799,12 @@ Form */
 	.container-wrapper {
 		margin: 0 6%; 
 		height: 100vh;
+	}
+	#video-bg > video {
+		
+		right: -70%;
+		width: auto;
+		height: 100%;
 	}
 	.header {
 		width: 88%;
@@ -6895,869 +6830,15 @@ Form */
 	}
 
 }
-
-/* @media screen and (max-width: 360px) {
-
-	Btn
-	.btn {
-		width: 19.5rem;
-		font-size: 1.4rem;
-		height: 5.4rem;
-		line-height: 0;
-	}
-
-	PopUp User Privacy Notice
-	.privacy-notes {
-		display: none;
-		width: 100%;
-		max-height: 100%;
-		height: 100%;
-		position: fixed;
-		top: 0;
-		left: 0;
-		z-index: 998;
-		background-color: white;
-		overflow: auto;
-	}
-	.privacy-header {
-		position: fixed;
-		position: absolute;
-		top: 0;
-		padding: 0 6%;
-		display: -webkit-box;
-		display: -ms-flexbox;
-		display: flex;
-		-webkit-box-align: end;
-		-ms-flex-align: end;
-		align-items: flex-end;
-		width: 100%;
-
-		z-index: 999;
-		height: 5.9rem;
-	}
-	.privacy-header__content {
-		width: 100%;
-		height: 4.054054054054054vh;
-		display: -webkit-box;
-		display: -ms-flexbox;
-		display: flex;
-		
-		align-items: center;
-		justify-content: flex-end;
-		
-		    height: 2.9rem;
-		p {
-			display: none;
-		}
-		button {
-			display: block;
-			width: 5.208333333333333vw;
-			height: 2.604166666666667vw;
-			height: 2.604166666666667vw;
-			border: none;
-			outline: none;
-			font-size: 1.7rem;
-			font-family: 'GT America';
-			background-color: transparent;
-		}
-	}
-	.privacy-wrapper {
-		padding: 0;
-	}
-	.privacy-content_border {
-		border: none;
-	}
-	.privacy-content {
-		padding: 10rem 2rem;
-		h2 {
-			font-size: 2.1rem;
-			.America-Bold();
-			margin-bottom: 1.5rem;
-			line-height: 140%;
-		}
-		p {
-			font-size: 1.4rem;
-			.America();
-			line-height: 160%;
-			padding-bottom: 7rem;
-		}
-		.item {
-			margin-top: 3rem;
-			h4 {
-				font-size: 2.1rem;
-				.America-Bold();
-				padding-bottom: 1.5rem;
-				line-height: 140%;
-			}
-			.mono {
-				.Cinetype-Mono();
-				padding-bottom: 1.5rem;
-			}
-			ul {
-				font-size: 1.4rem;
-				.America();
-				padding-left: 2rem;
-				li {
-					padding-bottom: 2rem;
-					list-style: none;
-					position: relative;
-					line-height: 160%;
-				}
-				li:nth-child(5) {
-					padding-bottom: 1rem;
-				}
-				li:before {
-					content: "";
-					display: block;
-					position: absolute;
-					top: 7%;
-					left: -7.5%;
-					width: 0.5rem;
-					height: 0.5rem;
-					background-color: #252525;
-				}
-			}
-			ul > li:nth-child(1):before {
-				content: "";
-				display: block;
-				position: absolute;
-				top: 14%;
-				left: -7.5%;
-			}
-			ul > li:nth-child(4):before {
-				content: "";
-				display: block;
-				position: absolute;
-				top: 14%;
-				left: -7.5%;
-			}
-			ul > li:nth-child(5):before {
-				content: "";
-				display: block;
-				position: absolute;
-				top: 7%;
-				left: -7.5%;
-			}
-			p {
-				padding-bottom: 1rem;
-			}
-		}
-	}
-
-	PopUp Cookies Notice
-	.cookies-notes {
-		display: none;
-		width: 100%;
-		max-height: 100%;
-		height: 100%;
-		position: fixed;
-		top: 0;
-		left: 0;
-		z-index: 998;
-		background-color: white;
-		overflow: auto;
-	}
-	.cookies-header {
-		position: fixed;
-		top: 0;
-		padding: 0 6%;
-		display: -webkit-box;
-		display: -ms-flexbox;
-		display: flex;
-		-webkit-box-align: end;
-		-ms-flex-align: end;
-		align-items: flex-end;
-		width: 100%;
-		z-index: 999;
-		height: 5.9rem;
-	}
-	.cookies-header__content {
-		width: 100%;
-		height: 4.054054054054054vh;
-		display: -webkit-box;
-		display: -ms-flexbox;
-		display: flex;
-		-webkit-box-align: center;
-		-ms-flex-align: center;
-		align-items: center;
-		-webkit-box-pack: end;
-		-ms-flex-pack: end;
-		justify-content: flex-end;
-		height: 2.9rem;
-		p {
-			display: none;
-		}
-		button {
-			display: block;
-			width: 5.208333333333333vw;
-			height: 2.604166666666667vw;
-			height: 2.604166666666667vw;
-			border: none;
-			    outline: none;
-			    font-size: 1.7rem;
-			    font-family: 'GT America';
-			    background-color: transparent;
-		}
-	}
-	.cookies-wrapper {
-		padding: 0;
-	}
-	.cookies-content_border {
-		border: none;
-	}
-	.cookies-content {
-		padding: 10rem 2rem 9rem;
-		h2 {
-			font-size: 2.1rem;
-			.America-Bold();
-			margin-bottom: 1.5rem;
-			line-height: 140%;
-		}
-		p {
-			font-size: 1.4rem;
-			.America();
-			line-height: 160%;
-			padding-bottom: 7rem;
-		}
-		.item {
-			margin-top: 3rem;
-			h4 {
-				font-size: 2.1rem;
-				.America-Bold();
-				padding-bottom: 1.5rem;
-				line-height: 140%;
-			}
-			.mono {
-				.Cinetype-Mono();
-				padding-bottom: 1.5rem;
-			}
-			ul {
-				
-				font-size: 1.4rem;
-				font-family: 'GT America';
-				padding-left: 2rem;
-				padding-top: 0.5rem;
-				p {
-					padding-bottom: 2rem;
-				}
-				.cookies-part {
-					padding-left: 6.770833333333333vw;
-					padding-top: 0;
-					li:before {
-						content: "";
-						display: block;
-						position: absolute;
-						top: 14%;
-						left: -3.5%;
-						width: 0.5rem;
-						height: 0.5rem;
-						background-color: #252525;
-					}
-					li {
-						padding-bottom: 1.5rem;
-					}
-
-				}
-				.cookies-part >li:nth-child(1):before {
-					position: absolute;
-					top: 7%;
-					left: -7.5%;
-				}
-				.cookies-part >li:nth-child(2):before {
-					position: absolute;
-					top: 6%;
-					left: -7.5%;
-				}
-				.cookies-part >li:nth-child(3):before {
-					position: absolute;
-					top: 13%;
-					left: -7.5%;
-				}
-				.cookies-part >li:nth-child(4):before {
-					position: absolute;
-					top: 11%;
-					left: -7.5%;
-				}
-
-				li {
-					position: relative;
-					font-size: 1.4rem;
-					padding-bottom: 2rem;
-					line-height: 160%;
-					
-					list-style: none;
-					p {
-						padding-bottom: 1rem;
-					}
-				}
-				li:nth-child(1) {
-					padding-bottom: 1.5rem;
-				}
-				.number-one:before {
-					content: "";
-					display: block;
-					position: absolute;
-					top: 5%;
-					left: -7.5%;
-					width: 0.5rem;
-					height: 0.5rem;
-					background-color: #252525;
-				}
-				.number-two:before {
-					content: "";
-					display: block;
-					position: absolute;
-					top: 5%;
-					left: -7.5%;
-					width: 0.5rem;
-					height: 0.5rem;
-					background-color: #252525;
-				}
-				.number-three:before {
-					content: "";
-					display: block;
-					position: absolute;
-					top: 2%;
-					left: -7.5%;
-					width: 0.5rem;
-					height: 0.5rem;
-					background-color: #252525;
-				}
-				
-			}
-			ol {
-				
-				font-size: 1.4rem;
-				    font-family: 'GT America';
-				    padding-left: 2rem;
-				    padding-top: 0.5rem;
-				li {
-					position: relative;
-					padding-bottom: 2rem;
-					font-size: 1.4rem;
-					list-style: none;
-					position: relative;
-					line-height: 160%;
-					
-					span {
-						position: absolute;
-						left: -7%;
-						top: 0;
-						.America-Bold();
-					}
-				}
-			}
-			p {
-				padding-bottom: 1rem;
-				overflow: hidden;
-			}
-		}
-		.item:nth-child(1) {
-			margin-top: 0;
-		}
-		.item:nth-child(4) {
-			margin-top: 1rem;
-		}
-		.item:nth-child(5) {
-			margin-top: 2rem;
-		}
-	}
-
-	PopUp Accessibility Notice
-	.accessibility-notes {
-		display: none;
-		width: 100%;
-		overflow: hidden;
-		height: 100vh;
-		position: fixed;
-		top: 0;
-		left: 0;
-		z-index: 998;
-		background-color: white;
-		overflow: auto;
-	}
-	.accessibility-header {
-		position: absolute;
-		top: 0;
-		padding: 0 6%;
-		display: -webkit-box;
-		display: -ms-flexbox;
-		display: flex;
-		-webkit-box-align: end;
-		-ms-flex-align: end;
-		align-items: flex-end;
-		width: 100%;
-		z-index: 999;
-		height: 5.9rem;
-	}
-	.accessibility-header__content {
-		width: 100%;
-		height: 4.054054054054054vh;
-		display: -webkit-box;
-		display: -ms-flexbox;
-		display: flex;
-		align-items: center;
-		justify-content: flex-end;
-		height: 2.9rem;
-		p {
-			display: none;
-		}
-		button {
-			display: block;
-			width: 5.208333333333333vw;
-			height: 2.604166666666667vw;
-			height: 2.604166666666667vw;
-			border: none;
-			outline: none;
-			font-size: 1.7rem;
-			font-family: 'GT America';
-			background-color: transparent;
-		}
-	}
-	.accessibility-wrapper {
-		padding: 0;
+/*Iphone X Video Bg*/
+@media screen and (min-width: 374px) and (max-width: 375px) and (min-height: 811px) {
+	#video-bg > video {
+		right: -90%;
+		width: auto;
 		height: 100%;
 	}
-	.accessibility-content_border {
-		border: none;
-		height: 100%;
-	}
-	.accessibility-content {
-		padding: 10rem 2rem;
-		h2 {
-			font-size: 2.1rem;
-			    font-family: 'GT America Bold';
-			    margin-bottom: 1.5rem;
-			    line-height: 140%;
-		}
-		p {
-			font-size: 1.4rem;
-			    font-family: 'GT America';
-			    line-height: 160%;
-			    padding-bottom: 7rem
-			padding-bottom: 7rem;
-		}
-	}
-
-	Form
-	.form-header {
-	    position: absolute;
-	    top: 0;
-	    padding: 0;
-	    display: -webkit-box;
-	    display: -ms-flexbox;
-	    display: flex;
-	    -webkit-box-align: end;
-	    -ms-flex-align: end;
-	    align-items: flex-end;
-	    width: 100%;
-	    z-index: 999;
-	    height: 5.9rem;
-	    &__content {
-	    	display: flex;
-	    	justify-content: flex-end;
-	    	padding: 0 ;
-	    	padding-right: 2rem;
-	    	height: 2.9rem;
-	    	
-	    	p {
-	    		display: none;
-	    	}
-	    	
-	    }
-	}
-	.popup-close {
-		font-size: 1.7rem;
-	}
-	.content-wrapper_border {
-		border: none;
-		display: block;
-	}
-	.form-wrapper  {
-		padding: 0;
-	}
-	.content-wrapper {
-		width: 100%;
-		padding: 0 2rem;
-		margin-top: 10rem;
-	}
-	.content-wrapper h1 {
-		font-size: 2.3rem;
-		font-family: 'GT America Bold';
-		margin-bottom: 3.5rem;
-	}
-	.input-wrapper-email,
-	.input-wrapper-city,
-	.input-wrapper-post,
-	.input-wrapper-phone {
-		min-height: 10rem;
-		position: relative;
-	}
-	fieldset p:nth-child(1) {
-	    font-size: 1.4rem;
-	    font-family: 'GT Cinetype Mono';
-	    min-height: 9.8375vw;
-	}
-	fieldset p:nth-child(1) label {
-	    font-size: 1.4rem;
-	}
-	input {
-	    padding: 1.7rem 2rem;
-	    width: 100%;
-	    height: 8.7rem;
-	    font-size: 1.4rem;
-	    font-family: 'GT America';
-	    cursor: none;
-	    outline: none;
-	    margin-top: 2rem;
-	    border: 1px solid #252525;
-	}
-	fieldset p:nth-child(1) {
-	    font-size: 1.4rem;
-	    font-family: 'GT Cinetype Mono';
-	    min-height: 13rem;
-	}
-	.btn-next, .btn-prev, .btn-success, .btn-danger {
-	    margin-top: 2.5rem;
-	    background-color: #252525;
-	    color: white;
-	    width: 47%;
-	    min-width: 13.3rem;
-	    max-width: 47%;
-	}
-	fieldset p:nth-child(1) label {
-	    font-size: 1.4rem;
-	    line-height: 160%;
-	}
-
-	.checkmark {
-		position: absolute;
-		top: -10%;
-	}
-	.checkmark {
-		width: 2.7rem;
-		height: 2.7rem;
-	}
-	.step-two p:nth-child(1) {
-	    min-height: 13rem;
-	}
-	.step-five p:nth-child(1),
-	.step-six p:nth-child(1) {
-		    min-height: 14rem;
-		}
-	.step-two p:nth-child(1),
-	.step-three p:nth-child(1),
-	.step-four p:nth-child(1) {
-	    min-height: 14.5rem;
-	}
-	.step-one p:nth-child(1) {
-	    min-height: 12rem;
-	}
-	.step-three p:nth-child(1) {
-	    min-height: 16.5rem;
-	}
-	.step-four p:nth-child(1) {
-	    min-height: 16.5rem;
-	}
-
-
-
-
-	Header
-
-	.header__section-logo .logo {
-		font-size: 2.1rem;
-	}
-	.header .toggle-button {
-		text-align: center;
-		display: block;
-		position: fixed;
-		font-size: 1.7rem;
-		cursor: pointer;
-		
-		z-index: 988;
-		transition: all .5s linear;
-	}
-	.header .main-menu div {
-		display: block;
-		font-size: 2.1rem;
-		padding-right: 20%;
-		padding-left: 20%;
-
-		text-align: center;
-		-webkit-transition: all .5s linear;
-		transition: all .5s linear;
-	}
-	.header .main-menu li {
-		display: block;
-		font-size: 2.1rem;
-		padding-right: 0;
-		padding-left: 0;
-		margin-bottom: 5rem;
-		text-align: center;
-		-webkit-transition: all .5s linear;
-		transition: all .5s linear;
-	}
-	.sup-text p {
-		font-size: 1.4rem;
-		line-height: 160%;
-	}
-	.sub-item__text:nth-child(3) {
-		margin-bottom: 0;
-	}
-	.sub-item__text h2 {
-		font-size: 2.1rem;
-	}
-	.toggle-button {
-	    color: black;
-	}
-
-	Description-content
-	.description-content {
-		&__border {
-			height:  35rem;
-		}
-		&__img {
-			width: 28rem;
-			img {
-				width: 100%;
-			}
-		}
-	}
-	.description-content__text .description-text-wrapper h3 {
-		font-size: 2.1rem;
-	}
-	.description-content__text .description-text-wrapper p {
-		font-size: 1.4rem;
-	}
-	Task
-	.task__title h3 {
-		font-size: 2.1rem;
-		margin-bottom: 0;
-	}
-	.task__title p {
-		font-size: 1.4rem;
-	}
-	.task__content .left-items .item h3 {
-		font-size: 1.4rem;
-		margin-bottom: 1.5rem;
-		line-height: 160%;
-	}
-	.task__content .left-items .item p,
-	.task__content .middle-items .item p,
-	.task__content .right-items .item p {
-		font-size: 1.4rem;
-		padding-right: 0;
-	}
-	.task__content .middle-items .item h3,
-	.task__content .middle-items .item h3,
-	.task__content .right-items .item h3 {
-		font-size: 1.4rem;
-		margin-bottom: 1.5rem;
-		line-height: 160%;
-	}
-
-	Solution
-	.solution__content {
-		.text-wrapper-caption > div h2{
-			font-size: 2.1rem;
-		}
-		.text-wrapper-desc >div p:nth-child(1) {
-			margin-bottom: 1.5rem;
-		}
-		.solution__square {
-			.square {
-				width: 28rem;
-				height: 28rem;
-			}
-			.square--left {
-				width: 21.3rem;
-				height: 16rem;
-			}
-			.square--right {
-				width: 15rem;
-				height: 15rem;
-			}
-		}
-	}
-    .solution__content .solution__text .text-wrapper-desc > div:nth-child(1) p {
-    	margin-bottom: 1.5rem;
-    }
-
-    Features
-    .features-content__items {
-    	margin-right: 20rem;
-    }
-    .features-content__items .items-img img {
-    	width: 10rem;
-    	height: 100%;
-    }
-    .features-content__items .items-text > div h3 {
-    	width: 80%;
-    	font-size: 2.3rem;
-    	padding-bottom: 1.5rem;
-    	line-height: 140%;
-    	margin-bottom: 0;
-    }
-    .features-content__items .items-text > div p {
-    	font-size: 1.4rem;
-    	width: 80%;
-    }
-
-
-    Digital-Sourcing
-    .digital-sourcing__text {
-    	margin-bottom: 3.5rem;
-    }
-    .digital-sourcing__text > div p {
-    	font-size: 2.1rem;
-    	line-height: 140%;
-    }
-    .digital-sourcing__text p:first-child {
-    	margin-bottom: 0;
-    }
-
-    Services
-    .services__sup-content .items .first-row p, .services__sub-content .items .first-row p {
-    	font-size: 1.4rem;
-    }
-    .services__sup-content .items .first-row img, .services__sub-content .items .first-row img {
-    	width: 4.4rem;
-    }
-    .services__sup-content .items .second-row p, .services__sub-content .items .second-row p, .services__sup-content .items .second-row, .services__sub-content .items .second-row {
-    	font-size: 1.4rem;
-    }
-
-    Contacts
-    .contacts-content__text .contacts-text-wrapper > div:nth-child(1) p {
-    	font-size: 1.4rem;
-    	margin-bottom: 1.2rem;
-    }
-    .contacts-content__text .contacts-text-wrapper > div:nth-child(2) h3 {
-    	font-size: 2.3rem;
-    }
-    .contacts-content__text .contacts-text-wrapper > div:nth-child(4) p {
-    	font-size: 1.4rem;
-    	margin-bottom: 3.5rem;
-    	margin-top: 0;
-    }
-    .contacts-content .contacts-btn {
-    	margin-top: 0;
-    	margin-bottom: 7rem;
-    	font-size: 1.4rem;
-    }
-
-
-    Footer
-    .footer__sup-content .logo {
-    	font-size: 2.1rem;
-    	text-align: center;
-    	padding: 0 1rem;
-    	margin-bottom: 3.5rem;
-    }
-    .footer__sup-content .footer__section-nav ._about {
-    	padding-right: 0;
-    	font-size: 1.7rem;
-    	margin-bottom: 5rem;
-    }
-    .footer__sub-content {
-    	.footer__section-sign {
-    		width: 100%;
-    		display: flex;
-    		flex-direction: column;
-    		align-items: center;
-    		.phone,
-    		.cookies,
-    		.privacy {
-    			font-size: 1.4rem;
-    			margin-bottom: 3.5rem;
-    		}
-    		.address {
-    			font-size: 1.4rem;
-    			text-align: center;
-    			margin-bottom: 3.5rem;
-    		}
-    	}
-    	.footer__section-copyright {
-    		width: 100%;
-    		display: flex;
-    		align-items: center;
-    		flex-direction: column-reverse;
-    		.policy {
-    			font-size: 1.4rem;
-    			text-align: center;
-    			margin-bottom: 3.5rem;
-    		}
-    	}
-    	.copyright {
-    		font-size: 1.4rem;
-    		text-align: center;
-    		margin-bottom: 5rem;
-    		line-height: 160%;
-    	}
-    }
-    .footer__sup-content .footer__section-nav .footer-item {
-    	padding-right: 0;
-    	font-size: 1.7rem;
-    	margin-bottom: 3.5rem;
-    }
-    .footer__sup-content .footer__section-nav .footer-item:nth-child(5) {
-			margin-bottom: 5rem;
-    }
-    .footer__section-nav {
-    	padding-bottom: 0;
-    }
-    .footer__section-sign {
-    	width: 100%;
-    	display: flex;
-    	flex-direction: column;
-    	align-items: center;
-    	.phone,
-    	.cookies,
-    	.privacy {
-    		font-size: 1.4rem;
-    		margin-bottom: 3.5rem;
-    	}
-    	.address {
-    		font-size: 1.4rem;
-    		text-align: center;
-    		margin-bottom: 3.5rem;
-    	}
-    }
-    .footer__section-copyright {
-    	width: 100%;
-    	display: flex;
-    	align-items: center;
-    	flex-direction: column-reverse;
-    	.policy {
-    		font-size: 1.4rem;
-    		text-align: center;
-    		margin-bottom: 3.5rem;
-    	}
-    }
-    .copyright {
-    	font-size: 1.4rem;
-    	text-align: center;
-    	margin-bottom: 5rem;
-    	line-height: 160%;
-    }
-    .copyright-wrapper-sup {
-    	text-align: center;
-    }
-    .copyright-wrapper-sub {
-    	display: flex;
-    	flex-direction: column;
-    	text-align: center;
-    	margin-top: 0;
-    	.footer-phone,
-    	.footer-email {
-    		margin-right: 0;
-    		margin-top: 3.5rem;
-    		margin-bottom: 0;
-    	}
-    }
 }
- */
+
 
 
 

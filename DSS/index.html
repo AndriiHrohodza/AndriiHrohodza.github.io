@@ -4,35 +4,19 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="Cache-Control" content="max-age=200" />
     <!-- Normalize -->
     <link rel="stylesheet" href="css/normalize.css">
     <!-- Animate -->
     <link rel="stylesheet" href="css/animation.css">
-    <!-- Form -->
-    <link rel="stylesheet" href="css/form.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/css/swiper.min.css">
-
     <!-- InpuNumber -->
     
     <link rel="stylesheet" href="css/pidie-0.0.8.css">
 
     <!-- Main Style -->
     <link rel="stylesheet" href="css/styleDSS.css">
-    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
-    <script>
-       function agreeForm(f) {
-        // Если поставлен флажок, снимаем блокирование кнопки
-        if (f.agree.checked) {
-          f.submit.disabled = 0
-                  f.submit.style.opacity = "1" 
-        } 
-        // В противном случае вновь блокируем кнопку
-        else {
-          f.submit.disabled = 1
-                    f.submit.style.opacity = "0.5" 
-        } 
-       }
-      </script>
+    
+    
 
     <title>DSS</title>
   </head>
@@ -40,6 +24,12 @@
     <!--Header-Primary-Scroll-->
     <div class="wrapper-primary-bg_black">
       <div id="wrapper-primary-trigger" class="wrapper-primary anchor">
+      <div id="video-bg">
+          <div class="overlay"></div>
+          <video id="video" preload="auto" autoplay muted loop playsinline src="video/Depositphotos_183300920_hd1080.mp4">
+              <source src="video/Depositphotos_183300920_hd1080.mp4" type='video/mp4'></source>
+          </video>
+      </div>
         <div class="container-wrapper">
           <!--Header-->
           <header class="header">
@@ -61,7 +51,7 @@
                       <a href="#task">Task.</a>
                     </li>
                     <li id="test" class="header-item _smart-staffing">
-                      <a href="#smart_staffing">SmartStaffing.</a>
+                      <a href="#smart_staffing">Value2B.</a>
                     </li>
                     <li class="header-item _services">
                       <a href="#services">Services.</a>
@@ -122,10 +112,10 @@
                     <p id="text-magic">Digital Sourcing & Staffing LLC Is Primarily A Staffing Services And Outsourcing Firm That Focuses On Technology Innovations</p>
                   </div>
                   <div>
-                    <p id="text-magic_fade" class="animated">The company is engaged in business promotion, focusing on its uniqueness. We work in the USA and around the world. We solve problems - you enjoy business.
-                      <br><br>
+                    <p id="text-magic_fade" class="animated ">The company is engaged in business promotion, focusing on its uniqueness. We work in the USA and around the world. We solve problems - you enjoy business.</p>
                       
-                      We deal with your business at the recruitment stage, create a team, analyze the market, and offer marketing innovations for promotion. DSS simplifies your business management with SmartStaffing module. By ordering services of Digital Sourcing & Staffing LLC you will receive comprehensive solutions. 
+                    <p id="text-magic_fade" class="animated">
+                      We deal with your business at the recruitment stage, create a team, analyze the market, and offer marketing innovations for promotion. DSS simplifies your business management with Value2B module. By ordering services of Digital Sourcing & Staffing LLC you will receive comprehensive solutions. 
                     </p>
                   </div>
                 </div>
@@ -201,7 +191,7 @@
                     <h2 id="solution-text-magic">We have a solution – </h2>
                   </div>
                   <div>
-                    <h2 id="solution-text-magic">SmartStaffing.</h2>
+                    <h2 id="solution-text-magic">Value2B.</h2>
                   </div>
                 </div>
                 <div class="text-wrapper-desc">
@@ -275,7 +265,7 @@
               <div><p id="text-digital-magic">approach to solving each task.</p></div>        
             </div>
             <div id="digital-img-magic" class="digital-sourcing__content">
-              <img src="img/main/digital-sourcing/bg.png" alt="digital-bg">
+              <img src="img/main/digital-sourcing/bg.jpg" alt="digital-bg">
             </div>
             <div class="digital-sourcing__border-wrapper">
               <div class="border_grey"></div>
@@ -352,7 +342,7 @@
                   <p id="contacts-text_fade" class="animated">We offer fresh solutions and are engaged in its development in all fields. Leave your contacts – we will offer you the best solution for cooperation.
                   </p>
                 </div>
-                <button id="contacts-button_trigger" class="contacts-btn btn animated fadeInUp popup-btn"><a href="#">Find a Solution  +</a></button>
+                <button id="contacts-button_trigger" class="contacts-btn btn animated fadeInUp popup-btn">Find a Solution  +</button>
               </div>
             </div>
             <div id="contacts-img-magic" class="contacts-content__img">
@@ -380,7 +370,7 @@
                 <a href="#task">Task.</a>
               </div>
               <div class="footer-item _smart-staffing">
-                <a href="#smart_staffing">SmartStaffing.</a>
+                <a href="#smart_staffing">Value2B.</a>
               </div>
               <div class="footer-item _services">
                 <a href="#services">Services.</a>
@@ -436,10 +426,7 @@
     </div>
     
 
-    <script type="text/javascript">
-      $(function(){
-        var mail_valid=/^([A-Za-z0-9_\-\.])+\@([A-Za-z0-9_\-\.])+\.([A-Za-z]{2,4})$/,phone_valid=/^[0-9-+()]+$/; $(".bmail_form").submit(function(){var b=$(this);$(".bmail_form *",b).removeClass("b_err");var a=0;$(".b_req",b).each(function(){if(!$(this).val()||$(this).hasClass("b_mail")&&!mail_valid.test($(this).val().toLowerCase())||$(this).hasClass("b_phone")&&!phone_valid.test($(this).val().toLowerCase()))a+=1,$(this).addClass("b_err")});if(0<a)return!1;$.ajax({type:"POST",url:"/mail.php",data:$(this).serialize()+"&to="+$(this).attr("data-to"),success:function(a){"1"==a?(window.location = '../thanks/index.html'):alert("Error")}});return!1});$("body").on("mouseover","input.b_err",function(){$(this).removeClass("b_err")});$("body").append("<style>.b_err{border-color:#f00 !important;-moz-box-shadow:inset 0 0 0 2px #ea1313 !important;-webkit-box-shadow:inset 0 0 0 2px #ea1313 !important;box-shadow:inset 0 0 0 2px #ea1313 !important}</style>");});
-      </script>
+    
 
       
     <!--Form-->
@@ -461,7 +448,7 @@
 
               <h1>Request a Specialist Form.</h1>
               
-              <form data-to="ahrohodza1@gmail.com" method="POST" action="" id="regform" class="regform bmail_form" >
+              <form data-to="ahrohodza1@gmail.com" method="POST" action="#" id="regform" class="regform bmail_form" >
                 <fieldset aria-label="Step One" class="step-one" tabindex="-1" id="step-1">
                   <p>
                     <label for="first-name">1. How Can We Call You?</label>
@@ -907,11 +894,28 @@
     <script>
       new WOW().init();
     </script>
-    <!-- Smooth JS -->
-    <script src="js/smoothScroll.js"></script>
+    
     <!-- Scroll JS -->
     <script src="js/scroll.js"></script>
     <!-- Form -->
+    <script>
+       function agreeForm(f) {
+        // Если поставлен флажок, снимаем блокирование кнопки
+        if (f.agree.checked) {
+          f.submit.disabled = 0
+                  f.submit.style.opacity = "1" 
+        } 
+        // В противном случае вновь блокируем кнопку
+        else {
+          f.submit.disabled = 1
+                    f.submit.style.opacity = "0.5" 
+        } 
+       }
+      </script>
+      <script>
+        $(function(){
+          var mail_valid=/^([A-Za-z0-9_\-\.])+\@([A-Za-z0-9_\-\.])+\.([A-Za-z]{2,4})$/,phone_valid=/^[0-9-+()]+$/; $(".bmail_form").submit(function(){var b=$(this);$(".bmail_form *",b).removeClass("b_err");var a=0;$(".b_req",b).each(function(){if(!$(this).val()||$(this).hasClass("b_mail")&&!mail_valid.test($(this).val().toLowerCase())||$(this).hasClass("b_phone")&&!phone_valid.test($(this).val().toLowerCase()))a+=1,$(this).addClass("b_err")});if(0<a)return!1;$.ajax({type:"POST",url:"/mail.php",data:$(this).serialize()+"&to="+$(this).attr("data-to"),success:function(a){"1"==a?(window.location = '../thanks/index.html'):alert("Error")}});return!1});$("body").on("mouseover","input.b_err",function(){$(this).removeClass("b_err")});$("body").append("<style>.b_err{border-color:#f00 !important;-moz-box-shadow:inset 0 0 0 2px #ea1313 !important;-webkit-box-shadow:inset 0 0 0 2px #ea1313 !important;box-shadow:inset 0 0 0 2px #ea1313 !important}</style>");});
+        </script>
     
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/js/swiper.min.js"></script>
     <script src="js/jquery.validate.js"></script>
@@ -951,28 +955,6 @@
        });
       });
     </script>
-    <!-- InputTel -->
-   <!-- <script src="js/intlTelInput.min.js"></script> -->
-   <!-- <script>
-     var input = document.querySelector("#phone");
-     var iti = window.intlTelInput(input, {
-      initialCountry: 'id' ,
-      nationalMode: true,
-      utilsScript: 'js/utils.js'
-     });
-   </script> -->
-
-    <!-- <script src="js/intlTelInput.min.js"></script>
-    <script>
-      var input = document.querySelector("#telephone");
-      window.intlTelInput(input,({
-        allowDropdown: true,
-        autoHideDialCode: true,
-        autoPlaceholder: "polite",
-        customPlaceholder: null
-      }));
-    
-    </script> -->
    <script src="js/pidie-0.0.8.js"></script>
    <script>
      new Pidie({
@@ -988,11 +970,23 @@
    </script>
     
      <!-- Send Form -->
-     <script src="js/js.js"></script>
     <script src="js/form.js"></script>
     <!-- Main JS -->
     <script src="js/jsDSS.js"></script>
     <!-- Squares Move-->
     <script src="js/squaresMove.js"></script>
+    <<!-- script>
+        $(document).ready(function() {
+        $("#video").bind("click", function() {
+        var vid = $(this).get(0);
+        if (vid.paused) { vid.play(); }
+        else { vid.pause(); }
+        }); 
+    }); 
+    </script> -->
+
+    <!-- Video -->
+    <script src="js/video.js"></script>
+
   </body>
 </html>
