@@ -9,6 +9,8 @@
     <!-- <script src="js/jquery.backgroundMove.js"></script> -->
     <link rel="stylesheet" href="slick/slick.css">
     <link rel="stylesheet" href="slick/slick-theme.css">
+    <link href="https://unpkg.com/video.js/dist/video-js.min.css" rel="stylesheet">
+    <script src="https://unpkg.com/video.js/dist/video.min.js"></script>
     <!-- <link rel="stylesheet" href="css/animation.css"> -->
     <link rel="stylesheet" href="css/makbushcoffee.css">
 
@@ -188,6 +190,34 @@
         </div>
       </div>
     </section>
+    
+    <section class="video">
+      <div class="container">
+        <div class="video-content">
+          <video
+              id="my-player"
+              class="video-js"
+              controls
+              preload="auto"
+              
+              data-setup='{}'>
+            <source src="video/Depositphotos_183300920_hd1080.mp4" type="video/mp4"></source>
+            <source src="video/Depositphotos_183300920_hd1080.webm" type="video/webm"></source>
+            <source src="video/Depositphotos_183300920_hd1080.ogv" type="video/ogg"></source>
+            <p class="vjs-no-js">
+              To view this video please enable JavaScript, and consider upgrading to a
+              web browser that
+              <a href="https://videojs.com/html5-video-support/" target="_blank">
+                supports HTML5 video
+              </a>
+            </p>
+          </video>
+        </div>
+      </div>
+    </section>
+
+
+
     <section class="partners">
       <div class="cards-container">
         <div class="partners-text">
@@ -386,8 +416,8 @@
             <p>Обратная связь</p>
             <form class="form-box" action="">
               <input type="text" placeholder="Ваше имя *">
-              <input id="form-phone" class="form-phone" name="phone" type="tel" placeholder="Номер телефона" minlength="10" maxlength="10" >
-              <input id="form-mail" class="form-mail" name="form-mail" type="email" placeholder="E-mail"  >
+              <input id="form-phone" class="form-phone" name="phone" type="tel" placeholder="Номер телефона" minlength="10" maxlength="10" required>
+              <input id="form-mail" class="form-mail" name="form-mail" type="email" placeholder="E-mail"  required>
               <span class="checkbox-form">
                 <label class="checkbox">
                   <input id="check" name="agree" onclick="agreeForm(this.form)"  class="check" type="checkbox" />

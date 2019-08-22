@@ -266,3 +266,12 @@ $( document ).ready(function() {
 		$('.wrapper-back, .features, .goods, .partners, .achievments, .about, .team, .price, .footer').removeClass('blur');  
 	})
 });
+
+
+/*Form*/
+$(function ($) {
+    const $inputs = $('input[name=phone],input[name=form-mail]');
+    $inputs.on('input', function () {
+        $inputs.not(this).prop('required', !$(this).val().length);
+    });
+});
